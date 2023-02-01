@@ -20,10 +20,15 @@ script:
   - cd gh-pages
   - git clone --depth=1 --branch=gh-pages https://github.com/AccessibleReadingTechnologies/APCAguidelines.git
   - cd APCAguidelines
-  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/index.html ../../AccessibleReadingTechnologies/APCAguidelines/assets ../../AccessibleReadingTechnologies/APCAguidelines/prototypes ../../AccessibleReadingTechnologies/APCAguidelines/requirements .
+  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/index.html ../../AccessibleReadingTechnologies/APCAguidelines/assets ../../AccessibleReadingTechnologies/APCAguidelines/prototypes .
   - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/guidelines/methods ../../AccessibleReadingTechnologies/APCAguidelines/guidelines/img ../../AccessibleReadingTechnologies/APCAguidelines/guidelines/guidelines.css guidelines
-  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/subgroups .
+  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/methods methods
+  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/outcomes outcomes
+  - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/how-tos how-tos
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+
+- curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/methods/font-characteristics-contrast/index.html -o methods/index.html -f --retry 3
+
 
 #  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/explainer/index.html -o explainer/index.html -f --retry 3
 #  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/requirements/index.html -o requirements/index.html -f --retry 3
