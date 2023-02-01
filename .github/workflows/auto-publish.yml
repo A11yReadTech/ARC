@@ -15,8 +15,6 @@ jobs:
             destination: explainer/index.html
           - source: guidelines/index.html
             destination: guidelines/index.html
-          - source: requirements/index.html
-            destination: requirements/index.html
           - source: methods/font-characteristics-contrast/index.html
             destination: methods/font-characteristics-contrast/index.html
           - source: how-tos/visual-contrast-of-text/index.html
