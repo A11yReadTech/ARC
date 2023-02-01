@@ -35,7 +35,7 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "https://www.readtech.org/APCAguidelines/" + new Date().getFullYear() + "/how-tos/";
+	var howtoBaseURI = "https://www.readtech.org/APCAguidelines/how-tos/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
 	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
 	document.querySelectorAll('.guideline').forEach(function(node){
@@ -49,7 +49,7 @@ function linkHowTo() {
 }
 
 function linkOutcome() {
-	var outcomeBaseURI = "https://www.readtech.org/APCAguidelines/" + new Date().getFullYear() + "/outcomes/";
+	var outcomeBaseURI = "https://www.readtech.org/APCAguidelines/outcomes/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
 	//else understandingBaseURI = "https://www.readtech.org/APCA" + version + "/Understanding/";
 	document.querySelectorAll('.outcome').forEach(function(node){
