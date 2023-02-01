@@ -27,7 +27,7 @@ script:
   - cp -r ../../AccessibleReadingTechnologies/APCAguidelines/how-tos how-tos
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/guidelines/index.html -o guidelines/index.html -f --retry 3
 
-- curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/methods/font-characteristics-contrast/index.html -o methods/index.html -f --retry 3
+- curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/methods/font-characteristics-contrast/index.html -o methods/font-characteristics-contrast/index.html -f --retry 3
 
 
 #  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APCAguidelines/main/explainer/index.html -o explainer/index.html -f --retry 3
