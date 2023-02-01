@@ -11,8 +11,8 @@ var respecConfig = {
 	//perEnd:               "2023-06-01",
 	//publishDate:          "2023-06-01",
 	
-	// the short name, as in https://www.readtech.org/apcaguidelines/
-	shortName: "apcaguidelines",
+	// the short name, as in https://www.readtech.org/apcaexplainer/
+	shortName: "apcaexplainer",
 	
 	
 	// if you wish the publication date to be other than today, set this
@@ -21,7 +21,7 @@ var respecConfig = {
 	license: "AGPL3",
 	
 	// link if there a publicly available draft
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APCAguidelines/draft/",
+	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APCAguidelines/explainer/",
 	
 	// editors, add as many as you like
 	// only "name" is required

@@ -35,7 +35,7 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/how-tos/";
+	var howtoBaseURI = "https://www.readtech.org/APCAguidelines/" + new Date().getFullYear() + "/how-tos/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
 	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
 	document.querySelectorAll('.guideline').forEach(function(node){
@@ -49,9 +49,9 @@ function linkHowTo() {
 }
 
 function linkOutcome() {
-	var outcomeBaseURI = "https://www.w3.org/WAI/GL/WCAG3/" + new Date().getFullYear() + "/outcomes/";
+	var outcomeBaseURI = "https://www.readtech.org/APCAguidelines/" + new Date().getFullYear() + "/outcomes/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
+	//else understandingBaseURI = "https://www.readtech.org/APCA" + version + "/Understanding/";
 	document.querySelectorAll('.outcome').forEach(function(node){
 		//this is brittle, depends on how respec does the heading
 		var heading = textNoDescendant(findHeading(node));
@@ -177,7 +177,7 @@ function termTitles() {
 function removeDraftMethodLinks() {
 	document.querySelectorAll('.method-link').forEach(function(node){
 		uri = node.href;
-		if (!uri.startsWith("https://www.w3.org")) {
+		if (!uri.startsWith("https://www.readtech.org")) {
 			node.parentElement.innerHTML = node.textContent;	
 		}
 	});
