@@ -18,7 +18,7 @@ var respecConfig = {
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
 	copyrightStart: "2020",
-	license: "AGPL3",
+	license: "",
 	
 	// link if there a publicly available draft
 	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APCAguidelines/explainer/",
