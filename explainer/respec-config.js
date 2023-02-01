@@ -12,16 +12,16 @@ var respecConfig = {
 	//publishDate:          "2023-06-01",
 	
 	// the short name, as in https://www.readtech.org/apcaexplainer/
-	shortName: "apcaexplainer",
+	shortName: "aprg-explainer",
 	
 	
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
 	copyrightStart: "2020",
-	license: "",
+	license: "document",
 	
 	// link if there a publicly available draft
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APCAguidelines/explainer/",
+	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/explainer/",
 	
 	// editors, add as many as you like
 	// only "name" is required
@@ -51,8 +51,8 @@ var respecConfig = {
 	],
 */
 
-	group: "read",
-	github: "AccessibleReadingTechnologies/APCAguidelines",
+	group: "lvtf",
+	github: "AccessibleReadingTechnologies/APRG",
 
 	maxTocLevel: 4,
 	

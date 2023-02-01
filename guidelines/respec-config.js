@@ -12,16 +12,16 @@ var respecConfig = {
 	//publishDate:          "2013-08-22",
 	
 	// the specifications short name, as in https://www.readtech.org/TR/short-name/
-	shortName: "apcaguidelines",
+	shortName: "aprg-guidelines",
 	
 	
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
 	copyrightStart: "2020",
-	license: "",
+	license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APCAguidelines/guidelines/",
+	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/guidelines/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -56,8 +56,8 @@ var respecConfig = {
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
-	group: "read",
-	github: "AccessibleReadingTechnologies/APCAguidelines",
+	group: "lvtf",
+	github: "AccessibleReadingTechnologies/APRG",
 
 	maxTocLevel: 4,
 	
