@@ -13,11 +13,10 @@ jobs:
         include:
           - source: guidelines/index.html
             destination: guidelines/index.html
-          - source: how-tos/visual-contrast-of-text/index.html
-            destination: how-tos/visual-contrast-of-text/index.html
           - source: methods/font-characteristics-contrast/index.html
             destination: methods/font-characteristics-contrast/index.html
-
+          - source: how-tos/visual-contrast-of-text/index.html
+            destination: how-tos/visual-contrast-of-text/index.html
     steps:
       - uses: actions/checkout@v2
       - uses: AccessibleReadingTechnologies/spec-prod@v2
