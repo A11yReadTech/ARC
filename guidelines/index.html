@@ -35,12 +35,12 @@ dfn{cursor:pointer}
 .dfn-panel li{margin-left:1em}
 .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
 </style>
-		
+  
 <title>APCA Readability Guidelines (APRG)</title>
-		
-		
-		
-		
+  
+  
+  
+  
 <style id="respec-mainstyle">
 @keyframes pop{
 0%{transform:scale(1,1)}
@@ -99,14 +99,12 @@ dd{margin-left:0}
 .removeOnSave{display:none}
 }
 </style>
-		
+  
 <script src="/js/aprg.js"></script>
-		
+  
 <link rel="stylesheet" type="text/css" href="/css/guidelines.css">
-	
-<meta name="description" content="The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.
-			
-			Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.">
+
+<meta name="description" content="The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 <style>
 var{position:relative;cursor:pointer}
 var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
@@ -170,7 +168,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "generatedSubtitle": "02 February 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css"></head>
-	<body class="h-entry"><div class="head">
+<body class="h-entry"><div class="head">
     
     <h1 id="title" class="title">APCA Readability Guidelines (APRG)</h1> 
     <p id="w3c-state"> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
@@ -222,369 +220,392 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </p>
     <hr title="Separator for header">
   </div>
-		<section id="abstract" class="introductory"><h2>Abstract</h2>
-			<p>The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.
-			
-			Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
-			<p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1">conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
-			<p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
-		</section>
-		<section id="sotd" class="introductory"><h2>Status of This Document</h2><p>
+  <section id="abstract" class="introductory"><h2>Abstract</h2>
+    <p>The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.</p>
+
+    <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
+    <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1">conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
+    <p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
+  </section>
+
+
+
+
+  <section id="sotd" class="introductory"><h2>Status of This Document</h2><p>
       This document is merely a <abbr title="World Wide Web Consortium">W3C</abbr>-internal
        document. It has no official standing
       of any kind and does not represent consensus of the <abbr title="World Wide Web Consortium">W3C</abbr> Membership.
     </p>
-			<p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. It is free to create a GitHub account to start discussions and file issues.</p>
-		</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li><li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li><li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guidelines</a></li><li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li><li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">B.2 </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li></ol></li></ol></nav>
-		<section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div><p class="informative-statement"><em>This section (with its subsections) provides advice only and does not specify guidelines, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> or non-normative.</em></p>
-			
-			<div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
-        <p>The current proposal for APRG is made up of different parts and sections, including:</p>
-          <ul><li>APRG</li>
-              <li>How-tos</li>
-              <li>Outcomes</li>
-              <li>Methods</li>
+    <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. It is free to create a GitHub account to start discussions and file issues.</p>
+  </section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li><li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li><li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guidelines</a></li><li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li><li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">B.2 </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li></ol></li></ol></nav>
+
+
+
+
+  <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div><p class="informative-statement"><em>This section (with its subsections) provides advice only and does not specify guidelines, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> or non-normative.</em></p>
+    
+    <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
+      <p>The current proposal for APRG is made up of different parts and sections, including:</p>
+        <ul><li>APRG</li>
+            <li>How-tos</li>
+            <li>Outcomes</li>
+            <li>Methods</li>
+        </ul>
+    </div><p class="summaryEnd">End of note</p></div>
+    <details class="summary">
+      <summary>Plain language summary of <q>Introduction</q></summary>
+      <p>The APCA Readability Guidelines (APRG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. APRG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
+      <p>What’s new in APCA/APRG?</p>
+      <ul>
+      <li>APCA/APRG includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
+      <li>It includes mobile and desktop applications, along with web content.</li>
+      <li>It has new guidelines and new tests that improve readability but also improve design flexibility.</li>
+      <li>It has new scoring with use cases to define critical content vs unimportant content.</li>
+      </ul>
+    <p class="summaryEnd">End of summary for <q>Introduction</q></p></details>
+
+    <section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
+      
+      <p>This introduction provides a <em>brief</em> background to APCA and APRG. </p>
+    </section>
+
+    <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
+      
+      <p>As part of the drafting process each normative section of this document is given a status, approximately following WCAG 3. This status is used to indicate how far along in the development this section is.</p>
+      <ul>
+        <li><strong id="status-deprecated">Deprecated</strong>: This content is obsolete, and no longer supported <em>hidden by default</em>.</li>
+        <li><strong id="status-placeholder">Placeholder</strong>: This content is temporary, it showcases the type of content or section to expect here <em>hidden by default</em>.</li>
+        <li><strong id="status-exploratory">Exploratory</strong>: This content is not refined, details and definitions may be missing  <em>hidden by default</em>.</li>
+        <li><strong id="status-developing">Developing</strong>: There is rough agreement but not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. </li>
+        <li><strong id="status-refining">Refining</strong>: It is ready for broad public review and experimental adoption. </li>
+        <li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
+      </ul>
+      <p>For more details, see the <a href="https://www.w3.org/WAI/GL/wiki/AG_process">AG Process page</a>. By default, placeholder and exploratory sections is hidden and removed from the table of contents. Toggle these sections with the following button:</p>
+      <p></p>
+    </section>
+
+    <section id="goals-and-requirements"><div class="header-wrapper"><h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
+      
+      <p>The goal of APRG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible and usable to all people, including those with disabilities. this goal will be met through evidence based science and responding to changing technologies.</p>
+
+      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.X contrast metrics. These issues shaped the guidelines that follow.</p>
+    </section>
+
+  </section>
+
+
+
+
+  <section id="normative-requirements"><div class="header-wrapper"><h2 id="x2-normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    
+    <details class="summary">
+      <summary>Plain language summary of <q>Normative requirements</q></summary>
+      <p>There are two types of content in this document:</p>
+      <ul>
+      <li><strong>Normative:</strong> what you must do to meet the guidelines.</li>
+      <li><strong>Non-normative:</strong> advice to help you meet the guidelines. This is also called <q>Informative</q>.</li>
+      </ul>
+    <p class="summaryEnd">End of summary for <q>Normative requirements</q></p></details>
+    <p>In addition to this section, the <a href="#guidelines">Guidelines</a>, <a href="#testing">Testing</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
+    <p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
+    <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p><p class="summaryEnd">End of note</p></div>
+  </section>
+  
+  
+  
+  
+  <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guidelines</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    
+      <details class="summary">
+      <summary>Plain language summary of <q>Guidelines</q> - APRG Visual Presentation</summary>
+      <ul>
+        <li>Visual hierarchy </li>
+        <li>Use of color (hue and colorfulness)</li>
+        <li>Visual contrast (color contrast);</li>
+        <ul><li>Use Cases (primary content, sub-fluent)</li>
+            <li>Text contrasts</li>
+            <li>Font characteristics</li>
+            <li>Non-text contrasts</li>
+            <li>Dataviz characteristics</li>
+        </ul>
+        <li>Interactive (links, forms, navigation) </li>
+        <li>Visual modes (dark, light, dalton) </li>
+      </ul>
+
+    <p class="summaryEnd">End of summary for <q>Guidelines</q></p></details>
+
+    <p>The guidelines included in this draft have been selected to show different types of content:</p>
+    <ul>
+      <li><a href="#visual-contrast">Visual contrast</a> - lightness contrast for readability substantial changes</li>
+
+    </ul>
+
+    <div class="note" id="issue-container-generatedID-1"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-1"></a></div><div class="">
+    <p>These are early drafts of guidelines to illustrate what APRG covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
+
+    </div><p class="summaryEnd">End of note</p></div>
+    </section>
+
+
+
+
+    <section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+      
+      <p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.<span> <a href="../../how-tos/visual-contrast/" class="howto-link">Visual contrast <span>how-to</span></a></span></p>
+
+      <section class="outcome notoc" data-status="developing"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background" aria-label="Permalink for this Section"></a></div>
+        <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.We have high confidence in the direction and some confidence in the details.</div>
+        <p>Provides adequate lightness/darkness contrast between background and text colors to make the text easy to read.</p>
+        <p> <a href="../../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p><details class="categories">
+          <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
+          <p>This outcome relates to the following functional categories:</p>
+          <ul>
+            <li>Sensory - Vision &amp; Visual </li>
           </ul>
+        </details>
+
+      <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
+        <p>Visual Contrast is a paradigm shift from WCAG 2.x terms of methodology and scope:</p>
+        <ul>
+          <li>New contrast calculations based on modern research on visual perception, providing a perceptally uniform result</li>
+          <li>Merging the 1.4.x criteria into one guideline.</li>
+          <li>New tests for text and non-text contrast.</li>
+        </ul>
+      <p>This is a significant change from <q>Contrast (Minimum)</q> and <q>Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
+      <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
+      <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
       </div><p class="summaryEnd">End of note</p></div>
-			<details class="summary">
-				<summary>Plain language summary of <q>Introduction</q></summary>
-				<p>The APCA Readability Guidelines (APRG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. APRG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
-				<p>What’s new in APCA/APRG?</p>
-				<ul>
-				<li>APCA/APRG includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
-				<li>It includes mobile and desktop applications, along with web content.</li>
-				<li>It has new guidelines and new tests that improve readability but also improve design flexibility.</li>
-				<li>It has new scoring with use cases to define critical content vs unimportant content.</li>
-				</ul>
-			<p class="summaryEnd">End of summary for <q>Introduction</q></p></details>
-
-			<section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-				
-				<p>This introduction provides a <em>brief</em> background to APCA and APRG. </p>
-			</section>
-
-			<section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
-				
-				<p>As part of the drafting process each normative section of this document is given a status, approximately following WCAG 3. This status is used to indicate how far along in the development this section is.</p>
-				<ul>
-					<li><strong id="status-deprecated">Deprecated</strong>: This content is obsolete, and no longer supported <em>hidden by default</em>.</li>
-					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary, it showcases the type of content or section to expect here <em>hidden by default</em>.</li>
-					<li><strong id="status-exploratory">Exploratory</strong>: This content is not refined, details and definitions may be missing  <em>hidden by default</em>.</li>
-					<li><strong id="status-developing">Developing</strong>: There is rough agreement but not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. </li>
-					<li><strong id="status-refining">Refining</strong>: It is ready for broad public review and experimental adoption. </li>
-					<li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
-				</ul>
-				<p>For more details, see the <a href="https://www.w3.org/WAI/GL/wiki/AG_process">AG Process page</a>. By default, placeholder and exploratory sections is hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-				<p></p>
-			</section>
+      </section>
 
 
-			<section id="goals-and-requirements"><div class="header-wrapper"><h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
-				
-				<p>The goal of APRG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible and usable to all people, including those with disabilities. this goal will be met through evidence based science and responding to changing technologies.</p>
 
-				<p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.X contrast metrics. These issues shaped the guidelines that follow.</p>
-			</section>
+      <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
+      <p>Set the lightness contrast as appropriate for a font family, font weight, and x-height. </p>
+      <ol><li>@@</li></ol>
+      <p> <a href="../../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p></section>
 
-		</section>
-		
+    </section>
 
-		<section id="normative-requirements"><div class="header-wrapper"><h2 id="x2-normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-			
-			<details class="summary">
-				<summary>Plain language summary of <q>Normative requirements</q></summary>
-				<p>There are two types of content in this document:</p>
-				<ul>
-				<li><strong>Normative:</strong> what you must do to meet the guidelines.</li>
-				<li><strong>Non-normative:</strong> advice to help you meet the guidelines. This is also called <q>Informative</q>.</li>
-				</ul>
-			<p class="summaryEnd">End of summary for <q>Normative requirements</q></p></details>
-			<p>In addition to this section, the <a href="#guidelines">Guidelines</a>, <a href="#testing">Testing</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
-			<p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
-			<div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p><p class="summaryEnd">End of note</p></div>
-		</section>
-		
-		
-		<section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guidelines</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-			
-				<details class="summary">
-				<summary>Plain language summary of <q>Guidelines</q> - APRG Visual Presentation</summary>
-				<ul>
-					<li>Visual hierarchy </li>
-					<li>Use of color (hue and colorfulness)</li>
-					<li>Visual contrast (color contrast);</li>
-					<ul><li>Use Cases (primary content, sub-fluent)</li>
-					    <li>Text contrasts</li>
-					    <li>Font characteristics</li>
-					    <li>Non-text contrasts</li>
-					    <li>Dataviz characteristics</li>
-					</ul>
-					<li>Interactive (links, forms, navigation) </li>
-					<li>Visual modes (dark, light, dalton) </li>
-				</ul>
-
-			<p class="summaryEnd">End of summary for <q>Guidelines</q></p></details>
-			
-			<p>The guidelines included in this draft have been selected to show different types of content:</p>
-			<ul>
-				<li><a href="#visual-contrast-of-text">Visual contrast of text</a> - a migration of WCAG 2.X with substantial changes</li>
-
-			</ul>
-			
-			<div class="note" id="issue-container-generatedID-1"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-1"></a></div><div class="">
-			<p>These are early drafts of guidelines to illustrate what APRG covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
-
-			</div><p class="summaryEnd">End of note</p></div>
+  
 
 
-			</section>
-			<section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-				
-				<p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.<span> <a href="../../how-tos/visual-contrast/" class="howto-link">Visual contrast <span>how-to</span></a></span></p>
-				<section class="outcome notoc" data-status="developing"><div class="header-wrapper"><h3 id="luminance-contrast-between-background-and-text">Luminance contrast between background and text<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#luminance-contrast-between-background-and-text" aria-label="Permalink for this Section"></a></div>
-					<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.We have high confidence in the direction and some confidence in the details.</div>
-					<p>Provides adequate luminance contrast between background and text colors to make the text easy to read.</p>
-					<p> <a href="../../outcomes/luminance-contrast-between-background-and-text" class="outcome-link"><span>Outcome, details, and methods for </span>Luminance contrast between background and text</a></p><details class="categories">
-						<summary>Functional categories for <q>Luminance contrast between background and text</q></summary>
-						<p>This outcome relates to the following functional categories:</p>
-						<ul>
-							<li>Sensory - Vision &amp; Visual </li>
-						</ul>
-					</details>
-				<div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
-					<p>Visual Contrast is a paradigm shift from WCAG 2.1n terms of methodology and scope:</p>
-					<ul>
-						<li>New contrast calculations based on modern research on visual perception, providing a perceptally uniform result</li>
-						<li>Merging the 1.4.x criteria into one guideline.</li>
-						<li>New tests for text and non-text contrast.</li>
-					</ul>
-				<p>This is a significant change from <q>Contrast (Minimum)</q> and <q>Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
-				<p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
-				<p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
-				</div><p class="summaryEnd">End of note</p></div>
-				</section>
+  <section data-status="exploratory" hidden="" id="testing"><div class="header-wrapper"><h2 id="x5-testing"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+    <details class="summary">
+      <summary>Plain language summary of <q>Testing</q> - What types of tests and scopes are used?</summary>
 
-				<section class="outcome notoc"><div class="header-wrapper"><h3 id="font-appropriate-for-luminance-contrast">Font appropriate for luminance contrast<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#font-appropriate-for-luminance-contrast" aria-label="Permalink for this Section"></a></div><p>Selects a font family, font weight, and x-height appropriate for the luminance contrast. </p><ol><li>@@</li></ol>
-				<p> <a href="../../outcomes/font-appropriate-for-luminance-contrast" class="outcome-link"><span>Outcome, details, and methods for </span>Font appropriate for luminance contrast</a></p></section>
+    <p class="summaryEnd">End of summary for <q>Testing</q></p></details>
 
-			</section>
-
-		
-		<section data-status="exploratory" hidden="" id="testing"><div class="header-wrapper"><h2 id="x5-testing"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-			<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-			<details class="summary">
-				<summary>Plain language summary of <q>Testing</q> - What types of tests and scopes are used?</summary>
-				
-			<p class="summaryEnd">End of summary for <q>Testing</q></p></details>
+  </section>
 
 
-		</section>
-	
 
-		
-		<section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
+
+
+
+  <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
         The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
         are to be interpreted as described in
         <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
         when, and only when, they appear in all capitals, as shown here.
       </p>
-			<section id="conformance-0"><div class="header-wrapper"><h3 id="x6-1-conformance"><bdi class="secno">6.1 </bdi>Conformance</h3><a class="self-link" href="#conformance-0" aria-label="Permalink for Section 6.1"></a></div>
-			<details class="summary">
-				<summary>Plain language summary of <q>Conformance</q></summary>
-				<p>To assert that your content or product meets an APCA outcome is called “conformance.” To conform to APCA, your test results must show that your project is visually accessible.</p>
-				<p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want t make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p>	
-			<p class="summaryEnd">End of summary for <q>Conformance</q></p></details>
-			<section data-status="exploratory" hidden="" id="conformance-levels"><div class="header-wrapper"><h4 id="x6-1-1-conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</h4><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 6.1.1"></a></div>
-				<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-				<div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
-				<p>APCA uses a new conformance model modeled after, and following the developments of WCAG 3.0, in order to support the goal of eventual integration. Some key goals for this new conformance model:</p>
+    <section id="conformance-0"><div class="header-wrapper"><h3 id="x6-1-conformance"><bdi class="secno">6.1 </bdi>Conformance</h3><a class="self-link" href="#conformance-0" aria-label="Permalink for Section 6.1"></a></div>
+    <details class="summary">
+      <summary>Plain language summary of <q>Conformance</q></summary>
+      <p>To assert that your content or product meets an APCA outcome is called “conformance.” To conform to APCA, your test results must show that your project is visually accessible.</p>
+      <p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want t make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p>	
+    <p class="summaryEnd">End of summary for <q>Conformance</q></p></details>
+    <section data-status="exploratory" hidden="" id="conformance-levels"><div class="header-wrapper"><h4 id="x6-1-1-conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</h4><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 6.1.1"></a></div>
+      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+      <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
+      <p>APCA uses a new conformance model modeled after, and following the developments of WCAG 3.0, in order to support the goal of eventual integration. Some key goals for this new conformance model:</p>
 
-				<ol>
-					<li>Develop a model that encourages websites to improve accessibility, as opposed to stopping at an arbitrary level such as "AA";</li>
-					<li>Better reflect the needs of visual users of content, and the wide spectrum of human vision and vision &amp; language related impairments.</li>
-					<li>Emphasize the need for discrete use cases based on the importance of the specific element understanding the content.
-					</li><li>Recognize the natural divisions of technology vs. content</li>
-				</ol>
+      <ol>
+        <li>Develop a model that encourages websites to improve accessibility, as opposed to stopping at an arbitrary level such as "AA";</li>
+        <li>Better reflect the needs of visual users of content, and the wide spectrum of human vision and vision &amp; language related impairments.</li>
+        <li>Emphasize the need for discrete use cases based on the importance of the specific element understanding the content.
+        </li><li>Recognize the natural divisions of technology vs. content</li>
+      </ol>
 
-				<p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
+      <p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
 
-				</div><p class="summaryEnd">End of note</p></div>
-				<p>APRG defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
+      </div><p class="summaryEnd">End of note</p></div>
+      <p>APRG defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
 
-				<section id="bronze"><div class="header-wrapper"><h5 id="x6-1-1-1-bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</h5><a class="self-link" href="#bronze" aria-label="Permalink for Section 6.1.1.1"></a></div>
-					
-					<p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to APRG. While there is some overlap between WCAG 2.x and APRG, APRG includes additional tests and different scoring methods. As a result, APRG is not backwards compatible with WCAG 2.x.</p>
-				</section>
-				<section id="silver"><div class="header-wrapper"><h5 id="x6-1-1-2-silver"><bdi class="secno">6.1.1.2 </bdi>Silver</h5><a class="self-link" href="#silver" aria-label="Permalink for Section 6.1.1.2"></a></div>
-					
-					<p>Silver is a higher conformance level, featuring improved readability and accommodation of user preferences.</p>
-				</section>
-				<section id="gold"><div class="header-wrapper"><h5 id="x6-1-1-3-gold"><bdi class="secno">6.1.1.3 </bdi>Gold</h5><a class="self-link" href="#gold" aria-label="Permalink for Section 6.1.1.3"></a></div>
-					
-					<p>Gold is the highest conformance level, featuring the improvements from Silver, but adding tests to ensure consistent presentation, such as regulating font x-height and weight relative to defined reference fonts.</p>
-				</section>
-			</section>
-
-
-			<section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h4 id="x6-1-2-defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</h4><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.1.2"></a></div>
-				<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-				<p>When evaluating the accessibility of content, APRG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
-				<ul>
-					<li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
-					<li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
-					<li>Some content is more important to the majority of users than other content; and</li>
-				</ul>
-				<p>APRG therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
+      <section id="bronze"><div class="header-wrapper"><h5 id="x6-1-1-1-bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</h5><a class="self-link" href="#bronze" aria-label="Permalink for Section 6.1.1.1"></a></div>
+        
+        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to APRG. While there is some overlap between WCAG 2.x and APRG, APRG includes additional tests and different scoring methods. As a result, APRG is not backwards compatible with WCAG 2.x.</p>
+      </section>
+      <section id="silver"><div class="header-wrapper"><h5 id="x6-1-1-2-silver"><bdi class="secno">6.1.1.2 </bdi>Silver</h5><a class="self-link" href="#silver" aria-label="Permalink for Section 6.1.1.2"></a></div>
+        
+        <p>Silver is a higher conformance level, featuring improved readability and accommodation of user preferences.</p>
+      </section>
+      <section id="gold"><div class="header-wrapper"><h5 id="x6-1-1-3-gold"><bdi class="secno">6.1.1.3 </bdi>Gold</h5><a class="self-link" href="#gold" aria-label="Permalink for Section 6.1.1.3"></a></div>
+        
+        <p>Gold is the highest conformance level, featuring the improvements from Silver, but adding tests to ensure consistent presentation, such as regulating font x-height and weight relative to defined reference fonts.</p>
+      </section>
+    </section>
 
 
-			</section>
+    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h4 id="x6-1-2-defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</h4><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.1.2"></a></div>
+      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+      <p>When evaluating the accessibility of content, APRG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+      <ul>
+        <li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
+        <li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
+        <li>Some content is more important to the majority of users than other content; and</li>
+      </ul>
+      <p>APRG therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
 
 
-			<section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h4 id="x6-1-3-conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</h4><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.1.3"></a></div>
-				<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-				<p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to APRG, the following conformance requirements apply:</p>
-				<ol>
-					<li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
-				</ol>
-			</section>
-			<section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h4 id="x6-1-4-conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</h4><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.1.4"></a></div>
-				<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-				<p>Conformance claims are not required. Authors can conform to APRG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
-				<section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h5 id="x6-1-4-1-required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</h5><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.1.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
-						<li><b>Date</b> of the claim;</li>
-						<li><b>Guidelines title, version and URI</b>
-							<q><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3.0 at ???</q></li>
-						<li><b>Conformance level</b> satisfied: (bronze, silver, or gold);</li>
-						<li><b>A concise description of the views and processes</b>, such as a list of URIs for which the claim is made, including any state changes which lead to a new view; and</li>
-						<li>The technology including the hardware, software, and assistive technology used to test the claim.</li>
-						</ol>
-				</section>
+    </section>
 
-			</section>
-		</section></section>
-		
-		
-		
-		<section data-status="exploratory" hidden="" id="glossary"><div class="header-wrapper"><h2 id="x7-glossary"><bdi class="secno">7. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-			<div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-			<div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-4"></a></div><p class="">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p><p class="summaryEnd">End of note</p></div>
-			<dl>
-				<dt><dfn data-lt="Automated evaluation|Automated|Automatically evaluated|Automated testing|Automatically tested" id="dfn-automated-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Automated
-						evaluation</dfn></dt>
-				<dd><p>Evaluation conducted using software tools, typically evaluating code-level features and applying
-						heuristics for other tests.</p>
-					<p>Automated testing is contrasted with other types of testing that involve human judgement or
-						experience. <a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-1">Semi-automated evaluation</a> allows machines to guide humans
-						to areas that need inspection. The emerging field of testing conducted via
-						machine learning is not included in this definition.</p></dd>
-				<dt><dfn data-lt="Conformance|Conform" id="dfn-conformance" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Conformance</dfn></dt>
-				<dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
-						the guidelines even when not making a formal Conformance Claim.</p>
-					<p>See <a href="#conformance">Conformance</a>.</p></dd>
-				<dt><dfn data-lt="Deprecate|deprecated" id="dfn-deprecate" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Deprecate</dfn></dt>
-				<dd>
-					<p>To declare something outdated and in the process of being phased out, usually in favor of a specified replacement.</p>
-					<p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
-				</dd>
-				<dt><dfn data-lt="Evaluation" id="dfn-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Evaluation</dfn></dt>
-				<dd>The process of examining content for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-3">conformance</a> to these
-					guidelines.</dd>
-				<dd>Different approaches to evaluation include automated <a href="#dfn-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-evaluation-1">evaluation</a>,
-						<a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-2">semi-automated evaluation</a>, <a href="#dfn-human-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-evaluation-1">human evaluation</a>, and <a href="#dfn-user-testing" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-testing-1">user
-						testing</a>.</dd>
-				<dt><dfn data-lt="Functional need|Functional needs" data-plurals="functional needs" id="dfn-functional-need" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Functional need</dfn></dt>
-				<dd>
-					<p>A statement that describes a specific gap in one’s ability, or a specific mismatch between ability and the designed environment or context.</p>
-				</dd>
-				<dt><dfn data-lt="Guideline|Guidelines" id="dfn-guideline" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Guideline</dfn></dt>
-				<dd>
-					<p>High-level, plain-language content used to organize <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-1">outcomes</a>.</p>
-					<p>See <a href="https://AccessibleReadingTechnologies.github.io/APRG/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
-				</dd>
-				<dt><dfn data-lt="Human evaluation|Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested" id="dfn-human-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Human evaluation</dfn></dt>
-				<dd>
-					<p>Evaluation conducted by a human, typically to apply human judgement to tests
-						that cannot be fully <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-2">automatically evaluated</a>.</p>
-					<p>Human evaluation is contrasted with <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-3">automated evaluation</a> which is done entirely by
-						machine, though it includes <a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-3">semi-automated evaluation</a> which allows
-						machines to guide humans to areas that need inspection. Human evaluation
-						involves inspection of content features, by contrast with <a href="#dfn-user-testing" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-testing-2">user
-							testing</a> which directly tests the experience of users with
-						content.</p></dd>
-				<dt><dfn data-lt="Informative|Non-normative" id="dfn-informative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Informative</dfn></dt>
-				<dd>
-					<p>Content provided for information purposes and not required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-4">conformance</a>.</p>
-					<div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-5"></a></div><p class="">Content required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-5">conformance</a> is referred to as <q><a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2">normative</a></q>.</p><p class="summaryEnd">End of note</p></div>
-				</dd>
-				<dt><dfn data-lt="Method|Methods" id="dfn-method" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Method</dfn></dt>
-				<dd>
-					<p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-2">outcome</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
-					<p>See <a href="https://AccessibleReadingTechnologies.github.io/APRG/explainer/#methods-structure">Methods</a> in the Explainer.</p>
-				</dd>
-				<dt><dfn data-lt="Normative" id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normative</dfn></dt>
-				<dd>
-					<p>Content whose instructions are required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-6">conformance</a>.</p>
-					<div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-6"></a></div><p class="">Content identified as <q><a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2">informative</a></q> or <q>non-normative</q> is never required for conformance.</p><p class="summaryEnd">End of note</p></div>
-				</dd>
-				<dt><dfn data-lt="Outcome|Outcomes" data-plurals="outcomes" id="dfn-outcome" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Outcome</dfn></dt>
-				<dd>
-					<p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
-					<p>See <a href="#outcomes">Outcomes</a>.</p>
-				</dd>
-				<dt><dfn data-lt="Process|Processes" id="dfn-process" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Process</dfn></dt>
-				<dd><p>A sequence of steps that need to be completed in order to accomplish an activity / task from
-						end-to-end.</p></dd>
-				<dt><dfn data-lt="Semi-Automated Evaluation" id="dfn-semi-automated-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Semi-Automated Evaluation</dfn></dt>
-				<dd>
-					<p>Evaluation conducted using machines to guide humans to areas that need
-						inspection.</p>
-					<p>Semi-automated evaluation involves components of <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-4">automated evaluation</a>
-						and <a href="#dfn-human-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-evaluation-2">human evaluation</a>.</p>
-				</dd>
-				<dt><dfn data-lt="Test|Tests" data-plurals="tests" id="dfn-test" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Test</dfn></dt>
-				<dd>
-					<p>Mechanism to evaluate implementation of a <a href="#dfn-method" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-method-1">method</a>.</p>
-					<p>Tests can include true / false evaluation or various types of rating scales as appropriate for the <a href="#dfn-guideline" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-guideline-1">guideline</a>, <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-3">outcome</a>, or technology.</p>
-				</dd>
-				<dt><dfn data-lt="Technique|Techniques" id="dfn-technique" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Technique</dfn></dt>
-				<dd>
-					<p>Technology-specific approach to follow a <a href="#dfn-method" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-method-2">method</a>.</p>
-				</dd>
-				<dd><div class="note" id="issue-container-generatedID-7"><div role="heading" class="ednote-title marker" id="h-ednote-4" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-7"></a></div><p class="">Future work on the glossary will better define terms such as publisher, content author, etc.</p><p class="summaryEnd">End of note</p></div></dd>
-				<dt><dfn data-lt="User need|User needs" id="dfn-user-need" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User need</dfn></dt>
-				<dd><p>The end goal a user has when starting a process through digital means.</p></dd>
-				<dt><dfn data-lt="User testing" id="dfn-user-testing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User testing</dfn></dt>
-				<dd>
-					<p>Evaluation of content by observation of how users with specific <a href="#dfn-functional-need" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functional-need-1">functional needs</a> are able to complete a <a href="#dfn-process" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-process-1">process</a> and how the content meets the relevant <a href="#outcomes">outcomes</a>.</p>
-				</dd>
-			</dl>
-		</section>
-		<section class="appendix" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
-			
-		</section>
-		<section class="appendix" id="differences-from-wcag-2-x"><div class="header-wrapper"><h2 id="b-differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</h2><a class="self-link" href="#differences-from-wcag-2-x" aria-label="Permalink for Appendix B."></a></div>
-			
-			<section id="outcomes"><div class="header-wrapper"><h3 id="b-1-outcomes"><bdi class="secno">B.1 </bdi>Outcomes</h3><a class="self-link" href="#outcomes" aria-label="Permalink for Appendix B.1"></a></div>
-				
-				<p>Outcomes are different from WCAG 2.x success criteria. Compared to success criteria, outcomes are written to be:</p>
-				<ul>
-					<li>In plain language;&nbsp;</li>
-					<li>More understandable by people who are not experts in technology;</li>
-					<li>More user-need oriented instead of technology oriented;</li>
-					<li>More granular, so there will be more of them; and</li>
-					<li>More flexible to allow more tests than the true/false statements of WCAG 2.x.&nbsp;</li>
-				</ul>
-			</section>
 
-		<section class="appendix" id="change-log"><div class="header-wrapper"><h3 id="b-2-change-log"><bdi class="secno">B.2 </bdi>Change log</h3><a class="self-link" href="#change-log" aria-label="Permalink for Appendix B.2"></a></div>
-			
-		</section>
-		<section class="appendix" id="acknowledgements"><div class="header-wrapper"><h3 id="b-3-acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</h3><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix B.3"></a></div>
-			
+    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h4 id="x6-1-3-conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</h4><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.1.3"></a></div>
+      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to APRG, the following conformance requirements apply:</p>
+      <ol>
+        <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
+      </ol>
+    </section>
+    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h4 id="x6-1-4-conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</h4><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.1.4"></a></div>
+      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+      <p>Conformance claims are not required. Authors can conform to APRG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
+      <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h5 id="x6-1-4-1-required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</h5><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.1.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
+          <li><b>Date</b> of the claim;</li>
+          <li><b>Guidelines title, version and URI</b>
+            <q><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3.0 at ???</q></li>
+          <li><b>Conformance level</b> satisfied: (bronze, silver, or gold);</li>
+          <li><b>A concise description of the views and processes</b>, such as a list of URIs for which the claim is made, including any state changes which lead to a new view; and</li>
+          <li>The technology including the hardware, software, and assistive technology used to test the claim.</li>
+          </ol>
+      </section>
 
-		</section>
-	
+    </section>
+  </section></section>
+  
+  
+  
+  <section data-status="exploratory" hidden="" id="glossary"><div class="header-wrapper"><h2 id="x7-glossary"><bdi class="secno">7. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+    <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-4"></a></div><p class="">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p><p class="summaryEnd">End of note</p></div>
+    <dl>
+      <dt><dfn data-lt="Automated evaluation|Automated|Automatically evaluated|Automated testing|Automatically tested" id="dfn-automated-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Automated
+          evaluation</dfn></dt>
+      <dd><p>Evaluation conducted using software tools, typically evaluating code-level features and applying
+          heuristics for other tests.</p>
+        <p>Automated testing is contrasted with other types of testing that involve human judgement or
+          experience. <a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-1">Semi-automated evaluation</a> allows machines to guide humans
+          to areas that need inspection. The emerging field of testing conducted via
+          machine learning is not included in this definition.</p></dd>
+      <dt><dfn data-lt="Conformance|Conform" id="dfn-conformance" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Conformance</dfn></dt>
+      <dd><p>Satisfying all the requirements of the guidelines. Conformance is an important part of following
+          the guidelines even when not making a formal Conformance Claim.</p>
+        <p>See <a href="#conformance">Conformance</a>.</p></dd>
+      <dt><dfn data-lt="Deprecate|deprecated" id="dfn-deprecate" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Deprecate</dfn></dt>
+      <dd>
+        <p>To declare something outdated and in the process of being phased out, usually in favor of a specified replacement.</p>
+        <p>Deprecated documents are no longer recommended for use and may cease to exist in the future.</p>
+      </dd>
+      <dt><dfn data-lt="Evaluation" id="dfn-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Evaluation</dfn></dt>
+      <dd>The process of examining content for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-3">conformance</a> to these
+        guidelines.</dd>
+      <dd>Different approaches to evaluation include automated <a href="#dfn-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-evaluation-1">evaluation</a>,
+          <a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-2">semi-automated evaluation</a>, <a href="#dfn-human-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-evaluation-1">human evaluation</a>, and <a href="#dfn-user-testing" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-testing-1">user
+          testing</a>.</dd>
+      <dt><dfn data-lt="Functional need|Functional needs" data-plurals="functional needs" id="dfn-functional-need" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Functional need</dfn></dt>
+      <dd>
+        <p>A statement that describes a specific gap in one’s ability, or a specific mismatch between ability and the designed environment or context.</p>
+      </dd>
+      <dt><dfn data-lt="Guideline|Guidelines" id="dfn-guideline" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Guideline</dfn></dt>
+      <dd>
+        <p>High-level, plain-language content used to organize <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-1">outcomes</a>.</p>
+        <p>See <a href="https://AccessibleReadingTechnologies.github.io/APRG/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
+      </dd>
+      <dt><dfn data-lt="Human evaluation|Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested" id="dfn-human-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Human evaluation</dfn></dt>
+      <dd>
+        <p>Evaluation conducted by a human, typically to apply human judgement to tests
+          that cannot be fully <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-2">automatically evaluated</a>.</p>
+        <p>Human evaluation is contrasted with <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-3">automated evaluation</a> which is done entirely by
+          machine, though it includes <a href="#dfn-semi-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semi-automated-evaluation-3">semi-automated evaluation</a> which allows
+          machines to guide humans to areas that need inspection. Human evaluation
+          involves inspection of content features, by contrast with <a href="#dfn-user-testing" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-testing-2">user
+            testing</a> which directly tests the experience of users with
+          content.</p></dd>
+      <dt><dfn data-lt="Informative|Non-normative" id="dfn-informative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Informative</dfn></dt>
+      <dd>
+        <p>Content provided for information purposes and not required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-4">conformance</a>.</p>
+        <div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-5"></a></div><p class="">Content required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-5">conformance</a> is referred to as <q><a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2">normative</a></q>.</p><p class="summaryEnd">End of note</p></div>
+      </dd>
+      <dt><dfn data-lt="Method|Methods" id="dfn-method" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Method</dfn></dt>
+      <dd>
+        <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-2">outcome</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
+        <p>See <a href="https://AccessibleReadingTechnologies.github.io/APRG/explainer/#methods-structure">Methods</a> in the Explainer.</p>
+      </dd>
+      <dt><dfn data-lt="Normative" id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normative</dfn></dt>
+      <dd>
+        <p>Content whose instructions are required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-6">conformance</a>.</p>
+        <div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-6"></a></div><p class="">Content identified as <q><a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2">informative</a></q> or <q>non-normative</q> is never required for conformance.</p><p class="summaryEnd">End of note</p></div>
+      </dd>
+      <dt><dfn data-lt="Outcome|Outcomes" data-plurals="outcomes" id="dfn-outcome" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Outcome</dfn></dt>
+      <dd>
+        <p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
+        <p>See <a href="#outcomes">Outcomes</a>.</p>
+      </dd>
+      <dt><dfn data-lt="Process|Processes" id="dfn-process" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Process</dfn></dt>
+      <dd><p>A sequence of steps that need to be completed in order to accomplish an activity / task from
+          end-to-end.</p></dd>
+      <dt><dfn data-lt="Semi-Automated Evaluation" id="dfn-semi-automated-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Semi-Automated Evaluation</dfn></dt>
+      <dd>
+        <p>Evaluation conducted using machines to guide humans to areas that need
+          inspection.</p>
+        <p>Semi-automated evaluation involves components of <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-4">automated evaluation</a>
+          and <a href="#dfn-human-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-evaluation-2">human evaluation</a>.</p>
+      </dd>
+      <dt><dfn data-lt="Test|Tests" data-plurals="tests" id="dfn-test" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Test</dfn></dt>
+      <dd>
+        <p>Mechanism to evaluate implementation of a <a href="#dfn-method" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-method-1">method</a>.</p>
+        <p>Tests can include true / false evaluation or various types of rating scales as appropriate for the <a href="#dfn-guideline" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-guideline-1">guideline</a>, <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-3">outcome</a>, or technology.</p>
+      </dd>
+      <dt><dfn data-lt="Technique|Techniques" id="dfn-technique" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Technique</dfn></dt>
+      <dd>
+        <p>Technology-specific approach to follow a <a href="#dfn-method" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-method-2">method</a>.</p>
+      </dd>
+      <dd><div class="note" id="issue-container-generatedID-7"><div role="heading" class="ednote-title marker" id="h-ednote-4" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-7"></a></div><p class="">Future work on the glossary will better define terms such as publisher, content author, etc.</p><p class="summaryEnd">End of note</p></div></dd>
+      <dt><dfn data-lt="User need|User needs" id="dfn-user-need" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User need</dfn></dt>
+      <dd><p>The end goal a user has when starting a process through digital means.</p></dd>
+      <dt><dfn data-lt="User testing" id="dfn-user-testing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User testing</dfn></dt>
+      <dd>
+        <p>Evaluation of content by observation of how users with specific <a href="#dfn-functional-need" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functional-need-1">functional needs</a> are able to complete a <a href="#dfn-process" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-process-1">process</a> and how the content meets the relevant <a href="#outcomes">outcomes</a>.</p>
+      </dd>
+    </dl>
+  </section>
+  <section class="appendix" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
+    
+  </section>
+  <section class="appendix" id="differences-from-wcag-2-x"><div class="header-wrapper"><h2 id="b-differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</h2><a class="self-link" href="#differences-from-wcag-2-x" aria-label="Permalink for Appendix B."></a></div>
+    
+    <section id="outcomes"><div class="header-wrapper"><h3 id="b-1-outcomes"><bdi class="secno">B.1 </bdi>Outcomes</h3><a class="self-link" href="#outcomes" aria-label="Permalink for Appendix B.1"></a></div>
+      
+      <p>Outcomes are different from WCAG 2.x success criteria. Compared to success criteria, outcomes are written to be:</p>
+      <ul>
+        <li>In plain language;&nbsp;</li>
+        <li>More understandable by people who are not experts in technology;</li>
+        <li>More user-need oriented instead of technology oriented;</li>
+        <li>More granular, so there will be more of them; and</li>
+        <li>More flexible to allow more tests than the true/false statements of WCAG 2.x.&nbsp;</li>
+      </ul>
+    </section>
+
+  <section class="appendix" id="change-log"><div class="header-wrapper"><h3 id="b-2-change-log"><bdi class="secno">B.2 </bdi>Change log</h3><a class="self-link" href="#change-log" aria-label="Permalink for Appendix B.2"></a></div>
+    
+  </section>
+  <section class="appendix" id="acknowledgements"><div class="header-wrapper"><h3 id="b-3-acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</h3><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix B.3"></a></div>
+    
+
+  </section>
+
 
 </section><section id="references" class="appendix"><div class="header-wrapper"><h2 id="c-references"><bdi class="secno">C. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix C."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="c-1-normative-references"><bdi class="secno">C.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix C.1"></a></div>
     
