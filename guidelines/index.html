@@ -165,7 +165,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
     <h1 id="title" class="title">APCA Readability Guidelines (APRG)</h1> 
     <p id="art-state"><a href="https://www.readtech.org/APRG/guidelines/">APRG Public Draft</a> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
-      <img src="/APRG/img/ARTlogo03.png" style="position: relative; top:28px; float: right; width: 25%; border-radius: 24px;">
 
   <details>
       <summary>More details about this document</summary>
@@ -208,12 +207,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Abstract</h2>
-    <p>The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.</p>
+        <img src="/APRG/img/ARTlogo03.png" style="position: relative; margin: 0 -18px 18px 18px; top:0px; float: right; width: 45%; border-radius: 24px;">
 
+  <section id="abstract" class="introductory"><h2>Abstract</h2>
+    <p>The APCA Readability Guidelines (APRG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially users with visual impairments.</p>
     <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
     <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1">conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
-    <p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
+    <p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than used previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
   </section>
 
 <nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2>
@@ -237,17 +237,17 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </p>
     <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. 
       It is free to create a GitHub account to start discussions and file issues.</p>
-  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>nor Myndex </p>
+  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>.</p>
 
   <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
     
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
-      <p>The current proposal for APRG is made up of different parts and sections, including:</p>
-        <ul><li>APCA Based Tools • provide perceptually uniform objective assessment of luminance</li>
+      <p>The current proposal for APCA and APRG is made up of several divisions, including:</p>
+        <ul><li>APCA Based Tools • provide perceptually uniform, objective assessment of contrast</li>
             <li>How-tos • Tutorial guides for planning and implementing design strategies</li>
             <li>Outcomes • Target accommodation goals, serving user needs</li>
-            <li>Methods • Specific tests and techniques for measuring and conforming</li>
+            <li>Methods • Specific tests and techniques for measuring and conforming to guidance</li>
         </ul>
     </div><p class="summaryEnd">End of note</p></div>
     
@@ -313,10 +313,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
   
   <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guideline Summary</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
-          <img src="/APRG/img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:0px;  width: 45%;">
-
-    
-    
+      
+    <img src="/APRG/img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:0px;  width: 45%;">
     <h3>APCA Visual Presentation Guidance</h3>
     
     <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
@@ -324,8 +322,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <details class="summary">
       <summary>Plain language summary of <q>Guidelines</q></summary>
       <ul>
-        <li>Visual hierarchy </li>
-        <li>Use of color (hue and colorfulness)</li>
+
         <li>Visual contrast (color contrast);</li>
         <ul><li>Use Cases (primary content, sub-fluent)</li>
             <li>Text contrasts</li>
@@ -333,6 +330,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <li>Non-text contrasts</li>
             <li>Dataviz characteristics</li>
         </ul>
+        <li>Visual hierarchy </li>
+        <li>Use of color (hue and colorfulness)</li>
         <li>Interactive (links, forms, navigation) </li>
         <li>Visual modes (dark, light, dalton) </li>
       </ul>
@@ -366,6 +365,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     </section>
 
+    
     <section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div>
       <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
       
@@ -379,6 +379,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p> <a href="../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p><details class="categories">
           <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
           <p>This outcome relates to the following functional categories:</p>
+
           <ul>
             <li>Sensory - Vision, Color </li>
             <li>Psychophysical - Discernment, Recognition </li>            
@@ -387,6 +388,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           </ul>
       </details>
 
+
       <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
         <p>Visual Contrast is a paradigm shift from WCAG 2.x contrast in terms of methodology and scope:</p>
         <ul>
@@ -394,15 +396,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <li>Merging the 1.4.x criteria into fewer guidelines.</li>
           <li>New tests for text and non-text contrast that consider imporant spatial effects. </li>
         </ul>
-      <p>This is a significant change from the WCAG 2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
-      <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
-      <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
-      </div><p class="summaryEnd">End of note</p></div>
+
+        <p>This is a significant change from the WCAG 2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
+        <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
+        <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
+        </div><p class="summaryEnd">End of note</p></div>
       </section>
 
 
 
-      <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
+    <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
       <p>Set the lightness contrast as appropriate for a font family, font weight, x-height, and the use-case of the text. </p>
       <ol>
         <li>Font weight has a substantial effect on visual contrast</li>
@@ -410,7 +413,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li>All sighted users require ample lightness contrast for best readability</li>
       </ol>
       <p> <a href="../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p></section>
-
     </section>
 
 
@@ -503,7 +505,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </section>
 
     </section>
-  </section></section>
+  </section>
+ </section>
   
   
   
