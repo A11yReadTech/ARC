@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - GH_REF: github.com/AccessibleReadingTechnologies/APRG.git
+    - GH_REF: github.com/A11yReadTech/APRG.git
     
 git:
   depth: 3
@@ -11,18 +11,18 @@ branches:
     main
 
 before_script:
-  - git config --global user.email "n@n.o"
+  - git config --global user.email "perceptex@myndex.com"
   - git config --global user.name "Myndex"
   
 script:
   - cd ../..
   - mkdir gh-pages
   - cd gh-pages
-  - git clone --depth=1 --branch=gh-pages https://github.com/AccessibleReadingTechnologies/APRG.git
+  - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/APRG.git
   - cd APRG
-  - cp -r ../../AccessibleReadingTechnologies/APRG/index.html ../../AccessibleReadingTechnologies/APRG/assets ../../AccessibleReadingTechnologies/APRG/prototypes ../../AccessibleReadingTechnologies/APRG/requirements .
-  - cp -r ../../AccessibleReadingTechnologies/APRG/guidelines/img guidelines
-  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+  - cp -r ../../A11yReadTech/APRG/index.html ../../A11yReadTech/APRG/assets ../../A11yReadTech/APRG/prototypes ../../A11yReadTech/APRG/requirements .
+  - cp -r ../../A11yReadTech/APRG/guidelines/img guidelines
+  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
   
 after_success:
   - git add -A .
