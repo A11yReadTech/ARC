@@ -22,7 +22,7 @@ summary::before {
 	box-shadow: 0 0 1em .25em #ffff99;
 }
 .summary summary::before {
-	content: url(img/summary.svg);
+	content: url(../img/summary.svg);
 }
 .methods summary::before {
 	content: url(img/method.svg);
