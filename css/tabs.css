@@ -40,19 +40,19 @@ h1+p, button[role="tablist"] {
 	vertical-align: text-top;
 }
 .guideline-link::before {
-	content: url(/WAI/GL/WCAG3/2020/img/silver-sticker.svg);
+	content: url(../img/rating.svg);
 }
 .howto-link::before {
-	content: url(/WAI/GL/WCAG3/2020/img/how-to.svg);
+	content: url(../img/how-to.svg);
 }
 .outcome-link::before {
-	content: url(/WAI/GL/WCAG3/2020/img/outcome.svg);
+	content: url(../img/outcome.svg);
 }
 .method-link::before {
-	content: url(/WAI/GL/WCAG3/2020/img/method.svg);
+	content: url(../img/method.svg);
 }
 .json-link::before {
-	content: url(/WAI/GL/WCAG3/2020/img/json.svg);
+	content: url(../img/json.svg);
 }
 .json-link {
 	text-align: right;
