@@ -162,6 +162,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
 <body class="h-entry"><div class="head">
    
+  <img src="/img/ARTlogo03.png" style="position: relative; float: right; width: 20%">
+  
     <h1 id="title" class="title">APCA Readability Guidelines (APRG)</h1> 
     <p id="w3c-state"><a href="https://www.readtech.org/standards/">ART Editor's Draft</a> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
     <details open="">
@@ -175,13 +177,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </dd>
        
         
-        
+        <!--
         
         
         <dt>Editor:</dt><dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
   </dd>
-        
+    -->    
         <dt>Project Manager:</dt><dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
   </dd>
@@ -197,13 +199,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </details>
     
     
-    <p class="copyright">
-    <a href="https://www.readtech.org/Copyright">Copyright</a> © 2020-2023
-    
-    <a href="https://www.readtech.org/">Accessible Reading Technologies</a>.
-    <abbr title="Accessible Reading Technologies">ART</abbr><sup>®</sup>
-    <a href="https://www.readtech.org/#Legal_Disclaimer">liability</a>, and
-    <a href="https://www.readtech.org/#ART_Trademarks">trademark</a>
+  <p class="copyright">
+    <a href="https://www.readtech.org/Copyright">Copyright</a> © 2020-2023 by <a href="https://www.readtech.org/">Accessible Reading Technologies</a>.
+    <abbr title="Accessible Reading Technologies">ART</abbr><sup>™</sup>
+    <a href="https://www.readtech.org/#Legal_Disclaimer">liability</a>, and <a href="https://www.readtech.org/#ART_Trademarks">trademark</a>
   </p>
     <hr title="Separator for header">
   </div>
@@ -215,7 +214,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
   </section>
 
-<nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li><li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li><li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guidelines</a></li><li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li><li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">B.2 </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li></ol></li></ol></nav>
+<nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2>
+<ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li>
+  <li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li>
+  <li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc">
+    <li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li>
+    <li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li>
+  <li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li>
+  <li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guideline Summary</a></li>
+  <li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li>
+  <li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">B.2 </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li></ol></li></ol></nav>
 
 
 
@@ -305,8 +313,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
   
   
-  <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guidelines</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
-    <h3>APRG Visual Presentation</h3>
+  <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guideline Summary</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
+    <h3>APCA Visual Presentation</h3>
+    
     <p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     
       <details class="summary">
@@ -327,7 +336,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     <p class="summaryEnd">End of summary for <q>Guidelines</q></p></details>
 
-    <p>These are early drafts of guidelines to illustrate what APRG covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
+    <p>These draft guidelines illuminate APRG's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. Eventually, upon integration into relevant standards such as ISO, WCAG, or ADA, for conformance or compliance testing. To be clear, at this time these guidelines are a work in progress, and not a part of a published final guideline.</p>
       <ul>  
         <li><a href="#visual-contrast">Visual contrast</a> - Designing for readability, understandability, and accessbility</li>
         <ul>
@@ -379,7 +388,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <li>Merging the 1.4.x criteria into one guideline.</li>
           <li>New tests for text and non-text contrast.</li>
         </ul>
-      <p>This is a significant change from <q>Contrast (Minimum)</q> and <q>Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
+      <p>This is a significant change from the WCAG 2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
       <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
       <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
       </div><p class="summaryEnd">End of note</p></div>
@@ -390,9 +399,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
       <p>Set the lightness contrast as appropriate for a font family, font weight, and x-height. </p>
       <ol>
-        <li>@@</li>
-        <li>@@</li>
-        <li>@@</li>
+        <li>Font weight has a substantial effect on visual contrast</li>
+        <li>Font size substantially affects readability for various acuity impairments</li>
+        <li>All sighted users require ample lightness contrast for best readability</li>
       </ol>
       <p> <a href="../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p></section>
 
