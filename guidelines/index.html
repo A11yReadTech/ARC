@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 	<head>
-		<title>APCA Guidelines (DRAFT)</title>
+		<title>APCA Readability Guidelines (APRG)</title>
 		<meta charset="UTF-8" />
 		<script src="/js/guidelines.js" class="remove"></script>
 		<script src="respec-config.js" class="remove"></script>
@@ -15,7 +15,7 @@
 			
 			Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
 			<p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a>conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
-			<p>Accessible Perceptual Contrast Guidelines (APRG) are developed  to augment W3C Accessibility Guidelines 3 [[WCAG3]] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
+			<p>Accessible Perceptual Readability Guidelines (APRG) are developed to augment W3C Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. APRG includes additional tests and different scoring mechanisms than sed previously. As a result, APRG is not backwards compatible with WCAG 2.x. APRG is an alternative set of guidelines.</p>
 		</section>
 		<section id="sotd">
 			<p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. It is free to create a GitHub account to start discussions and file issues.</p>
@@ -51,6 +51,7 @@
 				<h3>Section status levels</h3>
 				<p>As part of the drafting process each normative section of this document is given a status, approximately following WCAG 3. This status is used to indicate how far along in the development this section is.</p>
 				<ul>
+					<li><strong id="status-deprecated">Deprecated</strong>: This content is obsolete, and no longer supported <em>hidden by default</em>.</li>
 					<li><strong id="status-placeholder">Placeholder</strong>: This content is temporary, it showcases the type of content or section to expect here <em>hidden by default</em>.</li>
 					<li><strong id="status-exploratory">Exploratory</strong>: This content is not refined, details and definitions may be missing  <em>hidden by default</em>.</li>
 					<li><strong id="status-developing">Developing</strong>: There is rough agreement but not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. </li>
@@ -58,13 +59,13 @@
 					<li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
 				</ul>
 				<p>For more details, see the <a href="https://www.w3.org/WAI/GL/wiki/AG_process">AG Process page</a>. By default, placeholder and exploratory sections is hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-				<p><button id="status-filter" data-status-filter="exploratory,placeholder">Reveal placeholder &amp; exploratory sections</button></p>
+				<p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button></p>
 			</section>
 
 
 			<section>
 				<h3>Goals and Requirements</h3>
-				<p>The goal of APCA and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible and usable to all people, including those with disabilities. this goal will be met through evidence based science and responding to changing technologies.</p>
+				<p>The goal of APRG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible and usable to all people, including those with disabilities. this goal will be met through evidence based science and responding to changing technologies.</p>
 
 				<p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.X contrast metrics. These issues shaped the guidelines that follow.</p>
 			</section>
@@ -91,7 +92,7 @@
 		<section>
 			<h2>Guidelines</h2>
 				<details class="summary">
-				<summary>APCA Visual Presentation</summary>
+				<summary>APRG Visual Presentation</summary>
 				<ul>
 					<li>Visual hierarchy </li>
 					<li>Use of color (hue and colorfulness)</li>
@@ -115,7 +116,7 @@
 			</ul>
 			
 			<div class="ednote">
-			<p>These are early drafts of guidelines to illustrate what APCA covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
+			<p>These are early drafts of guidelines to illustrate what APRG covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
 
 			</div>
 
@@ -187,11 +188,11 @@
 				<p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
 
 				</div>
-				<p>APCA defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
+				<p>APRG defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
 
 				<section>
 					<h4>Bronze</h4>
-					<p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to APCA. While there is some overlap between WCAG 2.x and APCA, APCA includes additional tests and different scoring methods. As a result, APCA is not backwards compatible with WCAG 2.x.</p>
+					<p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to APRG. While there is some overlap between WCAG 2.x and APRG, APRG includes additional tests and different scoring methods. As a result, APRG is not backwards compatible with WCAG 2.x.</p>
 				</section>
 				<section>
 					<h4>Silver</h4>
@@ -206,13 +207,13 @@
 
 			<section data-status="exploratory">
 				<h3>Defining conformance scope</h3>
-				<p>When evaluating the accessibility of content, APCA requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+				<p>When evaluating the accessibility of content, APRG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
 				<ul>
 					<li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a>automated evaluation</a> of atomic tests;</li>
 					<li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
 					<li>Some content is more important to the majority of users than other content; and</li>
 				</ul>
-				<p>APCA therefore defines two inter-related ways to scope content: <a>views</a> and <a>structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
+				<p>APRG therefore defines two inter-related ways to scope content: <a>views</a> and <a>structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
 
 
 			</section>
@@ -220,14 +221,14 @@
 
 			<section data-status="exploratory">
 				<h3>Conformance requirements</h3>
-				<p>In order for technology to <a>conform</a> to APCA, the following conformance requirements apply:</p>
+				<p>In order for technology to <a>conform</a> to APRG, the following conformance requirements apply:</p>
 				<ol>
 					<li><b>Conformance level</b> - Content MUST meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
 				</ol>
 			</section>
 			<section data-status="exploratory">
 				<h3>Conformance claims</h3>
-				<p>Conformance claims are not required. Authors can conform to APCA without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
+				<p>Conformance claims are not required. Authors can conform to APRG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
 				<section><h4>Required components of a conformance claim</h4><p>A conformance claim MUST include the following information:</p><ol>
 						<li><b>Date</b> of the claim;</li>
 						<li><b>Guidelines title, version and URI</b>
