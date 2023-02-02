@@ -35,7 +35,7 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "https://www.readtech.org/APCAguidelines/how-tos/";
+	var howtoBaseURI = "../../how-tos/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
 	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
 	document.querySelectorAll('.guideline').forEach(function(node){
@@ -48,8 +48,22 @@ function linkHowTo() {
 	})
 }
 
+function linkMethod() {
+	var howtoBaseURI = "../../methods/";
+	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
+	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
+	document.querySelectorAll('.guideline').forEach(function(node){
+		//this is brittle, depends on how respec does the heading
+		var heading = textNoDescendant(findHeading(node));
+		var pathFrag = titleToPathFrag(heading);
+		var el = document.createElement("span");
+		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"method-link\">" + heading + " <span>method</span></a>";
+		node.querySelector("p.guideline-text").append(el);
+	})
+}
+
 function linkOutcome() {
-	var outcomeBaseURI = "https://www.readtech.org/APCAguidelines/outcomes/";
+	var outcomeBaseURI = "../../outcomes/";
 	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
 	//else understandingBaseURI = "https://www.readtech.org/APCA" + version + "/Understanding/";
 	document.querySelectorAll('.outcome').forEach(function(node){
