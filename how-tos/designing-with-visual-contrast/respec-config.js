@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/how-tos/",
+	edDraftURI: "https://A11yReadTech.github.io/APRG/how-tos/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -56,8 +56,8 @@ var respecConfig = {
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
-	group: "lvtf",
-	github: "AccessibleReadingTechnologies/APRG",
+	group: "wai",
+	github: "A11yReadTech/APRG",
 
 	maxTocLevel: 4,
 	

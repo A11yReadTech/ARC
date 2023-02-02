@@ -1,4 +1,4 @@
-/* Source: https://gist.github.com/kgmstwo/53e189d87b41ac7743ee, with a slight modification: https://gist.github.com/yatil/616f75465c4a92593044b1c006e4fb4c */
+/* Source: https://gist.github.com/kgmstwo/53e189d87b41ac7743ee, with a slight modification:  */
 /**
  * Note that this script is intended to be included at the *end* of the document, before </body>
  */

@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: '',
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/methods/font-characteristics-contrast/",
+	edDraftURI: "https://A11yReadTech.github.io/APRG/methods/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -57,7 +57,7 @@ var respecConfig = {
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
 	group: "wai",
-	github: "AccessibleReadingTechnologies/APRG",
+	github: "A11yReadTech/APRG",
 
 	maxTocLevel: 4,
 	
