@@ -39,9 +39,7 @@ dfn{cursor:pointer}
   
 <title>APCA Readability Guidelines (APRG)</title>
   
-  
-  
-  
+
 <style id="respec-mainstyle">
 @keyframes pop{
 0%{transform:scale(1,1)}
@@ -120,18 +118,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "permalinkEdge": true,
   "permalinkHide": false,
   "specStatus": "ED",
-  "shortName": "aprg-guidelines",
+  "shortName": "aprg",
   "copyrightStart": "2020",
   "edDraftURI": "https://A11yReadTech.github.io/APRG/guidelines/",
-  "editors": [
-    {
-      "name": "Andrew Somers",
-      "mailto": "perceptex@myndex.com",
-      "company": "ART",
-      "companyURI": "https://www.readtech.org/",
-      "url": "mailto:perceptex@myndex.com"
-    }
-  ],
   "authors": [
     {
       "name": "Andrew Somers",
@@ -289,7 +278,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
       </ul>
       <p>By default, deprecated, placeholder, and exploratory sections are hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-      <p></p>
+      <p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button></p>
     </section>
 
     <section id="goals-and-requirements"><div class="header-wrapper"><h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
@@ -342,15 +331,25 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     <p class="summaryEnd">End of summary for <q>Guidelines</q></p></details>
 
-    <p>The guidelines included in this draft have been selected to show different types of content:</p>
-    <ul>
-      <li><a href="#visual-contrast">Visual contrast</a> - lightness contrast for readability substantial changes</li>
-    </ul>
-
-    <div class="note" id="issue-container-generatedID-1"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-1"></a></div><div class="">
     <p>These are early drafts of guidelines to illustrate what APRG covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
+          <ul>
+        <li>Visual hierarchy </li>
+        <li>Use of color (hue and colorfulness)</li>
+        <li><a href="#visual-contrast">Visual contrast</a> - lightness contrast for readability substantial changes</li>
+        <ul><li>Use Cases (primary content, sub-fluent)</li>
+            <li>Text contrasts</li>
+            <li>Font characteristics</li>
+            <li>Non-text contrasts</li>
+            <li>Dataviz characteristics</li>
+        </ul>
+        <li>Interactive (links, forms, navigation) </li>
+        <li>Visual modes (dark, light, dalton) </li>
+      </ul>
 
-    </div><p class="summaryEnd">End of note</p></div>
+
+
+      
+      
     </section>
 
 
