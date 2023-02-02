@@ -22,7 +22,7 @@ script:
   - cd APRG
   - cp -r ../../AccessibleReadingTechnologies/APRG/index.html ../../AccessibleReadingTechnologies/APRG/assets .
   - cp -r ../../AccessibleReadingTechnologies/APRG/guidelines/img guidelines
-  - cp -r ../../AccessibleReadingTechnologies/APRG/methods/font-characteristics-contrast/index.html methods/font-characteristics-contrast
+  - cp -r ../../AccessibleReadingTechnologies/APRG/methods/index.html methods
   - cp -r ../../AccessibleReadingTechnologies/APRG/how-tos ../../AccessibleReadingTechnologies/APRG/outcomes .
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/methods/index.html -o methods/font-characteristics-contrast/index.html -f --retry 3
