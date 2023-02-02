@@ -18,7 +18,7 @@ var respecConfig = {
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
 	copyrightStart: "2020",
-	license: "document",
+	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
 	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/guidelines/",
