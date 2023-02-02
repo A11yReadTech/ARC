@@ -1,4 +1,4 @@
-# APRG • Accessible Percepual Readability Guidelines
-**A set of web-standard guidelines for text and non-text for use with APCA contrast algorithm.**
+# APRG • Accessible Perceptual Readability Guidelines
+**A set of web-standard guidelines for visual content for use with the APCA contrast algorithm.**
 
 http://git.readtech.org
