@@ -162,20 +162,22 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
 <body class="h-entry"><div class="head">
    
-  <img src="/img/ARTlogo03.png" style="position: relative; float: right; width: 20%">
+  <img src="/APRG/img/ARTlogo03.png" style="position: relative; top:28px; float: right; width: 25%; border-radius: 24px;">
   
     <h1 id="title" class="title">APCA Readability Guidelines (APRG)</h1> 
-    <p id="w3c-state"><a href="https://www.readtech.org/standards/">ART Editor's Draft</a> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
-    <details open="">
+    <p id="art-state"><a href="https://www.readtech.org/APRG/guidelines/">APRG Public Draft</a> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
+    
+  <details>
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://A11yReadTech.github.io/APRG/guidelines/">https://A11yReadTech.github.io/APRG/guidelines/</a>
+                <a class="u-url" href="https://A11yReadTech.github.io/APRG/guidelines/">A11yReadTech.github.io/APRG/guidelines/</a>
               </dd>
+        <!--
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.readtech.org/aprg-guidelines/">https://www.readtech.org/aprg-guidelines/</a>
+                <a href="https://www.readtech.org/APRG/guidelines/">www.readtech.org/APRG/guidelines</a>
               </dd>
-       
+       -->
         
         <!--
         
@@ -189,7 +191,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </dd>
         <dt>Feedback:</dt><dd>
         <a href="https://github.com/A11yReadTech/APRG/">GitHub A11yReadTech/APRG</a>
-        (<a href="https://github.com/A11yReadTech/APRG/pulls/">pull requests</a>,
+        (<a href="https://github.com/A11yReadTech/APRG/discussions/">discussions</a>,
         <a href="https://github.com/A11yReadTech/APRG/issues/new/choose">new issue</a>,
         <a href="https://github.com/A11yReadTech/APRG/issues/">open issues</a>)
       </dd>
@@ -230,17 +232,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
   <section id="sotd" class="introductory"><h2>Status of This Document</h2>
     <p>
-    This is a draft document and may be updated, replaced or obsoleted by other
-    documents at any time. It is inappropriate to cite this document as other
-    than work in progress.
-    
+    This is a draft document and may be updated, replaced, or superceeded by other
+    documents at any time. This document should only be referred to as a work in progress.
   </p>
     <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. 
       It is free to create a GitHub account to start discussions and file issues.</p>
-  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr> </p>
+  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>nor Myndex </p>
 
   <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
-    <p class="informative-statement"><em>This section (with its subsections) provides advice only and does not specify guidelines, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> or non-normative.</em></p>
+    <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
     
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
       <p>The current proposal for APRG is made up of different parts and sections, including:</p>
@@ -265,7 +265,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="summaryEnd">End of summary for <q>Introduction</q></p></details>
 
     <section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-      <p>This introduction provides a <em>brief</em> background to APCA and APRG. </p>
+      <p>This introduction will provide a <em>brief</em> background of APCA and APRG. </p>
     </section>
 
     <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
@@ -280,14 +280,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
       </ul>
       <p>By default, deprecated, placeholder, and exploratory sections are hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-      <p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button></p>
+      <p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated" style="font-size: 1.3em;">Reveal placeholder &amp; exploratory sections</button></p>
     </section>
 
     <section id="goals-and-requirements"><div class="header-wrapper">
       <h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
       
       <p>The goal of APRG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
-      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.X contrast metrics. These issues shaped the guidelines that follow.</p>
+      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.x contrast metrics. Correctng these issues shaped the guidelines that follow.</p>
     </section>
 
   </section>
@@ -314,9 +314,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
   
   <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guideline Summary</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
-    <h3>APCA Visual Presentation</h3>
+    <h3>APCA Visual Presentation Guidance</h3>
     
-    <p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     
       <details class="summary">
       <summary>Plain language summary of <q>Guidelines</q></summary>
@@ -364,9 +364,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </section>
 
     <section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div>
-      <p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+      <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
       
-      <p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.<span style="font-size: 1.2em; font-weight: 700;"> <a href="../how-tos/designing-with-visual-contrast/" class="howto-link">Designing with visual contrast <span>how-to</span></a></span></p>
+      <p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.
+        <br><span style="font-size: 1.2em; font-weight: 700;"> <a href="../how-tos/designing-with-visual-contrast/" class="howto-link">Designing with visual contrast <span>how-to</span></a></span></p>
 
       <section class="outcome notoc" data-status="developing"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3>
         <a class="self-link" href="#lightness-contrast-between-text-and-background" aria-label="Permalink for this Section"></a></div>
@@ -376,17 +377,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
           <p>This outcome relates to the following functional categories:</p>
           <ul>
-            <li>Sensory - Vision &amp; Visual </li>
-            <li>Cognitive</li>
+            <li>Sensory - Vision, Color </li>
+            <li>Psychophysical - Discernment, Recognition </li>            
+            <li>Cognitive - Language, Comprehension</li>
+            <li>Cognitive - Tasks, Instructions</li>
           </ul>
       </details>
 
       <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
-        <p>Visual Contrast is a paradigm shift from WCAG 2.x terms of methodology and scope:</p>
+        <p>Visual Contrast is a paradigm shift from WCAG 2.x contrast in terms of methodology and scope:</p>
         <ul>
           <li>New contrast calculations based on modern research on visual perception, providing a perceptually uniform result</li>
-          <li>Merging the 1.4.x criteria into one guideline.</li>
-          <li>New tests for text and non-text contrast.</li>
+          <li>Merging the 1.4.x criteria into fewer guidelines.</li>
+          <li>New tests for text and non-text contrast that consider human perception </li>
         </ul>
       <p>This is a significant change from the WCAG 2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
       <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
@@ -407,8 +410,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     </section>
 
-  
-
 
   <section data-status="exploratory" hidden="" id="testing"><div class="header-wrapper"><h2 id="x5-testing"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
@@ -420,14 +421,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </section>
 
 
-
-
-
-
   <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
         The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
-        are to be interpreted as described in
-        <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
+        are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
         when, and only when, they appear in all capitals, as shown here.
       </p>
@@ -496,7 +492,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h5 id="x6-1-4-1-required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</h5><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.1.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
           <li><b>Date</b> of the claim;</li>
           <li><b>Guidelines title, version and URI</b>
-            <q><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3.0 at ???</q></li>
+            <q><abbr title="Accessible Perceptual Contrast Algorithm">APCA</abbr> Readability Guidelines (version)</q></li>
           <li><b>Conformance level</b> satisfied: (bronze, silver, or gold);</li>
           <li><b>A concise description of the views and processes</b>, such as a list of URIs for which the claim is made, including any state changes which lead to a new view; and</li>
           <li>The technology including the hardware, software, and assistive technology used to test the claim.</li>
@@ -616,7 +612,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li>More granular, so there will be more of them; and</li>
         <li>More flexible to allow more tests than the true/false statements of WCAG 2.x.&nbsp;</li>
       </ul>
-    </section></section>
+    </section>
+  </section>
 
   <section class="appendix" id="change-log"><div class="header-wrapper"><h2 id="c-change-log"><bdi class="secno">C. </bdi>Change log</h2><a class="self-link" href="#change-log" aria-label="Permalink for Appendix C."></a></div>
     
