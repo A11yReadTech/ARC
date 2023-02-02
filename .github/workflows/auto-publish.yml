@@ -15,7 +15,7 @@ jobs:
             destination: guidelines/index.html
     steps:
       - uses: actions/checkout@v2
-      - uses: AccessibleReadingTechnologies/spec-prod@v2
+      - uses: A11yReadTech/spec-prod@v2
         with:
           TOOLCHAIN: respec
           GH_PAGES_BUILD_OVERRIDE: |
