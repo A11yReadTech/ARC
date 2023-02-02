@@ -22,7 +22,7 @@ script:
   - cd APRG
   - cp -r ../../AccessibleReadingTechnologies/APRG/index.html ../../AccessibleReadingTechnologies/APRG/assets .
   - cp -r ../../AccessibleReadingTechnologies/APRG/guidelines/methods ../../AccessibleReadingTechnologies/APRG/guidelines/img ../../AccessibleReadingTechnologies/APRG/guidelines/guidelines.css guidelines
-  - cp -r ../../AccessibleReadingTechnologies/APRG/methods ../../AccessibleReadingTechnologies/APRG/how-tos ../../AccessibleReadingTechnologies/APRG/outcomes outcomes .
+  - cp -r ../../AccessibleReadingTechnologies/APRG/methods ../../AccessibleReadingTechnologies/APRG/how-tos ../../AccessibleReadingTechnologies/APRG/outcomes .
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
   - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/methods/font-characteristics-contrast/index.html -o methods/font-characteristics-contrast/index.html -f --retry 3
 #  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/explainer/index.html -o explainer/index.html -f --retry 3
