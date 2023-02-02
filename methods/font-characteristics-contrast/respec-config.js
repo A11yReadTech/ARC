@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: '',
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/methods/",
+	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/methods/font-characteristics-contrast/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
