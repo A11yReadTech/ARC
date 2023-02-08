@@ -12,7 +12,7 @@ var respecConfig = {
 	//publishDate:          "2013-08-22",
 	
 	// the specifications short name, as in https://www.readtech.org/TR/short-name/
-	shortName: "aprg-guidelines",
+	shortName: "gard-guidelines",
 	
 	
 	// if you wish the publication date to be other than today, set this
@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://AccessibleReadingTechnologies.github.io/APRG/guidelines/",
+	edDraftURI: "https://AccessibleReadingTechnologies.github.io/GARD/guidelines/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -57,7 +57,7 @@ var respecConfig = {
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
 	group: "lvtf",
-	github: "AccessibleReadingTechnologies/APRG",
+	github: "AccessibleReadingTechnologies/GARD",
 
 	maxTocLevel: 4,
 	

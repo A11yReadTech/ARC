@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - GH_REF: github.com/AccessibleReadingTechnologies/APRG.git
+    - GH_REF: github.com/AccessibleReadingTechnologies/GARD.git
     
 git:
   depth: 4
@@ -18,12 +18,12 @@ script:
   - cd ../..
   - mkdir gh-pages
   - cd gh-pages
-  - git clone --depth=1 --branch=gh-pages https://github.com/AccessibleReadingTechnologies/APRG.git
-  - cd APRG
-  - cp -r ../../AccessibleReadingTechnologies/APRG/index.html ../../AccessibleReadingTechnologies/APRG/assets ../../AccessibleReadingTechnologies/APRG/css ../../AccessibleReadingTechnologies/APRG/js ../../AccessibleReadingTechnologies/APRG/img .
-  - cp -r ../../AccessibleReadingTechnologies/APRG/guidelines/img guidelines
-  - cp -r ../../AccessibleReadingTechnologies/APRG/methods ../../AccessibleReadingTechnologies/APRG/how-tos ../../AccessibleReadingTechnologies/APRG/outcomes .
-  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+  - git clone --depth=1 --branch=gh-pages https://github.com/AccessibleReadingTechnologies/GARD.git
+  - cd GARD
+  - cp -r ../../AccessibleReadingTechnologies/GARD/index.html ../../AccessibleReadingTechnologies/GARD/assets ../../AccessibleReadingTechnologies/GARD/css ../../AccessibleReadingTechnologies/GARD/js ../../AccessibleReadingTechnologies/GARD/img .
+  - cp -r ../../AccessibleReadingTechnologies/GARD/guidelines/img guidelines
+  - cp -r ../../AccessibleReadingTechnologies/GARD/methods ../../AccessibleReadingTechnologies/GARD/how-tos ../../AccessibleReadingTechnologies/GARD/outcomes .
+  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/AccessibleReadingTechnologies/GARD/main/guidelines/index.html -o guidelines/index.html -f --retry 3
 
 after_success:
   - git add -A .
