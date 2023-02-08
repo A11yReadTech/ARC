@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - GH_REF: github.com/A11yReadTech/APRG.git
+    - GH_REF: github.com/A11yReadTech/GARD.git
     
 git:
   depth: 3
@@ -18,11 +18,11 @@ script:
   - cd ../..
   - mkdir gh-pages
   - cd gh-pages
-  - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/APRG.git
-  - cd APRG
-  - cp -r ../../A11yReadTech/APRG/index.html ../../A11yReadTech/APRG/assets ../../A11yReadTech/APRG/prototypes ../../A11yReadTech/APRG/requirements .
-  - cp -r ../../A11yReadTech/APRG/guidelines/img guidelines
-  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/APRG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+  - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/GARD.git
+  - cd GARD
+  - cp -r ../../A11yReadTech/GARD/index.html ../../A11yReadTech/GARD/assets ../../A11yReadTech/GARD/prototypes ../../A11yReadTech/GARD/requirements .
+  - cp -r ../../A11yReadTech/GARD/guidelines/img guidelines
+  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/GARD/main/guidelines/index.html -o guidelines/index.html -f --retry 3
   
 after_success:
   - git add -A .
