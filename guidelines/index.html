@@ -2,6 +2,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="ReSpec 32.7.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="myndex" content="manual feb 8 2023">
+
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -35,12 +37,11 @@ dfn{cursor:pointer}
 .dfn-panel li{margin-left:1em}
 .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
 </style>
+
   
-<title>Guidelines for APCA Readable Design (GARD)</title>
+<title>APCA Guidelines for Readable Design (AGRD)</title>
   
-  
-  
-  
+
 <style id="respec-mainstyle">
 @keyframes pop{
 0%{transform:scale(1,1)}
@@ -100,11 +101,11 @@ dd{margin-left:0}
 }
 </style>
   
-<script src="/js/gard.js"></script>
-  
-<link rel="stylesheet" type="text/css" href="/css/guidelines.css">
+<script src="../js/agrd.js"></script>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/guidelines.css">
 
-<meta name="description" content="The Guidelines for APCA Readable Design (GARD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
+<meta name="description" content="The APCA Guidelines for Readable Design (AGRD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 <style>
 var{position:relative;cursor:pointer}
 var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
@@ -119,18 +120,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "permalinkEdge": true,
   "permalinkHide": false,
   "specStatus": "ED",
-  "shortName": "gard-guidelines",
+  "shortName": "agrd",
   "copyrightStart": "2020",
-  "edDraftURI": "https://A11yReadTech.github.io/GARD/guidelines/",
-  "editors": [
-    {
-      "name": "Andrew Somers",
-      "mailto": "perceptex@myndex.com",
-      "company": "ART",
-      "companyURI": "https://www.readtech.org/",
-      "url": "mailto:perceptex@myndex.com"
-    }
-  ],
+  "edDraftURI": "https://A11yReadTech.github.io/AGRD/guidelines/",
   "authors": [
     {
       "name": "Andrew Somers",
@@ -141,7 +133,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     }
   ],
   "group": "wai",
-  "github": "A11yReadTech/GARD",
+  "github": "A11yReadTech/AGRD",
   "maxTocLevel": 4,
   "preProcess": [
     null
@@ -164,45 +156,45 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     }
   },
   "lint": false,
-  "publishISODate": "2023-02-08T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 08 February 2023"
+  "publishISODate": "2023-02-02T00:00:00.000Z",
+  "generatedSubtitle": "ART Editor's Draft 02 February 2023"
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
+</head>
+  
+  
 <body class="h-entry"><div class="head">
-    <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
-  </a></p>
-    <h1 id="title" class="title">Guidelines for APCA Readable Design (GARD)</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2023-02-08">08 February 2023</time></p>
-    <details open="">
+   
+  
+    <h1 id="title" class="title">APCA Guidelines for Readable Design (AGRD)</h1> 
+    <p id="art-state"><a href="https://www.readtech.org/AGRD/guidelines/">AGRD Public Draft</a> <time class="dt-published" datetime="2023-02-02">02 February 2023</time></p>
+
+  <details>
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://A11yReadTech.github.io/GARD/guidelines/">https://A11yReadTech.github.io/GARD/guidelines/</a>
+                <a class="u-url" href="https://A11yReadTech.github.io/AGRD/guidelines/">A11yReadTech.github.io/AGRD/guidelines/</a>
               </dd>
+        <!--
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.w3.org/gard-guidelines/">https://www.w3.org/gard-guidelines/</a>
+                <a href="https://www.readtech.org/AGRD/guidelines/">www.readtech.org/AGRD/guidelines</a>
               </dd>
-        <dt>Latest editor's draft:</dt><dd><a href="https://A11yReadTech.github.io/GARD/guidelines/">https://A11yReadTech.github.io/GARD/guidelines/</a></dd>
-        <dt>History:</dt><dd>
-                    <a href="https://github.com/A11yReadTech/GARD/commits/">Commit history</a>
-                  </dd>
+       -->
         
-        
-        
+        <!--
         
         
         <dt>Editor:</dt><dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
   </dd>
-        
+    -->    
         <dt>Project Manager:</dt><dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
   </dd>
         <dt>Feedback:</dt><dd>
-        <a href="https://github.com/A11yReadTech/GARD/">GitHub A11yReadTech/GARD</a>
-        (<a href="https://github.com/A11yReadTech/GARD/pulls/">pull requests</a>,
-        <a href="https://github.com/A11yReadTech/GARD/issues/new/choose">new issue</a>,
-        <a href="https://github.com/A11yReadTech/GARD/issues/">open issues</a>)
+        <a href="https://github.com/A11yReadTech/AGRD/">GitHub A11yReadTech/AGRD</a>
+        (<a href="https://github.com/A11yReadTech/AGRD/discussions/">discussions</a>,
+        <a href="https://github.com/A11yReadTech/AGRD/issues/new/choose">new issue</a>,
+        <a href="https://github.com/A11yReadTech/AGRD/issues/">open issues</a>)
       </dd>
         
         
@@ -210,87 +202,64 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </details>
     
     
-    <p class="copyright">
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-    ©
-    2020-2023
-    
-    <a href="https://www.w3.org/">World Wide Web Consortium</a>.
-    <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
-    <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+  <p class="copyright">
+    <a href="https://www.readtech.org/Copyright">Copyright</a> © 2020-2023 by <a href="https://www.readtech.org/">Accessible Reading Technologies</a>.
+    <abbr title="Accessible Reading Technologies">ART</abbr><sup>™</sup>
+    <a href="https://www.readtech.org/#Legal_Disclaimer">liability</a>, and <a href="https://www.readtech.org/#ART_Trademarks">trademark</a>
   </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Abstract</h2>
-    <p>The Guidelines for APCA Readable Design (GARD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.</p>
+        <img src="../img/ARTlogo03.png" style="position: relative; margin: 0 -18px 18px 18px; top:0px; float: right; width: 45%; border-radius: 24px;">
 
+  <section id="abstract" class="introductory"><h2>Abstract</h2>
+    <p>The APCA Guidelines for Readable Design (AGRD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially users with visual impairments.</p>
     <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
     <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1">conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
-    <p>Guidelines for APCA Readable Design (GARD) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. GARD includes additional tests and different scoring mechanisms than sed previously. As a result, GARD is not backwards compatible with WCAG 2.x. GARD is an alternative set of guidelines.</p>
+    <p>Accessible Perceptual Readability Guidelines (AGRD) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. AGRD includes additional tests and different scoring mechanisms than used previously. As a result, AGRD is not backwards compatible with WCAG 2.x. AGRD is an alternative set of guidelines.</p>
   </section>
 
-
-
-
-  <section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
-      document at the time of its publication. A list of current <abbr title="World Wide Web Consortium">W3C</abbr>
-      publications and the latest revision of this technical report can be found
-      in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
-      https://www.w3.org/TR/.</em></p>
-    <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. It is free to create a GitHub account to start discussions and file issues.</p>
-  <p>
-    This document was published by the <a href="https://www.w3.org/groups/ig/wai">WAI Interest Group</a> as
-    an Editor's Draft. 
-  </p><p>Publication as an Editor's Draft does not
-  imply endorsement by <abbr title="World Wide Web Consortium">W3C</abbr> and its Members. </p><p>
-    This is a draft document and may be updated, replaced or obsoleted by other
-    documents at any time. It is inappropriate to cite this document as other
-    than work in progress.
-    
-  </p><p>
-    
-        This document was produced by a group
-        operating under the
-        <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
-          Policy</a>.
-      
-    
-                <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
-                <a rel="disclosure" href="">public list of any patent disclosures</a>
-          made in connection with the deliverables of
-          the group; that page also includes
-          instructions for disclosing a patent. An individual who has actual
-          knowledge of a patent which the individual believes contains
-          <a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">Essential Claim(s)</a>
-          must disclose the information in accordance with
-          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-        
-  </p><p>
-                  This document is governed by the
-                  <a id="w3c_process_revision" href="https://www.w3.org/2021/Process-20211102/">2 November 2021 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated">Reveal placeholder &amp; exploratory sections</button><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li><li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li><li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guidelines</a></li><li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li><li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">C. </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">D. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">E.1 </bdi>Normative references</a></li></ol></li></ol></nav>
+<nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2>
+<ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li>
+  <li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li>
+  <li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc">
+    <li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </a></li>
+    <li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</a></li><li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</a></li></ol></li>
+  <li class="tocline"><a class="tocxref" href="#normative-requirements"><bdi class="secno">2. </bdi>Normative requirements</a></li>
+  <li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guideline Summary</a></li>
+  <li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a></li>
+  <li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">6.1 </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</a></li><li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.1.2 </bdi>Silver</a></li><li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.1.3 </bdi>Gold</a></li></ol></li><li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</a></li><li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li><li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG 2.x</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcomes</a></li><li class="tocline"><a class="tocxref" href="#change-log"><bdi class="secno">B.2 </bdi>Change log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B.3 </bdi>Acknowledgements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li></ol></li></ol></nav>
 
 
 
 
-  <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div><p class="informative-statement"><em>This section (with its subsections) provides advice only and does not specify guidelines, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> or non-normative.</em></p>
+  <section id="sotd" class="introductory"><h2>Status of This Document</h2>
+    <p>
+    This is a draft document and may be updated, replaced, or superceeded by other
+    documents at any time. This document should only be referred to as a work in progress.
+  </p>
+    <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. 
+      It is free to create a GitHub account to start discussions and file issues.</p>
+  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>.</p>
+
+  <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
+    <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
     
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
-      <p>The current proposal for GARD is made up of different parts and sections, including:</p>
-        <ul><li>GARD</li>
-            <li>How-tos</li>
-            <li>Outcomes</li>
-            <li>Methods</li>
+      <p>The current proposal for APCA and AGRD is made up of several divisions, including:</p>
+        <ul><li>APCA Based Tools • provide perceptually uniform, objective assessment of contrast</li>
+            <li>How-tos • Tutorial guides for planning and implementing design strategies</li>
+            <li>Outcomes • Target accommodation goals, serving user needs</li>
+            <li>Methods • Specific tests and techniques for measuring and conforming to guidance</li>
         </ul>
     </div><p class="summaryEnd">End of note</p></div>
+    
+    
     <details class="summary">
       <summary>Plain language summary of <q>Introduction</q></summary>
-      <p>The Guidelines for APCA Readable Design (GARD) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. GARD is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
-      <p>What’s new in APCA/GARD?</p>
+      <p>The APCA Guidelines for Readable Design (AGRD) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. AGRD is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
+      <p>What’s new in APCA/AGRD?</p>
       <ul>
-      <li>APCA/GARD includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
+      <li>APCA/AGRD includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
       <li>It includes mobile and desktop applications, along with web content.</li>
       <li>It has new guidelines and new tests that improve readability but also improve design flexibility.</li>
       <li>It has new scoring with use cases to define critical content vs unimportant content.</li>
@@ -298,8 +267,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="summaryEnd">End of summary for <q>Introduction</q></p></details>
 
     <section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-      
-      <p>This introduction provides a <em>brief</em> background to APCA and GARD. </p>
+      <p>This introduction will provide a <em>brief</em> background of APCA and AGRD. </p>
     </section>
 
     <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
@@ -314,14 +282,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
       </ul>
       <p>By default, deprecated, placeholder, and exploratory sections are hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-      <p></p>
+      <p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated" style="font-size: 1.3em;">Reveal placeholder &amp; exploratory sections</button></p>
     </section>
 
-    <section id="goals-and-requirements"><div class="header-wrapper"><h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
+    <section id="goals-and-requirements"><div class="header-wrapper">
+      <h3 id="x1-3-goals-and-requirements"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
       
-      <p>The goal of GARD and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
-
-      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.X contrast metrics. These issues shaped the guidelines that follow.</p>
+      <p>The goal of AGRD and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
+      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.x contrast metrics. Correctng these issues shaped the guidelines that follow.</p>
     </section>
 
   </section>
@@ -346,14 +314,17 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
   
   
-  
-  <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guidelines</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+  <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines"><bdi class="secno">3. </bdi>Guideline Summary</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
+      
+    <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:0px;  width: 45%;">
+    <h3>APCA Visual Presentation Guidance</h3>
+    
+    <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     
       <details class="summary">
-      <summary>Plain language summary of <q>Guidelines</q> - GARD Visual Presentation</summary>
+      <summary>Plain language summary of <q>Guidelines</q></summary>
       <ul>
-        <li>Visual hierarchy </li>
-        <li>Use of color (hue and colorfulness)</li>
+
         <li>Visual contrast (color contrast);</li>
         <ul><li>Use Cases (primary content, sub-fluent)</li>
             <li>Text contrasts</li>
@@ -361,72 +332,93 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <li>Non-text contrasts</li>
             <li>Dataviz characteristics</li>
         </ul>
+        <li>Visual hierarchy </li>
+        <li>Use of color (hue and colorfulness)</li>
         <li>Interactive (links, forms, navigation) </li>
         <li>Visual modes (dark, light, dalton) </li>
       </ul>
 
     <p class="summaryEnd">End of summary for <q>Guidelines</q></p></details>
 
-    <p>The guidelines included in this draft have been selected to show different types of content:</p>
-    <ul>
-      <li><a href="#visual-contrast">Visual contrast</a> - lightness contrast for readability substantial changes</li>
+    <p>These draft guidelines illuminate AGRD's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. Eventually, upon integration into relevant standards such as ISO, WCAG, or ADA, for conformance or compliance testing. To be clear, at this time these guidelines are a work in progress, and not a part of a published final guideline.</p>
+      <ul>  
+        <li><a href="#visual-contrast">Visual contrast</a> - Designing for readability, understandability, and accessibility</li>
+        <ul>
+            <li>Use Cases • primary content vs sub-fluent vs spot readable</li>
+            <li>Text contrasts • understanding the need for luminance</li>
+            <li>Font characteristics • weight, size, and glyph design</li>
+            <li>White space • line & letter spacing, element padding</li>
+            <li>Non-text contrasts • semantic and non-semantic elements</li>
+            <li>Dataviz characteristics • unique needs of dataviz</li>
+        </ul>
+        <li>Visual hierarchy • semantic layouts and organizing information</li>
+        <li>Use of color (hue and colorfulness) – Hue and colorfulness to augment </li>
+        <li>Interactive • links, forms, navigation, and controls</li>
+        <li>User Personalization</li>            
+        <ul>
+            <li>Visual modes • dark, light, dalton, alternate color schemes </li>
+            <li>Zooming text or view, and text reflow</li>
+            <li>User adjustable properties and style sheets</li>
+        </ul>
+        <li>Other forms of contrast • shape, size, distance, motion</li>   
+        <li>Workspace and environmental illumination</li>   
+        <li>Visual fatigue and ocular health</li>   
+       </ul>
 
-    </ul>
-
-    <div class="note" id="issue-container-generatedID-1"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-1"></a></div><div class="">
-    <p>These are early drafts of guidelines to illustrate what GARD covers comprehensively, and for testing prior to submission to other standards such as ISO and WCAG.</p>
-
-    </div><p class="summaryEnd">End of note</p></div>
     </section>
 
-
-
-
-    <section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+    
+    <section class="guideline" id="visual-contrast"><div class="header-wrapper"><h2 id="x4-visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a></div>
+      <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
       
-      <p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.<span> <a href="../../how-tos/visual-contrast/" class="howto-link">Visual contrast <span>how-to</span></a></span></p>
+      <p class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient contrast between foreground and background.
+        <br><span style="font-size: 1.2em; font-weight: 700;"> <a href="../how-tos/designing-with-visual-contrast/" class="howto-link">Designing with visual contrast <span>how-to</span></a></span></p>
 
-      <section class="outcome notoc" data-status="developing"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background" aria-label="Permalink for this Section"></a></div>
+      <section class="outcome notoc" data-status="developing"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3>
+        <a class="self-link" href="#lightness-contrast-between-text-and-background" aria-label="Permalink for this Section"></a></div>
         <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.We have high confidence in the direction and some confidence in the details.</div>
         <p>Provides adequate lightness/darkness contrast between background and text colors to make the text easy to read.</p>
-        <p> <a href="../../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p><details class="categories">
+        <p> <a href="../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p><details class="categories">
           <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
           <p>This outcome relates to the following functional categories:</p>
+
           <ul>
-            <li>Sensory - Vision &amp; Visual </li>
+            <li>Sensory - Vision, Color </li>
+            <li>Psychophysical - Discernment, Recognition </li>            
+            <li>Cognitive - Language, Comprehension</li>
+            <li>Cognitive - Tasks, Instructions</li>
           </ul>
-        </details>
+      </details>
+
 
       <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
-        <p>Visual Contrast is a paradigm shift from WCAG 2.x terms of methodology and scope:</p>
+        <p>Visual Contrast is a paradigm shift from WCAG 2.x contrast in terms of methodology and scope:</p>
         <ul>
-          <li>New contrast calculations based on modern research on visual perception, providing a perceptally uniform result</li>
-          <li>Merging the 1.4.x criteria into one guideline.</li>
-          <li>New tests for text and non-text contrast.</li>
+          <li>New contrast calculations based on modern research on visual perception, providing a perceptually uniform result</li>
+          <li>Merging the 1.4.x criteria into fewer guidelines.</li>
+          <li>New tests for text and non-text contrast that consider imporant spatial effects. </li>
         </ul>
-      <p>This is a significant change from <q>Contrast (Minimum)</q> and <q>Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
-      <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
-      <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
-      </div><p class="summaryEnd">End of note</p></div>
+
+        <p>This is a significant change from the WCAG 2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
+        <p>The proposed new guidance more accurately models current research in human visual perception of contrast and light intensity. The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light ratio measurement; results can, for example, vary with size of text and the darkness of the colors or background.</p>
+        <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
+        </div><p class="summaryEnd">End of note</p></div>
       </section>
 
 
 
-      <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
-      <p>Set the lightness contrast as appropriate for a font family, font weight, and x-height. </p>
+    <section class="outcome notoc"><div class="header-wrapper"><h3 id="lightness-contrast-between-text-and-background-0">Lightness contrast between text and background<span class="inserted"> (outcome for <q>Visual contrast</q>)</span></h3><a class="self-link" href="#lightness-contrast-between-text-and-background-0" aria-label="Permalink for this Section"></a></div>
+      <p>Set the lightness contrast as appropriate for a font family, font weight, x-height, and the use-case of the text. </p>
       <ol>
-        <li>@@</li>
-        <li>@@</li>
-        <li>@@</li>
+        <li>Font weight has a substantial effect on visual contrast</li>
+        <li>Font size substantially affects readability for various acuity impairments</li>
+        <li>All sighted users require ample lightness contrast for best readability</li>
       </ol>
-      <p> <a href="../../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p></section>
-
+      <p> <a href="../outcomes/lightness-contrast-between-text-and-background" class="outcome-link"><span>Outcome, details, and methods for </span>Lightness contrast between text and background</a></p></section>
     </section>
 
-  
 
-
-  <section data-status="exploratory" id="testing"><div class="header-wrapper"><h2 id="x5-testing"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+  <section data-status="exploratory" hidden="" id="testing"><div class="header-wrapper"><h2 id="x5-testing"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
     <details class="summary">
       <summary>Plain language summary of <q>Testing</q> - What types of tests and scopes are used?</summary>
@@ -436,14 +428,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </section>
 
 
-
-
-
-
   <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
         The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
-        are to be interpreted as described in
-        <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
+        are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
         when, and only when, they appear in all capitals, as shown here.
       </p>
@@ -453,7 +440,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>To assert that your content or product meets an APCA outcome is called “conformance.” To conform to APCA, your test results must show that your project is visually accessible.</p>
       <p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want t make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p>	
     <p class="summaryEnd">End of summary for <q>Conformance</q></p></details>
-    <section data-status="exploratory" id="conformance-levels"><div class="header-wrapper"><h4 id="x6-1-1-conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</h4><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 6.1.1"></a></div>
+    <section data-status="exploratory" hidden="" id="conformance-levels"><div class="header-wrapper"><h4 id="x6-1-1-conformance-levels"><bdi class="secno">6.1.1 </bdi>Conformance levels</h4><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 6.1.1"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
       <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
       <p>APCA uses a new conformance model modeled after the emerging WCAG 3.0, in order to support the goal of eventual integration. Some key goals for this new conformance model:</p>
@@ -468,11 +455,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
 
       </div><p class="summaryEnd">End of note</p></div>
-      <p>GARD defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
+      <p>AGRD defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
 
       <section id="bronze"><div class="header-wrapper"><h5 id="x6-1-1-1-bronze"><bdi class="secno">6.1.1.1 </bdi>Bronze</h5><a class="self-link" href="#bronze" aria-label="Permalink for Section 6.1.1.1"></a></div>
         
-        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to GARD. While there is some overlap between WCAG 2.x and GARD, GARD includes additional tests and different scoring methods. As a result, GARD is not backwards compatible with WCAG 2.x.</p>
+        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to AGRD. While there is some overlap between WCAG 2.x and AGRD, AGRD includes additional tests and different scoring methods. As a result, AGRD is not backwards compatible with WCAG 2.x.</p>
       </section>
       <section id="silver"><div class="header-wrapper"><h5 id="x6-1-1-2-silver"><bdi class="secno">6.1.1.2 </bdi>Silver</h5><a class="self-link" href="#silver" aria-label="Permalink for Section 6.1.1.2"></a></div>
         
@@ -485,34 +472,34 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </section>
 
 
-    <section data-status="exploratory" id="defining-conformance-scope"><div class="header-wrapper"><h4 id="x6-1-2-defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</h4><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.1.2"></a></div>
+    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h4 id="x6-1-2-defining-conformance-scope"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</h4><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.1.2"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>When evaluating the accessibility of content, GARD requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+      <p>When evaluating the accessibility of content, AGRD requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
       <ul>
         <li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
         <li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
         <li>Some content is more important to the majority of users than other content; and</li>
       </ul>
-      <p>GARD therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
+      <p>AGRD therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
 
 
     </section>
 
 
-    <section data-status="exploratory" id="conformance-requirements"><div class="header-wrapper"><h4 id="x6-1-3-conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</h4><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.1.3"></a></div>
+    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h4 id="x6-1-3-conformance-requirements"><bdi class="secno">6.1.3 </bdi>Conformance requirements</h4><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.1.3"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to GARD, the following conformance requirements apply:</p>
+      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to AGRD, the following conformance requirements apply:</p>
       <ol>
         <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
       </ol>
     </section>
-    <section data-status="exploratory" id="conformance-claims"><div class="header-wrapper"><h4 id="x6-1-4-conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</h4><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.1.4"></a></div>
+    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h4 id="x6-1-4-conformance-claims"><bdi class="secno">6.1.4 </bdi>Conformance claims</h4><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.1.4"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>Conformance claims are not required. Authors can conform to GARD without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
+      <p>Conformance claims are not required. Authors can conform to AGRD without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
       <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h5 id="x6-1-4-1-required-components-of-a-conformance-claim"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</h5><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.1.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
           <li><b>Date</b> of the claim;</li>
           <li><b>Guidelines title, version and URI</b>
-            <q><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3.0 at ???</q></li>
+            <q><abbr title="Accessible Perceptual Contrast Algorithm">APCA</abbr> Readability Guidelines (version)</q></li>
           <li><b>Conformance level</b> satisfied: (bronze, silver, or gold);</li>
           <li><b>A concise description of the views and processes</b>, such as a list of URIs for which the claim is made, including any state changes which lead to a new view; and</li>
           <li>The technology including the hardware, software, and assistive technology used to test the claim.</li>
@@ -520,11 +507,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </section>
 
     </section>
-  </section></section>
+  </section>
+ </section>
   
   
   
-  <section data-status="exploratory" id="glossary"><div class="header-wrapper"><h2 id="x7-glossary"><bdi class="secno">7. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+  <section data-status="exploratory" hidden="" id="glossary"><div class="header-wrapper"><h2 id="x7-glossary"><bdi class="secno">7. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
     <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-4"></a></div><p class="">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p><p class="summaryEnd">End of note</p></div>
     <dl>
@@ -558,7 +546,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <dt><dfn data-lt="Guideline|Guidelines" id="dfn-guideline" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Guideline</dfn></dt>
       <dd>
         <p>High-level, plain-language content used to organize <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-1">outcomes</a>.</p>
-        <p>See <a href="https://A11yReadTech.github.io/GARD/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
+        <p>See <a href="https://A11yReadTech.github.io/AGRD/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Human evaluation|Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested" id="dfn-human-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Human evaluation</dfn></dt>
       <dd>
@@ -578,7 +566,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <dt><dfn data-lt="Method|Methods" id="dfn-method" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Method</dfn></dt>
       <dd>
         <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-2">outcome</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
-        <p>See <a href="https://A11yReadTech.github.io/GARD/explainer/#methods-structure">Methods</a> in the Explainer.</p>
+        <p>See <a href="https://A11yReadTech.github.io/AGRD/explainer/#methods-structure">Methods</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Normative" id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normative</dfn></dt>
       <dd>
@@ -632,7 +620,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li>More granular, so there will be more of them; and</li>
         <li>More flexible to allow more tests than the true/false statements of WCAG 2.x.&nbsp;</li>
       </ul>
-    </section></section>
+    </section>
+  </section>
 
   <section class="appendix" id="change-log"><div class="header-wrapper"><h2 id="c-change-log"><bdi class="secno">C. </bdi>Change log</h2><a class="self-link" href="#change-log" aria-label="Permalink for Appendix C."></a></div>
     
@@ -861,7 +850,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <a href="#ref-for-dfn-user-testing-1" title="§ 7. Glossary">§ 7. Glossary</a> <a href="#ref-for-dfn-user-testing-2" title="Reference 2">(2)</a> 
   </li>
   </ul>
-    </div><script id="respec-dfn-panel">(() => {
+    </div>
+    
+    
+    <script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
