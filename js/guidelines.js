@@ -1,3 +1,5 @@
+/* Respec runs this script to prepare the index.html doc */
+
 var version="30";
 
 function titleToPathFrag (title) {

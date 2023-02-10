@@ -39,16 +39,20 @@
   for (i = 0; i < tabs.length; ++i) {
     addListeners(i);
   }
+    window.addEventListener('load', bodyLoad);
 
   function addListeners (index) {
     tabs[index].addEventListener('click', clickEventListener);
     tabs[index].addEventListener('keydown', keydownEventListener);
     tabs[index].addEventListener('keyup', keyupEventListener);
-
     // Build an array with all tabs (<button>s) in it
     tabs[index].index = index;
   }
 
+  function bodyLoad () {
+    activateTab(tabs[0], false);
+  }
+  
   // When a tab is clicked, activateTab is fired to activate it
   function clickEventListener (event) {
     var tab = event.target;
@@ -72,7 +76,7 @@
         break;
 
       // Up and down are in keydown
-      // because we need to prevent page scroll >:)
+      // because we need to prevent page scroll
       case keys.up:
       case keys.down:
         determineOrientation(event);
