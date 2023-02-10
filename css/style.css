@@ -2171,7 +2171,7 @@ legend {
 }
 
 #site-header {
-  padding-top:3px
+  padding: 0 12px
 }
 @supports (display:grid) {
   [dir=ltr] #site-header {
@@ -3845,7 +3845,7 @@ ul.sentence li:last-child:first-child:before {
 }
 .sidenav {
   grid-area:navigation;
-  margin-bottom:24px;
+  margin: 0 24px 24px 0;
   display:none
 }
 .sidenav.open {

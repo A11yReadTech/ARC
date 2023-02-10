@@ -292,7 +292,7 @@ main {
 @media (max-width:60em) {
 .breadcrumb, .default-grid.breadcrumb, .default-grid .breadcrumb {
 	border-radius: 0 0 18px 18px ;
-	box-shadow: inset -6px -6px 10px #764,
+	box-shadow: inset -6px -6px 10px #7646,
 				inset 4px 4px 10px #fffa;
 	}
 }

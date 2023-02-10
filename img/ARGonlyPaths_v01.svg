@@ -3,13 +3,13 @@
    inkscape:export-ydpi="191.87595"
    inkscape:export-xdpi="191.87595"
    inkscape:export-filename="/Users/asomers/APCAmastadon.png"
-   sodipodi:docname="ARGonly_v01.svg"
+   sodipodi:docname="ARGonlyPaths_v01.svg"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm"
+   viewBox="0 0 74.136314 32.21727"
+   height="32.21727mm"
+   width="74.136314mm"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,15 +27,15 @@
        id="rect468" />
     <rect
        x="30.015337"
-       y="77.312232"
+       y="77.312233"
        width="113.39127"
        height="26.377115"
        id="rect854" />
     <rect
-       x="39.309524"
-       y="50.64881"
+       x="39.309525"
+       y="50.648811"
        width="124.73214"
-       height="48.380952"
+       height="48.380951"
        id="rect837" />
     <rect
        x="30.015337"
@@ -136,7 +136,7 @@
        id="filter214"
        inkscape:label="filter1" />
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter1324">
       <feFlood
@@ -168,13 +168,13 @@
          id="feComposite1322" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter1852"
        x="-0.0056384788"
        y="-0.10282417"
        width="1.0136263"
-       height="1.2484917">
+       height="1.2484916">
       <feFlood
          flood-opacity="0.59715639810426535"
          flood-color="rgb(113,9,149)"
@@ -204,12 +204,12 @@
          id="feComposite1850" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter2284"
-       x="-0.020332976"
+       x="-0.027475747"
        y="-0.092831238"
-       width="1.0504414"
+       width="1.068161"
        height="1.2302929">
       <feFlood
          flood-opacity="0.46762589928057552"
@@ -284,13 +284,13 @@
          id="feComposite1850-4" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter2416"
        width="2.5"
        height="1.5"
-       y="-0.29999999999999999"
-       x="-0.10000000000000001">
+       y="-0.30000001"
+       x="-0.1">
       <feGaussianBlur
          stdDeviation="0.39999999999999991 0.40000000000000002"
          result="blur"
@@ -309,11 +309,11 @@
        height="26.377115"
        id="rect2445" />
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Blur"
        id="filter1852-4"
-       height="2.0710851"
-       y="-0.51412084"
+       height="2.0710852"
+       y="-0.51412082"
        x="-0.028192393"
        width="1.0587342">
       <feFlood
@@ -619,8 +619,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="391"
-     inkscape:cy="204.5"
+     inkscape:cx="94"
+     inkscape:cy="4.5"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -651,7 +651,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-58.907858,-53.101635)">
     <rect
        style="display:inline;fill:#55d400;stroke-width:0.185782;filter:url(#filter156)"
        id="rect833"
@@ -666,15 +667,23 @@
        inkscape:export-xdpi="191.87595"
        inkscape:export-ydpi="191.87595"
        inkscape:label="rect833" />
-    <text
-       xml:space="preserve"
+    <g
+       aria-label="ARG"
        transform="matrix(0.26458333,0,0,0.26458333,-10.31875,24.341667)"
        id="text466"
-       style="font-weight:300;font-size:96px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';white-space:pre;shape-inside:url(#rect468);display:inline;fill:#ffffff;filter:url(#filter2284)"><tspan
-         x="281"
-         y="201.23298"
-         id="tspan1195"><tspan
-           style="font-weight:normal;font-family:Audiowide;-inkscape-font-specification:Audiowide"
-           id="tspan1193">ARG</tspan></tspan></text>
+       style="font-weight:300;font-size:96px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';white-space:pre;shape-inside:url(#rect468);display:inline;fill:#ffffff;filter:url(#filter2284)">
+      <path
+         d="m 354.03125,201.23298 h -12.1875 v -16.5 H 299 v 16.5 H 286.8125 V 167.6236 q 0,-7.35937 2.53125,-13.54687 2.53125,-6.1875 7.03125,-10.64063 4.5,-4.45312 10.64062,-6.9375 6.14063,-2.48437 13.40625,-2.48437 h 27.46875 q 1.26563,0 2.39063,0.46875 1.125,0.46875 1.96875,1.3125 0.84375,0.84375 1.3125,1.96875 0.46875,1.125 0.46875,2.39062 z M 299,172.54548 h 42.84375 v -26.34375 h -21.42188 q -0.5625,0 -2.39062,0.1875 -1.78125,0.14062 -4.17188,0.79687 -2.34375,0.65625 -4.96875,2.01563 -2.625,1.35937 -4.82812,3.75 -2.20313,2.39062 -3.65625,6 Q 299,162.51423 299,167.6236 Z"
+         style="font-weight:normal;font-family:Audiowide;-inkscape-font-specification:Audiowide"
+         id="path1722" />
+      <path
+         d="m 435.35937,156.60798 q 0,4.17187 -1.03125,7.45312 -1.03125,3.28125 -2.8125,5.8125 -1.73437,2.48438 -4.03125,4.26563 -2.29687,1.78125 -4.82812,2.95312 -2.48438,1.125 -5.0625,1.64063 -2.53125,0.51562 -4.78125,0.51562 l 25.45312,21.98438 H 419.42187 L 394.01562,179.2486 H 385.25 v -12.1875 h 27.5625 q 2.29687,-0.1875 4.17187,-0.9375 1.92188,-0.79687 3.28125,-2.10937 1.40625,-1.3125 2.15625,-3.14063 0.75,-1.875 0.75,-4.26562 v -7.6875 q 0,-1.03125 -0.28125,-1.54688 -0.23437,-0.5625 -0.65625,-0.79687 -0.375,-0.28125 -0.84375,-0.32813 -0.42187,-0.0469 -0.79687,-0.0469 H 380.375 v 55.03125 h -12.1875 v -61.07813 q 0,-1.26562 0.46875,-2.39062 0.46875,-1.125 1.26562,-1.96875 0.84375,-0.84375 1.96875,-1.3125 1.125,-0.46875 2.4375,-0.46875 h 46.26563 q 4.07812,0 6.89062,1.5 2.8125,1.45312 4.54688,3.70312 1.78125,2.20313 2.53125,4.78125 0.79687,2.57813 0.79687,4.82813 z"
+         style="font-weight:normal;font-family:Audiowide;-inkscape-font-specification:Audiowide"
+         id="path1724" />
+      <path
+         d="m 513.92187,195.09235 q 0,1.3125 -0.46875,2.4375 -0.46875,1.125 -1.3125,1.96875 -0.79687,0.79688 -1.92187,1.26563 -1.125,0.46875 -2.4375,0.46875 H 463.8125 q -1.6875,0 -3.65625,-0.375 -1.92188,-0.42188 -3.84375,-1.26563 -1.875,-0.84375 -3.60938,-2.15625 -1.73437,-1.35937 -3.09375,-3.23437 -1.3125,-1.92188 -2.10937,-4.40625 -0.79688,-2.53125 -0.79688,-5.67188 v -33 q 0,-1.6875 0.375,-3.60937 0.42188,-1.96875 1.26563,-3.84375 0.84375,-1.92188 2.20312,-3.65625 1.35938,-1.73438 3.23438,-3.04688 1.92187,-1.35937 4.40625,-2.15625 2.48437,-0.79687 5.625,-0.79687 h 49.54687 v 12.1875 H 463.8125 q -2.39063,0 -3.65625,1.26562 -1.26563,1.26563 -1.26563,3.75 v 32.90625 q 0,2.34375 1.26563,3.65625 1.3125,1.26563 3.65625,1.26563 h 37.92187 v -15.28125 h -32.4375 v -12.28125 h 38.48438 q 1.3125,0 2.4375,0.51562 1.125,0.46875 1.92187,1.3125 0.84375,0.84375 1.3125,1.96875 0.46875,1.07813 0.46875,2.34375 z"
+         style="font-weight:normal;font-family:Audiowide;-inkscape-font-specification:Audiowide"
+         id="path1726" />
+    </g>
   </g>
 </svg>
