@@ -249,44 +249,53 @@ main {
 
 /* ****** CONTENT STYLES ****** */
 
-.breadcrumb {
+.breadcrumb, .default-grid.breadcrumb, .default-grid .breadcrumb {
 	margin: 0;
-	padding: 0.25em 1em 0.5em;
-	font-size: 0.9em;
+	padding: 0.25em 1em 0.25em;
+	font-size: 0.8em;
 	font-weight: bold;
 	font-style: italic;
-	color: #EEA;
-	background-color: #444;
+	line-height: 1;
+	color: #345;
+	background-color: #fff6;
 	text-decoration: none;
-	border-radius: 18px;
-	box-shadow: inset 0 0 20px #808080,
-				inset 0 0 16px #BBB;
+	border-radius: 0 0 18px 0 ;
+	box-shadow: inset -6px -6px 10px #7646,
+				inset 4px 4px 10px #fffa;
 	}
+	
 .breadcrumb a {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-weight: normal;
 	font-style: normal;
-	color: #DEF;
+	color: #123;
 	text-decoration: none;	
-	text-shadow:  0 0 4px #000,
-				 0 0 2px #000;	
 	}
 .breadcrumb a:hover {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-weight: normal;
 	font-style: normal;
-	color: #FFF;
+	color: #123;
 	text-decoration: none;
-	text-shadow:  0 0 2px #70F,
-				 0 0 4px #07F;		
+	text-shadow:  0 0 1px #70F,
+				 0 0 2px #07F;		
 	}	
 .breadcrumb a::after {
 	content: '\00A0  \21D2  \00A0';
 	font-size: 1.4em;
 	line-height: 0.3;
 	text-decoration: none;
-	color: #DDF;
+	color: #123;
 	}		
+
+
+@media (max-width:60em) {
+.breadcrumb, .default-grid.breadcrumb, .default-grid .breadcrumb {
+	border-radius: 0 0 18px 18px ;
+	box-shadow: inset -6px -6px 10px #764,
+				inset 4px 4px 10px #fffa;
+	}
+}
 
 
 .guidanceBox {

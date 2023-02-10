@@ -697,7 +697,7 @@ blockquote.pull.alt-3 {
  }
 }
 
-.breadcrumb {
+.Xbreadcrumb {
   font-size:13px;
   font-size:.8125rem;
   background-color:#fff;
@@ -718,17 +718,17 @@ blockquote.pull.alt-3 {
   margin:0;
   padding:0
 }
-.breadcrumb ul li:after {
+.Xbreadcrumb ul li:after {
   content:" / ";
   color:#005a6a;
   color:var(--wai-green);
   white-space:pre-wrap
 }
-.breadcrumb ul li:last-child:after {
+.Xbreadcrumb ul li:last-child:after {
   content:"";
   display:none
 }
-.breadcrumb a {
+.Xbreadcrumb a {
   color:#036;
   color:var(--w3c-blue)
 }
