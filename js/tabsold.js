@@ -45,7 +45,6 @@
     tabs[index].addEventListener('click', clickEventListener);
     tabs[index].addEventListener('keydown', keydownEventListener);
     tabs[index].addEventListener('keyup', keyupEventListener);
-
     // Build an array with all tabs (<button>s) in it
     tabs[index].index = index;
   }
@@ -103,7 +102,7 @@
         break;
     }
   }
-  
+
   // When a tablist’s aria-orientation is set to vertical,
   // only up and down arrow should function.
   // In all other cases only left and right arrow function.
@@ -172,9 +171,6 @@
     if (setFocus) {
       tab.focus();
     }
-    
-    // Update URI seek
-    window.location.hash = tab.id;
   }
 
   // Deactivate all tabs and tab panels
@@ -248,12 +244,4 @@
 
     return delay;
   }
-  
-	if (window.location.hash) {
-	  $this=>deactivateTabs();
-	  $this=>activateTab(window.location.hash, true);
-	}
-
 }());
-
-
