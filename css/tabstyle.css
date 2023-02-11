@@ -2,7 +2,8 @@
 
 /*  Import for the TABLE only  */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&text=%250123456789NormalBoldpx&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
 
 
 /* 
@@ -33,15 +34,15 @@ body {
   --tab2Dark:#078;
   --tab3Dark:#029;
   --tab4Dark:#508;
-  --tab5Dark:#700;
-  --tab6Dark:#660;
+  --tab5Dark:#640;
+  --tab6Dark:#700;
 
   --tab1Light:#eaf0ea;
   --tab2Light:#e9f0f2;
   --tab3Light:#eaf0fa;
   --tab4Light:#f5f2f8;
-  --tab5Light:#fbf0e6;
-  --tab6Light:#f8f0e4;
+  --tab5Light:#f8f0e8;
+  --tab6Light:#fbf0e2;
 
 }
 

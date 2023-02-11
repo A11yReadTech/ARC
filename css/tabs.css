@@ -9,8 +9,8 @@
 }
 /*
 [role="tab"][aria-selected="true"] {
-	background-color: var(--w3c-blue);
-	border-color: var(--w3c-blue);
+	background-color: var(--art-blue);
+	border-color: var(--art-blue);
 	padding: 12px 16px 8px 16px;
 	font-size: 1rem;
 }

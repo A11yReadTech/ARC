@@ -4,9 +4,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:ital,wght@1,800&family=Fugaz+One&family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
-*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,500;1,600;1,700&display=swap');
+
+body > section {
+    margin-bottom: 2em;
+    padding: 0 1.25em 1em 2em;
+		font-weight: 500;
+		background-color: #f2eee2;
+		background-color: var(--bg);
+		border: 4px solid #fff;
+		border: 6px solid var(--lightAnchorRim);
+		border-radius: 1.5em;
+    box-shadow: inset 0.2em 0.2em 0.4em var(--lightAnchorShadow),
+                inset 0 0 0.2em  var(--lightAnchorOcclusion);
+
+}
+
+
+section section, section section section {
+    padding: 0 0 0 1em;
+		background-color: var(--bg);
+}
+
+body section#abstract {
+  padding: 1px 1.25em .5em 2em;
+}
+section#abstract > h2 {
+  margin: 1em 0 0;
+}
+
+.info {
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto 0.5em;
+  padding: 0.25em 0.75em 0.5em;
+  font-weight: bold;
+  line-height: 1.1;
+  background-color:#ffe011;
+  background-color:var(--gold);
+  border-radius: 0.75em;
+}
 
 
 
@@ -15,18 +56,37 @@ caption {
 }
 
 
-
-bdi.secno, .headerPlus,.headerPlus3,.headerPlus4,.headerPlus5    {
-  font-family:   Exo,  sans-serif;
+bdi.secno, .headerPlus, .headerPlus3,
+.headerPlus4, .headerPlus5 {
+  font-family: Exo, sans-serif;
   font-size: 1.3em;
   font-style:italic;
   font-weight: 700;
 }
 
-.headerPlus {font-size:1.8em;   margin: 50px 0 0px }
-.headerPlus3 {font-size:1.4em;   margin: 40px 0 0px }
-.headerPlus4 {font-size:1.15em;   margin: 30px 0 0px }
-.headerPlus5 {font-size:1.0em;   margin: 20px 0 0px }
+nav li bdi.secno {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+nav li li bdi.secno {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+nav li li li bdi.secno {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.toc > li { font-size:1.25em; font-weight: 700;}
+.toc > li li { font-size:0.9em; font-weight: 600;}
+.toc > li li li { font-size:0.9em; font-weight: 500;}
+
+.headerPlus {font-size:1.8em;   margin: 2.5rem 0 0 }
+.headerPlus3 {font-size:1.4em;   margin: 2rem 0 0 }
+.headerPlus4 {font-size:1.15em;   margin: 1.5rem 0 0}
+.headerPlus5 {font-size:1.0em;   margin: 1rem 0 0 }
+
+
 
 :not(.head) > details {
 	margin: 3em;

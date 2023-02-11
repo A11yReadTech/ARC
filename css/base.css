@@ -1,5 +1,5 @@
 /******************************************************************************
- *                   Style sheet for the W3C specifications                   *
+ *                   Style sheet for the ART specifications                   *
  *
  * Special classes handled by this style sheet include:
  *
@@ -72,17 +72,26 @@
 
 
 /******************************************************************************/
+/*                                  FONTS                                     */
+/******************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
+
+
+/******************************************************************************/
 /*                                  Colors                                    */
 /******************************************************************************/
 
 /* Any --*-text not paired with a --*-bg is assumed to have a transparent bg */
-:root {
-	--text: black;
-	--bg: white;
 
-	/* Absolute URLs due to https://bugs.webkit.org/show_bug.cgi?id=230243 */
-	--unofficial-watermark: url(https://www.w3.org/StyleSheets/TR/2021/logos/UD-watermark-light-unofficial.svg);
-	--draft-watermark: url(https://www.w3.org/StyleSheets/TR/2021/logos/UD-watermark-light-draft.svg);
+
+:root {
+	--text: #000;
+	--bg: #f2eee2;
+  --lightAnchorRim: #fff;
+  --lightAnchorBG: #fcfcfc;
+  --lightAnchorShadow: #0005;
+  --lightAnchorOcclusion: #0002;
 
 	--logo-bg: #1a5e9a;
 	--logo-active-bg: #c00;
@@ -105,7 +114,7 @@
 	--toclink-visited-text: var(--toclink-text);
 	--toclink-visited-underline: #054572;
 
-	--heading-text: #005a9c;
+	--heading-text: #004a9c;
 
 	--hr-text: var(--text);
 
@@ -167,6 +176,8 @@
 
 	--indexinfo-text: #707070;
 
+  --gold: #ffe011;
+
 	--indextable-hover-text: black;
 	--indextable-hover-bg: #f7f8f9;
 
@@ -194,7 +205,8 @@
 
 		/* Typography */
 		line-height: 1.5;
-		font-family: sans-serif;
+		font-family: Barlow, sans-serif;
+		font-weight: 500;
 		widows: 2;
 		orphans: 2;
 		word-wrap: break-word;
@@ -203,8 +215,8 @@
 		/* Colors */
 		color: black;
 		color: var(--text);
-		background: white top left fixed no-repeat;
-		background-color: var(--bg);
+		background: #fcfcfc top left fixed no-repeat;
+		background-color: var(--lightAnchorBG);
 		background-size: 25px auto;
 	}
 
@@ -223,7 +235,7 @@
 		font-size: 220%;
 	}
 
-	#w3c-state {
+	#art-state {
 		margin-top: 0;
 		margin-bottom: 1.5em;
 		font: 140% sans-serif;   /* Reset all font styling to clear out UA styles */
@@ -234,7 +246,7 @@
 		color: var(--heading-text);
 	}
 
-/** W3C Logo ******************************************************************/
+/** ART Logo ******************************************************************/
 
 	.head p:not(.copyright):first-child {
 		margin: 0;
@@ -246,7 +258,7 @@
 		margin: 0.4rem 0 0.2rem .4rem;
 	}
 
-	.head img[src*="logos/W3C"] {
+	.head img[src*="logos/ART"] {
 		display: block;
 		border: solid #1a5e9a;
 		border: solid var(--logo-bg);
@@ -259,12 +271,12 @@
 		font-weight: bold;
 	}
 
-	.head a:hover > img[src*="logos/W3C"],
-	.head a:focus > img[src*="logos/W3C"] {
+	.head a:hover > img[src*="logos/ART"],
+	.head a:focus > img[src*="logos/ART"] {
 		opacity: .8;
 	}
 
-	.head a:active > img[src*="logos/W3C"] {
+	.head a:active > img[src*="logos/ART"] {
 		background: #c00;
 		background: var(--logo-active-bg);
 		border-color: #c00;
@@ -397,12 +409,12 @@
 	}
 
 	/* Sidebar with its own space */
-	@media screen and (min-width: 78em) {
+	@media screen and (min-width: 75em) {
 		body:not(.toc-inline) #toc {
 			position: fixed;
 			top: 0; bottom: 0;
 			left: 0;
-			width: 23.5em;
+			width: 20.5em;
 			overflow: auto;
 			padding: 0 1em;
 			padding-left: 42px;
@@ -428,7 +440,7 @@
 		}
 	 
 		body:not(.toc-inline) {
-			padding-left: 29em;
+			padding-left: 25em;
 		}
 	/* See also Overflow section at the bottom */
 
@@ -462,10 +474,10 @@
 	}
 
 	h2, h3, h4, h5, h6 {
-		margin-top: 3rem;
+		margin-top: 2.5rem;
 	}
 
-	h1, h2, h3 {
+	h1, h2, h3, h4 {
 		color: #005a9c;
 		color: var(--heading-text);
 	}
@@ -670,7 +682,7 @@
 
 /** Inline Code fragments *****************************************************/
 
-  /* Do something nice. */
+
 
 /******************************************************************************/
 /*                                    Links                                   */
@@ -706,7 +718,7 @@
 		text-decoration-color: var(--a-active-underline);
 	}
 
-	/* Backout above styling for W3C logo */
+	/* Backout above styling for ART logo */
 	.head p:not(.copyright):first-child > a,
 	.head > a:first-child {
 		border: none;
@@ -1229,19 +1241,20 @@ Possible extra rowspan handling
 		padding: 0;
 	}
 	.toc {
-		line-height: 1.1em; /* consistent spacing */
+		font-weight: 500;
+		line-height: 1.2em; /* consistent spacing */
 	}
 
-	/* ToC not indented until third level, but font style & margins show hierarchy */
-	.toc > li             { font-weight: bold;   }
-	.toc > li li          { font-weight: normal; }
+	/* font style & margins show hierarchy */
+	.toc > li             { font-weight: 700;   }
+	.toc > li li          { font-weight: 600; }
 	.toc > li li li       { font-size:   95%;    }
 	.toc > li li li li    { font-size:   90%;    }
 	.toc > li li li li li { font-size:   85%;    }
 
 	.toc > li             { margin: 1.5rem 0;    }
-	.toc > li li          { margin: 0.3rem 0;    }
-	.toc > li li li       { margin-left: 2rem;   }
+	.toc > li li          { margin: 0.6rem 0 0 0.5rem;    }
+	.toc > li li li       { margin: 0rem 0 0 1.25rem;   }
 
 	/* Section numbers in a column of their own */
 	.toc .secno {
@@ -1256,24 +1269,27 @@ Possible extra rowspan handling
 		font-size: 100%;
 	}
 
-	:not(li) > .toc              { margin-left:  5rem; }
-	.toc .secno                  { margin-left: -5rem; }
-	.toc > li li li .secno       { margin-left: -7rem; }
-	.toc > li li li li .secno    { margin-left: -9rem; }
+	:not(li) > .toc              { margin-left:  5rem;  }
+	.toc .secno                  { margin-left: -5rem;  }
+	.toc > li li .secno          { margin-left: -5rem;  }
+	.toc > li li li .secno       { margin-left: -6rem;  }
+	.toc > li li li li .secno    { margin-left: -9rem;  }
 	.toc > li li li li li .secno { margin-left: -11rem; }
 
 	/* Tighten up indentation in narrow ToCs */
 	@media (max-width: 30em) {
 		:not(li) > .toc              { margin-left:  4rem; }
 		.toc .secno                  { margin-left: -4rem; }
+		.toc > li li .secno          { margin-left: -4rem; }
 		.toc > li li li              { margin-left:  1rem; }
 		.toc > li li li .secno       { margin-left: -5rem; }
 		.toc > li li li li .secno    { margin-left: -6rem; }
 		.toc > li li li li li .secno { margin-left: -7rem; }
 	}
-	@media screen and (min-width: 78em) {
+	@media screen and (min-width: 75em) {
 		body:not(.toc-inline) :not(li) > .toc              { margin-left:  4rem; }
 		body:not(.toc-inline) .toc .secno                  { margin-left: -4rem; }
+		body:not(.toc-inline) .toc > li li .secno          { margin-left: -4rem; }
 		body:not(.toc-inline) .toc > li li li              { margin-left:  1rem; }
 		body:not(.toc-inline) .toc > li li li .secno       { margin-left: -5rem; }
 		body:not(.toc-inline) .toc > li li li li .secno    { margin-left: -6rem; }
@@ -1281,6 +1297,7 @@ Possible extra rowspan handling
 	}
 	body.toc-sidebar #toc :not(li) > .toc              { margin-left:  4rem; }
 	body.toc-sidebar #toc .toc .secno                  { margin-left: -4rem; }
+	body.toc-sidebar #toc .toc > li li .secno          { margin-left: -4rem; }
 	body.toc-sidebar #toc .toc > li li li              { margin-left:  1rem; }
 	body.toc-sidebar #toc .toc > li li li .secno       { margin-left: -5rem; }
 	body.toc-sidebar #toc .toc > li li li li .secno    { margin-left: -6rem; }
@@ -1289,6 +1306,10 @@ Possible extra rowspan handling
 	.toc li {
 		clear: both;
 	}
+
+
+
+
 
 
 /** Index *********************************************************************/
@@ -1480,7 +1501,7 @@ Possible extra rowspan handling
 			max-width: none;
 		}
 	}
-	@media screen and (min-width: 78em) {
+	@media screen and (min-width: 75em) {
 		body:not(.toc-inline) .overlarge {
 			/* 30.5em body padding 50em content area */
 			margin-right: calc(40em - 50vw) !important;
