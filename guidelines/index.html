@@ -41,7 +41,7 @@ dfn{cursor:pointer}
 </style>
 
   
-<title>APCA Guidelines for Readable Design (AGRD)</title>
+<title>APCA Guidelines for Readable Design (ARG)</title>
   
 
 <style id="respec-mainstyle">
@@ -116,13 +116,13 @@ dd{margin-left:0}
 </style>
 
 
-<script src="../js/agrd.js"></script>
+<script src="../js/arg.js"></script>
 
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/guidelines.css">
 
 
-<meta name="description" content="The APCA Guidelines for Readable Design (AGRD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
+<meta name="description" content="The APCA Guidelines for Readable Design (ARG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 
 <style>
 var{position:relative;cursor:pointer}
@@ -140,9 +140,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "permalinkEdge": true,
   "permalinkHide": false,
   "specStatus": "ED",
-  "shortName": "agrd",
+  "shortName": "arg",
   "copyrightStart": "2020",
-  "edDraftURI": "https://A11yReadTech.github.io/AGRD/guidelines/",
+  "edDraftURI": "https://A11yReadTech.github.io/ARG/guidelines/",
   "authors": [
     {
       "name": "Andrew Somers",
@@ -153,7 +153,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     }
   ],
   "group": "wai",
-  "github": "A11yReadTech/AGRD",
+  "github": "A11yReadTech/ARG",
   "maxTocLevel": 4,
   "preProcess": [
     null
@@ -187,8 +187,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <body class="h-entry"><div class="head">
 
 
-  <h1 id="title" class="title headerPlus">APCA Guidelines for Readable Design (AGRD)</h1> 
-    <p id="art-state"><a href="https://www.readtech.org/AGRD/guidelines/">AGRD Public Draft</a> <time class="dt-published" datetime="2023-02-08">08 February 2023</time></p>
+  <h1 id="title" class="title headerPlus">APCA Guidelines for Readable Design (ARG)</h1> 
+    <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Draft</a> <time class="dt-published" datetime="2023-02-08">08 February 2023</time></p>
 
   <p class="info">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p>
   
@@ -196,11 +196,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://A11yReadTech.github.io/AGRD/guidelines/">A11yReadTech.github.io/AGRD/guidelines/</a>
+                <a class="u-url" href="https://A11yReadTech.github.io/ARG/guidelines/">A11yReadTech.github.io/ARG/guidelines/</a>
               </dd>
         <!--
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.readtech.org/AGRD/guidelines/">www.readtech.org/AGRD/guidelines</a>
+                <a href="https://www.readtech.org/ARG/guidelines/">www.readtech.org/ARG/guidelines</a>
               </dd>
        -->
         <!--
@@ -212,10 +212,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
   </dd>
         <dt>Feedback:</dt><dd>
-        <a href="https://github.com/A11yReadTech/AGRD/">GitHub A11yReadTech/AGRD</a>
-        (<a href="https://github.com/A11yReadTech/AGRD/discussions/">discussions</a>,
-        <a href="https://github.com/A11yReadTech/AGRD/issues/new/choose">new issue</a>,
-        <a href="https://github.com/A11yReadTech/AGRD/issues/">open issues</a>)
+        <a href="https://github.com/A11yReadTech/ARG/">GitHub A11yReadTech/ARG</a>
+        (<a href="https://github.com/A11yReadTech/ARG/discussions/">discussions</a>,
+        <a href="https://github.com/A11yReadTech/ARG/issues/new/choose">new issue</a>,
+        <a href="https://github.com/A11yReadTech/ARG/issues/">open issues</a>)
       </dd>
         
         
@@ -233,10 +233,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <img src="../img/ARTlogo03.png" style="position: relative; margin: 0 -18px 18px 18px; top:0px; float: right; width: 45%; border-radius: 24px;">
 
   <section id="abstract" class="introductory"><h2 class="headerPlus">Abstract</h2>
-    <p>The APCA Guidelines for Readable Design (AGRD) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially users with visual impairments.</p>
+    <p>The APCA Guidelines for Readable Design (ARG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially users with visual impairments.</p>
     <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, mobile devices, wearable devices, and other web of things devices. The guidelines also address related web tools such as user agents (browsers), content management systems, authoring tools, and testing tools.</p>
     <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. For entities that make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1">conformance</a> to these guidelines, several levels of conformance are available to address the diverse nature of digital content and the type of testing that is performed.</p>
-    <p>Accessible Perceptual Readability Guidelines (AGRD) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. AGRD includes additional tests and different scoring mechanisms than used previously. As a result, AGRD is not backwards compatible with WCAG 2.x. AGRD is an alternative set of guidelines.</p>
+    <p>Accessible Perceptual Readability Guidelines (ARG) are developed to augment <abbr title="World Wide Web Consortium">W3C</abbr> Accessibility Guidelines 3 [WCAG3] and intended to eventually integrate with these other standards. ARG includes additional tests and different scoring mechanisms than used previously. As a result, ARG is not backwards compatible with WCAG 2.x. ARG is an alternative set of guidelines.</p>
   </section>
 
 <nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2>
@@ -266,7 +266,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
     
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
-      <p>The current proposal for APCA and AGRD is made up of several divisions, including:</p>
+      <p>The current proposal for APCA and ARG is made up of several divisions, including:</p>
         <ul><li>APCA Based Tools • provide perceptually uniform, objective assessment of contrast</li>
             <li>How-tos • Tutorial guides for planning and implementing design strategies</li>
             <li>Outcomes • Target accommodation goals, serving user needs</li>
@@ -277,10 +277,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <details class="summary">
       <summary>Plain language summary of <q>Introduction</q></summary>
-      <p>The APCA Guidelines for Readable Design (AGRD) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. AGRD is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
-      <p>What’s new in APCA/AGRD?</p>
+      <p>The APCA Guidelines for Readable Design (ARG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. ARG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
+      <p>What’s new in APCA/ARG?</p>
       <ul>
-      <li>APCA/AGRD includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
+      <li>APCA/ARG includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
       <li>It includes mobile and desktop applications, along with web content.</li>
       <li>It has new guidelines and new tests that improve readability but also improve design flexibility.</li>
       <li>It has new scoring with use cases to define critical content vs unimportant content.</li>
@@ -288,7 +288,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </details>
 
     <section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-      <p>This introduction will provide a <em>brief</em> background of APCA and AGRD. </p>
+      <p>This introduction will provide a <em>brief</em> background of APCA and ARG. </p>
     </section>
 
     <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels" class="headerPlus3"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
@@ -309,7 +309,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <section id="goals-and-requirements"><div class="header-wrapper">
       <h3 id="x1-3-goals-and-requirements" class="headerPlus3"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
       
-      <p>The goal of AGRD and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
+      <p>The goal of ARG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
       <p>Research and development work performed by Myndex Research identified issues with the existing WCAG 2.x contrast metrics. Correctng these issues shaped the guidelines that follow.</p>
     </section>
 
@@ -363,7 +363,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     </details>
 
-    <p>These draft guidelines illuminate AGRD's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. Eventually, upon integration into relevant standards such as ISO, WCAG, or ADA, for conformance or compliance testing. To be clear, at this time these guidelines are a work in progress, and not a part of a published final guideline.</p>
+    <p>These draft guidelines illuminate ARG's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. Eventually, upon integration into relevant standards such as ISO, WCAG, or ADA, for conformance or compliance testing. To be clear, at this time these guidelines are a work in progress, and not a part of a published final guideline.</p>
       <ul>  
         <li><a href="#visual-contrast">Visual contrast</a> - Designing for readability, understandability, and accessibility</li>
         <ul>
@@ -431,7 +431,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
 			<h2 class="method-header">Methods:</h2>
 			<ol>
-				<li><a class="method-link" href="https://A11yReadTech.github.io/AGRD/methods/visual-readability-contrast/">Visual Readability Contrast</a> Set the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
+				<li><a class="method-link" href="https://A11yReadTech.github.io/ARG/methods/visual-readability-contrast/">Visual Readability Contrast</a> Set the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
 			</ol>
 			
 			<h2 class="howto-header">How-tos:</h2>
@@ -499,11 +499,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
 
       </div></div>
-      <p>AGRD defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
+      <p>ARG defines three levels of conformance: <a href="#bronze">bronze</a>, <a href="#silver">silver</a>, and <a href="#gold">gold</a>.</p>
 
       <section id="bronze"><div class="header-wrapper"><h5 id="x6-1-1-1-bronze" class="headerPlus5"><bdi class="secno">6.1.1.1 </bdi>Bronze</h5><a class="self-link" href="#bronze" aria-label="Permalink for Section 6.1.1.1"></a></div>
         
-        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to AGRD. While there is some overlap between WCAG 2.x and AGRD, AGRD includes additional tests and different scoring methods. As a result, AGRD is not backwards compatible with WCAG 2.x.</p>
+        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level does not conform to ARG. While there is some overlap between WCAG 2.x and ARG, ARG includes additional tests and different scoring methods. As a result, ARG is not backwards compatible with WCAG 2.x.</p>
       </section>
       <section id="silver"><div class="header-wrapper"><h5 id="x6-1-1-2-silver" class="headerPlus5"><bdi class="secno">6.1.1.2 </bdi>Silver</h5><a class="self-link" href="#silver" aria-label="Permalink for Section 6.1.1.2"></a></div>
         
@@ -518,13 +518,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h4 id="x6-1-2-defining-conformance-scope" class="headerPlus4"><bdi class="secno">6.1.2 </bdi>Defining conformance scope</h4><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.1.2"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>When evaluating the accessibility of content, AGRD requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+      <p>When evaluating the accessibility of content, ARG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
       <ul>
         <li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
         <li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
         <li>Some content is more important to the majority of users than other content; and</li>
       </ul>
-      <p>AGRD therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
+      <p>ARG therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
 
 
     </section>
@@ -532,14 +532,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
     <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h4 id="x6-1-3-conformance-requirements" class="headerPlus4"><bdi class="secno">6.1.3 </bdi>Conformance requirements</h4><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.1.3"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to AGRD, the following conformance requirements apply:</p>
+      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
       <ol>
         <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
       </ol>
     </section>
     <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h4 id="x6-1-4-conformance-claims" class="headerPlus4"><bdi class="secno">6.1.4 </bdi>Conformance claims</h4><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.1.4"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
-      <p>Conformance claims are not required. Authors can conform to AGRD without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
+      <p>Conformance claims are not required. Authors can conform to ARG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
       <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h5 id="x6-1-4-1-required-components-of-a-conformance-claim" class="headerPlus5"><bdi class="secno">6.1.4.1 </bdi>Required components of a conformance claim</h5><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.1.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
           <li><b>Date</b> of the claim;</li>
           <li><b>Guidelines title, version and URI</b>
@@ -590,7 +590,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <dt><dfn data-lt="Guideline|Guidelines" id="dfn-guideline" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Guideline</dfn></dt>
       <dd>
         <p>High-level, plain-language content used to organize <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-1">outcomes</a>.</p>
-        <p>See <a href="https://A11yReadTech.github.io/AGRD/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
+        <p>See <a href="https://A11yReadTech.github.io/ARG/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Human evaluation|Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested" id="dfn-human-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Human evaluation</dfn></dt>
       <dd>
@@ -610,7 +610,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <dt><dfn data-lt="Method|Methods" id="dfn-method" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Method</dfn></dt>
       <dd>
         <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-2">outcome</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
-        <p>See <a href="https://A11yReadTech.github.io/AGRD/explainer/#methods-structure">Methods</a> in the Explainer.</p>
+        <p>See <a href="https://A11yReadTech.github.io/ARG/explainer/#methods-structure">Methods</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Normative" id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normative</dfn></dt>
       <dd>
