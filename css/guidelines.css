@@ -1,93 +1,6 @@
-/* *****   This only imports the playfair ampersand for .ampSamp  ****** 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&text=1234567890.%26&display=swap');
- 'Lobster Two', 'Fugaz One', Bungee ,
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:ital,wght@1,800&family=Fugaz+One&family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap');
-*/
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,500;1,600;1,700&display=swap');
-
-body > section {
-    margin-bottom: 2em;
-    padding: 0 1.25em 1em 2em;
-		font-weight: 500;
-		background-color: #f2eee2;
-		background-color: var(--bg);
-		border: 4px solid #fff;
-		border: 6px solid var(--lightAnchorRim);
-		border-radius: 1.5em;
-    box-shadow: inset 0.2em 0.2em 0.4em var(--lightAnchorShadow),
-                inset 0 0 0.2em  var(--lightAnchorOcclusion);
-
-}
-
-
-section section, section section section {
-    padding: 0 0 0 1em;
-		background-color: var(--bg);
-}
-
-body section#abstract {
-  padding: 1px 1.25em .5em 2em;
-}
-section#abstract > h2 {
-  margin: 1em 0 0;
-}
-
-.info {
-  position: relative;
-  max-width: 75%;
-  margin: 0 auto 0.5em;
-  padding: 0.25em 0.75em 0.5em;
-  font-weight: bold;
-  line-height: 1.1;
-  background-color:#ffe011;
-  background-color:var(--gold);
-  border-radius: 0.75em;
-}
-
-
-
 caption {
 	visibility: hidden;
 }
-
-
-bdi.secno, .headerPlus, .headerPlus3,
-.headerPlus4, .headerPlus5 {
-  font-family: Exo, sans-serif;
-  font-size: 1.3em;
-  font-style:italic;
-  font-weight: 700;
-}
-
-nav li bdi.secno {
-  font-size: 1.4em;
-  font-weight: 700;
-}
-nav li li bdi.secno {
-  font-size: 1.2em;
-  font-weight: 600;
-}
-nav li li li bdi.secno {
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.toc > li { font-size:1.25em; font-weight: 700;}
-.toc > li li { font-size:0.9em; font-weight: 600;}
-.toc > li li li { font-size:0.9em; font-weight: 500;}
-
-.headerPlus {font-size:1.8em;   margin: 2.5rem 0 0 }
-.headerPlus3 {font-size:1.4em;   margin: 2rem 0 0 }
-.headerPlus4 {font-size:1.15em;   margin: 1.5rem 0 0}
-.headerPlus5 {font-size:1.0em;   margin: 1rem 0 0 }
-
-
-
 :not(.head) > details {
 	margin: 3em;
 	padding: 1em;
@@ -95,7 +8,6 @@ nav li li li bdi.secno {
 	border: medium solid #d9d9d9;
 	background-color: #F3F3F3;
 }
-
 summary::before {
 	display: inline-block;
 	margin-top: -1em;
@@ -105,68 +17,50 @@ summary::before {
 	float: left;
 	margin-right: -3.5em;
 }
-
 :not(.head) > details:focus summary::before, :not(.head) > details:hover summary::before, .guideline:focus h3::before, .guideline:hover h3::before, .outcome:focus h4::before, .outcome:hover h4::before {
 	background-color: #ffff99 ;
 	box-shadow: 0 0 1em .25em #ffff99;
 }
-
 .summary summary::before {
-	content: url(../img/summary.svg);
+	content: url(img/summary.svg);
 }
 .methods summary::before {
-	content: url(../img/method.svg);
+	content: url(img/method.svg);
 }
 .rating summary::before {
-	content: url(../img/rating.svg);
+	content: url(img/rating.svg);
 }
 .errors summary::before {
-	content: url(../img/error.svg);
+	content: url(img/error.svg);
 }
 .categories summary::before {
-	content: url(../img/category.svg);
+	content: url(img/category.svg);
 }
-
 .summaryEnd {
 	text-align: center;
 	font-weight: bold;
 }
-.howto-link, .outcome-link, 
-.method-link, .outcome-header {
-	font-weight: 600;
-	font-style: normal;
+.howto-link, .outcome-link {
+	font-style: italic;
 }
-.howto-link::before, .outcome-link::before, 
-.method-link::before, 
-.howto-header::before, .outcome-header::before,
-.method-header::before {
+.howto-link::before, .outcome-link::before, .method-link::before {
 	display: inline-block;
 	width: 2ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
-.howto-header::before, .outcome-header::before,
-.method-header::before  {
-  width: 3ex;
-	margin-right: .5em;
-	vertical-align: middle;
-  }
-
-
-.howto-link::before,.howto-header::before {
-	content: url(../img/how-to.svg);
+.howto-link::before {
+	content: url(img/how-to.svg);
 }
-.outcome-link::before, .outcome-header::before {
-	content: url(../img/outcome.svg);
+.outcome-link::before {
+	content: url(img/outcome.svg);
 }
-.method-link::before,.method-header::before {
-	content: url(../img/method.svg);
+.method-link::before {
+	content: url(img/method.svg);
 }
-
 a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:focus {
 	cursor: help;
 }
-
 .outcome {
 	margin-left: 2rem;
 }
@@ -176,18 +70,17 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	font-size: 100%;
 	color: #005A9C;
 }
-
 .guideline h3::before, .outcome h4::before {
 	display: inline-block;
 	width: 2em;
-	margin-right: 0.5em;
+	margin-right: .5em;
 	vertical-align: text-top;
 }
 .guideline h3::before {
-	content: url(../img/guideline.svg);
+	content: url(img/guideline.svg);
 }
 .outcome h4::before {
-	content: url(../img/outcome.svg);
+	content: url(img/outcome.svg);
 }
 .outcome h4 {
 	margin-top: 1rem;
@@ -240,7 +133,7 @@ caption {
 .marker {
 	position: relative;
 }
-.marker > a.self-link {
+.marker > a.self-link{
 	border: none;
 	color: inherit;
 	font-size: 83%;
@@ -261,7 +154,6 @@ caption {
 a[href].status-link {
 	color: var(--text);
 }
-
 @media screen and (min-width: 860px) {
 	.sticky {
 		position: sticky;
