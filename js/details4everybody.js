@@ -1,11 +1,9 @@
-/* Source: https://gist.github.com/kgmstwo/53e189d87b41ac7743ee, with a slight modification: https://gist.github.com/yatil/616f75465c4a92593044b1c006e4fb4c */
 /**
  * Note that this script is intended to be included at the *end* of the document, before </body>
  */
 (function (window, document) {
 if ('open' in document.createElement('details')) return;
 
-// made global by myself to be reused elsewhere
 var addEvent = (function () {
   if (document.addEventListener) {
     return function (el, type, fn) {

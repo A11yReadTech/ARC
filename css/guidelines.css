@@ -1,14 +1,14 @@
-/* *****   The following only imports capitals for .dropCapSimple  ****** */
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&text=1234567890.&display=swap');
-
 /* *****   This only imports the playfair ampersand for .ampSamp  ****** 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&text=1234567890.%26&display=swap');
  'Lobster Two', 'Fugaz One', Bungee ,
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
-*/
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:ital,wght@1,800&family=Fugaz+One&family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:ital,wght@1,800&family=Fugaz+One&family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap');
+
+
 
 caption {
 	visibility: hidden;
@@ -17,11 +17,12 @@ caption {
 
 
 bdi.secno, .headerPlus,.headerPlus3,.headerPlus4,.headerPlus5    {
-  font-family:   Exo,  Syncopate,'Playfair Display',  cursive;
+  font-family:   Exo,  sans-serif;
   font-size: 1.3em;
   font-style:italic;
   font-weight: 700;
 }
+
 .headerPlus {font-size:1.8em;   margin: 50px 0 0px }
 .headerPlus3 {font-size:1.4em;   margin: 40px 0 0px }
 .headerPlus4 {font-size:1.15em;   margin: 30px 0 0px }

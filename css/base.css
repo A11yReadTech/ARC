@@ -426,11 +426,11 @@
 			color: hsla(203,20%,40%,.7);
 			color: var(--tocsidebar-heading-text);
 		}
-	/* 
+	 
 		body:not(.toc-inline) {
 			padding-left: 29em;
 		}
-	See also Overflow section at the bottom */
+	/* See also Overflow section at the bottom */
 
 		body:not(.toc-inline) #toc-jump:not(:focus) {
 			width: 0;
@@ -1526,7 +1526,7 @@ Possible extra rowspan handling
 
 	#toc-theme-toggle img {
 		background-color: transparent;
-        }
+  }
 
 	#toc-theme-toggle span {
 		padding: 5px;
