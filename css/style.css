@@ -49,75 +49,35 @@
   white-space:inherit
 }
 @font-face {
-  font-family:Noto Sans;
-  src:url(../fonts/notosans/notosans-regular.woff2) format("woff2"),url(../fonts/notosans/notosans-regular.woff) format("woff");
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Regular-102.woff) format("woff");
   font-weight:400;
   font-style:normal;
   font-display:fallback
 }
 @font-face {
-  font-family:Noto Sans;
-  src:url(../fonts/notosans/notosans-italic.woff2) format("woff2"),url(../fonts/notosans/notosans-italic.woff) format("woff");
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-italic-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-italic-102.woff) format("woff");
   font-weight:400;
   font-style:italic;
   font-display:fallback
 }
 @font-face {
-  font-family:Noto Sans;
-  src:url(../fonts/notosans/notosans-bold.woff2) format("woff2"),url(../fonts/notosans/notosans-bold.woff) format("woff");
-  font-weight:600;
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-bold-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-bold-102.woff) format("woff");
+  font-weight:700;
   font-style:normal;
   font-display:fallback
 }
 @font-face {
-  font-family:Noto Sans;
-  src:url(../fonts/notosans/notosans-bolditalic.woff2) format("woff2"),url(../fonts/notosans/notosans-bolditalic.woff) format("woff");
-  font-weight:600;
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-bolditalic-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-bolditalic-102.woff) format("woff");
+  font-weight:700;
   font-style:italic;
   font-display:fallback
 }
-@font-face {
-  font-family:Noto Sans Mono;
-  src:url(../fonts/notosansmono/notosansmono-regular.woff2) format("woff2"),url(../fonts/notosansmono/notosansmono-regular.woff) format("woff");
-  font-weight:400;
-  font-style:normal;
-  font-display:fallback
-}
-@font-face {
-  font-family:Noto Sans Mono;
-  src:url(../fonts/notosansmono/notosansmono-bold.woff2) format("woff2"),url(../fonts/notosansmono/notosansmono-bold.woff) format("woff");
-  font-weight:600;
-  font-style:normal;
-  font-display:fallback
-}
-@font-face {
-  font-family:Noto Naskh Arabic Minimal;
-  src:url(../fonts/notonaskh/regular-minimal.woff2) format("woff2"),url(../fonts/notonaskh/regular-minimal.woff) format("woff");
-  font-weight:400;
-  font-style:normal;
-  font-display:fallback
-}
-@font-face {
-  font-family:Noto Naskh Arabic Minimal;
-  src:url(../fonts/notonaskh/bold-minimal.woff2) format("woff2"),url(../fonts/notonaskh/bold-minimal.woff) format("woff");
-  font-weight:700;
-  font-style:normal;
-  font-display:fallback
-}
-@font-face {
-  font-family:Noto Naskh Arabic;
-  src:url(../fonts/notonaskh/regular.woff2) format("woff2"),url(../fonts/notonaskh/regular.woff) format("woff");
-  font-weight:400;
-  font-style:normal;
-  font-display:fallback
-}
-@font-face {
-  font-family:Noto Naskh Arabic;
-  src:url(../fonts/notonaskh/bold.woff2) format("woff2"),url(../fonts/notonaskh/bold.woff) format("woff");
-  font-weight:700;
-  font-style:normal;
-  font-display:fallback
-}
+
+
 html {
   background-color:#f2f2f2;
   background-color:var(--off-white)
@@ -131,7 +91,7 @@ html {
 
 
 body {
-  font-family:Noto Sans,Trebuchet MS,Helvetica Neue,Arial,sans-serif;
+  font-family:Atkinson,'Trebuchet MS','Helvetica Neue',Arial,sans-serif;
   line-height:1.5;
   font-size:16px;
   font-size:1rem;
@@ -162,15 +122,10 @@ body {
  }
 }
 
-:lang(ar) {
-  font-family:Noto Naskh Arabic,Noto Sans,Trebuchet MS,Helvetica Neue,Arial,sans-serif
-}
-.langlist :lang(ar),.languagelist :lang(ar) {
-  font-family:Noto Naskh Arabic Minimal,Noto Sans,Trebuchet MS,Helvetica Neue,Arial,sans-serif
-}
+
 code {
   font-size:1em;
-  font-family:Noto Sans Mono,monospace
+  font-family:monospace;
 }
 a {
   color:#036;
@@ -1102,7 +1057,7 @@ blockquote.pull.alt-3 {
 }
 .criterion__answers textarea {
   width:100%;
-  font-family:Noto Sans Mono,monospace
+  font-family:monospace;
 }
 @media (min-width:35em) {
   .criterion__answers {

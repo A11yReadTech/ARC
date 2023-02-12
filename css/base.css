@@ -78,6 +78,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
 
 
+@font-face {
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Regular-102.woff) format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:fallback
+}
+@font-face {
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-italic-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-italic-102.woff) format("woff");
+  font-weight:400;
+  font-style:italic;
+  font-display:fallback
+}
+@font-face {
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-bold-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-bold-102.woff) format("woff");
+  font-weight:700;
+  font-style:normal;
+  font-display:fallback
+}
+@font-face {
+  font-family:Atkinson;
+  src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-bolditalic-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-bolditalic-102.woff) format("woff");
+  font-weight:700;
+  font-style:italic;
+  font-display:fallback
+}
+
 /******************************************************************************/
 /*                                  Colors                                    */
 /******************************************************************************/
