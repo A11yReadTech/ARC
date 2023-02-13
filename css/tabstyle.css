@@ -5,9 +5,6 @@
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap');
-
-
 /* 
 body {
 	max-width: 50rem;
@@ -186,6 +183,26 @@ A heavier weight text. To Use This you must add a title attribute to link */
 				inset 0 -1px 3px #4447,
 				0 2px 4px #6664;
 	}
+
+
+
+
+/* Styles for bibliography */
+
+#bibliography h3,
+#bibliography h4,
+#bibliography p {
+	margin: 0.15em 1.25em;
+	}
+#bibliography p ~ h3, #bibliography h2 ~ h3 {
+	margin: 1.15em 1em 0.15em 0.5em;
+	}
+#bibliography h3 {font-size: 1.1em;font-weight: 700;}
+#bibliography h4 {font-size: 1em; font-weight: 600;}
+#bibliography p  {font-size: 0.9em;font-weight: 500;}
+#bibliography p ~ p {font-size: 0.9em;font-weight: 400;}
+
+
 
 
 

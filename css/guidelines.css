@@ -5,10 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:ital,wght@1,800&family=Fugaz+One&family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap');
 */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,700;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
 
 body > section {
     margin-bottom: 2em;
@@ -21,7 +24,6 @@ body > section {
 		border-radius: 1.5em;
     box-shadow: inset 0.2em 0.2em 0.4em var(--lightAnchorShadow),
                 inset 0 0 0.2em  var(--lightAnchorOcclusion);
-
 }
 
 
@@ -37,6 +39,7 @@ section#abstract > h2 {
   margin: 1em 0 0;
 }
 
+/* *****    yellow beta warning   ***** */
 .info {
   position: relative;
   max-width: 75%;
@@ -56,29 +59,31 @@ caption {
 }
 
 
-bdi.secno, .headerPlus,.headerPlus1,
-.headerPlus2,.headerPlus2i, .headerPlus3,
+/* *****    special headers   ***** */
+
+
+bdi.secno, .headerPlus1, .headerPlus, 
+.headerPlus2,.headerPlus2i,
+.headerPlus2t,.headerPlus2ti,
+.headerPlus3, .headerPlus3t, .headerPlus3ti,
 .headerPlus4, .headerPlus5,
-.headerPlus4t, .headerPlus5t,
-.headerPlus2t, .headerPlus3t,.headerPlus3ti,
-.headerPlus2ti
-{
+.headerPlus4t, .headerPlus5t {
   font-family: Exo, sans-serif;
   font-size: 1.3em;
   font-style: normal;
   font-weight: 700;
 }
+
 bdi.secno {font-style: italic;}
+
 .headerPlus1 {font-size:2.2em; margin: 2.7rem 0 0 }
+
 .headerPlus, .headerPlus2i {
   font-size:1.8em;
   font-style: italic; 
   margin: 2.5rem 0 0;
  }
 .headerPlus2 {font-size:1.8em; margin: 2.5rem 0 0 }
-.headerPlus3 {font-size:1.4em; margin: 2rem 0 0 }
-.headerPlus4,.headerPlus4t {font-size:1.15em; margin: 1.5rem 0 0}
-.headerPlus5,.headerPlus5t {font-size:1.0em; margin: 1rem 0 0 }
 
 .headerPlus2ti {
   font-size:1.6em;
@@ -86,6 +91,8 @@ bdi.secno {font-style: italic;}
   margin: 2.2rem 0 0;
  }
 .headerPlus2t {font-size:1.6em; margin: 2.2rem 0 0 }
+
+.headerPlus3 {font-size:1.4em; margin: 2rem 0 0 }
 .headerPlus3ti {
   font-size:1.3em;
   font-style: italic; 
@@ -93,9 +100,13 @@ bdi.secno {font-style: italic;}
  }
 .headerPlus3t {font-size:1.3em; margin: 1.8rem 0 0 }
 
+.headerPlus4,.headerPlus4t {font-size:1.15em; margin: 1.5rem 0 0}
+.headerPlus5,.headerPlus5t {font-size:1.0em; margin: 1rem 0 0 }
+
 #resources li a {font-weight: 700; font-style: italic;}
 
 
+/* *****    TOC   ***** */
 
 nav li bdi.secno {
   font-size: 1.4em;
@@ -115,6 +126,9 @@ nav li li li bdi.secno {
 .toc > li li li { font-size:0.9em; font-weight: 500;}
 
 
+
+
+/* *****    DETAILS   ***** */
 
 :not(.head) > details {
 	margin: 3em;
@@ -159,6 +173,10 @@ summary::before {
 	text-align: center;
 	font-weight: bold;
 }
+
+
+
+
 .howto-link, .outcome-link, 
 .method-link, .outcome-header {
 	font-weight: 600;
@@ -200,7 +218,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 .outcome h4 {
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 100%;
 	color: #005A9C;
 }
@@ -225,6 +243,10 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	font-size: 100%;
 	color: #005A9C;
 }
+
+
+
+
 .rating-table, .rating-table th, .rating-table td {
 	border: 1px solid black;
 	vertical-align: top;
@@ -289,6 +311,7 @@ caption {
 a[href].status-link {
 	color: var(--text);
 }
+
 
 @media screen and (min-width: 860px) {
 	.sticky {

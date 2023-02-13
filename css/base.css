@@ -75,9 +75,8 @@
 /*                                  FONTS                                     */
 /******************************************************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
 
-
+/*
 @font-face {
   font-family:Atkinson;
   src:url(../fonts/atkinson/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2) format("woff2"),url(../fonts/atkinson/WOFF/Atkinson-Hyperlegible-Regular-102.woff) format("woff");
@@ -106,7 +105,7 @@
   font-style:italic;
   font-display:fallback
 }
-
+*/
 /******************************************************************************/
 /*                                  Colors                                    */
 /******************************************************************************/
@@ -234,7 +233,7 @@
 
 		/* Typography */
 		line-height: 1.5;
-		font-family: Atkinson, Barlow, sans-serif;
+		font-family: Barlow, Atkinson, sans-serif;
 		font-weight: 500;
 		widows: 2;
 		orphans: 2;
@@ -1071,7 +1070,7 @@
 
 	table.def th {
 		font-style: italic;
-		font-weight: normal;
+		font-weight: 500;
 		padding-left: 1em;
 		width: 3em;
 	}

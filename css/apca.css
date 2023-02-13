@@ -1,20 +1,7 @@
-/*  Import for the TABLE only  */
-
+/*  Imports for the TABLE only, not to be confused with Barlow not-condensed  */
+/*  note these imports only download a small subset of the fonts as needed for the table */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;800;900&text=%250123456789&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,500;1,600&text=%250123456789NMBLDVICONTRASpxt&display=swap');
-
-
-/* Styles for bibliography */
-
-#bibliography h3,
-#bibliography h4,
-#bibliography p {
-	margin: 0.15em 1em;
-	}
-#bibliography p ~ h3 {
-	margin: 1em 1em 0.15em;
-	}
 
 
 
