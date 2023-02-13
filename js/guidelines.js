@@ -37,11 +37,9 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "../../how-tos/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
+	var howtoBaseURI = "/ARG/how-tos/";
 	document.querySelectorAll('.guideline').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
+
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
@@ -51,11 +49,10 @@ function linkHowTo() {
 }
 
 function linkMethod() {
-	var howtoBaseURI = "../../methods/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.w3.org/WAI/WCAG" + version + "/Understanding/";
+	var howtoBaseURI = "/ARG/methods/";
+
 	document.querySelectorAll('.guideline').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
+
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
@@ -65,11 +62,10 @@ function linkMethod() {
 }
 
 function linkOutcome() {
-	var outcomeBaseURI = "../../outcomes/";
-	//if (respecConfig.specStatus == "ED") understandingBaseURI = "../../understanding/";
-	//else understandingBaseURI = "https://www.readtech.org/APCA" + version + "/Understanding/";
+	var outcomeBaseURI = "/ARG/outcomes/";
+
 	document.querySelectorAll('.outcome').forEach(function(node){
-		//this is brittle, depends on how respec does the heading
+
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("p");
@@ -153,11 +149,12 @@ function addNoteMarkers() {
 }
 
 var statusLabels = {
+	deprecated: 'This topic is obsolete, pending deletion.',
 	placeholder: 'We will be addressing this topic.',
 	exploratory: 'We are exploring one or more possible directions for this content.',
 	developing: 'We have high confidence in the direction and some confidence in the details.',
 	refining: 'We have high confidence in the direction and moderate confidence in the details.',
-	mature: 'We believe the content is ready to become a W3C Recommendation.',
+	mature: 'We believe the content is ready to become an official recommendation.',
 }
 
 function addStatusMarkers() {
@@ -204,11 +201,11 @@ function adjustNormativity() {
 		if (node.classList.contains("informative")) {
 			var normativeStatement = node.querySelector('p');
 			normativeStatement.classList.add("informative-statement");
-			normativeStatement.innerHTML = "<em>This section (with its subsections) provides advice only and does not specify guidelines, meaning it is <a href=\"#dfn-informative\" class=\"internalDFN\" data-link-type=\"dfn\">informative</a> or non-normative.</em>";
+			normativeStatement.innerHTML = "<em>This section provides information only. meaning it is <a href=\"#dfn-informative\" class=\"internalDFN\" data-link-type=\"dfn\">informative</a> or non-normative.</em>";
 		} else if (node.id != "abstract" && node.id != "sotd" && !node.classList.contains("appendix")) {
 			var el = document.createElement("p");
 			el.className = "normative-statement";
-			el.innerHTML = "<em>This section (with its subsections) provides requirements which must be followed to <a>conform</a> to the specification, meaning it is <a href=\"#dfn-normative\" class=\"internalDFN\" data-link-type=\"dfn\">normative</a>.</em>";
+			el.innerHTML = "<em>This section provides requirements to <a>conform</a> to the specification, meaning it is <a href=\"#dfn-normative\" class=\"internalDFN\" data-link-type=\"dfn\">normative</a>.</em>";
 			var heading = findHeading(node);
 			while (heading.parentNode !== node) {
 				heading = heading.parentNode;
@@ -295,7 +292,7 @@ function outputJson() {
 	
 	function loadMethods(path) {
 		var returnVal;
-		var ocpath = "../outcomes/" + path + ".html";
+		var ocpath = "/ARG/outcomes/" + path + ".html";
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {

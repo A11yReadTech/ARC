@@ -1,9 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-/*  Import for the TABLE only  */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&text=%250123456789NormalBoldpx&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap');
 
 
 /* 
@@ -126,8 +128,9 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
   max-width: 800px;
   padding: 24px;
 	outline: none;
-	font-family: Barlow, sans-serif;
+	font-family: Barlow, Atkinson,  sans-serif;
   font-size: 1.1rem;
+	font-weight: 500;
 	background-color: #fff;
 	border: 2px solid #308;
 	border-radius: 24px 24px 56px 56px;
@@ -435,7 +438,7 @@ a:active button.orange {
 /* ***** Visual Readability Table ***** */
 /* ***** Visual Readability Table ***** */
 
-
+/*
 .visReadTable {
 	margin: 0 auto;
 	overflow: scroll;
@@ -463,11 +466,6 @@ a:active button.orange {
 	font-size: 1.3em;
 	background-color: #EEF;
 	}
-.APCAtable th.tableTitle {
-	font-size: 1.3em;
-	color: #fff;
-	background-color: #206;
-	}
 	
 .visReadTable td.vBot, .visReadTable th.vBot, .visReadTable th .vBot, .vBot { 
 	padding: 10px;
@@ -476,29 +474,44 @@ a:active button.orange {
 	background-color: #DDB;
 	}
 
-.APCAtable th.weight {
+
+
+
+.APCAtable th.tableTitle {
+	font-size: 1.3em;
+	color: #fff;
+	background-color: #206;
+	}
+
+
+
+.APCAtable tr.weight {
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 1.6em; 
 	padding: 0 1px;
+	color: #000;
 	}
 	
 .APCAtable th.weight7, .APCAtable th.weight8, .APCAtable th.weight9
 {padding: 0 6px;}
 
-.APCAtable th.weight div {font-size: 0.6em; margin: -0.3em 0 0; padding: 0 1px;}
+.APCAtableX tr.weight th div {font-size: 0.6em; margin: -0.3em 0 0; padding: 0 1px;}
 
-.visReadTable th.weight1 { font-weight: 100; background-color: #FFF;}
-.visReadTable th.weight2 { font-weight: 200; background-color: #F4F4F4;}
-.visReadTable th.weight3 { font-weight: 300; background-color: #EAEAEA;}
-.visReadTable th.weight4 { font-weight: 400; background-color: #E2E2E2;}
-.visReadTable th.weight5 { font-weight: 500; background-color: #DADADA;}
-.visReadTable th.weight6 { font-weight: 600; background-color: #D0D0D0;}
-.visReadTable th.weight7 { font-weight: 700; background-color: #C6C6C6;}
-.visReadTable th.weight8 { font-weight: 800; background-color: #BBB;}
-.visReadTable th.weight9 { font-weight: 900; background-color: #AFAFAF;}
+.APCAtable th.weight1 { font-weight: 100; background-color: #FFF;}
+.APCAtable th.weight2 { font-weight: 200; background-color: #F4F4F4;}
+.APCAtable th.weight3 { font-weight: 300; background-color: #EAEAEA;}
+.APCAtable th.weight4 { font-weight: 400; background-color: #E2E2E2;}
+.APCAtable th.weight5 { font-weight: 500; background-color: #DADADA;}
+.APCAtable th.weight6 { font-weight: 600; background-color: #D0D0D0;}
+.APCAtable th.weight7 { font-weight: 700; background-color: #C6C6C6;}
+.APCAtable th.weight8 { font-weight: 800; background-color: #BBB;}
+.APCAtable th.weight9 { font-weight: 900; background-color: #AFAFAF;}
+
 
 
 .visReadTable td:first-child { font-weight: 600;}
+
+
 
 .APCAtable {text-align: center;}
 .APCAtable .underWeight {
@@ -508,12 +521,14 @@ a:active button.orange {
 	color: #c0272d;
 	background-color: #F883; 	
 	}
+	
 .underWeightSpan {
 	font-size: 1.5em;
 	line-height: 0.7;
 	color: var(--faded-red);
 	color: #c0272d;
 	}	
+	
 .APCAtable .keyValue, .keyVal80, .keyVal60{
 	font-weight: bold;
 	background-color: var(--cloudy-subtle);
@@ -552,18 +567,21 @@ td.keyVal06 { color: #411; background-color: #48F4;}
 td.keyVal10 { color: #000; background-color: #8F0A;}
 td.keyVal12 { color: #220; background-color: #EF08;}
 
-	/* provide some minimal visual accomodation for IE8 and below */
-	/* Define the background color for all the ODD background rows  */
+
+
+
+	/* provide some minimal visual accomodation for IE8 and below 
+	 * Define the background color for all the ODD background rows  *
 .visReadTable tr, .visReadTable tr:nth-child(odd) { 
 	color: #301170;
 	background-color: #F0FFFF;
 	}
-	
-	/* Define the background color for all the EVEN background rows  */
+	/* Define the background color for all the EVEN background rows  
 .visReadTable tr:nth-child(even) {
 	color: #204;
 	background-color: #E0EEFF;
 	}
+*/
 
 td.do-not, .do-not {
 	font-size: 1.6em;

@@ -234,7 +234,7 @@
 
 		/* Typography */
 		line-height: 1.5;
-		font-family: Barlow, sans-serif;
+		font-family: Atkinson, Barlow, sans-serif;
 		font-weight: 500;
 		widows: 2;
 		orphans: 2;
@@ -687,7 +687,7 @@
 /** General monospace/pre rules ***********************************************/
 
 	pre, code, samp {
-		font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+		font-family: Menlo, Consolas, Monaco, monospace;
 		font-size: .9em;
 		hyphens: none;
 		text-transform: none;
@@ -1469,7 +1469,7 @@ Possible extra rowspan handling
 		}
 		/* Serif for print. */
 		body {
-			font-family: serif;
+			font-family: Georgia, serif;
 		}
 
 		.outdated-warning {

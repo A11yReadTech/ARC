@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap');
 */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,700;1,500;1,600;1,700&display=swap');
 
 body > section {
     margin-bottom: 2em;
@@ -56,13 +56,46 @@ caption {
 }
 
 
-bdi.secno, .headerPlus, .headerPlus3,
-.headerPlus4, .headerPlus5 {
+bdi.secno, .headerPlus,.headerPlus1,
+.headerPlus2,.headerPlus2i, .headerPlus3,
+.headerPlus4, .headerPlus5,
+.headerPlus4t, .headerPlus5t,
+.headerPlus2t, .headerPlus3t,.headerPlus3ti,
+.headerPlus2ti
+{
   font-family: Exo, sans-serif;
   font-size: 1.3em;
-  font-style:italic;
+  font-style: normal;
   font-weight: 700;
 }
+bdi.secno {font-style: italic;}
+.headerPlus1 {font-size:2.2em; margin: 2.7rem 0 0 }
+.headerPlus, .headerPlus2i {
+  font-size:1.8em;
+  font-style: italic; 
+  margin: 2.5rem 0 0;
+ }
+.headerPlus2 {font-size:1.8em; margin: 2.5rem 0 0 }
+.headerPlus3 {font-size:1.4em; margin: 2rem 0 0 }
+.headerPlus4,.headerPlus4t {font-size:1.15em; margin: 1.5rem 0 0}
+.headerPlus5,.headerPlus5t {font-size:1.0em; margin: 1rem 0 0 }
+
+.headerPlus2ti {
+  font-size:1.6em;
+  font-style: italic; 
+  margin: 2.2rem 0 0;
+ }
+.headerPlus2t {font-size:1.6em; margin: 2.2rem 0 0 }
+.headerPlus3ti {
+  font-size:1.3em;
+  font-style: italic; 
+  margin: 1.8rem 0 0;
+ }
+.headerPlus3t {font-size:1.3em; margin: 1.8rem 0 0 }
+
+#resources li a {font-weight: 700; font-style: italic;}
+
+
 
 nav li bdi.secno {
   font-size: 1.4em;
@@ -80,11 +113,6 @@ nav li li li bdi.secno {
 .toc > li { font-size:1.25em; font-weight: 700;}
 .toc > li li { font-size:0.9em; font-weight: 600;}
 .toc > li li li { font-size:0.9em; font-weight: 500;}
-
-.headerPlus {font-size:1.8em;   margin: 2.5rem 0 0 }
-.headerPlus3 {font-size:1.4em;   margin: 2rem 0 0 }
-.headerPlus4 {font-size:1.15em;   margin: 1.5rem 0 0}
-.headerPlus5 {font-size:1.0em;   margin: 1rem 0 0 }
 
 
 

@@ -1,3 +1,5 @@
+/////     status filter to hide or show elements at various status levels
+
 function enableStatusFilter() {
 	var filterActive = false;
 	var button = document.querySelector('#status-filter');
@@ -14,7 +16,8 @@ function enableStatusFilter() {
 				return; // Use this to override the filter
 			}
 			var sectionId = section.id || findHeading(section).id;
-			var tocLink = document.querySelector('#toc a[href="#' + sectionId + '"]'); // this may be null due to TOC depth limit
+			  // this may be null due to TOC depth limit
+			var tocLink = document.querySelector('#toc a[href="#' + sectionId + '"]'); 
 			var tocItem = tocLink == null ? null : tocLink.parentNode;
 			if (filterActive) {
 				section.setAttribute('hidden', '');
@@ -24,7 +27,8 @@ function enableStatusFilter() {
 				if (tocItem != null) tocItem.removeAttribute('hidden');
 			}
 		});
-		button.textContent = (filterActive ? 'Reveal' : 'Hide') + ' placeholder & exploratory sections';
+		button.textContent = (filterActive ? 'Reveal' : 'Hide')
+		                   + ' placeholder & exploratory sections';
 	}
 	button.addEventListener('click', toggleStatus);
 	toggleStatus(); // Active by default

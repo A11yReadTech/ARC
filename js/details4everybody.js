@@ -1,6 +1,8 @@
-/**
- * Note that this script is intended to be included at the *end* of the document, before </body>
- */
+/////     This script is intended to be included at the *end*
+/////     of the document, before </body>
+/////     we still need this in 2023??
+
+
 (function (window, document) {
 if ('open' in document.createElement('details')) return;
 
@@ -30,7 +32,10 @@ var addEvent = (function () {
 
 
 /** details support - typically in it's own script */
+
+
 // find the first /real/ node
+
 function firstNode(source) {
   var node = null;
   if (source.firstChild.nodeName != "#text") {
@@ -57,10 +62,11 @@ function isSummary(el) {
 }
 
 function toggleDetails(event) {
-  // more sigh - need to check the clicked object
+  // need to check the clicked object
   var keypress = event.type == 'keypress',
       target = event.target || event.srcElement;
-  if (((target.parentNode == this) || (target.parentNode.parentNode == this)) && (keypress || isSummary(target))) {
+  if (((target.parentNode == this) || (target.parentNode.parentNode == this))
+     && (keypress || isSummary(target))) {
     if (keypress) {
       // if it's a keypress, make sure it was enter or space
       keypress = event.which || event.keyCode;
@@ -118,7 +124,8 @@ while (i--) {
   if (first != null && first.nodeName.toUpperCase() == 'SUMMARY') {
     // we've found that there's a details label already
   } else {
-    // first = label.cloneNode(true); // cloned nodes weren't picking up styles in IE - random
+    // first = label.cloneNode(true);
+   // cloned nodes weren't picking up styles in IE - random
     first = document.createElement('summary');
     first.appendChild(document.createTextNode('Details'));
     if (details[i].firstChild) {
@@ -128,7 +135,7 @@ while (i--) {
     }
   }
 
-  // this feels *really* nasty, but we can't target details :text in css :(
+  // we can't target details :text in css
   j = details[i].childNodes.length;
   while (j--) {
     if (details[i].childNodes[j].nodeName === '#text' && (details[i].childNodes[j].nodeValue||'').replace(/\s/g, '').length) {

@@ -64,14 +64,14 @@
     <li>
         <a href="/guidelines/">APCA Guidelines</a>
     </li>
-    <li><a class="page-link guideline-link" href="/guidelines/#visual-contrast">APCA Guidelines for Readable Design</a></li><li><a class="page-link outcome-link" href="/outcomes/ lightness-contrast-between-background-and-text">Lightness contrast between background and text</a></li><li class="page-link howto-link" href="/how-tos/designing-with-visual-contrast/">Designing With Visual Contrast</li></ul>
+    <li><a class="page-link guideline-link" href="/guidelines/#visual-contrast">APCA Guidelines for Readable Design</a></li><li><a class="page-link outcome-link" href="/guidelines/#outcome-lightness">Lightness contrast between background and text</a></li><li class="page-link howto-link" href="/how-tos/designing-with-visual-contrast/">Designing With Visual Contrast</li></ul>
 </nav>
 
 <div class="default-grid with-gap leftcol">
 
 <nav class="sidenav sn-contents" aria-label="Other Pages in this Resource">
   <ul class="sidenav--list">
-  <li><a class="page-link" href="/outcomes/lightness-contrast-between-background-and-text/">Lightness contrast between background and text</a></li><li><a class="page-link" href="/methods/visual-readability-contrast/" aria-current="page">Visual Readability Contrast</a></li> 
+  <li><a class="page-link" href="/guidelines/#outcome-lightness">Lightness contrast between background and text</a></li><li><a class="page-link" href="/methods/visual-readability-contrast/" aria-current="page">Visual Readability Contrast</a></li> 
   <li><a class="page-link" href="/how-tos/designing-with-visual-contrast/" aria-current="page">Designing With Visual Contrast</a></li></ul>
 </nav>
 
@@ -82,7 +82,7 @@
 
 
   <p><a href="/guidelines/"><img src="../../img/ARGtextPaths_v01.svg" alt="ARG logo" id="ARG" height="64" /></a></p>
-  <p><a href="https://A11yReadTech.github.io/ARG/guidelines/#visual-contrast">&#x1f519; APCA Guidelines</a> (Visual Contrast)</p><p><img src="../../img/method.svg" alt="" id="type-img" /></p>
+  <p><a href="/guidelines/#visual-contrast">&#x1f519; APCA Guidelines</a> (Visual Contrast)</p><p><img src="../../img/method.svg" alt="" id="type-img" /></p>
 
 		<h1>Designing With Visual Contrast</h1>
 		<p>Provide sufficient contrast between foreground text and its background.</p>
@@ -165,17 +165,17 @@
 	</head>
 	<body>
 		<header>
-			<h1>Get Started</h1>
+			<h1 class="headerPlus1">Get Started</h1>
 		</header>
 		<main>
 			<section id="summary">
-				<h2>Summary</h2>
+				<h2 class="headerPlus2ti">Summary</h2>
 				<p>Sighted users need good visual contrast between foreground and background to read easily. Users with low vision need strong contrast between foreground and background to perceive content. </p>
 			</section>
 			<section id="reason">
-				<h2>Why</h2>
+				<h2 class="headerPlus2ti">Why</h2>
 				<p>All sighted users need a high enough level of visual contrast to distinguish elements from each other, and foreground from background. By visual contrast we mean the total perceived lightness/darkness difference between the text and the background. As text gets smaller and/or thinner, visual contrast may need to be increased to achieve the same readability.</p>
-				<h4>EXAMPLE: you can increase perceived contrast by:</h4>
+				<h4 class="headerPlus4t">EXAMPLE: you can increase perceived contrast by:</h4>
 				<ul>
 					<li>Make the darkest of two colors darker</li>
 					<li>Make the lightest of two colors lighter</li>
@@ -188,7 +188,7 @@
 				<p>This guidance focuses on the needs of all users as well as users with low vision or visual/neurological impairments, and including <a href="https://www.myndex.com/CVD/">CVD</a> (Color Vision Deficiency, sometimes referred to as color-blindness or color insensitive vision). </p>
 			</section>
 			<section id="benefits">
-				<h2>Who it helps</h2>
+				<h2 class="headerPlus2ti">Who it helps</h2>
 				<ul>
 					<li>All sighted people, including those with with color insensitive vision need adequate visual contrast to read and understand text and graphic elements.</li>
 					  <ul>
@@ -200,7 +200,7 @@
 				</ul>
 			</section>
 			<section id="how">
-				<h2>How</h2>
+				<h2 class="headerPlus2ti">How</h2>
 				<p>Authors need to balance font size, font stroke width, background color, font color, and nearby colors to achieve good visual contrast. Authors can use tools to evaluate elements that predict the needed visual contrast for a given font size and weight to achieve a presentation which meets these requirements.
 				</p>
 				<p>To conform to readability contrast guidelines, use an APCA compliant contrast calculator. An APCA (Accessible Perceptual Contrast Algorithm) based tool allows authors to test a pair of colors and calculate a predicted contrast value. This defines the minimum useable font weight and size. 
@@ -229,11 +229,11 @@
 	</head>
 	<body>
 		<header>
-			<h1>Plan</h1>
+			<h1 class="headerPlus1">Plan</h1>
 		</header>
 		<main>
 			<section id="responsibilities">
-				<h2>Planning responsibilities</h2>
+				<h2 class="headerPlus2ti">Planning responsibilities</h2>
 				<ol>
 					<li>Because perceived contrast, and therefore readability, is tightly connected to font weight and font size. it is important to plan your CSS styles to provide predictable and consistent size and weight for the target display(s).
 						<ul><li>This is particularly important for responsive designs that resize or reconfigure to different device resolutions.</li>
@@ -251,26 +251,26 @@
 			</section>
 			
 			<section id="collaboration">
-				<h2>Tips for collaboration</h2>
+				<h2 class="headerPlus2ti">Tips for collaboration</h2>
 				<p>The planning and design phases will often be very interactive, and it is important to maintain communication and understanding of the available range of colors, sizes, and weights early in the process to allow adjustments to meet design goals and client needs.</p>
 			</section>
 			
 			<section id="stages">
-				<h2>Planning for each stage</h2>
+				<h2 class="headerPlus2ti">Planning for each stage</h2>
 				
 				<p>Consider early design <q>wireframes</q> and the space allocated for various elements, and how this will affect the desired font size in the final design.</p>
 				<p>Determine early on if the site will be responsive, to dynamically adjust and work on all device sizes, or if it will use a <q>mobile separate</q> paradigm. This choice will significantly affect font weight &amp; size.</p>
 				<p>To simplify early planning, remember that smaller and thinner (light weight) fonts require greater contrast between the font color and the background. Conversely, a lower contrast can be used with larger and thicker fonts.</p>
 				
 				<section id="early">
-					<h3>How to get started early</h3>
+					<h3 class="headerPlus3t">How to get started early</h3>
 				<ul>
 					<li>Still to be developed. We will include this in a future working draft. </li>
 				</ul>
 				</section>
 				
 				<section id="remediate">
-					<h3>How to remediate</h3>
+					<h3 class="headerPlus3t">How to remediate</h3>
 				<ul>
 					<li>Still to be developed. We will include this in a future working draft. </li>
 				</ul>
@@ -296,11 +296,11 @@
 	</head>
 	<body>
 		<header>
-			<h1>Design</h1>
+			<h1 class="headerPlus1">Design</h1>
 		</header>
 		<main>
 			<section id="responsibilities">
-				<h2>Design responsibilities</h2>
+				<h2 class="headerPlus2ti">Design responsibilities</h2>
 				<ul>
 					<li>Smaller, lighter weight fonts require higher contrast colors.</li>
 					<li>The CSS properties <q>-webkit-font-smoothing:</q> or <q>-moz-osx-font-smoothing</q> should be set to auto (default), and <em>not <q>antialiased</q></em>(webkit), and <em>not <q>greyscale</q></em>(moz).
@@ -345,7 +345,7 @@
 				</ul>
 			</section>
 			<section id="tips">
-				<h2>Designer tips</h2>
+				<h2 class="headerPlus2ti">Designer tips</h2>
 				<ol>
 					<li>Keep in mind that web content is displayed on a wide variety of display types, devices, and resolutions. It is important to test how content renders on different browsers and systems. <ul>
 							<li>If you normally work on a <q>retina</q> display it is particularly important to examine content on a normal display.</li>
@@ -357,7 +357,7 @@
 				</ol>
 			</section>
 			<section id="users">
-				<h2>User testing and meaningful involvement</h2>
+				<h2 class="headerPlus2ti">User testing and meaningful involvement</h2>
 				<p>The need for a beta period for testing designs with the input of end users cannot be understated. During planning, design, and development, familiarity with user interface controls may obscure elements that an end user finds non-intuitive. It is important to identify these stumbling blocks early in design.</p>
 				<p>In the context of visual contrast and readability, this includes features where the user can adjust color or theme, and where the user may want to adjust font size or line spacing on their end.</p>
 			</section>
@@ -381,19 +381,19 @@
 	</head>
 	<body>
 		<header>
-			<h1>Develop</h1>
+			<h1 class="headerPlus1">Develop</h1>
 		</header>
 			<main>
 				
 				<section id="responsibilities">
-					<h2>Technical responsibilities</h2>
+					<h2 class="headerPlus2ti">Technical responsibilities</h2>
 				<ul>
 					<li>Still to be developed. We will include this in a future working draft. </li>
 				</ul>
 				</section>
 				
 			<section id="technical">
-				<h2>Technical tips</h2>
+				<h2 class="headerPlus2ti">Technical tips</h2>
 				<ol>
 					<li>Javascript, PHP, and other dynamic page scripts must maintain the proper contrast and weight and size ratios.</li>
 					<li>Ensure Javascript and other dynamic page scripts allow text to be scaled in size without breaking content, so that:
@@ -429,41 +429,81 @@
 	</head>
 	<body>
 		<header>
-			<h1>Examples</h1>
+			<h1 class="headerPlus1">Examples</h1>
 		</header>
 		<main>
 			
-			<p class="note">The examples over black or white are the font Montserrat at 16px normal (400 weight). The examples over yellow are 18px 200 weight, except the large text which is 32px bold. CSS font-smoothing is at default (auto). The last example is 18px and 300 weight, and shows the difference with font smoothing if supported by this browser.</p>
-			
-			<p>Notice that the pure blue over black is very difficult to read. To use blue as the brightest of two colors, green must be added. Similarly, full green is hard to read against white, this is because green makes up the majority of luminance, or lightness.</p>
-			
+			<p class="note">The examples over black or white are the font Montserrat at 16px normal (400 weight). CSS font-smoothing is at default (auto, i.e. off) for these examples.</p>
+
+
+
 			<section class="example">
-				<h3>Black background</h3>
+				<h3 class="headerPlus3t">Black background</h3>
+				<p>Notice that the pure blue over black is very difficult to read. To use blue as the brightest of two colors, green must be added.</p>
 				<div class="testBox">
-					<p>#00F <span style="color: #00F;">This is Maximum Blue on Black. Difficult to Read. ☆ ★ ☎ </span></p>
-					<p>#08F <span style="color: #08F;">Add some green for a readable blue against black. ☆ ★ ☎</span></p>
-					<p>#F00 <span style="color: #F00; ">This is Pure Red on Black, approximately -80% contrast. Some types of color vision problems cause the red to be ~35% darker (on sRGB) thus pure red is better as the darkest of two colors. ☆ ★ ☎</span></p>
-					<p>#0A0 <span style="color: #0A0;">This is Green on Black at -80% contrast. ☆ ★ ☎</span></p>
+					<p>#00f Lc -16 • <span style="color: #00F;">This is maximum blue on black, but still only Lc&nbsp;16 contrast and therefore very difficult to Read. ☆ ★ ☎ </span></p>
+					<p>#f00 Lc -37 • <span style="color: #F00; ">This is full red on black, approximately Lc&nbsp;-37 contrast. Some types of color vision problems cause the red to be ~55% darker (on sRGB) thus pure red could never be against Black. ☆ ★ ☎</span></p>
+					<p>#0d0 Lc -69 • <span style="color: #0d0;">This is green on black at Lc&nbsp;-60 contrast. ☆ ★ ☎</span></p>
+					<p>#0bf Lc -60 • <span style="color: #0bF;">Add some green for a readable blue against black. ☆ ★ ☎</span></p>
+					<p>#f88 Lc -57 • <span style="color: #f88; ">Add green and blue for a readable red against black. ☆ ★ ☎</span></p>
+				</div>
+			</section>
+
+			<section class="example">
+				<h3 class="headerPlus3t">White background</h3>
+				<p>Similarly, full green is hard to read against white, this is because green makes up the majority of luminance, or lightness.</p>
+				<div class="testBox testBoxWhite">
+					<p>#0F0 Lc 17 • <span style="color: #0F0;">This is Maximum Green on White, giving only Lc&nbsp;17 contrast and very difficult to Read. ☆ ★ ☎</span></p>
+					<p>#080 Lc 71 • <span style="color: #080;">Keep green to less than #080 for readability when green is up against white, here is Lc&nbsp;71 against white. ☆ ★ ☎</span></p>
+					<p>#C00 Lc 76 • <span style="color: #c00; ">This is sRGB Red on White, Lc&nbsp;76 contrast. Some color vision problems cause red to be ~55% darker on sRGB, so it is better against white than black. ☆ ★ ☎</span></p>
+					<p>#00F Lc 85 • <span style="color: #00f;">Full Blue against white is Lc&nbsp;85 contrast, because blue contributes an insignificant amount to luminance. ☆ ★ ☎</span></p>
 				</div>
 			</section>
 			<section class="example">
-				<h3>White background</h3>
-				<div class="testBoxWhite">
-					<p>#0F0 <span style="color: #0F0;">This is Maximum Green on White. Difficult to Read. ☆ ★ ☎</span></p>
-					<p>#080 <span style="color: #080;">Keep green less than #080 for readability against white. ☆ ★ ☎</span></p>
-					<p>#E00 <span style="color: #E00; ">This is Pure Red on White, approximately 80% contrast. Since some color vision problems cause the red to be ~35% darker (on sRGB) pure red can be okay as the darker color against white. ☆ ★ ☎</span></p>
-					<p>#00F <span style="color: #00F;">Full Blue on White is 110% contrast. Since the blue is the same value in the white background, there is no detail in the blue channel at all. This is advantageous as it can reduce glare and chromatic aberration. ☆ ★ ☎</span></p>
-				</div>
+				<h3 class="headerPlus3t"> Color vision deficiency</h3>
+				<p>In the image below the samples were processed to simulate different forms of color vision deficiency (sometimes referred to as "colorblind"). Standard vision is upper left, and then the two most common forms of CVD are upper right in lower right. </p>
+				
+				<p>Notice how the luminance deficits are exacerbated for colors against black, but improved contrast for colors against white. This is the opposite of the calculations created by WCAG&nbsp;2.x Both standard vision and color deficient vision require substantial luminance for readability, and low luminance colors become even lower luminance for some forms of CVD when they are paired against black.</p>
+				<img src="./img/CVDprimariesonblackandwhite.png" width="100%" style="display: block;position: relative; margin: 0.5em auto;">
+
+        <p>An important takeaway here is that colors that are rich in green including cyan and yellow, should never be paired with white or very light colors. And at the other end, colors that are rich in red and/or blue, including purple, orange, and teal, should never be paired with black or very dark colors,
 			</section>
+
 			<section class="example">
-				<h3>Yellow background</h3>
-				<div class="testBoxBeige thinFont" style="">
-					<p><span style="color: #504;">This is Blue #009 very thin text on a #FE9 BG (120%). ☆ ★ ☎</span></p>
-					<p><span style="color: #504;">This is #504 dark purple thin text (120% contrast on #FE9). ☆ ★ ☎</span></p>
-					<p><span style="color: #79F;">#79F (50% contrast on #FE9) is too light for small thin text,  ☆ ★ ☎</span></p>
-					<p><span style="color: #79F; font-size: 32px; font-weight: 700;">but #79F is okay for large bold text.</span></p>
+				<h3 class="headerPlus3t">Spatial Frequency</h3>
+				<p>The first examples here over yellow are very high color contrast, using blue #009 against the light yellow #fe9 background, giving a contrast of Lc&nbsp;88 — yet despite the high color contrast, the very thin small fonts are hard to read. 
+				<p>This demonstrates that at high spatial frequencies, it is the spatial frequency, not the color, that is most important for contrast. The fonts here are all 18px, at 200 weight, 300 weight, 400 weight, and 500 weight.
+				<p>Then an example of 18px 400 weight using a lower contrast color of #6ab, here that color is too light for even a normal-weight font at this size. Yet this color is fine for a large bold font (32px 700 weight).</p>
+				
+				<div class="testBox testBoxBeige" style="">
+					<p>200 • <span class="thinFont" style="color: #009;">This is Blue #009 ultra thin (200) text (Lc&nbsp;88).&nbsp;—|–|–|—</span></p>
+					<p>300 • <span class="thinFont3" style="color: #009;">This is Blue #009 very thin (300) text (Lc&nbsp;88).&nbsp;—|–|–|—</span></p>
+					<p>400 • <span  class="" style="color: #009;">This is Blue #009 normal (400) text (Lc&nbsp;88).&nbsp;&nbsp;—|–|–|—</span></p>
+					<p>500 • <span  class="thickFont5" style="color: #009;">This is Blue #009 thicker (500) text (Lc&nbsp;88).&nbsp;&nbsp;—|–|–|—</span></p>
+					———————————————————————————————
+					<p>400 • <span style="color: #6ab;">#6ab (Lc&nbsp;40) is too much light for small & normal text</span>
+					<br>700 • <span style="color: #6ab; font-size: 32px; font-weight: 700;">#6ab is okay for large bold text</span></p>
 				</div>
 			</section>
+			
+			<section class="example">
+				<h3 class="headerPlus3t">Font Smoothing</h3>
+				<p>This final example is black 18px, and shows the difference with font smoothing if supported by this browser. Font smoothing should never be used for a small & thin fonts. The colors here are #555 and #FAFAF8, which is a WCAG&nbsp;2.x&nbsp;7:1, or APCA Lc&nbsp;82. This is a live example and renders differently with different browsers.</p>
+				<div class="testBox testBoxWhite2" style="">
+					<p><span class="thinFont smoothBlend" style="color: #000;">This is 200 weight thin text with font smoothing on. 200|&|~|</span></p>
+					<p><span class="thinFont" style="color: #000;">This is 200 weight thin text with font smoothing off. 200|&|~|</span></p>
+					<p><span class="thinFont3 smoothBlend" style="color: #000;">This is 300 weight thin text with font smoothing on. 300|&|~|</span></p>
+					<p><span class="thinFont3" style="color: #000;">This is 300 weight thin text with font smoothing off. 300|&|~|</span></p>
+					<p><span class="smoothBlend" style="color: #000;">This is 400 weight thin text with font smoothing on. 400|&|~|</span></p>
+					<p><span class="" style="color: #000;">This is 400 weight thin text with font smoothing off. 400|&|~|</span></p>
+					<p><span class="smoothBlend thickFont5" style="color: #000;">This is 500 weight thick text with font smoothing on. 500|&|~|</span></p>
+					<p><span class="thickFont5" style="color: #000;">This is 500 weight thick text with font smoothing off. 500|&|~|</span></p>
+					<p><span class="smoothBlend" style="color: #000; font-size: 24px; font-weight: 700;">Font smoothing is okay for large bold text.</span></p>
+				</div>
+				<p>Below is a screenshot taking on a high resolution retina display, and despite that still shows the substantial reduction in contrast that is caused by excessive font smoothing.</p>
+				<img src="./img/Fontsmoothingexamplescloseup.png" width="80%" style="display: block;position: relative; margin: 0.5em auto;">
+			</section>
+			
 		</main>
 	</body>
 </html>
@@ -481,14 +521,17 @@
 	</head>
 	<body>
 		<header>
-			<h1>Resources</h1>
+			<h1 class="headerPlus1">Resources</h1>
 		</header>
-		<main>
+		<main id="resources">
 			<ul>
-				<li><a href="https://git.apcacontrast.com/documentation/WhyAPCA.html">"Why APCA"</a> A plain language introduction to readability contrast.
-			  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_Colors_and_Luminance">Introduction to Color and Accessibility</a> A further tutorial on color and accessibility.
-				<li><a href="https://www.myndex.com/APCA/">APCA Tool</a></li> A live web app that calculates readability contrast.
-				<li><a href="https://www.myndex.com/CVD/">Color Vision Deficiency Simulator</a></li> A clinically accurate simulation of color insensitive vision.
+				<li><a href="https://git.apcacontrast.com/documentation/WhyAPCA.html">"Why APCA"</a> A plain language introduction to readability contrast.</li>
+				<li><a href="https://www.myndex.com/APCA/">APCA Tool</a> A live web app that calculates readability contrast.</li>
+				<li><a href="https://www.myndex.com/CVD/">Color Vision Deficiency Simulator</a> A clinically accurate simulation of color insensitive vision.</li>
+			  <li><a href="https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/">The Realities and Myths of Contrast and Color</a> a comprehensive color article published at Smashing magazine.</li>
+			  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_Colors_and_Luminance">Introduction to Color and Accessibility</a> A further tutorial on color and accessibility.</li>
+			  <li><a href="https://tangledweb.xyz/please-stop-using-grey-text-3d3e71acfca8"> Please Stop Using Grey Text</a> Myths regarding too much contrast are both overstated and misguided.</li>
+			  <li><a href="https://git.myndex.com">Contrast Clearinghouse</a> A catalog of white papers, reviews, articles, and technical information relating to color, contrast, and the APCA.</li>
 			</ul>
 		</main>
 	</body>
@@ -501,7 +544,7 @@
 
 		<footer>
 			<section id="changelog">
-				<h2>Change Log</h2>
+				<h2 class="headerPlus2ti">Change Log</h2>
 				<ul>
 					<li>2023-02-01: Port to ASRG</li>
 					<li>2022-05-18: Update APCA information.</li>
