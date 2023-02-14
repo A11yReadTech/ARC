@@ -336,6 +336,7 @@
 			box-shadow: 0 0 2px;
 			font-size: 1.5em;
 		}
+
 		#toc-nav > a {
 			display: block;
 			white-space: nowrap;
@@ -505,15 +506,17 @@
 		margin-top: 2.5rem;
 	}
 
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 		color: #005a9c;
 		color: var(--heading-text);
 	}
+	
 
-	h1 { font-size: 170%; }
-	h2 { font-size: 140%; }
-	h3 { font-size: 120%; }
-	h4 { font-weight: bold; }
+
+	h1, .h1 { font-size: 170%; }
+	h2, .h2 { font-size: 140%; }
+	h3, .h3 { font-size: 120%; }
+	h4, .h4 { font-weight: bold; }
 	h5 { font-style: italic; }
 	h6 { font-variant: small-caps; }
 	dt { font-weight: bold; }
@@ -530,6 +533,12 @@
 	h4 + h5,
 	h5 + h6 {
 		margin-top: 1.2em; /* = 1 x line-height */
+	}
+	h2 + .h3,
+	h3 + .h4,
+	h2 + .h4,
+	h1 + .h2 {
+		margin-top: 1em; /* = 1 x line-height */
 	}
 
 /** Section divider ***********************************************************/
@@ -552,24 +561,46 @@
 /*                            Paragraphs and Lists                            */
 /******************************************************************************/
 
-	p {
-		margin: 1em 0;
-	}
+	p { margin: 1em 0; }
 
 	dd > p:first-child,
-	li > p:first-child {
-		margin-top: 0;
-	}
+	li > p:first-child { margin-top: 0; }
 
 	ul, ol {
-		margin-left: 0;
-		padding-left: 2em;
+		margin: 0;
+		padding-left: 1em;
+		font-size: 0.9em;
+		font-weight: 500;
+		list-style-type: disc
+	}
+
+
+:not(li,ul,ol) + ul, :not(li,ul,ol) + ol {
+		margin: 0em;
+		padding: 0.5em 0 0.5em 2em;
+		font-weight: 500;
+		font-size: 1em;
+		list-style-type: square;
+	}
+
+ul.multilevel {
+		margin: 0em;
+		padding: 1em 0 1em 2em;
+		font-weight: 600;
+		font-size: 1.05em;
+		list-style-type: square;
 	}
 
 	li {
-		margin: 0.25em 0 0.5em;
+		margin: 0 0 0.66em;
 		padding: 0;
-	}
+		line-height: 1.15;
+		}
+	li:first-child {
+		margin: -0.33em 0 0.66em;
+		}
+
+
 
 	dl dd {
 		margin: 0 0 .5em 2em;
@@ -1516,6 +1547,19 @@ Possible extra rowspan handling
 		display: grid;
 		grid-template-columns: minmax(0, 50em);
 	}
+
+  @media (max-width: 770px) {
+    body {
+      padding: 2vw;
+    }
+    body > section {
+      padding: 2vw;
+    }
+    body section#abstract {
+      padding: 2vw;
+    }
+  }
+
 	.overlarge > table {
 		/* limit preferred width of table */
 		max-width: 50em;

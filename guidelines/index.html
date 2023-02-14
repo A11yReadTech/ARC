@@ -115,8 +115,7 @@
 
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" href="../css/guidelines.css">
-
-
+<link rel="stylesheet" href="../css/mobilefix.css">
 
 
 <style>
@@ -272,27 +271,29 @@
   <li class="tocline"><a class="tocxref" href="#guidelines"><bdi class="secno">3. </bdi>Guideline Summary</a></li>
   <li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual contrast</a>
   <ol class="toc">
-    <li class="tocline"><a class="tocxref" href="#outcome-lightness"><bdi class="secno">4.1 </bdi>Outcome: Lightness Contrast </a></li>  
+    <li class="tocline"><a class="tocxref" href="#outcome-lightness"><bdi class="secno">4.1 </bdi>Outcome: Lightness Contrast (text)</a></li>  
   </ol></li>
 
-  <li class="tocline"><a class="tocxref" href="#testing"><bdi class="secno">5. </bdi>Testing</a></li>
-  <li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a>
+  <li class="tocline"><a class="tocxref" href="#nontext-contrast"><bdi class="secno">5. </bdi>Nontext Contrast</a></li>
+  <li class="tocline"><a class="tocxref" href="#user-integration"><bdi class="secno">6. </bdi>User Integration</a></li>
+  
+  <li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformance</a>
   <ol class="toc">
-    <li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">6.1 </bdi>Conformance levels</a>
+    <li class="tocline"><a class="tocxref" href="#conformance-levels"><bdi class="secno">7.1 </bdi>Conformance levels</a>
     <ol class="toc">
-      <li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">6.1.1 </bdi>Bronze</a></li>
-      <li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">6.1.2 </bdi>Silver</a></li>
-      <li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">6.1.3 </bdi>Gold</a></li>
+      <li class="tocline"><a class="tocxref" href="#bronze"><bdi class="secno">7.1.1 </bdi>Bronze</a></li>
+      <li class="tocline"><a class="tocxref" href="#silver"><bdi class="secno">7.1.2 </bdi>Silver</a></li>
+      <li class="tocline"><a class="tocxref" href="#gold"><bdi class="secno">7.1.3 </bdi>Gold</a></li>
     </ol></li>
-    <li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">6.2 </bdi>Defining conformance scope</a></li>
-    <li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">6.3 </bdi>Conformance requirements</a></li>
-    <li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">6.4 </bdi>Conformance claims</a>
+    <li class="tocline"><a class="tocxref" href="#defining-conformance-scope"><bdi class="secno">7.2 </bdi>Defining conformance scope</a></li>
+    <li class="tocline"><a class="tocxref" href="#conformance-requirements"><bdi class="secno">7.3 </bdi>Conformance requirements</a></li>
+    <li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">7.4 </bdi>Conformance claims</a>
     <ol class="toc">
-      <li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">6.4.1 </bdi>Required components of a conformance claim</a></li>
+      <li class="tocline"><a class="tocxref" href="#required-components-of-a-conformance-claim"><bdi class="secno">7.4.1 </bdi>Required components of a conformance claim</a></li>
     </ol></li>
   </ol></li>
 
-	<li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">7. </bdi>Glossary</a></li>
+	<li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">8. </bdi>Glossary</a></li>
 
 	<li class="tocline"><a class="tocxref" href="#guidelines-development-methodology"><bdi class="secno">A. </bdi>Guidelines development methodology</a></li>
 
@@ -400,8 +401,8 @@
       <li><strong>Normative:</strong> what you must do to meet the guidelines.</li>
       <li><strong>Non-normative:</strong> advice to help you meet the guidelines. This is also called <q>Informative</q>.</li>
       </ul>
-    <p class="summaryEnd">End of summary for <q>Normative requirements</q></p></details>
-    <p>In addition to this section, the <a href="#guidelines">Guidelines</a>, <a href="#testing">Testing</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
+    </details>
+    <p>In addition to this section, the <a href="#guidelines">Visual Presentation</a>, <a href="#visual-contrast">Visual Contrast</a>, <a href="#nontext-contrast-">Nontext Contrast</a>, <a href="#user-integration">User Integration</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
     <p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
     <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p></div>
 </section><!-- close norm section 2 -->
@@ -413,11 +414,11 @@
 
 
 
-<section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines" class="headerPlus"><bdi class="secno">3. </bdi>Guideline Summary</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
+<section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines" class="headerPlus"><bdi class="secno">3. </bdi>Visual Presentation</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
 
 
-    <h3  class="headerPlus3">APCA Visual Presentation Guidance</h3>
-    <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:0px;  width: 33%;">&nbsp;&nbsp;&nbsp; <img src="../img/ARGtextPaths_v01.svg" style="position: relative; margin 0 auto; top:0px;  width: 50%;">
+    <div class="h3 headerPlus2t noLeftShift">APCA Visual Presentation Guidance</div>
+    <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:12px;  width: 33%;">&nbsp;&nbsp;&nbsp; <img src="../img/ARGtextPaths_v01.svg" style="position: relative; margin 0 auto; top:12px;  width: 50%;">
 
     <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
 
@@ -425,7 +426,7 @@
       <summary>Plain language summary of <q>Guidelines</q></summary>
       <ul>
 
-        <li>Visual contrast (color contrast);</li>
+        <li>Visual contrast (color contrast)</li>
         <ul><li>Use Cases (primary content, sub-fluent)</li>
             <li>Text contrasts</li>
             <li>Font characteristics</li>
@@ -440,32 +441,40 @@
 
     </details>
 
-    <p>These draft guidelines illuminate APCA Readabiliy Guidelines's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. Eventually, upon integration into relevant standards such as ISO, WCAG, or ADA, for conformance or compliance testing. To be clear, at this time these guidelines are a work in progress, and not a part of a published final guideline.</p>
-      <ul>  
-        <li><a href="#visual-contrast">Visual contrast</a> - Designing for readability, understandability, and accessibility</li>
+    <p>This draft section illuminates the APCA Readabiliy Guidelines's comprehensive coverage of visual presentation, depending on application, usable as a stand-alone suite for design guidance. While the eventual goal is integration into relevant standards such as ISO, WCAG, or ADA, the current conformance testing as described herein is independent. Further, these guidelines are a living work in progress, in development, and not yet a part of any other final published standard or guideline.</p>
+     
+     
+        <h3 class="headerPlus3"><a href="#visual-contrast">Visual contrast</a> - Designing for readability, understandability, and accessibility</h3>
+        
+      <ul class="multilevel">  
+        <li><strong>A)</strong> Text contrasts • understanding the need for luminance
         <ul>
-            <li>Use Cases • primary content vs sub-fluent vs spot readable</li>
-            <li>Text contrasts • understanding the need for luminance</li>
             <li>Font characteristics • weight, size, and glyph design</li>
+            <li>Use Cases • primary content vs sub-fluent vs spot readable</li>
             <li>White space • line & letter spacing, element padding</li>
-            <li>Non-text contrasts • semantic and non-semantic elements</li>
+        </ul></li>
+        <li><strong>B)</strong> Non-text contrasts • semantic and non-semantic elements
+        <ul>
+            <li>Use of color (hue and colorfulness) – Hue and colorfulness to augment </li>
+            <li>Other forms of contrast • shape, size, distance, motion</li>   
             <li>Dataviz characteristics • unique needs of dataviz</li>
-        </ul>
-        <li>Visual hierarchy • semantic layouts and organizing information</li>
-        <li>Use of color (hue and colorfulness) – Hue and colorfulness to augment </li>
-        <li>Interactive • links, forms, navigation, and controls</li>
-        <li>User Personalization</li>            
+            <li>Interactive • links, forms, navigation, and controls</li>
+            <li>Visual hierarchy • semantic layouts and organizing information</li>
+        </ul></li>
+        <li><strong>C)</strong> User integration • personalization and environment           
         <ul>
             <li>Visual modes • dark, light, dalton, alternate color schemes </li>
             <li>Zooming text or view, and text reflow</li>
             <li>User adjustable properties and style sheets</li>
-        </ul>
-        <li>Other forms of contrast • shape, size, distance, motion</li>   
-        <li>Workspace and environmental illumination</li>   
-        <li>Visual fatigue and ocular health</li>   
+            <li>Workspace and environmental illumination</li>   
+            <li>Visual fatigue and ocular health</li>   
+        </ul></li>
        </ul>
 
 </section><!-- close sum section 3 -->
+
+
+
 
 
 <section class="guideline" id="visual-contrast">
@@ -474,23 +483,24 @@
     </div>
       <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
 
-      <h3 class="guideline-text"><span class="inserted">Guideline: </span>Provide sufficient lightness/darkness contrast between foreground and background.</h3>
+<div class="header-wrapper"><h3 id="x4-1-luminance-contrast" class="headerPlus3">
+<bdi class="secno">4.1 </bdi>Guideline: Luminance Contrast</h3><a class="self-link" href="#luminance-contrast" aria-label="Permalink for Section 4.1"></a></div>
+
+      <p class="">Provide sufficient lightness/darkness contrast between foreground and background.</p>
 
         <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
 
-
-            <details class="categories">
-              <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
-              <p>This outcome relates to the following functional categories:</p>
-
-              <ul>
-                <li>Sensory - Vision, Color </li>
-                <li>Psychophysical - Discernment, Recognition </li>
-                <li>Cognitive - Language, Comprehension</li>
-                <li>Cognitive - Tasks, Instructions</li>
-              </ul>
-            </details>
-
+        <details class="categories">
+          <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
+          <p>This outcome relates to the following functional categories:</p>
+          <ul>
+            <li>Sensory - Light, Contrast</li>
+            <li>Sensory - Vision, Color</li>
+            <li>Psychophysical - Discernment, Recognition</li>
+            <li>Cognitive - Language, Comprehension</li>
+            <li>Cognitive - Tasks, Instructions</li>
+          </ul>
+        </details>
 
 		<section>
 			<h2 id="outcome-lightness" class="outcome-header">Outcome: Lightness contrast between text and background</h2>
@@ -506,21 +516,18 @@
       </ol>
 
 
-			<h2 class="method-header">Methods:</h2>
+		 <h2 class="method-header">Testing Methods</h2>
 			<ol>
 				<li><a class="method-link" href="../methods/visual-readability-contrast/">Visual Readability Contrast</a> Set the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
 			</ol>
 
 
-			<h2 class="howto-header">How-tos:</h2>
+			<h2 class="howto-header">How-to Guides:</h2>
 			<ol>
 				<li><a class="howto-link" href="../how-tos/designing-with-visual-contrast/">Designing with visual contrast <span>how-to</span></a> A guide for planning, designing, and implementing accessible visual contrast.</li> 
 			</ol>
 
 		</section>
-
-
-
 
       <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
         <p>Visual Contrast is a paradigm shift from WCAG&nbsp;2.x contrast in terms of methodology and scope:</p>
@@ -540,17 +547,95 @@
 
 
 
-<section data-status="exploratory" hidden="" id="testing"><div class="header-wrapper"><h2 id="x5-testing" class="headerPlus"><bdi class="secno">5. </bdi>Testing</h2><a class="self-link" href="#testing" aria-label="Permalink for Section 5."></a></div><p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-    <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+
+
+<section data-status="developing" id="nontext-contrast">
+  <div class="header-wrapper">
+  <h2 id="x5-nontext-contrast" class="headerPlus"><bdi class="secno">5. </bdi>NONTEXT CONTRAST</h2><a class="self-link" href="#nontext-contrast" aria-label="Permalink for Section 5."></a></div>
+  <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
+    
     <details class="summary">
-      <summary>Plain language summary of <q>Testing</q> - What types of tests and scopes are used?</summary>
+      <summary>Plain language summary of <q>Nontext Contrast</q></summary>
 
     </details>
+    
+    
+        <details class="categories">
+          <summary>Functional categories for <q>non text contrast for semantic and non-somatic elements</q></summary>
+          <p>This outcome relates to the following functional categories:</p>
+          <ul>
+            <li>Sensory - Light, Contrast</li>
+            <li>Sensory - Vision, Color</li>
+            <li>Psychophysical - Discernment, Recognition</li>
+            <li>Cognitive - non-lexical understanding</li>
+            <li>Cognitive - Tasks, Instructions</li>
+          </ul>
+        </details>
 
+		<section>
+			<h2 id="outcome-nontext" class="outcome-header">Outcome: hue and colorfulness are not the only representations of data</h2>
+
+			<p class="outcome"> Hue and colorfulness are important dimension to design, however because of the great amount of variability of vision among individuals, as well as cultural differences regarding color, information coding must utilize other techniques besides hue differentiation.</p>
+
+		 <h2 class="method-header">Testing Methods</h2>
+			<ol>
+				<li><a class="method-link" href="../methods/">Null</a></li>
+			</ol>
+
+
+			<h2 class="howto-header">How-to Guides:</h2>
+			<ol>
+				<li><a class="howto-link" href="../how-tos/">Null</a></li> 
+			</ol>
+		</section>
 </section><!-- close test section 5 -->
 
 
-<section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance" class="headerPlus"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+
+
+<section data-status="exploratory" hidden="" id="user-integration">
+  <div class="header-wrapper">
+  <h2 id="x6-user-integration" class="headerPlus"><bdi class="secno">5. </bdi>USER-INTEGRATION</h2><a class="self-link" href="#user-integration" aria-label="Permalink for Section 6."></a></div>
+  <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.</div>
+    
+    <details class="summary">
+      <summary>Plain language summary of <q>User Integration</q></summary>
+
+    </details>
+        <details class="categories">
+          <summary>Functional categories for <q>user integration </q></summary>
+          <p>This outcome relates to the following functional categories:</p>
+          <ul>
+            <li>Sensory - Light, Contrast</li>
+            <li>Sensory - Vision, Color</li>
+            <li>Psychophysical - Discernment, Recognition</li>
+            <li>Cognitive - non-lexical understanding</li>
+            <li>Cognitive - Tasks, Instructions</li>
+          </ul>
+        </details>
+
+		<section>
+			<h2 id="outcome-non" class="outcome-header">Outcome: </h2>
+
+			<p class="outcome"> </p>
+			
+		 <h2 class="method-header">Testing Methods</h2>
+			<ol>
+				<li><a class="method-link" href="../methods/">Null</a></li>
+			</ol>
+
+
+			<h2 class="howto-header">How-to Guides:</h2>
+			<ol>
+				<li><a class="howto-link" href="../how-tos/">Null</a></li> 
+			</ol>
+		</section>
+</section><!-- close test section 6 -->
+
+
+<section id="conformance"><div class="header-wrapper"><h2 id="x7-conformance" class="headerPlus"><bdi class="secno">7. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
   
   <p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative.</p>
   
@@ -566,7 +651,7 @@
       <p>To assert that your content or product meets an ARG outcome is called “conformance.” To conform to APCA Readabiliy Guidelines, your test results must show that your project is visually accessible.</p>
       <p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want to make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p></details>
     <section data-status="Developing" id="conformance-levels">
-      <div class="header-wrapper"><h3 id="x6-1-conformance-levels" class="headerPlus3"><bdi class="secno">6.1 </bdi>Conformance levels</h3><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 6.1"></a></div>
+      <div class="header-wrapper"><h3 id="x7-1-conformance-levels" class="headerPlus3"><bdi class="secno">7.1 </bdi>Conformance levels</h3><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 7.1"></a></div>
 
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
       <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
@@ -585,23 +670,23 @@
 
       <p>APCA Readabiliy Guidelines define three levels of conformance: <a href="#bronze">BRONZE</a>, <a href="#silver">SILVER</a>, and <a href="#gold">GOLD</a>.</p>
 
-      <section id="bronze"><div class="header-wrapper"><h4 id="x6-1-1-bronze" class="headerPlus4"><bdi class="secno">6.1.1 </bdi>Bronze</h4><a class="self-link" href="#bronze" aria-label="Permalink for Section 6.1.1"></a></div>
+      <section id="bronze"><div class="header-wrapper"><h4 id="x7-1-1-bronze" class="headerPlus4"><bdi class="secno">7.1.1 </bdi>Bronze</h4><a class="self-link" href="#bronze" aria-label="Permalink for Section 7.1.1"></a></div>
         
         <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level fails to conform to ARG.</p>
         <p class="note" >BACKWARDS COMPATIBILITY NOTE: While there is some overlap between WCAG&nbsp;2.x and ARG-Bronze, ARG includes additional tests and different scoring methods. As a result, ARG is not backwards compatible with WCAG&nbsp;2.x. Bridge-PCA is a special set of guidelines that pass both WCAG&nbsp;2.0 1.4.3 and also ARG, at the expense of design flexibility.</p>
       </section>
-      <section id="silver"><div class="header-wrapper"><h4 id="x6-1-2-silver" class="headerPlus4"><bdi class="secno">6.1.2 </bdi>Silver</h4><a class="self-link" href="#silver" aria-label="Permalink for Section 6.1.2"></a></div>
+      <section id="silver"><div class="header-wrapper"><h4 id="x7-1-2-silver" class="headerPlus4"><bdi class="secno">7.1.2 </bdi>Silver</h4><a class="self-link" href="#silver" aria-label="Permalink for Section 7.1.2"></a></div>
         
         <p>Silver is a higher conformance level, featuring improved readability and accommodation of user preferences.</p>
       </section>
-      <section id="gold"><div class="header-wrapper"><h4 id="x6-1-3-gold" class="headerPlus4"><bdi class="secno">6.1.3 </bdi>Gold</h4><a class="self-link" href="#gold" aria-label="Permalink for Section 6.1.3"></a></div>
+      <section id="gold"><div class="header-wrapper"><h4 id="x7-1-3-gold" class="headerPlus4"><bdi class="secno">7.1.3 </bdi>Gold</h4><a class="self-link" href="#gold" aria-label="Permalink for Section 7.1.3"></a></div>
         
         <p>Gold is the highest conformance level, featuring the improvements from Silver, but adding tests to ensure consistent presentation, such as regulating font x-height and font weight relative to defined reference fonts.</p>
       </section>
     </section>
 
 
-    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h3 id="x6-2-defining-conformance-scope" class="headerPlus3"><bdi class="secno">6.2 </bdi>Defining conformance scope</h3><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 6.2"></a></div>
+    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h3 id="x7-2-defining-conformance-scope" class="headerPlus3"><bdi class="secno">7.2 </bdi>Defining conformance scope</h3><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 7.2"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
       <p>When evaluating the accessibility of content, ARG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
       <ul>
@@ -613,7 +698,7 @@
     </section>
 
 
-    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h3 id="x6-3-conformance-requirements" class="headerPlus3"><bdi class="secno">6.3 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 6.3"></a></div>
+    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h3 id="x7-3-conformance-requirements" class="headerPlus3"><bdi class="secno">7.3 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.3"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
       <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
       <ol>
@@ -622,10 +707,10 @@
     </section>
 
 
-    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h3 id="x6-4-conformance-claims" class="headerPlus3"><bdi class="secno">6.4 </bdi>Conformance claims</h3><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 6.4"></a></div>
+    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h3 id="x7-4-conformance-claims" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance claims</h3><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 7.4"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
       <p>Conformance claims are not required. Authors can conform to ARG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
-      <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h4 id="x6-4-1-required-components-of-a-conformance-claim" class="headerPlus4"><bdi class="secno">6.4.1 </bdi>Required components of a conformance claim</h4><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 6.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
+      <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h4 id="x7-4-1-required-components-of-a-conformance-claim" class="headerPlus4"><bdi class="secno">7.4.1 </bdi>Required components of a conformance claim</h4><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 7.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
           <li><b>Date</b> of the claim;</li>
           <li><b>Guidelines title, version and URI</b>
             <q><abbr title="Accessible Perceptual Contrast Algorithm">APCA</abbr> Readability Guidelines (version)</q></li>
@@ -636,11 +721,11 @@
       </section>
 
     </section>
-</section><!-- close conf section 6 -->
+</section><!-- close conf section 7 -->
   
   
   
-<section data-status="Developing" id="glossary"><div class="header-wrapper"><h2 id="x7-glossary" class="headerPlus"><bdi class="secno">7. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 7."></a></div>
+<section data-status="Developing" id="glossary"><div class="header-wrapper"><h2 id="x8-glossary" class="headerPlus"><bdi class="secno">8. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 8."></a></div>
   <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
   
     <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
@@ -734,7 +819,7 @@
         <p>Evaluation of content by observation of how users with specific <a href="#dfn-functional-need" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functional-need-1">functional needs</a> are able to complete a <a href="#dfn-process" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-process-1">process</a> and how the content meets the relevant <a href="#outcomes">outcomes</a>.</p>
       </dd>
     </dl>
-</section><!-- close glossary section 7 -->
+</section><!-- close glossary section 8 -->
 
 <section class="appendix" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology" class="headerPlus"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
 

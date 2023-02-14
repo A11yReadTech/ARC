@@ -131,7 +131,7 @@ nav li li li bdi.secno {
 /* *****    DETAILS   ***** */
 
 :not(.head) > details {
-	margin: 2em 0 2em 2em;
+	margin: 3em;
 	padding: 1em;
 	color: #404040;
 	border: medium solid #d9d9d9;
@@ -143,16 +143,12 @@ summary::before {
 	margin-top: -1em;
 	width: 3em;
 	position: relative;
-	left: -3.5em;
+	left: -4.5em;
 	float: left;
 	margin-right: -3.5em;
 }
 
-/* .guideline:focus h3::before, .guideline:hover h3::before, */
-
-:not(.head) > details:focus summary::before,
-:not(.head) > details:hover summary::before, 
-.outcome:focus h4::before, .outcome:hover h4::before {
+:not(.head) > details:focus summary::before, :not(.head) > details:hover summary::before, .guideline:focus h3::before, .guideline:hover h3::before, .outcome:focus h4::before, .outcome:hover h4::before {
 	background-color: #ffff99 ;
 	box-shadow: 0 0 1em .25em #ffff99;
 }
@@ -183,9 +179,8 @@ summary::before {
 
 .howto-link, .outcome-link, 
 .method-link, .outcome-header {
-	font-weight: 700;
+	font-weight: 600;
 	font-style: normal;
-	line-height: 1.1;
 }
 .howto-link::before, .outcome-link::before, 
 .method-link::before, 
@@ -221,7 +216,6 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 .outcome {
 	margin-left: 2rem;
 }
-
 .outcome h4 {
 	font-style: normal;
 	font-weight: 500;
@@ -229,24 +223,18 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #005A9C;
 }
 
-/* .guideline h3::before,  */
-.outcome h4::before {
-  display: inline-block;
-  position: relative;	
+.guideline h3::before, .outcome h4::before {
+	display: inline-block;
 	width: 2em;
-	margin: 0 0.5em 0 -3em;
-	top: 1em;
+	margin-right: 0.5em;
+	vertical-align: text-top;
 }
-
-/*
 .guideline h3::before {
 	content: url(../img/guideline.svg);
 }
-*/
 .outcome h4::before {
 	content: url(../img/outcome.svg);
 }
-
 .outcome h4 {
 	margin-top: 1rem;
 	margin-left: -2rem;
@@ -256,13 +244,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #005A9C;
 }
 
-h3.guideline-text {
-    position: relative;
-    margin-left: 3em;
-    font-weight: 500;
-}
 
-span.inserted {display: inline-block; font-weight: 700;}
 
 
 .rating-table, .rating-table th, .rating-table td {
@@ -274,8 +256,6 @@ span.inserted {display: inline-block; font-weight: 700;}
 .rating-table th[scope=row] {
 	white-space: nowrap;
 }
-
-
 caption {
 	font-style: normal !important;
 	font-weight: bold;
@@ -301,8 +281,6 @@ caption {
 	display: block;
 	margin: auto;
 }
-
-
 .screenshot {
 	width: 400px;
 }
