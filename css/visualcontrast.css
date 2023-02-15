@@ -4,9 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
 
 
+.cursiveAlert{
+	padding: 1.5em;
+	font-family: cursive, fantasy, ;
+	font-size: 24px;
+}
+
 .testBox {
 	padding: 1.5em;
-	font-family: Montserrat, Barlow, sans-serif;
+	font-family: Montserrat, Barlow, cursive;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.4;

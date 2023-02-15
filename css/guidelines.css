@@ -140,9 +140,9 @@ nav li li li bdi.secno {
 
 summary::before {
 	display: inline-block;
+	position: relative;
 	margin-top: -1em;
 	width: 3em;
-	position: relative;
 	left: -3.5em;
 	float: left;
 	margin-right: -3.5em;
@@ -196,18 +196,30 @@ summary::before {
 	margin-right: .25em;
 	vertical-align: text-top;
 }
-.howto-header::before, .outcome-header::before,
-.method-header::before  {
-  width: 3ex;
-	margin-right: .5em;
-	vertical-align: middle;
+.outcome-header div::before
+ {
+  position: relative;
+  width: 2ex;
+	margin-right: 0.5em;
+	top: 1em;
   }
+  
+.outcome-header div {
+  	position: relative;
+    font-size: 1.3em;
+  	margin-left: -2.5em;
+  	top: -0.25em;
 
-
+  }
+.outcome-header {
+  	margin-left: 2.5em;
+  }
+  
+  
 .howto-link::before,.howto-header::before {
 	content: url(../img/how-to.svg);
 }
-.outcome-link::before, .outcome-header::before {
+.outcome-link::before, .outcome-header div::before {
 	content: url(../img/outcome.svg);
 }
 .method-link::before,.method-header::before {
