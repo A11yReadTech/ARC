@@ -1512,6 +1512,8 @@ Possible extra rowspan handling
 			display: none;
 		}
 	}
+	
+	
 	@page {
 		margin: 1.5cm 1.1cm;
 	}
@@ -1548,7 +1550,7 @@ Possible extra rowspan handling
 		grid-template-columns: minmax(0, 50em);
 	}
 
-  @media (max-width: 770px) {
+@media (max-width: 770px) {
     body {
       padding: 2vw;
     }
