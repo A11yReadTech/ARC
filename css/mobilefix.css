@@ -11,7 +11,7 @@
     section section, section section section {
       padding: 0 0 0 2vw;
     }
-   :is(h2):not(#toch2)+a.self-link {
+   :is(h2):not(#toch2) + a.self-link {
      top: -1.33em;
      left: -0.8em;
    }

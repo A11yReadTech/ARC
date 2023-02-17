@@ -6,7 +6,7 @@
 
   <meta name="generator" content="ReSpec 32.7.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="myndex" content="manual feb 12 2023">
+  <meta name="readtech" content="manual feb 16 2023">
 
   <meta name="description" content="The APCA Readabiliy Guidelines (ARG) provide recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 
@@ -14,6 +14,7 @@
 
 
 <style>
+
   .issue-label{text-transform:initial}
   .warning>p:first-child{margin-top:0}
   .warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
@@ -26,17 +27,25 @@
   input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
   .issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
 
+
   dfn{cursor:pointer}
-  .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+  .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:0.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
   .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
   .dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
   .dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+  
   .dfn-panel *{margin:0}
+  
   .dfn-panel b{display:block;color:#000;margin-top:.25em}
+  
   .dfn-panel ul a[href]{color:#333}
+  
   .dfn-panel>div{display:flex}
+  
   .dfn-panel a.self-link{font-weight:700;margin-right:auto}
+  
   .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+  
   .dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
   .dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
   .dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
@@ -44,68 +53,116 @@
   .dfn-panel ul{padding:0}
   .dfn-panel li{margin-left:1em}
   .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+
 </style>  
 
 <style id="respec-mainstyle">
+
   @keyframes pop {
     0% {transform:scale(1,1)}
     25% {transform:scale(1.25,1.25);opacity:.75}
     100% {transform:scale(1,1)}
   }
+
   :is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+
   dfn{font-weight:700}
+
   a.internalDFN{color:inherit;border-bottom:1px solid #99c; text-decoration:none}
   a.externalDFN{color:inherit;border-bottom:1px dotted #ccc; text-decoration:none}
+
   a.bibref{text-decoration:none}
+
   .respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
   .respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
-  @supports not (text-decoration:red wavy underline) {
+ 
+ @supports not ( text-decoration: red wavy underline ) {
     .respec-offending-element:not(pre){display:inline-block}
     .respec-offending-element{ background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x
     }
   }
+
   #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+
   cite .bibref{font-style:normal}
+
   a[href].orcid{padding-left:4px;padding-right:4px}
   a[href].orcid>svg{margin-bottom:-2px}
+
   .toc a,.tof a{text-decoration:none}
   a .figno,a .secno{color:#000}
   ol.tof,ul.tof{list-style:none outside none}
+
   .caption{margin-top:.5em;font-style:italic}
   table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+
   .simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
   .simple th a{color:#fff;padding:3px 5px;text-align:left}
   .simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
   .simple td{padding:3px 10px;border-top:1px solid #ddd}
   .simple tr:nth-child(even){background:#f0f6ff}
+
   .section dd>p:first-child{margin-top:0}
   .section dd>p:last-child{margin-bottom:0}
   .section dd{margin-bottom:1em}
   .section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+
   #issue-summary>ul{column-count:2}
   #issue-summary li{list-style:none;display:inline-block}
+
   details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
   details.respec-tests-details>*{padding-right:2em}
   details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
   details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
   details.respec-tests-details>ul{width:100%;margin-top:-.3em}
   details.respec-tests-details>li{padding-left:1em}
-  .self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
-  aside.example .marker>a.self-link{color:inherit}
-  .header-wrapper{display:flex;align-items:baseline}
-  :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
-  :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
-  :is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
-  :is(h2,h3)+a.self-link{top:-.2em}
-  :is(h4,h5,h6)+a.self-link::before{color:#000}
+  
+  .self-link:hover{
+    opacity:1;
+    text-decoration:none;
+    background-color:transparent;
+  }
+  
+  aside.example .marker>a.self-link{ color:inherit; }
+  
+  .header-wrapper{ display:flex; align-items: baseline;}
+  
+  :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2) { 
+    position: relative; 
+    left: -0.5em; 
+    }
 
-  @media (max-width:767px){
+ :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{
+   color:inherit;
+   order:-1;
+   position:relative;
+   left:-1.1em;
+   font-size: 1rem;
+   opacity:0.5;
+  }
+  
+  :is(h2,h3,h4,h5,h6)+a.self-link::before{
+    content: "§";
+    text-decoration: none;
+    color: var(--heading-text);
+  }
+  :is(h2,h3) + a.self-link { top: -0.2em }
+  :is(h4,h5,h6) + a.self-link::before { color:#000 }
+
+ :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2).outcome-header { 
+    position: relative; 
+    left: -2.3em; 
+    }
+
+  @media (max-width:767px) {
     dd{margin-left:0}
   }
 
   @media print{
-    .removeOnSave{display:none}
+    .removeOnSave{ display:none }
   }
+  
+  
 </style>
 
 
@@ -119,18 +176,21 @@
 
 
 <style>
+
   var{position:relative;cursor:pointer}
   var[data-type]::after,var[data-type]::before{ position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
   var[data-type]::before{ content:"";transform:translateX(-50%); border-width:4px 6px 0 6px; border-style:solid;border-color:transparent;border-top-color:#000}
   var[data-type]::after{ content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
   var[data-type]:hover::after,
   var[data-type]:hover::before{opacity:1}
+
 </style>
 
 
 
 
 <script id="initialUserConfig" type="application/json">
+/*
 {
   "trace": true,
   "doRDFa": "1.1",
@@ -162,6 +222,8 @@
   "publishISODate": "2023-02-02T00:00:00.000Z",
   "generatedSubtitle": "ART Editor's Draft 02 February 2023"
 }
+
+*/
 </script>
 
 
@@ -184,63 +246,20 @@
 <div class="head">
 
   <h1 id="title" class="title headerPlus">APCA Readabiliy Guidelines (ARG)</h1> 
-  <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Draft</a> <time class="dt-published" datetime="2023-02-12">12 February 2023</time></p>
+  <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Working Draft</a> <time class="dt-published" datetime="2023-02-17">17 February 2023</time></p>
 
-  <p class="info">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p>
+  <div style="position: relative; margin: 0; top:0px; float: right; width: 65%;"><p class="info" style="max-width: 70%; padding-left: 1.5em;">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p><img style="position: relative; margin: -2em -2em 0; top:0px; float: right; filter: drop-shadow(0.5em 0.3em 0.5em #5678);" src="../img/safetyManSMALL.png" height="160"></div>
 
-  <details>
-    <summary>More details about this document</summary>
-      <dl>
+      <p><button id="quickstart" onclick="window.location.href='#guidelines'" style="margin: -1em 0 0 0; padding: 0.5em; cursor: pointer;font-size: 1.4em; font-weight:bold; color:#ffe; background:#96b; border-radius:0.75em; box-shadow: inset -0.1em -0.1em 0.2em 0.1em #0007, inset 0.1em 0.1em 0.2em 0.1em #fff7, 0.1em 0.1em 0.2em #0007;">JUMP TO<br>VISUAL<br>CONTRAST<br> QUICK START </button></p>
 
-<!--
-        <dt>Current unpublished draft version:</dt>
-      <dd>
-                <a class="u-url" href="https://A11yReadTech.github.io/ARG/guidelines/">A11yReadTech.github.io/ARG/guidelines/</a>
-              </dd>
--->
-        <dt>Latest published working draft (THIS):</dt><dd>
-                <a href="https://www.readtech.org/ARG/guidelines/">www.readtech.org/ARG/guidelines</a>
-              </dd>
 
-        <!--
-        <dt>Editor:</dt><dd class="editor p-author h-card vcard">
-    <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
-  </dd>
-    -->    
-        <dt>Project Manager:</dt><dd class="editor p-author h-card vcard">
-    <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
-    </dd>
-      <dt>ARG (Readability Guidelines) Feedback:</dt>
-      <dd>
-        <a href="https://github.com/A11yReadTech/ARG/">GitHub A11yReadTech/ARG</a>
-        (<a href="https://github.com/A11yReadTech/ARG/discussions/">ARG open discussions</a>,
-        <a href="https://github.com/A11yReadTech/ARG/issues/">ARG beta issues</a>)
-      </dd>
-
-      <dt>APCA Algorithm Feedback:</dt>
-      <dd>
-        <a href="https://github.com/Myndex/SAPC-APCA/">GitHub Myndex/SAPC-APCA</a>
-        (<a href="https://github.com/Myndex/SAPC-APCA/discussions/">APCA open discussions</a>,
-        <a href="https://github.com/Myndex/SAPC-APCA/issues/">APCA beta issues</a>)
-      </dd>
-
-      </dl>
-
-    </details>
-    
-  <p class="copyright">
-    <a href="https://www.readtech.org/LGL/">Copyright</a> © 2021-2023 by <a href="https://www.readtech.org/"><abbr title="Accessible Reading Technologies">ART</abbr></a><sup>™</sup>. All Rights Reserved.
-    <a href="https://www.readtech.org/LGL/#disclaimers">Liability</a>, <a href="https://www.readtech.org/LGL/#trademarks">Trademarks</a>, <a href="https://www.readtech.org/LGL/#patents">Patents</a>, and <a href="https://www.readtech.org/LGL/#license">License</a>
-  </p>
-    <hr title="Separator for header">
+    <hr title="Separator for header" style="clear:both;">
 </div> <!-- close div head -->
-
-
 
 
 <section id="abstract" class="introductory">
   
-  <h2 class="headerPlus">Abstract</h2>
+  <h2 class="headerPlus">EXECUTIVE SUMMARY</h2>
 
   <img src="../img/ARTtextPaths_v03.svg" style="position: relative; margin: 1em 1.5em 4em; top:0px; float: right; width: 40%;">
 
@@ -254,8 +273,8 @@
   </section>
 
 <!-- table of contents -->
-<nav id="toc"><h2 class="introductory headerPlus3" id="table-of-contents">Table of Contents</h2>
-<ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a>
+<nav id="toc"><h2 class="introductory headerPlus" id="table-of-contents">Table of Contents</h2>
+<ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract"> Executive Summary</a>
   <ol class="toc"><li class="tocline"><a class="tocxref" href="#background">History and Purpose</a></li>
     <li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li>
   </ol></li>
@@ -324,14 +343,60 @@
   <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>.</p>
   </section>
 
+
+
+  <details>
+    <summary>More details about this document</summary>
+      <dl>
+
+<!--
+        <dt>Current unpublished draft version:</dt>
+      <dd>
+                <a class="u-url" href="https://A11yReadTech.github.io/ARG/guidelines/">A11yReadTech.github.io/ARG/guidelines/</a>
+              </dd>
+-->
+        <dt>Latest published working draft (THIS):</dt><dd>
+                <a href="https://www.readtech.org/ARG/guidelines/">www.readtech.org/ARG/guidelines</a>
+              </dd>
+
+        <!--
+        <dt>Editor:</dt><dd class="editor p-author h-card vcard">
+    <a class="ed_mailto u-email email p-name" href="mailto:perceptex@myndex.com">Andrew Somers</a> (<span class="p-org org h-org">ART</span>)
+  </dd>
+    -->    
+        <dt>Project Manager:</dt><dd class="editor p-author h-card vcard">
+    <a class="ed_mailto u-email email p-name" href="mailto:info@readtech.rg">Mike Anderson</a> (<span class="p-org org h-org">ART</span>)
+    </dd>
+      <dt>ARG (Readability Guidelines) Feedback:</dt>
+      <dd>
+        <a href="https://github.com/A11yReadTech/ARG/">GitHub A11yReadTech/ARG</a>
+        (<a href="https://github.com/A11yReadTech/ARG/discussions/">ARG open discussions</a>,
+        <a href="https://github.com/A11yReadTech/ARG/issues/">ARG beta issues</a>)
+      </dd>
+
+      <dt>APCA Algorithm Feedback:</dt>
+      <dd>
+        <a href="https://github.com/Myndex/SAPC-APCA/">GitHub Myndex/SAPC-APCA</a>
+        (<a href="https://github.com/Myndex/SAPC-APCA/discussions/">APCA open discussions</a>,
+        <a href="https://github.com/Myndex/SAPC-APCA/issues/">APCA beta issues</a>)
+      </dd>
+
+      </dl>
+
+    </details>
+    
+  <p class="copyright">
+    <a href="https://www.readtech.org/LGL/">Copyright</a> © 2021-2023 by <a href="https://www.readtech.org/"><abbr title="Accessible Reading Technologies">ART</abbr></a><sup>™</sup>. All Rights Reserved.
+    <a href="https://www.readtech.org/LGL/#disclaimers">Liability</a>, <a href="https://www.readtech.org/LGL/#trademarks">Trademarks</a>, <a href="https://www.readtech.org/LGL/#patents">Patents</a>, and <a href="https://www.readtech.org/LGL/#license">License</a>
+  </p>
 </section><!-- close abstract section -->
 
 
 
 
-
+ 
 <section class="informative" id="introduction">
-  <div class="header-wrapper"><h2 id="x1-introduction" class="headerPlus"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
+  <div class="header-wrapper "><h2 id="x1-introduction" class="headerPlus"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
@@ -357,11 +422,11 @@
       </ul>
     </details>
 
-    <section id="about-apca-readability-guidelines"><div class="header-wrapper"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3"><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
+    <section id="about-apca-readability-guidelines"><div class="header-wrapper marker"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3 "><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
       <p>This introduction will provide a <em>brief</em> background of APCA and ARG. </p>
     </section>
 
-    <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels" class="headerPlus3"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
+    <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels" class="headerPlus3 marker"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
 
       <p>As part of the drafting process each normative section of this document is given a status, approximately following WCAG 3. This status is used to indicate how far along in the development this section is.</p>
       <ul>
@@ -377,7 +442,7 @@
     </section>
 
     <section id="goals-and-requirements"><div class="header-wrapper">
-      <h3 id="x1-3-goals-and-requirements" class="headerPlus3"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
+      <h3 id="x1-3-goals-and-requirements" class="headerPlus3 marker"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
 
       <p>The goal of ARG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
       <p>Research and development work performed by Myndex Research identified issues with the existing WCAG&nbsp;2.x contrast metrics. Correcting these issues shaped the guidelines that follow.</p>
@@ -391,7 +456,7 @@
 
 
 
-<section id="normative-requirements"><div class="header-wrapper"><h2 id="x2-normative-requirements" class="headerPlus"><bdi class="secno">2. </bdi>Normative requirements</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div>
+<section id="normative-requirements"><div class="header-wrapper"><h2 id="x2-normative-requirements" class="headerPlus marker"><bdi class="secno">2. </bdi>Normative requirements</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div>
     <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
 
     <details class="summary">
@@ -405,6 +470,8 @@
     <p>In addition to this section, the <a href="#guidelines">Visual Presentation</a>, <a href="#visual-contrast">Visual Contrast</a>, <a href="#nontext-contrast-">Nontext Contrast</a>, <a href="#user-integration">User Integration</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
     <p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
     <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p></div>
+
+
 </section><!-- close norm section 2 -->
 
 
@@ -503,11 +570,14 @@
         </details>
 
 		<section>
-			<h3 id="outcome-lightness" class="outcome-header"><div>Outcome:</div> Lightness contrast between text and background</h3>
-
-			<p class="outcome">Provides adequate luminance contrast (lightness/darkness difference) between background and text or non-text colors in order to read the text easily, or discern non-text meaning and function easily.</p>
+			<h3 id="outcome-lightness" class="outcome-header"><div>Outcome:</div> Ample lightness contrast between text and background</h3>
+    
+    <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="../img/ReadingOrangeMan.png" height="240"  alt="a little orange man reading a magenta book"id="" /></p>
+    
+			<p class="outcome" status="position: relative; clear: left;">Provides adequate luminance contrast (lightness/darkness difference) between background and text or non-text colors in order to read the text easily, or discern non-text meaning and function easily.</p>
 
       <p>Set the lightness contrast as appropriate for a font family, font weight, x-height, and the use-case of the text.</p>
+
 
       <ol>
         <li>Font weight has a substantial effect on visual contrast</li>
@@ -542,7 +612,7 @@
         <p>The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light-ratio measurement.</p>
         <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
         </div></div>
-</section><!-- close vis con section 4-->
+</section><!-- close vis con section 4 -->
 
 
 
@@ -559,8 +629,7 @@
       <summary>Plain language summary of <q>Nontext Contrast</q></summary>
 
     </details>
-    
-    
+
         <details class="categories">
           <summary>Functional categories for <q>non text contrast for semantic and non-somatic elements</q></summary>
           <p>This outcome relates to the following functional categories:</p>
@@ -574,6 +643,7 @@
         </details>
 
 		<section>
+
 			<h3 id="outcome-nontext" class="outcome-header"><div>Outcome:</div> hue and colorfulness are not the only representations of data</h3>
 
 			<p class="outcome"> Hue and colorfulness are important dimension to design, however because of the great amount of variability of vision among individuals, as well as cultural differences regarding color, information coding must utilize other techniques besides hue differentiation.</p>
@@ -583,15 +653,12 @@
 				<li><a class="method-link" href="../methods/">Null</a></li>
 			</ol>
 
-
 			<h2 class="howto-header">How-to Guides:</h2>
 			<ol>
 				<li><a class="howto-link" href="../how-tos/">Null</a></li> 
 			</ol>
 		</section>
 </section><!-- close test section 5 -->
-
-
 
 
 <section data-status="exploratory" hidden="" id="user-integration">
@@ -614,6 +681,25 @@
             <li>Cognitive - non-lexical understanding</li>
             <li>Cognitive - Tasks, Instructions</li>
           </ul>
+        
+        PLACEHOLDERS FROM SILVER TEMPLATE (are they still in use?)
+        						<li>Essential </li>
+						<li>Sensory - Vision &amp; Visual </li>
+						<li>Sensory - Hearing &amp; Auditory </li>
+						<li>Sensory Intersections </li>
+						<li>Physical - Mobility </li>
+						<li>Physical - Motor </li>
+						<li>Physical &amp; Sensory Intersections </li>
+						<li>Speech </li>
+						<li>Cognitive - Attention </li>
+						<li>Cognitive - Language &amp; Literacy </li>
+						<li>Cognitive - Learning </li>
+						<li>Cognitive - Memory </li>
+						<li>Cognitive - Executive </li>
+						<li>Cognitive - Mental Health </li>
+						<li>Cognitive &amp; Sensory Intersections </li>
+						<li>Independence </li>
+
         </details>
 
 		<section>
@@ -633,7 +719,6 @@
 			</ol>
 		</section>
 </section><!-- close test section 6 -->
-
 
 <section id="conformance"><div class="header-wrapper"><h2 id="x7-conformance" class="headerPlus"><bdi class="secno">7. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
   
@@ -706,7 +791,6 @@
       </ol>
     </section>
 
-
     <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h3 id="x7-4-conformance-claims" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance claims</h3><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 7.4"></a></div>
       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
       <p>Conformance claims are not required. Authors can conform to ARG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
@@ -721,10 +805,10 @@
       </section>
 
     </section>
+
 </section><!-- close conf section 7 -->
-  
-  
-  
+
+
 <section data-status="Developing" id="glossary"><div class="header-wrapper"><h2 id="x8-glossary" class="headerPlus"><bdi class="secno">8. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 8."></a></div>
   <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
   
@@ -824,8 +908,8 @@
 <section class="appendix" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology" class="headerPlus"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
 
 </section><!-- close A section -->
-  
-  
+
+
 <section class="appendix" id="differences-from-wcag-2-x"><div class="header-wrapper"><h2 id="b-differences-from-wcag-2-x" class="headerPlus"><bdi class="secno">B. </bdi>Differences from WCAG&nbsp;2.x</h2><a class="self-link" href="#differences-from-wcag-2-x" aria-label="Permalink for Appendix B."></a></div>
 
 
@@ -858,7 +942,9 @@
   <div class="header-wrapper">
     <h2 id="e-references" class="headerPlus"><bdi class="secno">E. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix E."></a>
 
+
   </div>
+
 
 
 
@@ -1398,7 +1484,7 @@
 })()
 </script>
 
-<script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script>
+<script src="../js/fixup.js"></script>
 
 </body>
 </html>

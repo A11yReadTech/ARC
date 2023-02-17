@@ -56,7 +56,7 @@ var respecConfig = {
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
-	group: "wai",
+	group: "art",
 	github: "A11yReadTech/ARG",
 
 	maxTocLevel: 4,
