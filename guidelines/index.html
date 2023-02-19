@@ -6,7 +6,7 @@
 
   <meta name="generator" content="ReSpec 32.7.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="readtech" content="manual feb 16 2023">
+  <meta name="readtech" content="manual feb 19 2023">
 
   <meta name="description" content="The APCA Readabiliy Guidelines (ARG) provide recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 
@@ -220,12 +220,31 @@
   ],
   "lint": false,
   "publishISODate": "2023-02-02T00:00:00.000Z",
-  "generatedSubtitle": "ART Editor's Draft 02 February 2023"
+  "generatedSubtitle": "ART Editor's Draft 19 February 2023"
 }
 
 */
 </script>
 
+
+
+<style>
+div.upR p.info {
+  max-width: calc(100% - 5.5em);
+}
+div.upR {
+  width: 70%;
+}
+
+
+
+@media (max-width:640px){
+  div.upR {
+    width: 100%;
+    margin: 0 0 3em;
+  }
+}
+</style>
 
 </head>
 
@@ -246,10 +265,15 @@
 <div class="head">
 
   <h1 id="title" class="title headerPlus">APCA Readabiliy Guidelines (ARG)</h1> 
-  <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Working Draft</a> <time class="dt-published" datetime="2023-02-17">17 February 2023</time></p>
+  <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Working Draft</a> <time class="dt-published" datetime="2023-02-19">19 February 2023</time></p>
+
+
+  <div class="upR"><p class="info" style="">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p><img style="" src="../img/safetyManSMALL.png" height="150"></div>
+
+<!--
 
   <div style="position: relative; margin: 0; top:0px; float: right; width: 65%;"><p class="info" style="max-width: 70%; padding-left: 1.5em;">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p><img style="position: relative; margin: -2em -2em 0; top:0px; float: right; filter: drop-shadow(0.5em 0.3em 0.5em #5678);" src="../img/safetyManSMALL.png" height="160"></div>
-
+-->
       <p><button id="quickstart" onclick="window.location.href='#guidelines'" style="margin: -1em 0 0 0; padding: 0.5em; cursor: pointer;font-size: 1.4em; font-weight:bold; color:#ffe; background:#96b; border-radius:0.75em; box-shadow: inset -0.1em -0.1em 0.2em 0.1em #0007, inset 0.1em 0.1em 0.2em 0.1em #fff7, 0.1em 0.1em 0.2em #0007;">JUMP TO<br>VISUAL<br>CONTRAST<br> QUICK START </button></p>
 
 
@@ -399,7 +423,7 @@
   <div class="header-wrapper "><h2 id="x1-introduction" class="headerPlus"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 
-    <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
+    <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
       <p>The current proposal for APCA and ARG is made up of several divisions, including:</p>
         <ul><li>APCA Based Tools • provide perceptually uniform, objective assessment of contrast</li>
             <li>How-tos • Tutorial guides for planning and implementing design strategies</li>
@@ -412,7 +436,7 @@
 
     <details class="summary">
       <summary>Plain language summary of <q>Introduction</q></summary>
-      <p>The APCA Readabiliy Guidelines (ARG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. ARG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
+      <p>The APCA Readability Guidelines (ARG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. ARG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
       <p>What’s new in APCA/ARG?</p>
       <ul>
       <li>APCA/ARG includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
@@ -423,30 +447,37 @@
     </details>
 
     <section id="about-apca-readability-guidelines"><div class="header-wrapper marker"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3 "><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-      <p>This introduction will provide a <em>brief</em> background of APCA and ARG. </p>
+      <p>The APCA Readability Guidelines (ARG) is a modern set of visual contrast design guidelines utilizing the Accessible Perceptual Contrast Algorithm (APCA), which is tuned for perceptual uniformity of text and non-taxed elements as displayed on a self illuminated monitor or device.</p> 
+      <p>APCA & ARG provide significant improvements over older methods and guidelines such as the Web Content Accessibility Guidelines (WCAG)&nbsp;2.x. and other similar standards. The improvements include more robust readability in a wider variety of environments, and on a wider variety of displays and devices. Also, while other methods fail to calculate for dark mode correctly, APCA is well able to calculate reasonable values here.</p>
+      <p>These improvements are achieved by referencing and implementing the very latest peer-reviewed vision science, as well as integrating with modern, scientific-consensus readability research. Please see the bibliography for references.</p>
+      <p>ARG is intended to eventually integrate into other standards such as ISO and the future WCAG&nbsp;3. As such, you may notice that some aspects of the documents here are presented similarly to those in the emerging WCAG&nbsp;3. This should come as no surprise, as the authors of ARG are also actively working as part of the task force & subgroups developing WCAG&nbsp;3. However we want to stress that the ARG are a separate, independent set of guidelines, and are not presently an official recommendation, and should be referenced only as a work in progress.</p>
+
     </section>
 
     <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels" class="headerPlus3 marker"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
 
-      <p>As part of the drafting process each normative section of this document is given a status, approximately following WCAG 3. This status is used to indicate how far along in the development this section is.</p>
-      <ul>
-        <li><strong id="status-deprecated">Deprecated</strong>: This content is obsolete, and no longer supported <em>hidden by default</em>.</li>
-        <li><strong id="status-placeholder">Placeholder</strong>: This content is temporary, it showcases the type of content or section to expect here <em>hidden by default</em>.</li>
-        <li><strong id="status-exploratory">Exploratory</strong>: This content is not refined, details and definitions may be missing  <em>hidden by default</em>.</li>
-        <li><strong id="status-developing">Developing</strong>: There is rough agreement but not all high-level concerns have been settled. Details have been filled, but are yet to be worked out. </li>
-        <li><strong id="status-refining">Refining</strong>: It is ready for broad public review and experimental adoption. </li>
-        <li><strong id="status-mature">Mature</strong>: Content is believed to be ready for integration with other standards.</li>
+      <p>ASections of this document are assigned a status, approximately following the as yet undefined patterns of WCAG&nbsp;3. This status is used to indicate  what stage of development the section is at present.</p>
+      <ul id="status-levels" >
+        <li><strong id="status-deprecated">Deprecated</strong> : This content is obsolete and no longer supported ••• <em>hidden</em>.</li>
+        <li><strong id="status-placeholder">Placeholder</strong> : This indicates content will be here ••• <em>hidden</em>.</li>
+        <li><strong id="status-exploratory">Exploratory</strong> : This content is unrefined and in the early research phase •••  <em>hidden</em>.</li>
+        <li><strong id="status-developing">Developing</strong> : An active developing draft but still subject to significant revision. </li>
+        <li><strong id="status-review">Review</strong> : Ready for broad public review and public beta. </li>
+        <li><strong id="status-mature">Mature</strong> : Ready for adoption or integration into other standards.</li>
       </ul>
-      <p>By default, deprecated, placeholder, and exploratory sections are hidden and removed from the table of contents. Toggle these sections with the following button:</p>
-      <p><button id="status-filter" data-status-filter="exploratory,placeholder,deprecated" style="font-size: 1.3em;">Reveal placeholder &amp; exploratory sections</button></p>
+      <p>The deprecated, placeholder, and exploratory sections are hidden when this page loads, but you may toggle the visibility for these sections with the following button:</p>
+
+      <p><button id="status-filter" data-status-filter="exploratory, placeholder, deprecated" style="padding: 0.5em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.5em">Reveal placeholder &amp; exploratory sections</button></p>
     </section>
 
     <section id="goals-and-requirements"><div class="header-wrapper">
       <h3 id="x1-3-goals-and-requirements" class="headerPlus3 marker"><bdi class="secno">1.3 </bdi>Goals and Requirements</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
 
-      <p>The goal of ARG and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies more readable, accessible, and usable for all people, including those with visual impairments. this goal will be met through evidence based science and responding to changing technologies.</p>
-      <p>Research and development work performed by Myndex Research identified issues with the existing WCAG&nbsp;2.x contrast metrics. Correcting these issues shaped the guidelines that follow.</p>
+    <p>The goal of APCA Readability Guidelines (ARG) and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies, more readable, accessible, and usable for all people, including those with visual impairments. This goal will be met through evidence-based science and responding to changing technologies.</p>
+    <p>Research and development work beginning in early 2019, identified issues with the existing WCAG&nbsp;2.x contrast methods and guidelines. Correcting these issues shaped the guidelines contained herein.</p>
+    <p>Nevertheless, ARG embodies a much wider scope, and is not confined merely to contrast, but to the entire visual presentation of text and non-text content. The reality is that the very context-sensitive nature of the human vision system requires this more complete, holistic approach to visual perception design guidelines.</p>
     </section>
+
 </section><!-- close intro section 1 -->
 
 
@@ -469,7 +500,7 @@
     </details>
     <p>In addition to this section, the <a href="#guidelines">Visual Presentation</a>, <a href="#visual-contrast">Visual Contrast</a>, <a href="#nontext-contrast-">Nontext Contrast</a>, <a href="#user-integration">User Integration</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
     <p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
-    <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p></div>
+    <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p></div>
 
 
 </section><!-- close norm section 2 -->
@@ -483,6 +514,7 @@
 
 <section id="guidelines"><div class="header-wrapper"><h2 id="x3-guidelines" class="headerPlus"><bdi class="secno">3. </bdi>Visual Presentation</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
 
+    <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
 
     <div class="h3 headerPlus2t noLeftShift">APCA Visual Presentation Guidance</div>
     <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin 0 auto; top:12px;  width: 33%;">&nbsp;&nbsp;&nbsp; <img src="../img/ARGtextPaths_v01.svg" style="position: relative; margin 0 auto; top:12px;  width: 50%;">
@@ -493,18 +525,21 @@
       <summary>Plain language summary of <q>Guidelines</q></summary>
       <ul>
 
-        <li>Visual contrast (color contrast)</li>
+        <li>Visual contrast (lightness contrast)</li>
         <ul><li>Use Cases (primary content, sub-fluent)</li>
             <li>Text contrasts</li>
             <li>Font characteristics</li>
+        </ul>
+        <li>Color contrast (hue contrast)</li>
+        <ul><li>Use of color (hue and colorfulness)</li>
             <li>Non-text contrasts</li>
             <li>Dataviz characteristics</li>
         </ul>
-        <li>Visual hierarchy </li>
-        <li>Use of color (hue and colorfulness)</li>
-        <li>Interactive (links, forms, navigation) </li>
-        <li>Visual modes (dark, light, dalton) </li>
-      </ul>
+        <li>User integration</li>
+        <ul><li>Visual modes (dark, light, dalton) </li>
+            <li>Visual hierarchy </li>
+            <li>Interactive (links, forms, navigation) </li>
+      </ul></ul>
 
     </details>
 
@@ -545,17 +580,20 @@
 
 
 <section class="guideline" id="visual-contrast">
+
     <div class="header-wrapper"><h2 id="x4-visual-contrast" class="headerPlus">
     <bdi class="secno">4. </bdi>VISUAL CONTRAST</h2><a class="self-link" href="#visual-contrast" aria-label="Permalink for Section 4."></a>
     </div>
-      <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+
+<div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
+
+<p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
 
 <div class="header-wrapper"><h3 id="x4-1-luminance-contrast" class="headerPlus3">
 <bdi class="secno">4.1 </bdi>Guideline: Luminance Contrast</h3><a class="self-link" href="#luminance-contrast" aria-label="Permalink for Section 4.1"></a></div>
 
       <p class="">Provide sufficient lightness/darkness contrast between foreground and background.</p>
 
-        <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
 
         <details class="categories">
           <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
@@ -573,7 +611,7 @@
 			<h3 id="outcome-lightness" class="outcome-header"><div>Outcome:</div> Ample lightness contrast between text and background</h3>
     
     <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="../img/ReadingOrangeMan.png" height="240"  alt="a little orange man reading a magenta book"id="" /></p>
-    
+
 			<p class="outcome" status="position: relative; clear: left;">Provides adequate luminance contrast (lightness/darkness difference) between background and text or non-text colors in order to read the text easily, or discern non-text meaning and function easily.</p>
 
       <p>Set the lightness contrast as appropriate for a font family, font weight, x-height, and the use-case of the text.</p>
@@ -599,7 +637,7 @@
 
 		</section>
 
-      <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
+      <div class="note" id="issue-container-generatedID-2"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="4"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-2"></a></div><div class="">
         <p>Visual Contrast is a paradigm shift from WCAG&nbsp;2.x contrast in terms of methodology and scope:</p>
         <ul>
           <li>New contrast calculations based on modern research into visual perception and visual reading, provide a perceptually uniform result which extends the useable range allowing for automated color selection and calculating for special modes such as dark mode.</li>
@@ -619,11 +657,14 @@
 
 
 
+
+
 <section data-status="developing" id="nontext-contrast">
   <div class="header-wrapper">
   <h2 id="x5-nontext-contrast" class="headerPlus"><bdi class="secno">5. </bdi>NONTEXT CONTRAST</h2><a class="self-link" href="#nontext-contrast" aria-label="Permalink for Section 5."></a></div>
+  
+       <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
   <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
     
     <details class="summary">
       <summary>Plain language summary of <q>Nontext Contrast</q></summary>
@@ -664,8 +705,8 @@
 <section data-status="exploratory" hidden="" id="user-integration">
   <div class="header-wrapper">
   <h2 id="x6-user-integration" class="headerPlus"><bdi class="secno">5. </bdi>USER-INTEGRATION</h2><a class="self-link" href="#user-integration" aria-label="Permalink for Section 6."></a></div>
+       <div class="addition sticky floatAddition exploratory"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.</div>
   <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-       <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.</div>
     
     <details class="summary">
       <summary>Plain language summary of <q>User Integration</q></summary>
@@ -720,9 +761,11 @@
 		</section>
 </section><!-- close test section 6 -->
 
-<section id="conformance"><div class="header-wrapper"><h2 id="x7-conformance" class="headerPlus"><bdi class="secno">7. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
-  
-  <p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative.</p>
+
+<section id="conformance"><div class="header-wrapper"><h2 id="x7-conformance" class="headerPlus"><bdi class="secno">7. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div>
+    
+
+<p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
   
   <p>
         The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
@@ -735,12 +778,12 @@
       <summary>Plain language summary of <q>Conformance</q></summary>
       <p>To assert that your content or product meets an ARG outcome is called “conformance.” To conform to APCA Readabiliy Guidelines, your test results must show that your project is visually accessible.</p>
       <p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want to make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p></details>
-    <section data-status="Developing" id="conformance-levels">
+    <section data-status="developing" id="conformance-levels">
       <div class="header-wrapper"><h3 id="x7-1-conformance-levels" class="headerPlus3"><bdi class="secno">7.1 </bdi>Conformance levels</h3><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 7.1"></a></div>
 
-      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
-      <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span>Editor's note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
-      <p>APCA Readabiliy Guidelines use new conformance methods, modeled after the future WCAG&nbsp;3.0 in order to support the goal of integration. Some key goals for this new conformance model:</p>
+      <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
+      <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
+      <p>APCA Readabiliy Guidelines use new conformance methods, partially modeled after the future WCAG&nbsp;3.0 in order to support the goal of integration. Some key goals for this new conformance model:</p>
 
       <ol>
         <li>Develop a model that encourages websites to improve accessibility, as opposed to stopping at an arbitrary level such as "AA";</li>
@@ -749,30 +792,140 @@
         </li><li>Recognize the natural divisions of technology vs. content</li>
       </ol>
 
-      <p>To do this, the conformance model prioritizes content needed to complete tasks while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that does not meet one or more guidelines, so long as that content doesn’t prevent people with disabilities from successfully using the site.</p>
+      <p>To do this, the conformance model prioritizes primary use cases of content needed to understand or complete tasks, while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that might not meet one or more guidelines, so long as such content doesn’t prevent people with disabilities from successfully using the site.</p>
 
       </div></div>
 
       <p>APCA Readabiliy Guidelines define three levels of conformance: <a href="#bronze">BRONZE</a>, <a href="#silver">SILVER</a>, and <a href="#gold">GOLD</a>.</p>
 
-      <section id="bronze"><div class="header-wrapper"><h4 id="x7-1-1-bronze" class="headerPlus4"><bdi class="secno">7.1.1 </bdi>Bronze</h4><a class="self-link" href="#bronze" aria-label="Permalink for Section 7.1.1"></a></div>
+      <section id="bronze"><div class="header-wrapper"><h4 id="x7-1-1-bronze" class="headerPlus4"><bdi class="secno">7.1.1 </bdi>BRONZE:</h4><a class="self-link" href="#bronze" aria-label="Permalink for Section 7.1.1"></a></div>
         
+        <strong> Covers primary content text only.</strong> 
         <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level fails to conform to ARG.</p>
         <p class="note" >BACKWARDS COMPATIBILITY NOTE: While there is some overlap between WCAG&nbsp;2.x and ARG-Bronze, ARG includes additional tests and different scoring methods. As a result, ARG is not backwards compatible with WCAG&nbsp;2.x. Bridge-PCA is a special set of guidelines that pass both WCAG&nbsp;2.0 1.4.3 and also ARG, at the expense of design flexibility.</p>
+
+
+					<ul>
+						<li>There is no font lookup table, only a set of general conformance levels.</li>
+						<li>Use-cases for "body text" and "other content text".</li>
+						<li>Spot text: disabled, placeholder, ancillary, decorative text is not covered</li>
+						<li>Logos and incidental text in images are not covered</li>
+						<li>There is no specified minimum font size.</li>
+						<li>There is no requirement to match a reference font weight or size.</li>
+					</ul>
+
+
+
       </section>
-      <section id="silver"><div class="header-wrapper"><h4 id="x7-1-2-silver" class="headerPlus4"><bdi class="secno">7.1.2 </bdi>Silver</h4><a class="self-link" href="#silver" aria-label="Permalink for Section 7.1.2"></a></div>
-        
+      <section id="silver"><div class="header-wrapper"><h4 id="x7-1-2-silver" class="headerPlus4"><bdi class="secno">7.1.2 </bdi>SILVER</h4><a class="self-link" href="#silver" aria-label="Permalink for Section 7.1.2"></a></div>
+        <strong> Covers all text content.</strong>
         <p>Silver is a higher conformance level, featuring improved readability and accommodation of user preferences.</p>
+					<ul>
+						<li>Font weight and size per Lc contrast value and font lookup table.</li>
+						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
+						<li>Logos are covered, with a contrast requirement reduced by Lc 15.</li>
+						<li>Spot text: disabled, placeholder, ancillary, decorative text are covered as a recommendation (should)</li>
+						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
+						<li>Minimum font size for non-content text is 10px.</li>
+						<li>There is no requirement to compare to a reference font weight or size.</li>
+					</ul>
+
+
       </section>
-      <section id="gold"><div class="header-wrapper"><h4 id="x7-1-3-gold" class="headerPlus4"><bdi class="secno">7.1.3 </bdi>Gold</h4><a class="self-link" href="#gold" aria-label="Permalink for Section 7.1.3"></a></div>
-        
+      <section id="gold"><div class="header-wrapper"><h4 id="x7-1-3-gold" class="headerPlus4"><bdi class="secno">7.1.3 </bdi>GOLD</h4><a class="self-link" href="#gold" aria-label="Permalink for Section 7.1.3"></a></div>
+        <strong> Covers all text content, enhanced.</strong>
         <p>Gold is the highest conformance level, featuring the improvements from Silver, but adding tests to ensure consistent presentation, such as regulating font x-height and font weight relative to defined reference fonts.</p>
+					<ul>
+						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
+						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
+						<li>Ancillary, decorative text are covered with recommendations</li>
+						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
+						<li>Minimum font size for non-content text is 12px.</li>
+						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
+					</ul>
+
       </section>
     </section>
 
 
-    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h3 id="x7-2-defining-conformance-scope" class="headerPlus3"><bdi class="secno">7.2 </bdi>Defining conformance scope</h3><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 7.2"></a></div>
-      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+    <section data-status="developing" id="conformance-requirements"><div class="header-wrapper"><h3 id="x7-2-conformance-requirements" class="headerPlus3"><bdi class="secno">7.2 </bdi>Use Cases and Conformance Levels</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.2"></a></div>
+      <div class="addition sticky floatAddition developing"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
+      <p>In order for content to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
+      <ol>
+        <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
+      </ol>
+       <p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
+
+				<h4 class="headerPlus4t">Text Use Cases: body text, fluent text, sub-fluent text, etc.</h3>
+
+			<ul style="font-size: 18px;">
+				<li id="fluent"><strong>FLUENT</strong></li>
+				<ul>
+					<li><strong>Fluent Readability, Block/Body Text</strong></li>
+					<ul>
+						<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
+					</ul>
+					
+					
+					<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text</li>
+					<ul>
+						<li><strong>Defined as:</strong> up to two and a half lines of continuous text.</li>
+						<ul>
+							<li>Includes headlines, captions, and images of text, if they <em>contribute to content</em></li>
+							<li><strong><em>primary</em></strong> navigation and primary menus</li>
+							<li>asides, tool-tips, spoilers, &quot;continued&quot; </li>
+							<li>user entered text in forms, fields, etc </li>
+							<li><em>does not include text the user controls or adjusts in size or color</em></li>
+						</ul>
+					</ul>
+
+					<li><strong>Large Fluent</strong> header/title content</li>
+					<ul>
+						<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
+					</ul>
+				</ul>
+				<li id="subfluent"><strong>SUB FLUENT</strong></li>
+					<ul>
+
+					<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content</li>
+					<ul>
+						<li><strong>Defined as:</strong> non-primary content with relaxed readability needs.</li>
+						<ul>
+							<li>Applies to certain aspects of dataviz (call-outs, de-enhanced aspects of visual hierarchy)</li>
+							<li>Category can include secondary/tertiary nav such as to TOS/EULA</li>
+							<li>May include byline, short duplicative captions, footer matter.</li>
+						</ul>
+					</ul>
+
+
+					<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;</li>
+					<ul>
+						<li><strong>Defined as:</strong> non-content text of an incidental nature.</li>
+						<ul>
+							<li>This category includes <em>non-informative placeholder text</em>, disabled controls, copyright/trademark/license bugs (but not actual license or legal text blocks)</li>
+						</ul>
+					</ul>
+
+
+					<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
+					<ul>
+						<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
+					</ul>
+
+					<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
+				</ul>
+			</ul>
+
+
+    </section>
+
+
+
+
+
+
+    <section data-status="exploratory" hidden="" id="defining-conformance-scope"><div class="header-wrapper"><h3 id="x7-3-defining-conformance-scope" class="headerPlus3"><bdi class="secno">7.3 </bdi>Use Cases and Conformance Levels</h3><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 7.3"></a></div>
+      <div class="addition sticky floatAddition exploratory"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a></div>
       <p>When evaluating the accessibility of content, ARG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
       <ul>
         <li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
@@ -780,21 +933,28 @@
         <li>Some content is more important to the majority of users than other content; and</li>
       </ul>
       <p>ARG therefore defines two inter-related ways to scope content: <a data-type="element" href="https://www.w3.org/TR/SVG/linking.html#elementdef-view">views</a> and <a class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">structure</a>. Evaluation and conformance is done on one or more complete views or structures. </p>
+
+
+
+
+
+
     </section>
 
 
-    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h3 id="x7-3-conformance-requirements" class="headerPlus3"><bdi class="secno">7.3 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.3"></a></div>
-      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+    <section data-status="exploratory" hidden="" id="conformance-requirements"><div class="header-wrapper"><h3 id="x7-4-conformance-requirements" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.4"></a></div>
+      <div class="addition sticky floatAddition exploratory"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a></div>
       <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
       <ol>
         <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
       </ol>
+
     </section>
 
-    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h3 id="x7-4-conformance-claims" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance claims</h3><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 7.4"></a></div>
-      <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a>.We are exploring one or more possible directions for this content.</div>
+    <section data-status="exploratory" hidden="" id="conformance-claims"><div class="header-wrapper"><h3 id="x7-5-conformance-claims" class="headerPlus3"><bdi class="secno">7.5 </bdi>Conformance claims</h3><a class="self-link" href="#conformance-claims" aria-label="Permalink for Section 7.5"></a></div>
+      <div class="addition sticky floatAddition exploratory"><a href="#section-status-levels" class="status-link">Section status: <strong>Exploratory</strong></a></div>
       <p>Conformance claims are not required. Authors can conform to ARG without making a claim. The material below describes how to make a conformance claim if that option is chosen.</p>
-      <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h4 id="x7-4-1-required-components-of-a-conformance-claim" class="headerPlus4"><bdi class="secno">7.4.1 </bdi>Required components of a conformance claim</h4><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 7.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
+      <section id="required-components-of-a-conformance-claim"><div class="header-wrapper"><h4 id="x7-4-1-required-components-of-a-conformance-claim" class="headerPlus4"><bdi class="secno">7.5.1 </bdi>Required components of a conformance claim</h4><a class="self-link" href="#required-components-of-a-conformance-claim" aria-label="Permalink for Section 7.4.1"></a></div><p>A conformance claim <em class="rfc2119">MUST</em> include the following information:</p><ol>
           <li><b>Date</b> of the claim;</li>
           <li><b>Guidelines title, version and URI</b>
             <q><abbr title="Accessible Perceptual Contrast Algorithm">APCA</abbr> Readability Guidelines (version)</q></li>
@@ -810,9 +970,11 @@
 
 
 <section data-status="Developing" id="glossary"><div class="header-wrapper"><h2 id="x8-glossary" class="headerPlus"><bdi class="secno">8. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 8."></a></div>
+
+    <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
+
   <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
   
-    <div class="addition sticky"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a>.</div>
     <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-4"></a></div><p class="">Many of the terms defined here have common meanings. When terms appear with a link to the definition, the meaning is as formally defined here. When terms appear without a link to the definition, their meaning is not explicitly related to the formal definition here. These definitions are in progress and may evolve as the document evolves. </p></div>
     <dl>
       <dt><dfn data-lt="Automated evaluation|Automated|Automatically evaluated|Automated testing|Automatically tested" id="dfn-automated-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Automated
@@ -905,13 +1067,17 @@
     </dl>
 </section><!-- close glossary section 8 -->
 
-<section class="appendix" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology" class="headerPlus"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
+<section class="appendix"  data-status="placeholder" hidden="" id="guidelines-development-methodology"><div class="header-wrapper"><h2 id="a-guidelines-development-methodology" class="headerPlus"><bdi class="secno">A. </bdi>Guidelines development methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
+     <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong> Placeholder</strong></a><br>Content will be developed for the section.</div>
 
+  <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 </section><!-- close A section -->
 
 
 <section class="appendix" id="differences-from-wcag-2-x"><div class="header-wrapper"><h2 id="b-differences-from-wcag-2-x" class="headerPlus"><bdi class="secno">B. </bdi>Differences from WCAG&nbsp;2.x</h2><a class="self-link" href="#differences-from-wcag-2-x" aria-label="Permalink for Appendix B."></a></div>
+    <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
 
+  <p class="reference-statement"><em>This section is reference only, some references are <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a> in their own context, nevertheless the session is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> relative to this document.</em></p>
 
   <section id="outcomes"><div class="header-wrapper"><h3 id="b-1-outcomes" class="headerPlus3"><bdi class="secno">B.1 </bdi>Outcomes</h3><a class="self-link" href="#outcomes" aria-label="Permalink for Appendix B.1"></a></div>
     <p>Outcomes are different from WCAG&nbsp;2.x success criteria. Compared to success criteria, outcomes are written to be:</p>
@@ -925,13 +1091,20 @@
   </section>
 </section><!-- close B section -->
 
-<section class="appendix" id="change-log"><div class="header-wrapper"><h2 id="c-change-log" class="headerPlus"><bdi class="secno">C. </bdi>Change log</h2><a class="self-link" href="#change-log" aria-label="Permalink for Appendix C."></a></div>
+<section class="appendix"  data-status="placeholder" hidden="" id="change-log"><div class="header-wrapper"><h2 id="c-change-log" class="headerPlus"><bdi class="secno">C. </bdi>Change log</h2><a class="self-link" href="#change-log" aria-label="Permalink for Appendix C."></a></div>
 
+<div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong> Placeholder</strong></a><br>Content will be developed for the section.</div>
+
+  <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 </section><!-- close C section -->
 
 
-<section class="appendix" id="acknowledgements"><div class="header-wrapper"><h2 id="d-acknowledgements" class="headerPlus"><bdi class="secno">D. </bdi>Acknowledgements</h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix D."></a></div>
 
+<section class="appendix" data-status="placeholder" hidden="" id="acknowledgements"><div class="header-wrapper"><h2 id="d-acknowledgements" class="headerPlus"><bdi class="secno">D. </bdi>Acknowledgements</h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix D."></a></div>
+     
+<div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong> Placeholder</strong></a><br>Content will be developed for the section.</div>
+
+  <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 </section><!-- close D section -->
 
 
@@ -941,10 +1114,10 @@
 
   <div class="header-wrapper">
     <h2 id="e-references" class="headerPlus"><bdi class="secno">E. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix E."></a>
-
-
   </div>
+    <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Developing</strong></a></div>
 
+  <p class="reference-statement"><em>This section is reference only, some references are <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>,</em></p>
 
 
 

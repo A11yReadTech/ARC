@@ -135,14 +135,14 @@
 	--tocsidebar-text: var(--text);
 	--tocsidebar-bg: #f7f8f9;
 	--tocsidebar-shadow: rgba(0,0,0,.1);
-	--tocsidebar-heading-text: hsla(203,20%,40%,.7);
+	--tocsidebar-heading-text: #60b;
 
 	--toclink-text: var(--text);
 	--toclink-underline: #3980b5;
 	--toclink-visited-text: var(--toclink-text);
 	--toclink-visited-underline: #054572;
 
-	--heading-text: #004a9c;
+	--heading-text: #60b;
 
 	--hr-text: var(--text);
 
@@ -161,7 +161,7 @@
 	--a-active-text: #c00;
 	--a-active-underline: #c00;
 
-	--blockquote-border: silver;
+	--blockquote-border: #63c;
 	--blockquote-bg: transparent;
 	--blockquote-text: var(--text);
 
@@ -175,10 +175,10 @@
 	--example-text: var(--text);
 	--exampleheading-text: #574b0f;
 
-	--note-border: #52e052;
-	--note-bg: #e9fbe9;
+	--note-border: #d055f0;
+	--note-bg: #f4e7fa;
 	--note-text: var(--text);
-	--noteheading-text: hsl(120, 70%, 30%);
+	--noteheading-text: var(--heading-text);
 	--notesummary-underline: silver;
 
 	--advisement-border: orange;
@@ -507,7 +507,7 @@
 	}
 
 	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
-		color: #005a9c;
+		color: #60b;
 		color: var(--heading-text);
 	}
 	
@@ -569,7 +569,7 @@
 	ul, ol {
 		margin: 0;
 		padding-left: 1em;
-		font-size: 0.9em;
+		font-size: 0.94em;
 		font-weight: 500;
 		list-style-type: disc
 	}
@@ -941,9 +941,9 @@ ul.multilevel {
 /** Non-normative Note ********************************************************/
 
 	.note {
-		border-color: #52e052;
+		border-color: #e5f;
 		border-color: var(--note-border);
-		background: #e9fbe9;
+		background: #fef;
 		background: var(--note-bg);
 		color: black;
 		color: var(--note-text);

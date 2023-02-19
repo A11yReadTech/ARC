@@ -623,6 +623,8 @@ blockquote.pull.alt-3 {
   background-color:#fff;
   background-color:var(--pure-white)
 }
+
+
 @media (min-width:35em) {
   .box.box-left,.box.box-right {
   width:33%;

@@ -1,21 +1,26 @@
 @media (max-width: 770px) {
-:root {}
-    body {
-      padding: 5vw;
-    }
-    body > section, body section#abstract {
-      margin: 8vw 0;
-      padding: 5vw;
-      border: none
-    }
-    section section, section section section {
-      padding: 0 0 0 2vw;
-    }
-   :is(h2):not(#toch2) + a.self-link {
-     top: -1.33em;
-     left: -0.8em;
-   }
-   .headerPlus, .headerPlus2i {margin: 0.5rem 0 0;}
-   
-    section .noLeftShift { position: relative; left:0em; font-size: 1.25em}
+  :root {}
+  body {
+    padding: 5vw;
   }
+  body > section, body section#abstract {
+    margin: 8vw 0;
+    padding: 5vw;
+    border: none
+  }
+  section section, section section section {
+    padding: 0 0 0 2vw;
+  }
+  :is(h2):not(#toch2) + a.self-link {
+   top: -1.33em;
+   left: -0.8em;
+  }
+  .headerPlus, .headerPlus2i {margin: 0.5rem 0 0;}
+ 
+  section .noLeftShift { position: relative; left:0em; font-size: 1.25em; }
+
+}
+
+
+
+
