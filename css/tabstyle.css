@@ -70,15 +70,24 @@ body {
 	margin-left: 1em; 
 	margin-bottom: 1em;
 }
-#type-img {
-	height: 5ex;
-	width: 5ex;
+
+/* method icon */
+#type-img, #type-img-how {
+	height: 6ex;
+	width: 6ex;
 	max-width: 15%;
 	float: left; 
 	margin-right: 1em; 
 	margin-bottom: 1em;
 	vertical-align: bottom;
 }
+
+#type-img-how {
+	height: 6ex;
+	width: 3.39ex;
+  }
+
+
 h1+p, button[role="tablist"] {
 	clear: both;
 }
@@ -211,7 +220,7 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	outline: none;
 	border: none;
 	padding: .5rem;
-	border-radius: 0 0 24px 24px;	
+	border-radius: 0 0 32px 32px;	
 	box-shadow: inset 0 3px 7px rgba(32,32,32,0.2);	
 	}
 [role="tabpanel"] * + * {
