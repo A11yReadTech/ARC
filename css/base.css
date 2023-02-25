@@ -447,7 +447,7 @@
 			overflow: hidden;
 		}
 	}
-	/* Hide main scroller when only the ToC is visible anyway */
+/* Hide main scroller when only the ToC is visible anyway */
 	@media screen and (max-width: 26em) {
 		body.toc-sidebar {
 			overflow-x: auto;			
@@ -457,7 +457,7 @@
 
 
 
-	/* Sidebar with its own space */
+/* Sidebar with its own space */
 	@media screen and (min-width: 800px) and (max-width: 74.99em) {
 		body:not(.toc-inline) #toc {
 			position: fixed;
@@ -493,7 +493,7 @@
 		body:not(.toc-inline) {
 			padding-left:  33vw;
 		}
-	/* See also Overflow section at the bottom */
+/* See also Overflow section at the bottom */
 
 		body:not(.toc-inline) #toc-jump:not(:focus) {
 			width: 0;
@@ -508,7 +508,7 @@
 
 
 
-	/* Sidebar with its own space */
+/* Sidebar with its own space */
 	@media screen and (min-width: 75em) {
 		body:not(.toc-inline) #toc {
 			position: fixed;
