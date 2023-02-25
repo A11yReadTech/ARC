@@ -191,20 +191,6 @@
 			<h1 class="headerPlus1">Introduction</h1>
 		</header>
 		<main>
-			<section id="platform">
-				<h2 class="headerPlus2ti">Platform</h2>
-				<ul>
-					<li>All desktop and mobile platforms including Windows, iOS, Android, MacOS, and Linux.</li>
-					<li>Web pages and documents including PDF, word processing documents, ePub, and slideware.</li>
-				</ul>
-			</section>
-
-			<section id="technology">
-				<h2 class="headerPlus2ti">Technology</h2>
-				<ul>
-					<li>HTML, CSS, Javascript, and content authoring applications where visually readable content specifies the font size and weight and the text and background colors. </li>
-				</ul>
-			</section>
 
 			<section id="summary">
 				<h2 class="headerPlus2ti">Summary</h2>
@@ -300,22 +286,23 @@
 
 					<h4 class="headerPlus4">Test Procedure</h4>
 					<ul>
-						<li>Determine the intended conformance scope, with a choice of Bronze, Silver, Gold</li>
+						<li>Determine the intended conformance scope, with a choice of Bronze, Silver, Gold
 						<ul>
-							<li><strong>BRONZE:</strong> Covers primary content text only.</li>
+							<li><strong>BRONZE:</strong> Covers primary content text only.
 							<ul>
 								<li>No font lookup table, only simple conformance levels.</li>
-							</ul>
-							<li><strong>SILVER:</strong> Covers all text content.</li>
+							</ul></li>
+							<li><strong>SILVER:</strong> Covers all text content.
 							<ul>
 								<li>Font weight & size per Lc contrast value and font lookup table.</li>
-							</ul>
-							<li><strong>GOLD:</strong> Covers all text content, enhanced.</li>
+							</ul></li>
+							<li><strong>GOLD:</strong> Covers all text content, enhanced.
 							<ul>
 								<li>Font weight & size per Lc contrast value and font tables per use cases. </li>
 								<li>Fonts for content text are compared to a reference font creating a weight/size offset for equivalency.</li>
-							</ul>
-						</ul>
+							</ul></li>
+						</ul></li>
+					</ul>
 				</section>
 
 
@@ -324,18 +311,18 @@
 					<p>A typical page of text content will have several different use cases of text, such as headlines, blocks of body text, text in menus, and so forth.</p>
 					<p>Depending on the chosen conformance level, it will not always be necessary to test every use-case of text. At a minimum, text the smallest, and also the lowest visible contrast examples on the page.</p>
 
-					<h4 class="headerPlus4t">Test Procedure</h4>
+					<h4 class="headerPlus4">Test Procedure</h4>
 					<ul>
-						<li>Determine the intended use-case-scope to be tested, per the <a href="?tn=techniques#conformance">conformance scope.</a></li>
+						<li>Determine the intended use-case-scope to be tested, per the <a href="?tn=techniques#conformance">conformance scope.</a>
 						<ul>
-							<li>Bronze Use Cases for Testing</li>
+							<li>Bronze Use Cases for Testing
 							<ul>
 								<li>Body Text</li>
 								<li>Other Content Text</li>
 								<li>Large Fluent Content</li>
-							</ul>
+							</ul></li>
 
-							<li>Silver or Gold Use Cases for Testing</li>
+							<li>Silver or Gold Use Cases for Testing
 							<ul>
 								<li>Body Text</li>
 								<li>Fluent Content</li>
@@ -343,14 +330,14 @@
 								<li>Logos & Branding</li>
 								<li>Sub-Fluent</li>
 								<li>Spot Readability</li>
-							</ul>
+							</ul></li>
 
-							<li>Additional Gold Testing</li>
+							<li>Additional Gold Testing
 							<ul>
 								<li>If the page uses non-standard fonts, then for gold level, additionally perform the separate <a href="?tn=tests#weight">font weight test.</a></li>
-							</ul>
-						</ul>
-
+							</ul></li>
+						</ul></li>
+					</ul>
 				</section>
 
 
@@ -358,15 +345,16 @@
 					<h3 class="headerPlus3t">STEP THREE: Determine Colors and Contrast Value</h3>
 					<p>This testing procedure provides guidance on how to determine the lightness contrast value (Lc) of the elements to be tested, such as the text against the adjacent background.</p>
 
-					<h4 class="headerPlus4t">Test Procedure</h4>
+					<h4 class="headerPlus4">Test Procedure</h4>
 				<ul>
 					<li>Obtain the CSS color values for the text (or non-text) element, and the adjacent background, using one or more of the <a href="?tn=techniques#sampling">color sampling techniques</a></li>
 
-					<li>Using a contrast calculator that is compliant with the APCA-W3 contrast method, calculate the predicted lightness contrast (Lc value) between the foreground and background colors.</li>
+					<li>Using a contrast calculator that is compliant with the APCA-W3 contrast method, calculate the predicted lightness contrast (Lc value) between the foreground and background colors.
 					<ul>
 						<li>Important: do not swap the foreground & background colors in the tool entry fields. </li>
 						<li>The contrast evaluation is based in part on polarity, i.e. dark-mode or light-mode, so it is important that the background color value be entered into the background color field, and likewise for the foreground text or non-text element being tested. </li>
-					</ul>
+					</ul></li>
+				</ul>
 				</section>
 
 				<section id="testing">
@@ -375,16 +363,16 @@
 				<ol>
 					<li>For automated tools, and calculators that provide a minimum size and weight with the results: Compare the smallest font size and weight as used in the content and use-case, and confirm that it meets or exceeds the calculated minimum font size & weight.</li>
 					
-					<li>For calculators that provide only a numeric contrast result, and require a manual comparison:</li>
+					<li>For calculators that provide only a numeric contrast result, and require a manual comparison:
 					<ul>
 						<li>Compare the calculated contrast value against the <a href="?tn=tests#conformance-minimums">Conformance Minimums</a> and for Silver of Gold, find the font and contrast value on the <a href="?tn=tests#tables">Font Lookup Tables</a> below.</li>
-						<li>Check that the absolute value of contrast (the Lc value) meets or exceeds the required Lc value for the font weight & size, in the content of the given use case. </li>
+						<li>Check that the absolute value of contrast (the Lc value) meets or exceeds the required Lc value for the font weight & size, in the content of the given use case. 
 						<ul>
 							<li>Interpolation of the data in the font table is permitted.</li>
 							<li>Remember that light text on a dark background generates a negative value; ignore the minus sign and use the absolute value when using the lookup table.</li>
 							<li>Interpolation of the data in the font table is permitted.</li>
-						</ul>
-					</ul>
+						</ul></li>
+					</ul></li>
 				</ol>
 
 				<h3 class="headerPlus3t">Scoring the Result</h3>
@@ -974,30 +962,31 @@
 				<section id="weight">
 					<h3 class="headerPlus3t">Determining Effective Font Weight for Non-Standard Fonts</h3>
 					<p>Because there is a lack of consistency in terms of weight and size among different font families this test method provides a means to equalize a font relative to a reference.
-					<h4 class="headerPlus4t">Test Procedure</h4>
+					<h4 class="headerPlus4">Test Procedure</h4>
 					<ol>
-						<li>Draft procedure at the <a href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289">APCA forum on GitHub.</a></li>
+						<li>Draft procedure at the <a href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289">APCA forum on GitHub.</a>
 							<!-- <ul>
-								<li></li>
+								<li>
 								<ul>
 									<li></li>
 									<li></li>
-								</ul>
-								<li></li>
+								</ul></li>
+								<li>
 								<ul>
 									<li></li>
 									<li></li>
-								</ul>
-								<li></li>
+								</ul></li>
+								<li>
 								<ul>
 									<li></li>
 									<li></li>
-								</ul>
-							</ul>
+								</ul></li>
+							</ul></li>
 						<li>
 							<ul>
 								<li></li>
-							</ul>  -->
+							</ul></li>  -->
+						</li>
 					</ol>
 					
 				</section>
@@ -1022,45 +1011,45 @@
 			<h1 class="headerPlus1">Test Techniques</h1>
 		</header>
 		<main>
-			<section id="techniques">
-				<h2 class="headerPlus2ti">Visual Contrast Testing Techniques</h2>
-				<p>These are specific techniques with examples, demonstrating best practices to support the tests for visual contrast of text and non-text elements.</p>
+		<section id="techniques">
+			<h2 class="headerPlus2ti">Visual Contrast Testing Techniques</h2>
+			<p>These are specific techniques with examples, demonstrating best practices to support the tests for visual contrast of text and non-text elements.</p>
 
 			<section id="sampling">
 				<h3 class="headerPlus3t">Sampling Colors for Testing</h3>
 				<p>These testing techniques provide guidance on how to determine the RGB color values of the elements to be tested, such as the color of the text and the adjacent background.</p>
-				<h4 class="headerPlus4t">Color Sampling Techniques</h4>
+				<h4 class="headerPlus4">Color Sampling Techniques</h4>
 				<p>Use one of the following methods, or an equivalent method that provides an accurate sRGB value (or RGB value in the relevant color space as displayed.)</p>
-				
-				<ol>
-					<li><strong>CALCULATED:</strong> Read the calculated values as determined by a browser, user agent, or automated tool.</li>
+
+				<ol class="alpha">
+					<li><strong>CALCULATED:</strong> Read the calculated values as determined by a browser, user agent, or automated tool.
 					<ul>
 						<li>For consistency and ease of use, this is the preferred method.</li>
 						<li>Ensure the values are for the sRGB color space. (Other spaces discussed separately).</li>
-						<li>Ensure that colors with alpha channels (transparency) are fully composited, i.e. that the actual final color is sampled, with no remaining transparency.</li>
+						<li>Ensure that colors with alpha channels (transparency) are fully composited, i.e. that the actual final color is sampled, with no remaining transparency.
 						<ul>
 							<li>If the user agent or tool does not present the final color, it must be calculated.</li>
 							<li>REFERENCE: <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing</a> W3 CSS guidance regarding calculating colors involving alpha channels.</li>
-						</ul>
-					</ul>
+						</ul></li>
+					</ul></li>
 
 
-					<li><strong>AUDIT CSS:</strong> Auditing the CSS styles in use on the page.</li>
+					<li><strong>AUDIT CSS:</strong> Auditing the CSS styles in use on the page.
 					<ul>
 						<li>It is important to confirm that a particular style property is actually the active value. </li>
 						<li>For complex style sheets, it is recommended to use the values as calculated by the browser, user agent, or automated tool.</li>
 						<li>For colors with an alpha channel or transparency, calculate the final composited color using the method as described in <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing.</a></li>
-					</ul>
+					</ul></li>
 
 
-					<li><strong>EYEDROPPER:</strong> Sample the colors on the rendered page using a software based "digital color meter" eye-dropper type tool, which samples the rendered screen values.</li>
+					<li><strong>EYEDROPPER:</strong> Sample the colors on the rendered page using a software based "digital color meter" eye-dropper type tool, which samples the rendered screen values.
 					<ul>
 						<li>This method is required if testing content in an image, and also has the advantage of taking alpha blending into account without further calculations. Nevertheless, it is recommended to use the values as calculated by the browser, user agent, or automated tool as the preferred method for sampling colors.</li>
 						<li>The eye dropper tool must report the native CSS value for the color space (nominally sRGB). See <a href="?tn=techniques#eyedropper">this guide</a> for setting up an eye-dropper color meter tool properly.</li>
 						<li>The eye dropper sample should be a pixel in the middle of a major stroke of the smallest size font to be tested, and with the content at the default size (no zoom or scaling). </li>
 						<li>For small and thin fonts, where the major stroke is inconsistent due to antialiasing, sample at least three to five different letters and average the result.<br>
 						<img width="45%" alt="example of sampling the main stroke of a thin letter" src="./img/Sampleapixelinthemiddleofamajorstrokeinaletter.png"></li>
-					</ul>
+					</ul></li>
 				</ol>
 			</section>
 
@@ -1070,8 +1059,8 @@
 			<section id="tools">
 				<h3 id="eyedropper" class="headerPlus3t">Setup for a Digital Color Meter (Eye Dropper)</h3>
 				<p>In order for a digital color meter or eye dropper tool to provide useful color data, the system color profile and the tool need to be configured correctly. This tutorial is using the standard digital color meter app in MacOS.</p>
-				<ul>
-					<li>The test system should use an sRGB monitor.</li>
+					<h4>The test system should use an sRGB monitor.</h4>
+				<ol>
 					<li>Set the system color profile to a standard sRGB profile when using the digital color meter.<br>
 						<img width="45%" alt="Set Display to an sRGB profile" src="./img/SetDisplaytoansRGBprofile.png"></li>
 
@@ -1081,78 +1070,79 @@
 					<li>Under the view menu, set the digital color meter to report the color values as decimal, hex, or percentage, per your working preference, or the needs of the other tools in use.<br>
 						<img width="45%" alt="Choose the display value you are comfortable with" src="./img/Choosethedisplayvalueyouarecomfortablewith.png"></li>
 					<li>Set the size of the sample to one pixel.</li>
-
+				</ol>
 			</section>
 
 <hr>
 
 			<section id="conformance">
-			<h2 class="headerPlus2ti">Use Cases and Conformance Levels</h2>
-       <p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
-				<h3 class="headerPlus3t">Text Use Cases: body text, fluent text, sub-fluent text, etc.</h3>
+				<h2 class="headerPlus2ti">Use Cases and Conformance Levels</h2>
+				<p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
+				<h3 class="headerPlus3t">Text Use Cases: Body Text, Fluent, Sub-Fluent, Spot, etc.</h3>
 
 				<ul>
-				<li id="fluent"><strong>FLUENT</strong></li>
-				<ul>
-					<li><strong>Fluent Readability, Block/Body Text</strong></li>
+					<li id="fluent"><strong>FLUENT</strong>
 					<ul>
-						<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
-					</ul>
-					
-					
-					<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text</li>
-					<ul>
-						<li><strong>Defined as:</strong> up to two and a half lines of continuous text.</li>
+						<li><strong>Fluent Readability, Block/Body Text</strong>
 						<ul>
-							<li>Includes headlines, captions, and images of text, if they <em>contribute to content</em></li>
-							<li><strong><em>primary</em></strong> navigation and primary menus</li>
-							<li>asides, tool-tips, spoilers, &quot;continued&quot; </li>
-							<li>user entered text in forms, fields, etc </li>
-							<li><em>does not include text the user controls or adjusts in size or color</em></li>
-						</ul>
-					</ul>
+							<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
+						</ul></li>
 
-					<li><strong>Large Fluent</strong> header/title content</li>
-					<ul>
-						<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
-					</ul>
+						<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text
+						<ul>
+							<li><strong>Defined as:</strong> up to two and a half lines of continuous text.
+							<ul>
+								<li>Includes headlines, captions, and images of text, if they <em>contribute to content</em></li>
+								<li><strong><em>primary</em></strong> navigation and primary menus</li>
+								<li>asides, tool-tips, spoilers, &quot;continued&quot; </li>
+								<li>user entered text in forms, fields, etc </li>
+								<li><em>does not include text the user controls or adjusts in size or color</em></li>
+							</ul></li>
+						</ul></li>
+
+						<li><strong>Large Fluent</strong> header/title content
+						<ul>
+							<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
+						</ul></li>
+					</ul></li>
+
+					<li id="subfluent"><strong>SUB FLUENT</strong>
+						<ul>
+							<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content
+							<ul>
+								<li><strong>Defined as:</strong> non-primary content with relaxed readability needs.
+								<ul>
+									<li>Applies to certain aspects of dataviz (call-outs, de-enhanced aspects of visual hierarchy)</li>
+									<li>Category can include secondary/tertiary nav such as to TOS/EULA</li>
+									<li>May include byline, short duplicative captions, footer matter.</li>
+								</ul></li>
+							</ul></li>
+						</ul></li>
+
+
+						<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;
+						<ul>
+							<li><strong>Defined as:</strong> non-content text of an incidental nature.
+							<ul>
+								<li>This category includes <em>non-informative placeholder text</em>, disabled controls, copyright/trademark/license bugs (but not actual license or legal text blocks)</li>
+							</ul></li>
+						</ul></li>
+
+
+						<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
+						<ul>
+							<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
+						</ul></li>
+
+						<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
+					</ul></li>
 				</ul>
-				<li id="subfluent"><strong>SUB FLUENT</strong></li>
-					<ul>
-
-					<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content</li>
-					<ul>
-						<li><strong>Defined as:</strong> non-primary content with relaxed readability needs.</li>
-						<ul>
-							<li>Applies to certain aspects of dataviz (call-outs, de-enhanced aspects of visual hierarchy)</li>
-							<li>Category can include secondary/tertiary nav such as to TOS/EULA</li>
-							<li>May include byline, short duplicative captions, footer matter.</li>
-						</ul>
-					</ul>
-
-
-					<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;</li>
-					<ul>
-						<li><strong>Defined as:</strong> non-content text of an incidental nature.</li>
-						<ul>
-							<li>This category includes <em>non-informative placeholder text</em>, disabled controls, copyright/trademark/license bugs (but not actual license or legal text blocks)</li>
-						</ul>
-					</ul>
-
-
-					<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
-					<ul>
-						<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
-					</ul>
-
-					<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
-				</ul>
-			</ul>
 
 
 				<h3 class="headerPlus3t">Conformance Levels: Bronze, Silver, and Gold</h3>
+
 				<ul>
-					<li><h4 class="headerPlus4t">BRONZE:</h4> <strong> Covers primary content text only.</strong> </li>
+					<li><h4 class="headerPlus4">BRONZE:</h4> <strong> Covers primary content text only.</strong> 
 					<ul>
 						<li>There is no font lookup table, only a set of general conformance levels.</li>
 						<li>Use-cases for "body text" and "other content text".</li>
@@ -1160,8 +1150,9 @@
 						<li>Logos and incidental text in images are not covered</li>
 						<li>There is no specified minimum font size.</li>
 						<li>There is no requirement to match a reference font weight or size.</li>
-					</ul>
-					<li><h4 class="headerPlus4t">SILVER:</h4> <strong> Covers all text content.</strong> </li>
+					</ul></li>
+
+					<li><h4 class="headerPlus4">SILVER:</h4> <strong> Covers all text content.</strong> 
 					<ul>
 						<li>Font weight and size per Lc contrast value and font lookup table.</li>
 						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
@@ -1170,8 +1161,8 @@
 						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
 						<li>Minimum font size for non-content text is 10px.</li>
 						<li>There is no requirement to compare to a reference font weight or size.</li>
-					</ul>
-					<li><h4 class="headerPlus4t">GOLD:</h4><strong> Covers all text content, enhanced.</strong> </li>
+					</ul></li>
+					<li><h4 class="headerPlus4">GOLD:</h4><strong> Covers all text content, enhanced.</strong> 
 					<ul>
 						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
 						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
@@ -1179,21 +1170,27 @@
 						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
 						<li>Minimum font size for non-content text is 12px.</li>
 						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
-					</ul>
+					</ul></li>
+				</ul>
 
-<hr>
+			</section>
+	<hr>
+
+
 
 			<h2 class="headerPlus2ti">Testing Conditions and Environment</h2>
+
 			<section id="conditions">
 				<h3 class="headerPlus3t">Objective Test Baseline Setup</h3>
-				<ul>
+				
+				<ol class=" alpha">
 					<li>Color samples are taken using the sRGB color space, the default color space for web content.</li>
 					<li>The monitor used on the testing system is sRGB, and the system profile is set to sRGB</li>
 					<li>Content to be tested is at the initial or default zoom for the given view.</li>
 					<li>Content is using the embedded or page-provided CSS styles</li>
 					<li>No user styles nor user-preference appearance altering extensions active</li>
 					<li>For web based content, user agent shall be a commonly available browser capable of rendering the most recent recommended CSS and HTML standards, or an equivalent testing tool.</li>
-				</ul>
+				</ol>
 				<h3 class="headerPlus3t">Color Spaces</h3>
 				<p>Because sRGB is the default standard color space for web content, primary tests for conformance should be conducted in sRGB. It is permissible to conduct tests in other color spaces, so long as the primary tests for conformance are conducted in sRGB.</p>
 
@@ -1207,12 +1204,15 @@
 				
 				<h3 class="headerPlus3t">Conditional/Qualified Tests Standard Setup</h3>
 				<p>Because conditional or qualified tests involve a certain amount of subjectivity, it's important to have a standardized environment for conducting any such tests. This is facilitated with a defined standard testing environment, intended to provide a consistent foundation for evaluations that require any degree of subjectivity.</p>
+
 				<p><em><strong>The standard environmental model shall comprise</strong></em></p>
-				<ul>
+
+				<ol>
 					<li>A desktop sRGB LCD screen that is
-						<ul>
-						<li>A non-retina display in the sRGB colorspace</li>
+					<ul>
+						<li>A non-retina, standard resolution display in the sRGB colorspace</li>
 						<li>IPS or equivelent technology such that off-axis viewing is not impacted. </li>
+						<li>For desktop, the monitor should have a ppi between 72 and 112 to allow an observer distance between 24&quot; (60cm) and 37&quot; (90cm)</li>
 					</ul></li>
 
 					<li>Monitor shall be calibrated using a hardware calibrator to:
@@ -1225,18 +1225,22 @@
 
 					<li>Monitor&#39;s surrounding environmental conditions
 					<ul>
-						<li>Background behind the monitor and within the users field of view should be neutral grey or white, at a luminance that is 20% of the monitor&#39;s maximum white.<ul>
-						  <li>For instance if the peak white luminance of the screen is 140cd/m^2, that the immediate area surrounding the screen should be 28cd/m^2.</li>
-						</ul>
-						</li>
-						
-						<li>Ambient light of approximately 350 lux.<ul>
-							<li>The light should not <em>directly</em> shine on the face of the monitor.</li>
-							<li>The light should not shine into the eyes of the user while viewing the monitor.</li>
+						<li>Background behind the monitor and within the users field of view should be neutral grey or white, at a luminance that is 20% of the monitor&#39;s maximum white.
+						<ul>
+							<li>For instance if the peak white luminance of the screen is 140cd/m^2, that the immediate area surrounding the screen should be 28cd/m^2.</li>
 						</ul></li>
 					</ul></li>
+					<li>Ambient light of approximately 350 lux.
+					<ul>
+						<li>The light should not <em>directly</em> shine on the face of the monitor.</li>
+						<li>The light should not shine into the eyes of the user while viewing the monitor.</li>
+					</ul></li>
+				</ol>
 
-					<li>Position monitor toward user in a way that minimizes reflections.</li>
+				<p><em><strong>The standard model configuration shall be: </strong></em></p>
+
+				<ol>
+					<li>Monitor positioned toward user in a way that minimizes reflections.</li>
 
 					<li>Ambient evaluation procedure:
 					<ul>
@@ -1257,16 +1261,19 @@
 						<li>As a quick rule of thumb: <strong> the font Verdana at 16px is approximately the critical size for standard 20/20 vision.</strong></li>
 					</ul></li>
 
-						<li>Observer is positioned based on the monitor resolution.
-						<ul>
-							<li>For a mobile device, the observer is positioned such that the 1px = 1.278&#39; arc-min relationship is maintained.</li>
-							<li>For a 96ppi monitor, the observer shall be 28&quot; away.</li>
-						</ul></li>
-						<li>For desktop, the monitor should have a ppi between 72 and 112 to allow an observer distance between 24&quot; (60cm) and 37&quot; (90cm)</li>
-				</ul>
+					<li>Observer is positioned based on the monitor resolution.
+					<ul>
+						<li>For a mobile device, the observer is positioned such that the 1px = 1.278&#39; arc-min relationship is maintained.</li>
+						<li>For a 96ppi monitor, the observer shall be 28&quot; away.</li>
+					</ul></li>
+
+				</ol>
+
+
+
 
 	<div style="overflow: scroll;">
-		<table class="ppiTable">
+		<table class="ppiTable centered">
 			<tr><th colspan="5">Screen Pitch vs Distance for 1.278 arc-min VA</th></tr>
 			<tr><th colspan="1">Distance<br>to Display</th><th colspan="3">Screen Pitch</th><th colspan="1">Distance<br>to Display</th></tr>
 			<tr><th>inches</th><th>ppi</th><th> </th><th>ppcm</th><th>cm</th></tr>

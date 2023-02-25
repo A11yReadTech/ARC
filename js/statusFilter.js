@@ -3,9 +3,10 @@
 function enableStatusFilter() {
 	var filterActive = false;
 	var button = document.querySelector('#status-filter');
+	var buttontoc = document.querySelector('#status-filter-toc');
 	var statusLabels = (button.getAttribute('data-status-filter') || '').split(',');
 	var statusSelector = statusLabels.map(function (status) {
-		return '[data-status="'+ status +'"]'
+	  return '[data-status="'+ status +'"]'
 	}).join(',')
 
 	function toggleStatus() {
@@ -27,10 +28,13 @@ function enableStatusFilter() {
 				if (tocItem != null) tocItem.removeAttribute('hidden');
 			}
 		});
-		button.textContent = (filterActive ? 'Reveal' : 'Hide')
+		button.textContent = (filterActive ? 'Show' : 'Hide')
 		                   + ' placeholder & exploratory sections';
+		buttontoc.textContent = (filterActive ? 'Show Hidden' : 'Hide Placeholders');
+		                   
 	}
 	button.addEventListener('click', toggleStatus);
+	buttontoc.addEventListener('click', toggleStatus);
 	toggleStatus(); // Active by default
 }
 

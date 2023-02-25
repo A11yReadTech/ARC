@@ -14,8 +14,8 @@
 
 
 body > section {
-    margin-bottom: 2em;
-    padding: 0 1.25em 1em 2em;
+    margin-bottom: 1.618em;
+    padding: 0 1.618em 1em 3em;
 		font-weight: 500;
 		background-color: #f2eee2;
 		background-color: var(--bg);
@@ -23,17 +23,17 @@ body > section {
 		border: 6px solid var(--lightAnchorRim);
 		border-radius: 1.5em;
     box-shadow: inset 0.2em 0.2em 0.4em var(--lightAnchorShadow),
-                inset 0 0 0.2em  var(--lightAnchorOcclusion);
+                inset 0 0 0.2em var(--lightAnchorOcclusion);
 }
 
 
-section section, section section section {
+body > section section, body > section section section {
     padding: 0 0 0 1em;
 		background-color: var(--bg);
 }
 
-body section#abstract {
-  padding: 1px 1.25em .5em 2em;
+body > section#abstract {
+  padding: 1px 1.25em .5em 3em;
 }
 section#abstract > h2 {
   margin: 1em 0 0;
@@ -127,48 +127,90 @@ caption {
 
 
 /* *****    special headers   ***** */
+/* t for the tab page, i for italic */
+/* Minus means negative top margin */
 
-
+.headerExo, .headerExoi, 
 bdi.secno, .headerPlus1, .headerPlus, 
 .headerPlus2,.headerPlus2i,
 .headerPlus2t,.headerPlus2ti,
-.headerPlus3, .headerPlus3t, .headerPlus3ti,
-.headerPlus4, .headerPlus5,
-.headerPlus4t, .headerPlus5t {
+.headerPlus3,.headerPlus3i,
+.headerPlus3t,.headerPlus3ti,
+.headerPlus4,.headerPlus4i,
+.headerPlus5,.headerPlus5i,
+.headerZero2,.headerZero2i,
+.headerZero2t,.headerZero2ti,
+.headerZero3,.headerZero3i,.headerZero3t,.headerZero3ti,
+.headerZero4,.headerZero4i,
+.headerZero5,.headerZero5i,
+.headerMinus2,.headerMinus2i,
+.headerMinus2t,.headerMinus2ti,
+.headerMinus3,.headerMinus3i,.headerMinus3t,.headerMinus3ti,
+.headerMinus4,.headerMinus4i,
+.headerMinus5,.headerMinus5i {
   font-family: Exo, sans-serif;
-  font-size: 1.3em;
   font-style: normal;
   font-weight: 700;
 }
 
-bdi.secno {font-style: italic;}
-
 .headerPlus1 {font-size:2.2em; margin: 2.7rem 0 0 }
 
-.headerPlus, .headerPlus2i {
-  font-size:1.8em;
-  font-style: italic; 
-  margin: 2.5rem 0 0;
- }
-.headerPlus2 {font-size:1.8em; margin: 2.5rem 0 0 }
+.headerPlus, 
+.headerPlus2, .headerPlus2i,
+.headerZero2, .headerZero2i,
+.headerShort2, .headerShort2i,
+.headerMinus2, .headerMinus2i  { font-size:1.8em; margin: 2.5rem 0 0;}
+.headerPlus2t, .headerPlus2ti,
+.headerZero2t, .headerZero2ti,
+.headerShort2t, .headerShort2ti,
+.headerMinus2t, .headerMinus2ti  { font-size:1.6em; margin: 2.2rem 0 0; }
 
-.headerPlus2ti {
-  font-size:1.6em;
-  font-style: italic; 
-  margin: 2.2rem 0 0;
- }
-.headerPlus2t {font-size:1.6em; margin: 2.2rem 0 0 }
+.headerPlus3, .headerPlus3i,
+.headerZero3, .headerZero3i,
+.headerShort3, .headerShort3i,
+.headerMinus3, .headerMinus3i  {font-size:1.4em; margin: 2rem 0 0 }
+.headerPlus3t, .headerPlus3ti,
+.headerZero3t, .headerZero3ti,
+.headerShort3t, .headerShort3ti,
+.headerMinus3t, .headerMinus3ti  { font-size:1.3em; margin: 1.8rem 0 0;}
+.headerPlus4, .headerPlus4i,
+.headerZero4, .headerZero4i,
+.headerShort4, .headerShort4i,
+.headerMinus4, .headerMinus4i  {font-size:1.15em; margin: 1.5rem 0 0}
+.headerPlus5, .headerPlus5i,
+.headerZero5, .headerZero5i,
+.headerShort5, .headerShort5i,
+.headerMinus5, .headerMinus5i  {font-size:1.0em; margin: 1rem 0 0 }
 
-.headerPlus3 {font-size:1.4em; margin: 2rem 0 0 }
-.headerPlus3ti {
-  font-size:1.3em;
-  font-style: italic; 
-  margin: 1.8rem 0 0;
- }
-.headerPlus3t {font-size:1.3em; margin: 1.8rem 0 0 }
+.headerExoi, bdi.secno, .headerPlus,
+.headerPlus2i, .headerPlus2ti,
+.headerPlus3i,.headerPlus3ti,
+.headerPlus4i,.headerPlus5i,
+.headerZero2i, .headerZero2ti,
+.headerZero3i,.headerZero3ti,
+.headerZero4i,.headerZero5i,
+.headerMinus2i,.headerMinus2ti,
+.headerMinus3i,.headerMinus3ti,
+.headerMinus4i,.headerMinus5i{font-style:italic;}
 
-.headerPlus4,.headerPlus4t {font-size:1.15em; margin: 1.5rem 0 0}
-.headerPlus5,.headerPlus5t {font-size:1.0em; margin: 1rem 0 0 }
+.headerZero2,.headerZero2i,
+.headerZero2t,.headerZero2ti,
+.headerZero3,.headerZero3i,.headerZero3t,.headerZero3ti,
+.headerZero4,.headerZero4i,
+.headerZero5,.headerZero5i { margin: 0 0 0.5em 0.75em; }
+
+.headerShort2,.headerShort2i,
+.headerShort2t,.headerShort2ti,
+.headerShort3,.headerShort3i,.headerShort3t,.headerShort3ti,
+.headerShort4,.headerShort4i,
+.headerShort5,.headerShort5i { margin: 0.5em 0 0.75em; }
+
+.headerMinus2,.headerMinus2i,
+.headerMinus2t,.headerMinus2ti,
+.headerMinus3,.headerMinus3i,.headerMinus3t,.headerMinus3ti,
+.headerMinus4,.headerMinus4i,
+.headerMinus5,.headerMinus5i { margin: -0.25em 0 0; }
+
 
 #resources li a {font-weight: 700; font-style: italic;}
 
@@ -187,11 +229,11 @@ bdi.secno {font-style: italic;}
 		box-shadow: inset 3px 3px 8px rgb(0 0 0 / .3);
 }
 
-#status-developing,#status-exploratory,
+#status-development,#status-research,
 #status-placeholder,#status-deprecated,
 #status-review,#status-mature  {
   padding: 0.15em 0.5em 0.33em;
-  border-width:  1px 1px 1px 0.65em;
+  border-width: 1px 1px 1px 0.65em;
   border-style: solid;
   border-radius: 0 0.45em 0.45em 0;
   box-shadow: 3px 3px 6px #6789;
@@ -201,23 +243,24 @@ ul#status-levels li {
   margin: 1em 0.5em; 
   border-radius: 0 0.45em 0.45em 0; 
   line-height: 1.7;
-
 }
 
 #status-mature {color: #050; background-color: #dfd; border-color:#0d0 }
 #status-review {color:#004; background-color: #eef8ff;border-color:#08d }
 
-.addition.developing,#status-developing {color: #103; background-color: #edf;border-color:#c0d}
-.addition.exploratory,#status-exploratory {color:#000; background-color: #ff4;border-color:#bb0}
+.addition.development,#status-development {color: #103; background-color: #edf;border-color:#c0d}
+.addition.research,#status-research {color:#000; background-color: #ff4;border-color:#bb0}
 .addition.placeholder,#status-placeholder {color:#fff; background-color: #d60;border-color:#f90}
 .addition.deprecated,#status-deprecated {color:#fff; background-color: #a00;border-color:#f34}
 
 .addition.deprecated .status-link,.addition.placeholder .status-link {color:#fff;}
 
 
+
+
 /* button */
 
-#status-filter {
+#status-filter,#status-filter-toc {
   position: relative;
   padding: 0.5em;
   font-size: 1.3em;
@@ -230,14 +273,15 @@ ul#status-levels li {
               inset -3px -3px 8px #0005,
               2px 2px 5px #5436;
   }
-#status-filter:hover, #status-filter:focus {
+#status-filter:hover, #status-filter:focus,
+#status-filter-toc:hover, #status-filter-toc:focus {
   background: #FFa;
   cursor: pointer;
 	box-shadow: inset 3px 3px 8px #fffa,
               inset -3px -3px 8px #0003,
               2px 2px 5px #5434;
   }
-#status-filter:active {
+#status-filter:active, #status-filter-toc:active {
   background: #FFa;
   top: 3px;
   left: 3px;
@@ -251,21 +295,32 @@ ul#status-levels li {
 
 nav li bdi.secno {
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: 800;
 }
 nav li li bdi.secno {
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 700;
 }
 nav li li li bdi.secno {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.toc > li { font-size:1.25em; font-weight: 700;}
-.toc > li li { font-size:0.9em; font-weight: 600;}
-.toc > li li li { font-size:0.9em; font-weight: 500;}
+nav li .abstract {
+  position: relative;
+  left: 0.5em;
+  }
+nav li li .abstract {
+  position: relative;
+  left: 1.5em;
+  }
 
+.toc > li { font-size:1.35em; font-weight: 700;}
+.toc > li li { font-size:0.95em; font-weight: 700;}
+.toc > li li li { font-size:0.925em; font-weight: 600;}
+
+.toc > li div {white-space:nowrap; padding-left: 0.33em; font-weight: 600;font-style: italic;}
+.toc > li li div {white-space:nowrap; padding-left: 0.33em; font-weight: 600;font-style: italic;}
 
 
 
@@ -545,6 +600,31 @@ a[href].status-link {
 	color: var(--text);
 }
 
+/** Section divider ***********************************************************/
+
+	:not(.head) > :not(.head) + hr {
+    position:relative;
+	  max-width: 60%;
+		font-size: 0.5em;
+		text-align: center;
+		margin: -1em auto -1em;
+		padding: 1em;
+		height: auto;
+		color: #408;
+		color: var(--h3-text);
+		border: transparent solid 0;
+		background: transparent;
+	}
+	:not(.head) > hr::before {
+		content: url(../img/hr/divider-7551966-thin.svg);
+    position:relative;    
+    left: -3em;
+		opacity: 0.5;
+	}
+
+section p, section li {
+  max-width: 36em;
+  }
 
 @media screen and (min-width: 860px) {
 	.sticky {

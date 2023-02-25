@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 578.917 434.188" version="1.1" viewBox="0 0 578.917 434.188">
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g>
+		<linearGradient id="e" x1="292.69" x2="286.37" y1="12.292" y2="412.62" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#CECECF" offset="0"/>
+			<stop stop-color="#CBCBCC" offset=".0603"/>
+			<stop stop-color="#C0C0C1" offset=".2627"/>
+			<stop stop-color="#B3B3B4" offset=".4619"/>
+			<stop stop-color="#A8A8A8" offset=".6544"/>
+			<stop stop-color="#A0A09F" offset=".8372"/>
+			<stop stop-color="#9D9D9C" offset="1"/>
+		</linearGradient>
+		<rect width="578.92" height="434.19" fill="url(#e)"/>
+			<linearGradient id="f" x1="302.93" x2="311" y1="371.55" y2="183.79" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#5AC0CF" offset="0"/>
+				<stop stop-color="#4EABB9" offset=".0437"/>
+				<stop stop-color="#347A87" offset=".1706"/>
+				<stop stop-color="#245561" offset=".3012"/>
+				<stop stop-color="#193B46" offset=".4333"/>
+				<stop stop-color="#122934" offset=".5675"/>
+				<stop stop-color="#0C1E28" offset=".7045"/>
+				<stop stop-color="#091720" offset=".8463"/>
+				<stop stop-color="#08151E" offset="1"/>
+			</linearGradient>
+			<polygon points="470.48 323.81 441.58 373.86 137.34 373.86 260.56 160.43 289.46 210.48 224.03 323.81" fill="url(#f)"/>
+			<linearGradient id="g" x1="469.48" x2="96.483" y1="331.25" y2="69.44" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#5AC0CF" offset="0"/>
+				<stop stop-color="#54B6C5" offset=".0149"/>
+				<stop stop-color="#3A8794" offset=".1015"/>
+				<stop stop-color="#2A616E" offset=".194"/>
+				<stop stop-color="#1E4651" offset=".2913"/>
+				<stop stop-color="#16333E" offset=".3947"/>
+				<stop stop-color="#10252F" offset=".5063"/>
+				<stop stop-color="#0B1C25" offset=".6304"/>
+				<stop stop-color="#091720" offset=".7765"/>
+				<stop stop-color="#08151E" offset="1"/>
+			</linearGradient>
+			<polygon points="260.56 60.326 318.36 60.326 470.48 323.81 224.03 323.81 252.92 273.76 383.79 273.76" fill="url(#g)"/>
+			<linearGradient id="h" x1="91.21" x2="328.48" y1="156.38" y2="290.09" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#5AC0CF" offset="0"/>
+				<stop stop-color="#58BECC" offset=".3583"/>
+				<stop stop-color="#54B6C4" offset=".5017"/>
+				<stop stop-color="#4CA8B6" offset=".6066"/>
+				<stop stop-color="#4296A3" offset=".6928"/>
+				<stop stop-color="#367F8C" offset=".7675"/>
+				<stop stop-color="#2B6571" offset=".8342"/>
+				<stop stop-color="#1F4955" offset=".895"/>
+				<stop stop-color="#142F3A" offset=".9494"/>
+				<stop stop-color="#08151E" offset="1"/>
+			</linearGradient>
+			<polygon points="137.34 373.86 108.44 323.81 260.56 60.326 383.79 273.76 325.99 273.76 260.56 160.43" fill="url(#h)"/>
+	</g>
+</switch>
+</svg>

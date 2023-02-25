@@ -25,7 +25,7 @@
   var tocJumpText         = '<span aria-hidden="true">↑</span> '
                           + '<span>Jump to Table of Contents</span>';
 
-  var sidebarMedia = window.matchMedia('screen and (min-width: 78em)');
+  var sidebarMedia = window.matchMedia('screen and (min-width: 799.9px)');
   var autoToggle   = function(e){ toggleSidebar(e.matches) };
   if(sidebarMedia.addListener) {
     sidebarMedia.addListener(autoToggle);

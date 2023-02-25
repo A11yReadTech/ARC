@@ -35,6 +35,8 @@
 
 
 :root {
+  --list-indent: 1em;
+  
   --art-classic:#60a;
   --art-blue:#60a;
   --arg-purple:#409;
@@ -2442,10 +2444,12 @@ h5 {
 h5+h6 {
   margin-top:0
 }
+
 h6 {
   font-size:14px;
   font-size:.875rem
 }
+
 @media print {
   h6 {
   font-size:12pt
@@ -2455,39 +2459,50 @@ h6 {
 h6 {
   line-height:1.8
 }
+
 h1.ap:before,h1.ex:before,h2.ap:before,h2.ex:before,h3.ap:before,h3.ex:before,h4.ap:before,h4.ex:before,h5.ap:before,h5.ex:before,h6.ap:before,h6.ex:before {
   color:#036!important;
   color:var(--art-blue)!important;
   font-weight:700
 }
+
 h1.ex,h2.ex,h3.ex,h4.ex,h5.ex,h6.ex {
   counter-increment:a;
   counter-reset:b
 }
+
 h1.ex:before,h2.ex:before,h3.ex:before,h4.ex:before,h5.ex:before,h6.ex:before {
   content:"Example " counter(a) ": "
 }
+
 h1.ex.inap,h2.ex.inap,h3.ex.inap,h4.ex.inap,h5.ex.inap,h6.ex.inap {
   counter-reset:none
 }
+
 h1.newap,h2.newap,h3.newap,h4.newap,h5.newap,h6.newap {
   counter-reset:b
 }
+
 h1.newex,h2.newex,h3.newex,h4.newex,h5.newex,h6.newex {
   counter-reset:a
 }
+
 h1.first,h1.newexap,h2.first,h2.newexap,h3.first,h3.newexap,h4.first,h4.newexap,h5.first,h5.newexap,h6.first,h6.newexap {
   counter-reset:a b
 }
+
 h1.ap,h2.ap,h3.ap,h4.ap,h5.ap,h6.ap {
   counter-increment:b
 }
+
 h1.ap:before,h2.ap:before,h3.ap:before,h4.ap:before,h5.ap:before,h6.ap:before {
   content:"Approach " counter(b) ": "
 }
+
 h1 code,h2 code,h3 code,h4 code,h5 code,h6 code {
   color:inherit!important
 }
+
 .in-resource h1 {
   margin-bottom:0
 }
@@ -2583,6 +2598,8 @@ h1 code,h2 code,h3 code,h4 code,h5 code,h6 code {
   height:1.6em;
   vertical-align:middle
 }
+
+
 img.tiny {
   --img-width:60px
 }
@@ -2632,10 +2649,10 @@ main img:not([width]) {
   width:var(--img-width)
 }
 ul {
-  list-style-type:disc
+  list-style-type: disc
 }
 ul.alt,ul.alt ul {
-  list-style-type:circle
+  list-style-type: circle
 }
 ol li,ul li {
   margin-bottom:8px

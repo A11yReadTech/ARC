@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1" viewBox="0 0 3366 4749">
+ <defs>
+  <style type="text/css">
+    .fil2 {fill:#E6E6E6}
+    .fil1 {fill:white}
+    .fil0 {fill:url(#k)}
+    .fil3 {fill:url(#l)}
+  </style>
+   <mask id="g">
+  <linearGradient id="h" x1="1680.3" x2="1680.3" y1="435.36" y2="1639.6" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+    <rect x="74" y="63" width="3213" height="1950" fill="url(#h)"/>
+   </mask>
+   <mask id="i">
+  <linearGradient id="j" x1="1683.1" x2="1683.1" y1="773.81" y2="1471.4" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+    <rect x="861" y="556" width="1645" height="1133" fill="url(#j)"/>
+   </mask>
+  <linearGradient id="k" x1="1723.3" x2="1642.9" y1="447.68" y2="4301.7" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#73B4FA" offset="0"/>
+   <stop stop-color="#58A2F0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="l" x1="486.01" x2="2880.2" y1="2331.7" y2="1010.4" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#9CBDFF" offset="0"/>
+   <stop stop-color="#62A1F4" offset=".67059"/>
+   <stop stop-color="#2785E9" offset="1"/>
+  </linearGradient>
+ </defs>
+  <path class="fil0" d="m1683 4749c16 0-1743-2025-1681-3252 99-1996 3263-1996 3363 0 61 1227-1698 3252-1682 3252z"/>
+  <path class="fil1" d="m88 1988s1606-941 3140 21c562-2380-3382-2785-3140-21z" mask="url(#g)"/>
+  <circle class="fil2" cx="1683" cy="1671" r="1167"/>
+  <path class="fil3" d="m1683 536c627 0 1135 508 1135 1135s-508 1135-1135 1135-1135-508-1135-1135 508-1135 1135-1135zm0-123c695 0 1258 563 1258 1258s-563 1258-1258 1258-1258-563-1258-1258 563-1258 1258-1258z"/>
+  <path class="fil1" d="m1683 560c452 0 819 252 819 563 0 310-367 562-819 562s-818-252-818-562c0-311 366-563 818-563z" mask="url(#i)"/>
+</svg>

@@ -114,6 +114,9 @@
 
 
 :root {
+
+  --list-indent: 1em;
+  
 	--text: #000;
 	--bg: #f2eee2;
   --lightAnchorRim: #fff;
@@ -143,8 +146,18 @@
 	--toclink-visited-underline: #054572;
 
 	--heading-text: #60b;
-
+  --h1-text: var(--heading-text);
+  --h2-text: var(--heading-text);
+  --h3-text: #50a;
+  --h4-text: #409;
+  --h5-text: #306;
+  --h6-text: var(--h5-text);
+  
 	--hr-text: var(--text);
+
+  --svg-hr1: var(--h3-text);
+  --svg-hr2: var(--svg-hr1);
+  --svg-hr3: #123bad;
 
 	--algo-border: #def;
 
@@ -342,7 +355,7 @@
 			white-space: nowrap;
 
 			height: 1.33em;
-			padding: .1em 0.3em;
+			padding: 0.1em 0.3em;
 			margin: 0;
 
 			box-shadow: 0 0 2px;
@@ -396,10 +409,11 @@
 			position: fixed;
 			top: 0; bottom: 0;
 			left: 0;
-			width: 23.5em;
+			width: 20.5em;
 			max-width: 80%;
 			max-width: calc(100% - 2em - 26px);
-			overflow: auto;
+			overflow-x: auto;			
+			overflow-y: clip;
 			padding: 0 1em;
 			padding-left: 42px;
 			padding-left: calc(1em + 26px);
@@ -431,11 +445,65 @@
 		}
 	}
 	/* Hide main scroller when only the ToC is visible anyway */
-	@media screen and (max-width: 28em) {
+	@media screen and (max-width: 26em) {
 		body.toc-sidebar {
-			overflow: hidden;
+			overflow-x: auto;			
+			overflow-y: clip;
 		}
 	}
+
+
+
+	/* Sidebar with its own space */
+	@media screen and (min-width: 800px) and (max-width: 74.99em) {
+		body:not(.toc-inline) #toc {
+			position: fixed;
+			top: 0; bottom: 0;
+			left: 0;
+			width: 26vw;
+			overflow-x: auto;			
+			overflow-y: clip;
+			padding: 0 2em;
+			padding-left: 2vw;
+			
+			font-size: 1.333vw;
+			color: black;
+			color: var(--tocsidebar-text);
+			background: inherit;
+			background-color: #f7f8f9;
+			background-color: var(--tocsidebar-bg);
+			z-index: 1;
+			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
+			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
+		}
+		body:not(.toc-inline) #toc h2 {
+			margin-top: .8rem;
+			font-variant: small-caps;
+			font-variant: all-small-caps;
+			text-transform: lowercase;
+			font-weight: bold;
+			color: gray;
+			color: hsla(203,20%,40%,.7);
+			color: var(--tocsidebar-heading-text);
+		}
+	 
+		body:not(.toc-inline) {
+			padding-left:  33vw;
+		}
+	/* See also Overflow section at the bottom */
+
+		body:not(.toc-inline) #toc-jump:not(:focus) {
+			width: 0;
+			height: 0;
+			padding: 0;
+			position: absolute;
+			overflow-x: auto;			
+			overflow-y: clip;
+		}
+	}
+
+
+
 
 	/* Sidebar with its own space */
 	@media screen and (min-width: 75em) {
@@ -443,11 +511,13 @@
 			position: fixed;
 			top: 0; bottom: 0;
 			left: 0;
-			width: 20.5em;
-			overflow: auto;
-			padding: 0 1em;
-			padding-left: 42px;
-			padding-left: calc(1em + 26px);
+			width: 19em;
+			overflow-x: auto;			
+			overflow-y: clip;
+			padding: 0 2em;
+			padding-left: 2em;
+			padding-left: calc(1em + 16px);
+			font-size: 1rem;
 			color: black;
 			color: var(--tocsidebar-text);
 			background: inherit;
@@ -506,11 +576,12 @@
 		margin-top: 2.5rem;
 	}
 
-	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
-		color: #60b;
-		color: var(--heading-text);
-	}
-	
+
+h1, .h1{ color: #60b; color: var(--h1-text); }
+h2, .h2 { color: #50a; color: var(--h2-text); }
+h3, .h3 { color: #409; color: var(--h3-text); }
+h4, .h4 { color: #308; color: var(--h4-text); }
+h5, .h5, h6, .h6 { color: #306; color: var(--h5-text); }
 
 
 	h1, .h1 { font-size: 170%; }
@@ -538,7 +609,7 @@
 	h3 + .h4,
 	h2 + .h4,
 	h1 + .h2 {
-		margin-top: 1em; /* = 1 x line-height */
+		margin-top: 0.33em; /* = 1 x line-height */
 	}
 
 /** Section divider ***********************************************************/
@@ -553,6 +624,7 @@
 		border: transparent solid 0;
 		background: transparent;
 	}
+
 	:not(.head) > hr::before {
 		content: "\2727\2003\2003\2727\2003\2003\2727";
 	}
@@ -569,6 +641,7 @@
 	ul, ol {
 		margin: 0;
 		padding-left: 1em;
+		padding-left: var(--list-indent);
 		font-size: 0.94em;
 		font-weight: 500;
 		list-style-type: disc
@@ -597,18 +670,19 @@ ul.multilevel {
 		line-height: 1.15;
 		}
 	li:first-child {
-		margin: -0.33em 0 0.66em;
+		margin: 0.1em 0 0.66em;
 		}
-
 
 
 	dl dd {
 		margin: 0 0 .5em 2em;
 	}
 
+
 	.head dd + dd { /* compact for header */
-		margin-top: -.5em;
+		margin-top: -0.5em;
 	}
+
 
 	/* Style for algorithms */
 	ol.algorithm ol:not(.algorithm),
@@ -616,6 +690,7 @@ ul.multilevel {
 	 border-left: 0.5em solid #def;
 	 border-left: 0.5em solid var(--algo-border);
 	}
+
 
 	/* Style for switch/case <dl>s */
 	dl.switch > dd > ol.only {
@@ -643,8 +718,8 @@ ul.multilevel {
 	 line-height: 0.5em;
 	}
 
-/** Terminology Markup ********************************************************/
 
+/** Terminology Markup ********************************************************/
 
 /******************************************************************************/
 /*                                 Inline Markup                              */
@@ -1273,6 +1348,7 @@ Possible extra rowspan handling
 		border-color: #3980b5;
 		border-color: var(--toclink-underline);
 	}
+
 	.toc a:visited {
 		color: black;
 		color: var(--toclink-visited-text);
@@ -1281,6 +1357,7 @@ Possible extra rowspan handling
 		border-color: #054572;
 		border-color: var(--toclink-visited-underline);
 	}
+
 	.toc a:focus,
 	.toc a:hover {
 		background: #f8f8f8;
@@ -1289,6 +1366,7 @@ Possible extra rowspan handling
 		border-bottom-width: 3px;
 		margin-bottom: -2px;
 	}
+
 	.toc a:not(:focus):not(:hover) {
 		/* Allow colors to cascade through from link styling */
 		border-bottom-color: transparent;
@@ -1300,26 +1378,27 @@ Possible extra rowspan handling
 		margin:  0;
 		padding: 0;
 	}
+
 	.toc {
 		font-weight: 500;
 		line-height: 1.2em; /* consistent spacing */
 	}
 
 	/* font style & margins show hierarchy */
-	.toc > li             { font-weight: 700;   }
+	.toc > li             { font-weight: 600;   }
 	.toc > li li          { font-weight: 600; }
 	.toc > li li li       { font-size:   95%;    }
 	.toc > li li li li    { font-size:   90%;    }
 	.toc > li li li li li { font-size:   85%;    }
 
 	.toc > li             { margin: 1.5rem 0;    }
-	.toc > li li          { margin: 0.6rem 0 0 0.5rem;    }
-	.toc > li li li       { margin: 0rem 0 0 1.25rem;   }
+	.toc > li li          { margin: 0.6rem 0 0;    }
+	.toc > li li li       { margin: 0;   }
 
 	/* Section numbers in a column of their own */
 	.toc .secno {
 		float: left;
-		width: 4rem;
+		width: 3rem;
 		white-space: nowrap;
 	}
 	.toc > li li li li .secno {
@@ -1329,14 +1408,20 @@ Possible extra rowspan handling
 		font-size: 100%;
 	}
 
-	:not(li) > .toc              { margin-left:  5rem;  }
-	.toc .secno                  { margin-left: -5rem;  }
-	.toc > li li .secno          { margin-left: -5rem;  }
-	.toc > li li li .secno       { margin-left: -6rem;  }
-	.toc > li li li li .secno    { margin-left: -9rem;  }
-	.toc > li li li li li .secno { margin-left: -11rem; }
+
+	:not(li) > .toc              { margin-left:  2rem;  }
+	.toc .secno                  { margin-left: 0em;  }
+	.toc > li               { margin-left: 0rem;  }
+	.toc > li li            { margin-left: 0rem;  }
+	.toc > li li li         { margin-left: 0rem;  }
+	.toc > li li .secno          { margin-left: 0.1em; padding-right:0.1em;}
+	.toc > li li li .secno       { margin-left: 0.2em; padding-right:0.3em;  }
+	.toc > li li li li .secno    { margin-left: 0rem;  }
+	.toc > li li li li li .secno { margin-left: 0rem; }
+
 
 	/* Tighten up indentation in narrow ToCs */
+	/*
 	@media (max-width: 30em) {
 		:not(li) > .toc              { margin-left:  4rem; }
 		.toc .secno                  { margin-left: -4rem; }
@@ -1347,26 +1432,31 @@ Possible extra rowspan handling
 		.toc > li li li li li .secno { margin-left: -7rem; }
 	}
 	@media screen and (min-width: 75em) {
-		body:not(.toc-inline) :not(li) > .toc              { margin-left:  4rem; }
-		body:not(.toc-inline) .toc .secno                  { margin-left: -4rem; }
-		body:not(.toc-inline) .toc > li li .secno          { margin-left: -4rem; }
-		body:not(.toc-inline) .toc > li li li              { margin-left:  1rem; }
-		body:not(.toc-inline) .toc > li li li .secno       { margin-left: -5rem; }
-		body:not(.toc-inline) .toc > li li li li .secno    { margin-left: -6rem; }
-		body:not(.toc-inline) .toc > li li li li li .secno { margin-left: -7rem; }
 	}
-	body.toc-sidebar #toc :not(li) > .toc              { margin-left:  4rem; }
-	body.toc-sidebar #toc .toc .secno                  { margin-left: -4rem; }
-	body.toc-sidebar #toc .toc > li li .secno          { margin-left: -4rem; }
-	body.toc-sidebar #toc .toc > li li li              { margin-left:  1rem; }
-	body.toc-sidebar #toc .toc > li li li .secno       { margin-left: -5rem; }
-	body.toc-sidebar #toc .toc > li li li li .secno    { margin-left: -6rem; }
-	body.toc-sidebar #toc .toc > li li li li li .secno { margin-left: -7rem; }
-
+		body:not(.toc-inline) .toc .secno                  { margin-left: -2rem;  }
+		body:not(.toc-inline) .toc > li li .secno          { margin-left: -2rem;  }
+		body:not(.toc-inline) .toc > li li li              { margin-left:  0rem;  }
+		body:not(.toc-inline) .toc > li li li .secno       { margin-left: -2rem;  }
+		body:not(.toc-inline) .toc > li li li li .secno    { margin-left: -3rem;  }
+		body:not(.toc-inline) .toc > li li li li li .secno { margin-left: -4rem;  }
+	*/
+	body:not(.toc-inline) :not(li) > .toc              { margin-left:  0.5em;  }
+/*
+	body.toc-sidebar #toc :not(li) > .toc              { margin-left:  1rem; }
+	body.toc-sidebar #toc .toc .secno                  { margin-left: -1rem; }
+	body.toc-sidebar #toc .toc > li li                 { margin-left: 2.5rem; }
+	body.toc-sidebar #toc .toc > li li .secno          { margin-left: -1rem; }
+	body.toc-sidebar #toc .toc > li li li              { margin-left: 0.5rem; }
+	body.toc-sidebar #toc .toc > li li li .secno       { margin-left: -2rem; }
+	body.toc-sidebar #toc .toc > li li li li .secno    { margin-left: -3rem; }
+	body.toc-sidebar #toc .toc > li li li li li .secno { margin-left: -4rem; }
+*/
 	.toc li {
 		clear: both;
 	}
 
+@media (max-width: 30em) {
+}
 
 
 
@@ -1381,6 +1471,8 @@ Possible extra rowspan handling
 	ul.index dl    { margin-top: 0; }
 	ul.index dt    { margin: .2em 0 .2em 20px;}
 	ul.index dd    { margin: .2em 0 .2em 40px;}
+	
+	
 	/* Index Lists: Typography */
 	ul.index ul,
 	ul.index dl { font-size: smaller; }
