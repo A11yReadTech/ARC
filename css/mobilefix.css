@@ -1,26 +1,46 @@
-@media (max-width: 770px) {
+@media (max-width: 769.99px) {
   :root {}
   body {
     padding: 5vw;
+    font-size: 2.2vw;
   }
+
   body > section, body section#abstract {
     margin: 8vw 0;
-    padding: 5vw;
+    padding: 2vw 5vw 5vw;
     border: none
   }
-  section section, section section section {
+
+  body > section section, body > section section section {
     padding: 0 0 0 2vw;
   }
+
   :is(h2):not(#toc h2) + a.self-link {
-   top: -1.33em;
-   left: -0.8em;
+   top: -1em;
+   left: -1em;
   }
-  .headerPlus, .headerPlus2i {margin: 0.5rem 0 0;}
- 
-  section .noLeftShift { position: relative; left:0em; font-size: 1.25em; }
+
+  .headerPlus, .headerPlus2i {margin: 12vw 0 0;}
+
+  section .noLeftShift { position: relative; left:0; font-size: 1.25em; }
 
 }
 
+@media (max-width: 639.99px) {
+  :root {}
+  body {
+    padding: 5vw;
+    font-size: 3vw;
+  }
+
+div.upR {
+  max-width: 100vw;
+  width: 90%;
+}
+div.upR img {
+  height: 26vw;
+ } 
 
 
+}
 

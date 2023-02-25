@@ -115,7 +115,10 @@
 
 :root {
 
-  --list-indent: 1em;
+  --list-indent: 1em; /* ol,ul padding-left */
+  --list-space: 0.25em; /* ol,ul margin */
+  --parapad: 1em; /* p padding-left */
+  
   
 	--text: #000;
 	--bg: #f2eee2;
@@ -423,8 +426,8 @@
 			background-color: #f7f8f9;
 			background-color: var(--tocsidebar-bg);
 			z-index: 1;
-			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
-			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
+			box-shadow: inset -0.1em 0 .25em var(--tocsidebar-shadow) ;
+			box-shadow: inset -0.9em 0 .25em rgba(0,11,22,.3) ;
 		}
 		body.toc-sidebar #toc h2 {
 			margin-top: .8rem;
@@ -473,8 +476,8 @@
 			background-color: #f7f8f9;
 			background-color: var(--tocsidebar-bg);
 			z-index: 1;
-			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
 			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
+			box-shadow: -.1em 0 .25em rgba(0,0,0,1) inset;
 		}
 		body:not(.toc-inline) #toc h2 {
 			margin-top: .8rem;
@@ -524,9 +527,15 @@
 			background-color: #f7f8f9;
 			background-color: var(--tocsidebar-bg);
 			z-index: 1;
-			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
-			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
+			box-shadow: inset -0.2em 0 0.35em var(--tocsidebar-shadow),
+			box-shadow: inset -0.2em 0 0.35em var(--tocsidebar-shadow);
+			box-shadow: inset -0.2em 0 0.35em rgba(11,33,55,1),
+			            inset -0.4em -0.2em 0.35em rgba(11,33,55,1);
 		}
+
+
+
+
 		body:not(.toc-inline) #toc h2 {
 			margin-top: .8rem;
 			font-variant: small-caps;
@@ -537,11 +546,13 @@
 			color: hsla(203,20%,40%,.7);
 			color: var(--tocsidebar-heading-text);
 		}
-	 
+
+
 		body:not(.toc-inline) {
 			padding-left: 25em;
 		}
 	/* See also Overflow section at the bottom */
+
 
 		body:not(.toc-inline) #toc-jump:not(:focus) {
 			width: 0;
@@ -658,7 +669,9 @@ h5, .h5, h6, .h6 { color: #306; color: var(--h5-text); }
 
 ul.multilevel {
 		margin: 0em;
-		padding: 1em 0 1em 2em;
+		padding: 1em 0 1em 1.5em;
+		padding-left: 1.5em;
+		padding-left: calc(var(--list-indent) * 1.5);
 		font-weight: 600;
 		font-size: 1.05em;
 		list-style-type: square;
