@@ -16,8 +16,8 @@ before_script:
   
 script:
   - cd ../..
-  - mkdir gh-pages
-  - cd gh-pages
+  - mkdir nellynull
+  - cd nellynull
   - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/GARD.git
   - cd GARD
   - cp -r ../../A11yReadTech/GARD/index.html ../../A11yReadTech/GARD/assets ../../A11yReadTech/GARD/prototypes ../../A11yReadTech/GARD/requirements .
