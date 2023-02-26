@@ -1,8 +1,8 @@
-@media (max-width: 769.99px) {
+@media (max-width: 49.99em) {
   :root {}
   body {
     padding: 5vw;
-    font-size: 2.2vw;
+    font-size: 2.5vw;
   }
 
   body > section, body section#abstract {
@@ -22,25 +22,27 @@
 
   .headerPlus, .headerPlus2i {margin: 12vw 0 0;}
 
-  section .noLeftShift { position: relative; left:0; font-size: 1.25em; }
+  section .noLeftShift {
+    position: relative; 
+    left:0; 
+    font-size: 1.25em;
+  }
+}/* CLOSE MEDIA QUERY */
 
-}
 
-@media (max-width: 639.99px) {
+@media (max-width: 39.99em) {
   :root {}
   body {
     padding: 5vw;
     font-size: 3vw;
   }
 
-div.upR {
-  max-width: 100vw;
-  width: 90%;
-}
-div.upR img {
-  height: 26vw;
+  div.upR {
+    max-width: 100vw;
+    width: 90%;
+  }
+  div.upR img {
+    height: 26vw;
  } 
-
-
-}
+}/* CLOSE MEDIA QUERY */
 

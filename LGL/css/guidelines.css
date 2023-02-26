@@ -184,7 +184,7 @@ summary::before {
 	margin-right: -3.5em;
 }
 
-:not(.head) > details:focus summary::before, :not(.head) > details:hover summary::before, .guideline:focus h3::before, .guideline:hover h3::before, .outcome:focus h4::before, .outcome:hover h4::before {
+:not(.head) > details:focus summary::before, :not(.head) > details:hover summary::before, .guideline:focus h3::before, .guideline:hover h3::before, .objective:focus h4::before, .objective:hover h4::before {
 	background-color: #ffff99 ;
 	box-shadow: 0 0 1em .25em #ffff99;
 }
@@ -213,21 +213,21 @@ summary::before {
 
 
 
-.howto-link, .outcome-link, 
-.method-link, .outcome-header {
+.howto-link, .objective-link, 
+.method-link, .objective-header {
 	font-weight: 600;
 	font-style: normal;
 }
-.howto-link::before, .outcome-link::before, 
+.howto-link::before, .objective-link::before, 
 .method-link::before, 
-.howto-header::before, .outcome-header::before,
+.howto-header::before, .objective-header::before,
 .method-header::before {
 	display: inline-block;
 	width: 2ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
-.howto-header::before, .outcome-header::before,
+.howto-header::before, .objective-header::before,
 .method-header::before  {
   width: 3ex;
 	margin-right: .5em;
@@ -238,8 +238,8 @@ summary::before {
 .howto-link::before,.howto-header::before {
 	content: url(../img/how-to.svg);
 }
-.outcome-link::before, .outcome-header::before {
-	content: url(../img/outcome.svg);
+.objective-link::before, .objective-header::before {
+	content: url(../img/objective.svg);
 }
 .method-link::before,.method-header::before {
 	content: url(../img/method.svg);
@@ -249,17 +249,17 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	cursor: help;
 }
 
-.outcome {
+.objective {
 	margin-left: 2rem;
 }
-.outcome h4 {
+.objective h4 {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 100%;
 	color: #005A9C;
 }
 
-.guideline h3::before, .outcome h4::before {
+.guideline h3::before, .objective h4::before {
 	display: inline-block;
 	width: 2em;
 	margin-right: 0.5em;
@@ -268,10 +268,10 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 .guideline h3::before {
 	content: url(../img/guideline.svg);
 }
-.outcome h4::before {
-	content: url(../img/outcome.svg);
+.objective h4::before {
+	content: url(../img/objective.svg);
 }
-.outcome h4 {
+.objective h4 {
 	margin-top: 1rem;
 	margin-left: -2rem;
 }

@@ -8,7 +8,7 @@
 <!-- 
 <link rel="stylesheet" href="https://readtech.org/css/splash.css">
 -->
-<meta name="description" content="The APCA Readability Guidelines (ARG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
+<meta name="description" content="The APCA Readability Criterion (ARC) provides a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
@@ -22,7 +22,7 @@ body {
   margin: 0; 
   padding: 24px; 
   font-family: Barlow, exo, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   Line-height: 1.45;
   color: #f0e8e0; 
@@ -271,7 +271,8 @@ div.resourceLinks {
 
   }
   .fs07 {font-size: 0.9em; line-height: 1.7;}
-}
+  
+}/* CLOSE MEDIA QUERY */
 
 @media screen and (min-width: 700px) and (max-width: 960px){
   body {font-size: 2vw;}
@@ -279,9 +280,13 @@ div.resourceLinks {
   div.main {max-width: calc(42vw - 32px);}
   div p { padding: 0 7vw 0 1em;}
   div.resourceLinks {max-width: 540px; margin: 1em; padding: 0em;}
-  .resourceLinks ul li {position: relative; max-width: 70vw;
- margin: 0 0 0.5em ; padding: 0em;}
-}
+  .resourceLinks ul li {
+    position: relative; 
+    max-width: 70vw;
+    margin: 0 0 0.5em ; 
+    padding: 0em;
+  }
+}/* CLOSE MEDIA QUERY */
 </style>
 </head>
 
@@ -296,7 +301,7 @@ div.resourceLinks {
   <img class="imgFloat" alt="Image of an orange figurine representing a human reading a purple covered book" src="img/ReadingOrangeMan.png">
   </div>
   <div class="main">
-    <a href="https://readtech.org/ARG/guidelines/">
+    <a href="https://readtech.org/ARC/guidelines/">
     <img src="https://readtech.org/img/ARTtextPaths_v03.svg">
     <h1>APCA GUIDELINES<span class="forit"><br>for<br></span>READABLE DESIGN</h1>
     </a>
@@ -320,7 +325,7 @@ div.resourceLinks {
   <div class="innerwrapper">
     <div><b>Visit us at GitHub</b>
       <br>
-      <a href="https://github.com/A11yReadTech/">APCA Readability Guidelines GitHub Repo.</a><br>
+      <a href="https://github.com/A11yReadTech/ARC/">APCA Readability Criterion GitHub Repo.</a><br>
       <a href="https://github.com/Myndex/apca-w3">APCA-W3 GitHub Repository.</a><br>
       <a href="https://git.myndex.com">APCA, Color, and Contrast documentation.</a><br>
     </div>

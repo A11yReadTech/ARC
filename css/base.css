@@ -402,7 +402,7 @@
 		#toc-nav > a > span + span {
 			padding-right: 0.2em;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 /** ToC Sidebar ***************************************************************/
 
@@ -446,19 +446,20 @@
 			position: absolute;
 			overflow: hidden;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
+
 /* Hide main scroller when only the ToC is visible anyway */
 	@media screen and (max-width: 26em) {
 		body.toc-sidebar {
 			overflow-x: auto;			
 			overflow-y: clip;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 
 
 /* Sidebar with its own space */
-	@media screen and (min-width: 800px) and (max-width: 74.99em) {
+	@media screen and (min-width: 50em) and (max-width: 74.99em) {
 		body:not(.toc-inline) #toc {
 			position: fixed;
 			top: 0; bottom: 0;
@@ -468,7 +469,7 @@
 			overflow-y: clip;
 			padding: 0 2em;
 			padding-left: 2vw;
-			
+      
 			font-size: 1.333vw;
 			color: black;
 			color: var(--tocsidebar-text);
@@ -503,7 +504,7 @@
 			overflow-x: auto;			
 			overflow-y: clip;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 
 
@@ -561,31 +562,40 @@
 			position: absolute;
 			overflow: hidden;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
+	
+	
 	@media screen and (min-width: 90em) {
 		body:not(.toc-inline) {
 			margin: 0 4em;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 /******************************************************************************/
 /*                                Sectioning                                  */
 /******************************************************************************/
 
-/** Headings ******************************************************************/
+/** HEADINGS ******************************************************************/
 
 	h1, h2, h3, h4, h5, h6, dt {
 		page-break-after: avoid;
 		page-break-inside: avoid;
 		font: 100% sans-serif;   /* Reset all font styling to clear out UA styles */
 		font-family: inherit;    /* Inherit the font family. */
-		line-height: 1.2;        /* Keep wrapped headings compact */
+		line-height: 1.15;        /* Keep wrapped headings compact */
 		hyphens: manual;         /* Hyphenated headings look weird */
 	}
+
 
 	h2, h3, h4, h5, h6 {
 		margin-top: 2.5rem;
 	}
+
+@media (max-width: 34.99em) {
+	h2, h3, h4, h5, h6 {
+		margin-top: 6vw;
+	}
+}/* CLOSE MEDIA QUERY */
 
 
 h1, .h1{ color: #60b; color: var(--h1-text); }
@@ -595,141 +605,144 @@ h4, .h4 { color: #308; color: var(--h4-text); }
 h5, .h5, h6, .h6 { color: #306; color: var(--h5-text); }
 
 
-	h1, .h1 { font-size: 170%; }
-	h2, .h2 { font-size: 140%; }
-	h3, .h3 { font-size: 120%; }
-	h4, .h4 { font-weight: bold; }
-	h5 { font-style: italic; }
-	h6 { font-variant: small-caps; }
-	dt { font-weight: bold; }
+h1, .h1 { font-size: 180%; font-weight: 600;}
+h2, .h2 { font-size: 155%; font-style: italic; font-weight: 600;}
+h3, .h3 { font-size: 130%; font-weight: 600; }
+h4, .h4 { font-size: 110%; font-weight: 700; }
+h5 { font-style: italic; }
+h6 { font-variant: small-caps; }
+dt { font-weight: bold; }
 
 /** Subheadings ***************************************************************/
 
-	h1 + h2,
-	#subtitle {
-		/* #subtitle is a subtitle in an H2 under the H1 */
-		margin-top: 0;
-	}
-	h2 + h3,
-	h3 + h4,
-	h4 + h5,
-	h5 + h6 {
-		margin-top: 1.2em; /* = 1 x line-height */
-	}
-	h2 + .h3,
-	h3 + .h4,
-	h2 + .h4,
-	h1 + .h2 {
-		margin-top: 0.33em; /* = 1 x line-height */
-	}
+h1 + h2,
+#subtitle {
+  /* #subtitle is a subtitle in an H2 under the H1 */
+  margin-top: 0;
+}
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 1.2em; /* = 1 x line-height */
+}
+h2 + .h3,
+h3 + .h4,
+h2 + .h4,
+h1 + .h2 {
+  margin-top: 0.33em; /* = 1 x line-height */
+}
 
 /** Section divider ***********************************************************/
 
-	:not(.head) > :not(.head) + hr {
-		font-size: 1.5em;
-		text-align: center;
-		margin: 1em auto;
-		height: auto;
-		color: black;
-		color: var(--hr-text);
-		border: transparent solid 0;
-		background: transparent;
-	}
+:not(.head) > :not(.head) + hr {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em auto;
+  height: auto;
+  color: black;
+  color: var(--hr-text);
+  border: transparent solid 0;
+  background: transparent;
+}
 
-	:not(.head) > hr::before {
-		content: "\2727\2003\2003\2727\2003\2003\2727";
-	}
+:not(.head) > hr::before {
+  content: "\269B\2003\2003\269B\2003\2003\269B";
+}
 
 /******************************************************************************/
 /*                            Paragraphs and Lists                            */
 /******************************************************************************/
 
-	p { margin: 1em 0; }
+p { margin: 1em 0; }
 
-	dd > p:first-child,
-	li > p:first-child { margin-top: 0; }
+dd > p:first-child,
+li > p:first-child { margin-top: 0; }
 
-	ul, ol {
-		margin: 0;
-		padding-left: 1em;
-		padding-left: var(--list-indent);
-		font-size: 0.94em;
-		font-weight: 500;
-		list-style-type: disc
-	}
+ul, ol {
+  margin: 0;
+  padding-left: 1em;
+  padding-left: var(--list-indent);
+  font-size: 0.95em;
+  font-weight: 500;
+  list-style-type: disc
+}
 
 
 :not(li,ul,ol) + ul, :not(li,ul,ol) + ol {
-		margin: 0em;
-		padding: 0.5em 0 0.5em 2em;
-		font-weight: 500;
-		font-size: 1em;
-		list-style-type: square;
-	}
+  margin: 0em;
+  padding: 0.5em 0 0.5em 2em;
+  font-weight: 500;
+  font-size: 1em;
+  list-style-type: square;
+}
+
 
 ul.multilevel {
-		margin: 0em;
-		padding: 1em 0 1em 1.5em;
-		padding-left: 1.5em;
-		padding-left: calc(var(--list-indent) * 1.5);
-		font-weight: 600;
-		font-size: 1.05em;
-		list-style-type: square;
-	}
-
-	li {
-		margin: 0 0 0.66em;
-		padding: 0;
-		line-height: 1.15;
-		}
-	li:first-child {
-		margin: 0.1em 0 0.66em;
-		}
+  margin: 0em;
+  padding: 1em 0 1em 1.5em;
+  padding-left: 1.5em;
+  padding-left: calc(var(--list-indent) * 1.5);
+  font-weight: 600;
+  font-size: 1em;
+  list-style-type: square;
+}
 
 
-	dl dd {
-		margin: 0 0 .5em 2em;
-	}
+
+li {
+  margin: 0 0 0.66em;
+  padding: 0;
+  line-height: 1.15;
+  }
+li:first-child {
+  margin: 0.1em 0 0.66em;
+  }
 
 
-	.head dd + dd { /* compact for header */
-		margin-top: -0.5em;
-	}
+dl dd {
+  margin: 0 0 .5em 2em;
+}
 
 
-	/* Style for algorithms */
-	ol.algorithm ol:not(.algorithm),
-	.algorithm > ol ol:not(.algorithm) {
-	 border-left: 0.5em solid #def;
-	 border-left: 0.5em solid var(--algo-border);
-	}
+.head dd + dd { /* compact for header */
+  margin-top: -0.5em;
+}
 
 
-	/* Style for switch/case <dl>s */
-	dl.switch > dd > ol.only {
-	 margin-left: 0;
-	}
-	dl.switch > dd > ol.algorithm {
-	 margin-left: -2em;
-	}
-	dl.switch {
-	 padding-left: 2em;
-	}
-	dl.switch > dt {
-	 text-indent: -1.5em;
-	 margin-top: 1em;
-	}
-	dl.switch > dt + dt {
-	 margin-top: 0;
-	}
-	dl.switch > dt::before {
-	 content: '\21AA';
-	 padding: 0 0.5em 0 0;
-	 display: inline-block;
-	 width: 1em;
-	 text-align: right;
-	 line-height: 0.5em;
-	}
+/* Style for algorithms */
+ol.algorithm ol:not(.algorithm),
+.algorithm > ol ol:not(.algorithm) {
+ border-left: 0.5em solid #def;
+ border-left: 0.5em solid var(--algo-border);
+}
+
+
+/* Style for switch/case <dl>s */
+dl.switch > dd > ol.only {
+ margin-left: 0;
+}
+dl.switch > dd > ol.algorithm {
+ margin-left: -2em;
+}
+dl.switch {
+ padding-left: 2em;
+}
+dl.switch > dt {
+ text-indent: -1.5em;
+ margin-top: 1em;
+}
+dl.switch > dt + dt {
+ margin-top: 0;
+}
+dl.switch > dt::before {
+ content: '\21AA';
+ padding: 0 0.5em 0 0;
+ display: inline-block;
+ width: 1em;
+ text-align: right;
+ line-height: 0.5em;
+}
 
 
 /** Terminology Markup ********************************************************/
@@ -739,97 +752,101 @@ ul.multilevel {
 /******************************************************************************/
 
 /** Terminology Markup ********************************************************/
-	dfn   { /* Defining instance */
-		font-weight: bolder;
-	}
-	a > i { /* Instance of term */
-		font-style: normal;
-	}
-	dt dfn code, code.idl {
-		font-size: inherit;
-	}
-	dfn var {
-		font-style: normal;
-	}
+dfn   { /* Defining instance */
+  font-weight: bolder;
+}
+a > i { /* Instance of term */
+  font-style: normal;
+}
+dt dfn code, code.idl {
+  font-size: inherit;
+}
+dfn var {
+  font-style: normal;
+}
 
 /** Change Marking ************************************************************/
 
-	del {
-		color: #AA0000;
-		color: var(--del-text);
-		background: transparent;
-		background: var(--del-bg);
-		text-decoration: line-through;
-	}
-	ins {
-		color: #006100;
-		color: var(--ins-text);
-		background: transparent;
-		background: var(--ins-bg);
-		text-decoration: underline;
-	}
-	ins:not(#dontusethisid) *,
-	del:not(#dontusethisid) * {
-		color: inherit;
-	}
-	ins:not([hidden]).diff-inactive,
-	del:not([hidden]).diff-inactive {
-		all: unset;
-	}
-	ins:not(.diff-inactive) *,
-	del:not(.diff-inactive) * {
-		color: inherit;
-	}
+del {
+  color: #AA0000;
+  color: var(--del-text);
+  background: transparent;
+  background: var(--del-bg);
+  text-decoration: line-through;
+}
+ins {
+  color: #006100;
+  color: var(--ins-text);
+  background: transparent;
+  background: var(--ins-bg);
+  text-decoration: underline;
+}
+ins:not(#dontusethisid) *,
+del:not(#dontusethisid) * {
+  color: inherit;
+}
+ins:not([hidden]).diff-inactive,
+del:not([hidden]).diff-inactive {
+  all: unset;
+}
+ins:not(.diff-inactive) *,
+del:not(.diff-inactive) * {
+  color: inherit;
+}
 
-	/* for amendments (candidate/proposed changes) */
-	.amendment ins, .correction ins, .addition ins,
-	ins[cite] { text-decoration-style: dotted; }
-	.amendment del, .correction del, .addition del,
-	del[cite] { text-decoration-style: dotted; }
-	.amendment.proposed ins, .correction.proposed ins, .addition.proposed ins,
-	ins[cite].proposed { text-decoration-style: double; }
-	.amendment.proposed del, .correction.proposed del, .addition.proposed del,
-	del[cite].proposed { text-decoration-style: double; }
+/* for amendments (candidate/proposed changes) */
+.amendment ins, .correction ins, .addition ins,
+ins[cite] { text-decoration-style: dotted; }
+.amendment del, .correction del, .addition del,
+del[cite] { text-decoration-style: dotted; }
+.amendment.proposed ins, .correction.proposed ins, .addition.proposed ins,
+ins[cite].proposed { text-decoration-style: double; }
+.amendment.proposed del, .correction.proposed del, .addition.proposed del,
+del[cite].proposed { text-decoration-style: double; }
 
 /** Miscellaneous improvements to inline formatting ***************************/
 
-	sup {
-		vertical-align: super;
-		font-size: 80%;
-	}
+sup {
+  vertical-align: super;
+  font-size: 75%;
+}
 
 /******************************************************************************/
 /*                                    Code                                    */
 /******************************************************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
 /** General monospace/pre rules ***********************************************/
 
-	pre, code, samp {
-		font-family: Menlo, Consolas, Monaco, monospace;
-		font-size: .9em;
-		hyphens: none;
-		text-transform: none;
-		text-align: left;
-		text-align: start;
-		font-variant: normal;
-		orphans: 3;
-		widows: 3;
-		page-break-before: avoid;
-	}
-	pre code,
-	code code {
-		font-size: 100%;
-	}
+pre, code, samp {
+  font-family: 'Fira Mono', Menlo, Consolas, Monaco, monospace;
+  font-size: 0.95em;
+  hyphens: none;
+  text-transform: none;
+  text-align: left;
+  text-align: start;
+  font-variant: normal;
+  orphans: 3;
+  widows: 3;
+  page-break-before: avoid;
+}
 
-	pre {
-		margin-top: 1em;
-		margin-bottom: 1em;
-		overflow: auto;
-	}
+pre code,
+code code {
+  font-size: 100%;
+}
+
+pre {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+
+
+
 
 /** Inline Code fragments *****************************************************/
-
-
 
 /******************************************************************************/
 /*                                    Links                                   */
@@ -837,80 +854,85 @@ ul.multilevel {
 
 /** General Hyperlinks ********************************************************/
 
-	/* We hyperlink a lot, so make it less intrusive */
-	a[href] {
-		color: #034575;
-		color: var(--a-normal-text);
-		text-decoration-color: #707070;
-		text-decoration-color: var(--a-normal-underline);
-		text-decoration-skip-ink: none;
-	}
-	a:visited {
-		color: #034575;
-		color: var(--a-visited-text);
-		text-decoration-color: #bbb;
-		text-decoration-color: var(--a-visited-underline);
-	}
 
-	/* Indicate interaction with the link */
-	a[href]:focus,
-	a[href]:hover {
-		text-decoration-thickness: 2px;
-		text-decoration-skip-ink: none;
-	}
-	a[href]:active {
-		color: #c00;
-		color: var(--a-active-text);
-		text-decoration-color: #c00;
-		text-decoration-color: var(--a-active-underline);
-	}
 
-	/* Backout above styling for ART logo */
-	.head p:not(.copyright):first-child > a,
-	.head > a:first-child {
-		border: none;
-		text-decoration: none;
-		background: transparent;
-	}
+
+/* We hyperlink a lot, so make it less intrusive */
+a[href] {
+  color: #034575;
+  color: var(--a-normal-text);
+  text-decoration-color: #707070;
+  text-decoration-color: var(--a-normal-underline);
+  text-decoration-skip-ink: none;
+}
+a:visited {
+  color: #034575;
+  color: var(--a-visited-text);
+  text-decoration-color: #bbb;
+  text-decoration-color: var(--a-visited-underline);
+}
+
+/* Indicate interaction with the link */
+a[href]:focus,
+a[href]:hover {
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+}
+a[href]:active {
+  color: #c00;
+  color: var(--a-active-text);
+  text-decoration-color: #c00;
+  text-decoration-color: var(--a-active-underline);
+}
+
+/* Backout above styling for ART logo */
+.head p:not(.copyright):first-child > a,
+.head > a:first-child {
+  border: none;
+  text-decoration: none;
+  background: transparent;
+}
 
 /******************************************************************************/
 /*                                    Images                                  */
 /******************************************************************************/
 
-	img {
-		border-style: none;
-	}
+img {
+  border-style: none;
+}
 
-	/* For autogen numbers, add
-	   .caption::before, figcaption::before { content: "Figure " counter(figure) ". "; }
-	*/
+/* For autogen numbers, add
+   .caption::before, figcaption::before { content: "Figure " counter(figure) ". "; }
+*/
 
-	figure, .figure, .sidefigure {
-		page-break-inside: avoid;
-		text-align: center;
-		margin: 2.5em 0;
-	}
-	.figure img,    .sidefigure img,    figure img,
-	.figure object, .sidefigure object, figure object {
-		max-width: 100%;
-		margin: auto;
-		height: auto;
-	}
-	.figure pre, .sidefigure pre, figure pre {
-		text-align: left;
-		display: table;
-		margin: 1em auto;
-	}
-	.figure table, figure table {
-		margin: auto;
-	}
+figure, .figure, .sidefigure {
+  page-break-inside: avoid;
+  text-align: center;
+  margin: 2.5em 0;
+}
+.figure img,    .sidefigure img,    figure img,
+.figure object, .sidefigure object, figure object {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+.figure pre, .sidefigure pre, figure pre {
+  text-align: left;
+  display: table;
+  margin: 1em auto;
+}
+.figure table, figure table {
+  margin: auto;
+}
 	@media screen and (min-width: 20em) {
 		.sidefigure {
 			float: right;
 			width: 50%;
 			margin: 0 0 0.5em 0.5em;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
+	
+	
 	.caption, figcaption, caption {
 		font-style: italic;
 		font-size: 90%;
@@ -1139,7 +1161,7 @@ ul.multilevel {
 		bottom: 2em;
 		z-index: 1000;
 	}
-}
+}/* CLOSE MEDIA QUERY */
 
 	details.annoying-warning:not([open]) > summary {
 		text-align: center;
@@ -1443,9 +1465,11 @@ Possible extra rowspan handling
 		.toc > li li li .secno       { margin-left: -5rem; }
 		.toc > li li li li .secno    { margin-left: -6rem; }
 		.toc > li li li li li .secno { margin-left: -7rem; }
-	}
+	}/* CLOSE MEDIA QUERY 
+	
 	@media screen and (min-width: 75em) {
-	}
+	}/* CLOSE MEDIA QUERY 
+	
 		body:not(.toc-inline) .toc .secno                  { margin-left: -2rem;  }
 		body:not(.toc-inline) .toc > li li .secno          { margin-left: -2rem;  }
 		body:not(.toc-inline) .toc > li li li              { margin-left:  0rem;  }
@@ -1468,8 +1492,8 @@ Possible extra rowspan handling
 		clear: both;
 	}
 
-@media (max-width: 30em) {
-}
+@media (max-width: 29.99em) {
+}/* CLOSE MEDIA QUERY */
 
 
 
@@ -1499,7 +1523,7 @@ Possible extra rowspan handling
 			color: #707070;
 			color: var(--indexinfo-text);
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 /** Index Tables *****************************************************/
 	/* See also the data table styling section, which this effectively subclasses */
@@ -1656,7 +1680,8 @@ Possible extra rowspan handling
 		grid-template-columns: minmax(0, 50em);
 	}
 
-@media (max-width: 770px) {
+
+@media (max-width: 47.49em) {
     body {
       padding: 2vw;
     }
@@ -1666,7 +1691,7 @@ Possible extra rowspan handling
     body section#abstract {
       padding: 2vw;
     }
-  }
+  }/* CLOSE MEDIA QUERY */
 
 	.overlarge > table {
 		/* limit preferred width of table */
@@ -1680,19 +1705,19 @@ Possible extra rowspan handling
 			margin-right: calc(13px + 26.5rem - 50vw);
 			max-width: none;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 	@media screen and (min-width: 75em) {
 		body:not(.toc-inline) .overlarge {
 			/* 30.5em body padding 50em content area */
 			margin-right: calc(40em - 50vw) !important;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 	@media screen and (min-width: 90em) {
 		body:not(.toc-inline) .overlarge {
 			/* 4em html margin 30.5em body padding 50em content area */
 			margin-right: calc(84.5em - 100vw) !important;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 	@media not print {
 		.overlarge {
@@ -1708,7 +1733,7 @@ Possible extra rowspan handling
 			background-repeat: no-repeat;
 			*/
 		}
-	}
+	}/* CLOSE MEDIA QUERY */
 
 /******************************************************************************/
 /*                             Dark mode toggle                               */
@@ -1746,4 +1771,4 @@ Possible extra rowspan handling
 			overflow: initial;
 			bottom: unset;
 		}
-	}
+	}/* CLOSE MEDIA QUERY */

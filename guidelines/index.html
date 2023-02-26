@@ -2,31 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>APCA Readabiliy Guidelines (ARG)</title>
+  <title>APCA Readability Criterion (ARC)</title>
 
   <meta name="generator" content="ReSpec 32.7.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="readtech" content="manual feb 20 2023">
 
-  <meta name="description" content="The APCA Readabiliy Guidelines (ARG) provide recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
+  <meta name="description" content="APCA Readability Criterion (ARC) provide recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 
-  <meta name="keywords" content="APCA, Readabiliy, ARG, visual content, contrast, color, colour, self illuminated displays, accessibility, accessible, text, web design, a11y, Color blind, color vision deficiency, visual impairments">
-
-
-<meta name="description" content="The APCA Readability Guidelines (ARG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
+  <meta name="keywords" content="APCA, Readabiliy, ARC, visual content, contrast, color, colour, self illuminated displays, accessibility, accessible, text, web design, a11y, Color blind, color vision deficiency, visual impairments">
 
 
-<link rel="canonical" href="https://www.readtech.org/ARG/guidelines/" />
+<meta name="description" content="The APCA Readability Criterion (ARC) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments.">
 
-<META NAME="Keywords" CONTENT="APCA, contrast, color, colour, ARG,">
+
+<link rel="canonical" href="https://www.readtech.org/ARC/guidelines/" />
+
+<META NAME="Keywords" CONTENT="APCA, contrast, color, colour, ARC,">
 
 <meta property="fb:app_id" content="227594707878157" />
 
-<meta property="og:title" content="APCA Readability Guidelines • Contrast" />
-<meta property="og:description" content="The APCA Readability Guidelines (ARG) provide a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments" />
+<meta property="og:title" content="APCA Readability Criterion • Contrast" />
+<meta property="og:description" content="The APCA Readability Criterion (ARC) provides a range of recommendations for making visual content on illuminated displays more accessible to all users, especially with visual impairments" />
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.readtech.org/ARG/guidelines/" />
+<meta property="og:url" content="https://www.readtech.org/ARC/guidelines/" />
 <meta property="og:site_name" content="Accessible Reading Technologies" />
 
  <meta name="twitter:image" content="https://www.readtech.org/img/ogimage.png">
@@ -67,7 +67,6 @@
   input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
   .issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
 
-
   dfn{cursor:pointer}
   .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:0.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
   .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -95,6 +94,7 @@
   .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
 
 </style>  
+
 
 <style id="respec-mainstyle">
 
@@ -177,31 +177,32 @@
    order:-1;
    position:relative;
    left:-1.1em;
-   font-size: 1rem;
+   font-size: 1em;
    opacity:0.5;
   }
   
-  :is(h2,h3,h4,h5,h6)+a.self-link::before{
+  :is(h2,h3,h4,h5,h6) + a.self-link::before {
     content: "§";
     text-decoration: none;
     color: var(--heading-text);
   }
+  
   :is(h2,h3) + a.self-link { top: -0.2em }
+  
   :is(h4,h5,h6) + a.self-link::before { color:#000 }
 
- :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2).outcome-header { 
+  :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2).objective-header { 
     position: relative; 
     left: -2.3em; 
-    }
-
-  @media (max-width:767px) {
-    dd{margin-left:0}
   }
+
+  @media (max-width:47.49em) {
+    dd{margin-left:0}
+  }/* CLOSE MEDIA QUERY */
 
   @media print{
     .removeOnSave{ display:none }
-  }
-  
+  }/* CLOSE MEDIA QUERY */
   
 </style>
 
@@ -242,7 +243,7 @@
   "specStatus": "ED",
   "shortName": "arg",
   "copyrightStart": "2021",
-  "edDraftURI": "https://A11yReadTech.github.io/ARG/guidelines/",
+  "edDraftURI": "https://A11yReadTech.github.io/ARC/guidelines/",
   "authors": [
     {
       "name": "Andrew Somers",
@@ -252,7 +253,7 @@
       "url": "mailto:perceptex@myndex.com"
     }
   ],
-  "github": "A11yReadTech/ARG",
+  "github": "A11yReadTech/ARC",
   "maxTocLevel": 4,
   "preProcess": [
     null
@@ -279,12 +280,12 @@ div.upR {
 }
 
 
-@media (max-width:640px){
+@media (max-width:39.99em){
   div.upR {
     width: 100%;
     margin: 0 0 3em;
   }
-}
+}/* CLOSE MEDIA QUERY */
 </style>
 
 </head>
@@ -317,8 +318,8 @@ div.upR {
 
 <div class="head">
 
-  <h1 id="title" class="title headerPlus">APCA Readabiliy Guidelines</h1> 
-  <p id="art-state"><a href="https://www.readtech.org/ARG/guidelines/">ARG Public Working Draft</a> <time class="dt-published" datetime="2023-02-20">20 February 2023</time></p>
+  <h1 id="title" class="title headerPlus">APCA Readability Criterion</h1> 
+  <p id="art-state"><a href="https://www.readtech.org/ARC/guidelines/">ARC Public Working Draft</a> <time class="dt-published" datetime="2023-02-26">26 February 2023</time></p>
 
 
   <div class="upR"><p class="info" style="">Content in this resource is still under active development and should be considered beta. It may change, move, antecede, or be deleted with or without notice.</p><img style="" src="../img/safetyManSMALL.png" height="150"></div>
@@ -342,13 +343,13 @@ div.upR {
 
   <img src="../img/ARTtextPaths_v03.svg" style="position: relative; margin: 1em 1.5em; top:0px; float: right; width: 40%;">
 
-    <p>The APCA™ Readabiliy Guidelines (ARG™) provide a range of evidence-based recommendations for making visual content on self-illuminated displays more accessible to all users, especially users with visual impairments. These guidelines are developed with a thorough understanding and reference to modern peer-reviewed research and scientific consensus in the areas of visual perception and visual reading.</p>
+    <p>The APCA™ Readabiliy Criterion (ARC™) provides a range of evidence-based recommendations for making visual content on self-illuminated displays more accessible to all users, especially users with visual impairments. These guidelines are developed with a thorough understanding and reference to modern peer-reviewed research and scientific consensus in the areas of visual perception and visual reading.</p>
     <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, and mobile devices.</p>
-    <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, outcomes, and guidelines to address new needs as technologies evolve. Several levels of conformance are available to address the diverse nature of digital content, and the specific goals of entities that wish to make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1"> conformance</a> to these guidelines.</p>
+    <p>This specification is expected to be updated regularly to keep pace with changing technology by updating and adding methods, objectives, and guidelines to address new needs as technologies evolve. Several levels of conformance are available to address the diverse nature of digital content, and the specific goals of entities that wish to make formal claims of <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-1"> conformance</a> to these guidelines.</p>
 
   <section id="background" class="introductory"><h2 class="headerPlus3">History and Purpose</h2>
-    <p>APCA Readability Guidelines (ARG) began as a project to correct well known problems with <abbr title="Web Content Accessibility Guidelines 2">"WCAG&nbsp;2.x</abbr> contrast specifications, and subsequently evolving into draft guidance for the future <abbr title="World Wide Web Consortium (W3C) Accessibility Guidelines 3">WCAG&nbsp;3</abbr>. APCA and ARG are intended to integrate with these and other relevant standards. To that end, ARG is designed to follow the general form of WCAG&nbsp;3 as it develops. This also means ARG includes additional tests and different scoring mechanisms than used previously. As a result, ARG is not backwards compatible with WCAG&nbsp;2.x.
-    <p>ARG is an alternative, independent set of guidelines as embodied herein. The expected release date of WCAG&nbsp;3 is several years in the future, but there is a pressing need today for a perceptually uniform contrast measure. The design community requires a useful contrast guideline capable of calculating for modern design needs, such as dark mode. These APCA Readability Guidelines are presented here to bridge this gap, with the aim of improving <em>actual</em> accessibility.</p>
+    <p>APCA Readability Criterion (ARC) began as a project to correct well known problems with <abbr title="Web Content Accessibility Guidelines 2">"WCAG&nbsp;2.x</abbr> contrast specifications, and subsequently evolving into draft guidance for the future <abbr title="World Wide Web Consortium (W3C) Accessibility Guidelines 3">WCAG&nbsp;3</abbr>. APCA and ARC are intended to integrate with these and other relevant standards. To that end, ARC is designed to follow the general form of WCAG&nbsp;3 as it develops. This also means ARC includes additional tests and different scoring mechanisms than used previously. As a result, ARC is not backwards compatible with WCAG&nbsp;2.x.
+    <p>ARC is an alternative, independent set of guidelines as embodied herein. The expected release date of WCAG&nbsp;3 is several years in the future, but there is a pressing need today for a perceptually uniform contrast measure. The design community requires a useful contrast guideline capable of calculating for modern design needs, such as dark mode. These APCA Readability Criterion are presented here to bridge this gap, with the aim of improving <em>actual</em> accessibility.</p>
   </section>
 
 <hr>
@@ -381,7 +382,7 @@ div.upR {
 
   <li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a>
   <ol class="toc">
-    <li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA & ARG</a></li>
+    <li class="tocline"><a class="tocxref" href="#about-apca-readability-guidelines"><bdi class="secno">1.1 </bdi>About APCA & ARC</a></li>
     <li class="tocline"><a class="tocxref" href="#section-status-levels"><bdi class="secno">1.2 </bdi>Section Status</a></li>
 		<li class="tocline"><a class="tocxref" href="#goals-and-requirements"><bdi class="secno">1.3 </bdi>Objectives</a></li>
 	</ol></li>
@@ -391,7 +392,7 @@ div.upR {
 
   <li class="tocline"><a class="tocxref" href="#visual-contrast"><bdi class="secno">4. </bdi>Visual Contrast<div>Text & Fonts </div></a>
   <ol class="toc">
-    <li class="tocline"><a class="tocxref" href="#outcome-lightness"><bdi class="secno">4.1 </bdi>Outcome: <div>Text Lightness Contrast</div></a></li>  
+    <li class="tocline"><a class="tocxref" href="#objective-lightness"><bdi class="secno">4.1 </bdi>Objective: <div>Text Lightness Contrast</div></a></li>  
   </ol></li>
 
   <li class="tocline"><a class="tocxref" href="#nontext-contrast"><bdi class="secno">5. </bdi>Visual Contrast<div>Non-Text & DataViz</div></a></li>
@@ -446,7 +447,7 @@ div.upR {
 
 	<li class="tocline"><a class="tocxref" href="#differences-from-wcag-2-x"><bdi class="secno">B. </bdi>Differences from WCAG&nbsp;2.x</a>
 	<ol class="toc">
-		<li class="tocline"><a class="tocxref" href="#outcomes"><bdi class="secno">B.1 </bdi>Outcome Model</a></li>
+		<li class="tocline"><a class="tocxref" href="#objectives"><bdi class="secno">B.1 </bdi>Objective Model</a></li>
 	</ol>
 	</li>
 
@@ -461,10 +462,11 @@ div.upR {
 		<li class="tocline"><a class="tocxref" href="#special-thanks"><bdi class="secno">D.1 </bdi> Special thanks </a></li>
 	</ol>
 	</li>
-
 </ol>
 
+
 <hr>
+
 
 </nav> <!-- close table of contents -->
 
@@ -485,17 +487,15 @@ div.upR {
 
 
   <section id="sotd" class="introductory"><h2 class="headerPlus3">Status of This Document</h2>
-    <p>
-    This is a draft document and may be updated, replaced, or superseded by other
-    documents at any time. This document should only be referred to as a work in progress.
-  </p>
+    <p>This is a draft document and may be updated, replaced, or superseded by other documents at any time. This document should only be referred to as a work in progress.
+    </p>
 
 
 
 
     <p>To comment, <a href="https://github.com/Myndex/SAPC-APCA/discussions/new/choose"> start a discussion in the SAPC-APCA GitHub repository</a>. 
       It is free to create a GitHub account to start discussions and file issues.</p>
-  <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>.</p>
+    <p>Publication as an Editor's Draft does not imply endorsement by <abbr title="Accessible Reading Technologies">ART</abbr>.</p>
   </section>
 
 
@@ -504,19 +504,17 @@ div.upR {
   <details>
     <summary>More details about this document</summary>
       <dl>
-
-
-
-
 <!--
         <dt>Current unpublished draft version:</dt>
       <dd>
-                <a class="u-url" href="https://A11yReadTech.github.io/ARG/guidelines/">A11yReadTech.github.io/ARG/guidelines/</a>
-              </dd>
+        <a class="u-url" href="https://A11yReadTech.github.io/ARC/guidelines/">A11yReadTech.github.io/ARC/guidelines/</a>
+      </dd>
 -->
-        <dt>Latest published working draft (THIS):</dt><dd>
-                <a href="https://www.readtech.org/ARG/guidelines/">www.readtech.org/ARG/guidelines</a>
-              </dd>
+
+      <dt>Latest published working draft (THIS):</dt>
+        <dd>
+          <a href="https://www.readtech.org/ARC/guidelines/">www.readtech.org/ARC/guidelines</a>
+      </dd>
 
 
 
@@ -530,14 +528,16 @@ div.upR {
 
 
 
-        <dt>Project Manager:</dt><dd class="editor p-author h-card vcard">
+        <dt>Project Manager:</dt>
+      <dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:info@readtech.rg">Mike Anderson</a> (<span class="p-org org h-org">ART</span>)
-    </dd>
-      <dt>ARG (Readability Guidelines) Feedback:</dt>
+      </dd>
+
+      <dt>ARC (Readability Guidelines) Feedback:</dt>
       <dd>
-        <a href="https://github.com/A11yReadTech/ARG/">GitHub A11yReadTech/ARG</a>
-        (<a href="https://github.com/A11yReadTech/ARG/discussions/">ARG open discussions</a>,
-        <a href="https://github.com/A11yReadTech/ARG/issues/">ARG beta issues</a>)
+        <a href="https://github.com/A11yReadTech/ARC/">GitHub A11yReadTech/ARC</a>
+        (<a href="https://github.com/A11yReadTech/ARC/discussions/">ARC open discussions</a>,
+        <a href="https://github.com/A11yReadTech/ARC/issues/">ARC beta issues</a>)
       </dd>
 
       <dt>APCA Algorithm Feedback:</dt>
@@ -546,11 +546,12 @@ div.upR {
         (<a href="https://github.com/Myndex/SAPC-APCA/discussions/">APCA open discussions</a>,
         <a href="https://github.com/Myndex/SAPC-APCA/issues/">APCA beta issues</a>)
       </dd>
-
       </dl>
-
     </details>
-    
+
+
+
+
   <p class="copyright">
     <a href="https://www.readtech.org/LGL/">Copyright</a> © 2021-2023 by <a href="https://www.readtech.org/"><abbr title="Accessible Reading Technologies">ART</abbr></a><sup>™</sup>. All Rights Reserved.
     <a href="https://www.readtech.org/LGL/#disclaimers">Liability</a>, <a href="https://www.readtech.org/LGL/#trademarks">Trademarks</a>, <a href="https://www.readtech.org/LGL/#patents">Patents</a>, and <a href="https://www.readtech.org/LGL/#license">License</a>
@@ -596,41 +597,50 @@ div.upR {
 
 
 
-
 <section class="informative" id="introduction">
   <div class="header-wrapper "><h2 id="x1-introduction" class="headerPlus"><bdi class="secno">1. </bdi>INTRODUCTION</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 
+
+
+
     <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID"></a></div><div class="">
-      <p>The current proposal for APCA and ARG is made up of several divisions, including:</p>
+      <p>The current proposal for APCA and ARC is made up of several divisions, including:</p>
         <ul><li>APCA Based Tools • provide perceptually uniform, objective assessment of contrast</li>
             <li>How-tos • Tutorial guides for planning and implementing design strategies</li>
-            <li>Outcomes • Target accommodation goals, serving user needs</li>
+            <li>Objectives • Target accommodation goals, serving user needs</li>
             <li>Methods • Specific tests and techniques for measuring and conforming to guidance</li>
         </ul>
     </div>
   </div>
 
 
+
+
     <details class="summary">
       <summary>Plain language summary of <q>Introduction</q></summary>
-      <p>The APCA Readability Guidelines (ARG) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. ARG is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
-      <p>What’s new in APCA/ARG?</p>
+      <p>The APCA Readability Criterion (ARC) is a newer standard based on the Accessible Perceptual Contrast Algorithm, which provides significant improvements over the older Web Content Accessibility Guidelines (WCAG) 2.2. ARC is intended to eventually integrate into other standards such as ISO and WCAG 3.</p>
+      <p>What’s new in APCA/ARC?</p>
       <ul>
-      <li>APCA/ARG includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
+      <li>APCA/ARC includes math that provides results in accordance with human vision, and better accommodates visual impairments.</li>
       <li>It includes mobile and desktop applications, along with web content.</li>
       <li>It has new guidelines and new tests that improve readability but also improve design flexibility.</li>
       <li>It has new scoring with use cases to define critical content vs unimportant content.</li>
       </ul>
     </details>
 
-    <section id="about-apca-readability-guidelines"><div class="header-wrapper marker"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3 "><bdi class="secno">1.1 </bdi>About APCA Readability Guidelines </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
-      <p>The APCA Readability Guidelines (ARG) are a modern set of  design guidelines or visual content utilizing the Accessible Perceptual Contrast Algorithm (APCA), which is tuned for perceptual uniformity of text and non-text elements, as displayed on a self-illuminated monitor or device.</p> 
-      <p>APCA&amp;ARG provide significant improvements over older methods and guidelines such as the Web Content Accessibility Guidelines (WCAG)&nbsp;2.x. and other similar standards. The improvements include more robust readability in a wider variety of environments, and on a wider variety of displays and devices. Also, while other methods fail to calculate for dark mode correctly, APCA is well-able to calculate reasonable values here.</p>
-      <p>These improvements are achieved by referencing and implementing the very latest peer-reviewed vision science, as well as integrating with modern, scientific-consensus readability research. Please see the bibliography for references.</p>
-      <p>ARG is intended to eventually integrate into other standards such as ISO and the future WCAG&nbsp;3. As such, you may notice that some aspects of the documents here are presented similarly to those in the emerging WCAG&nbsp;3. This should come as no surprise, as the authors of ARG are also actively working as part of the task force&amp;subgroups developing WCAG&nbsp;3. However we want to stress that the ARG are a separate, independent set of guidelines, and are not presently an official recommendation, and should be referenced only as a work in progress.</p>
 
+
+
+    <section id="about-apca-readability-guidelines"><div class="header-wrapper marker"><h3 id="x1-1-about-apca-readability-guidelines" class="headerPlus3 "><bdi class="secno">1.1 </bdi>About APCA Readability Criterion </h3><a class="self-link" href="#about-apca-readability-guidelines" aria-label="Permalink for Section 1.1"></a></div>
+      <p>The APCA Readability Criterion (ARC) is a modern set of design guidelines or visual content utilizing the Accessible Perceptual Contrast Algorithm (APCA), which is tuned for perceptual uniformity of text and non-text elements, as displayed on a self-illuminated monitor or device.</p> 
+      <p>APCA&amp;ARC provide significant improvements over older methods and guidelines such as the Web Content Accessibility Guidelines (WCAG)&nbsp;2.x. and other similar standards. The improvements include more robust readability in a wider variety of environments, and on a wider variety of displays and devices. Also, while other methods fail to calculate for dark mode correctly, APCA is well-able to calculate reasonable values here.</p>
+      <p>These improvements are achieved by referencing and implementing the very latest peer-reviewed vision science, as well as integrating with modern, scientific-consensus readability research. Please see the bibliography for references.</p>
+      <p>ARC is intended to eventually integrate into other standards such as ISO and the future WCAG&nbsp;3. As such, you may notice that some aspects of the documents here are presented similarly to those in the emerging WCAG&nbsp;3. This should come as no surprise, as the authors of ARC are also actively working as part of the task force&amp;subgroups developing WCAG&nbsp;3. However we want to stress that the ARC are a separate, independent set of guidelines, and are not presently an official recommendation, and should be referenced only as a work in progress.</p>
     </section>
+
+
+
 
     <section id="section-status-levels"><div class="header-wrapper"><h3 id="x1-2-section-status-levels" class="headerPlus3 marker"><bdi class="secno">1.2 </bdi>Section status levels</h3><a class="self-link" href="#section-status-levels" aria-label="Permalink for Section 1.2"></a></div>
 
@@ -640,22 +650,22 @@ div.upR {
         <li><strong id="status-deprecated">Deprecated</strong> : Obsolete and no longer supported ••• <em>hidden</em>.</li>
         <li><strong id="status-placeholder">Placeholder</strong> : Future content will be here ••• <em>hidden</em>.</li>
         <li><strong id="status-research">Research</strong> : Early due-diligence & research phase  <em></em>.</li>
-        <li><strong id="status-development">Development</strong> : An active developing draft, subject to revision. </li>
+        <li><strong id="status-development">Development</strong> : An active developing draft, subject to revision.</li>
         <li><strong id="status-review">Review</strong> : Public beta ready for broad public review.</li>
         <li><strong id="status-mature">Mature</strong> : Ready for adoption or integration into other standards.</li>
       </ul>
 
       <p>The research and development sections are visible during the present development cycle. Deprecated & placeholder sections are hidden when this page loads, but you may toggle the visibility for these sections with the button the top of the table of contents or the button below:</p>
 
-      <p><button id="status-filter" data-status-filter="placeholder,deprecated" style="padding: 0.5em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.5em">Reveal placeholder &amp; research sections</button></p>
+      <p><button id="status-filter" data-status-filter="placeholder,deprecated" style="padding: 0.5em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.5em">Reveal placeholder &amp; deprecated sections</button></p>
     </section>
 
     <section id="goals-and-requirements"><div class="header-wrapper">
       <h3 id="x1-3-goals-and-requirements" class="headerPlus3 marker"><bdi class="secno">1.3 </bdi>Goals and Objectives</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
 
-    <p>The goal of APCA Readability Guidelines (ARG) and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies, more readable, accessible, and usable for all people, including those with visual impairments. This goal will be met through evidence-based science and responding to changing technologies.</p>
+    <p>The goal of the APCA Readability Criterion (ARC) and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies, more readable, accessible, and usable for all people, including those with visual impairments. This goal will be met through evidence-based science and responding to changing technologies.</p>
     <p>Research and development work beginning in early 2019, identified issues with the existing WCAG&nbsp;2.x contrast methods and guidelines. Correcting these issues shaped the guidelines contained herein.</p>
-    <p>Nevertheless, ARG embodies a much wider scope, and is not confined merely to contrast, but to the entire visual presentation of text and non-text content. The reality is that the very context-sensitive nature of the human vision system requires this more complete, holistic approach to visual perception design guidelines.</p>
+    <p>Nevertheless, ARC embodies a much wider scope, and is not confined merely to contrast, but to the entire visual presentation of text and non-text content. The reality is that the very context-sensitive nature of the human vision system requires this more complete, holistic approach to visual perception design guidelines.</p>
     </section>
 
 </section><!-- close intro section 1 -->
@@ -690,7 +700,7 @@ div.upR {
     </details>
     <p>In addition to this section, the <a href="#guidelines">Visual Presentation</a>, <a href="#visual-contrast">Visual Contrast</a>, <a href="#nontext-contrast-">Nontext Contrast</a>, <a href="#user-integration">User Integration</a>, and <a href="#conformance">Conformance</a> sections in APCA provide <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1">normative</a> content and define requirements that impact conformance claims. Introductory material, appendices, sections marked as <q>non-normative</q>, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
     <p>The key words <em class="rfc2119" title="MAY"><em class="rfc2119">MAY</em></em>, <em class="rfc2119" title="MUST"><em class="rfc2119">MUST</em></em>, <em class="rfc2119" title="MUST NOT"><em class="rfc2119">MUST NOT</em></em>, <em class="rfc2119" title="NOT RECOMMENDED"><em class="rfc2119">NOT RECOMMENDED</em></em>, <em class="rfc2119" title="RECOMMENDED"><em class="rfc2119">RECOMMENDED</em></em>, <em class="rfc2119" title="SHOULD"><em class="rfc2119">SHOULD</em></em>, and <em class="rfc2119" title="SHOULD NOT"><em class="rfc2119">SHOULD NOT</em></em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].</p>
-    <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Outcomes and critical errors are normative. Guidelines, methods, and outcome ratings are informative.</p></div>
+    <div class="note" id="issue-container-generatedID-0"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="3"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-0"></a></div><p class="">Objectives and critical errors are normative. Guidelines, methods, and objective ratings are informative.</p></div>
 
 
 </section><!-- close norm section 2 -->
@@ -731,13 +741,17 @@ box-shadow: inset 6px 6px 14px 2px #1636,
     inset 2px 2px 9px 2px #,
           2px 2px 6px #2648; */">
 
+
     <div class="h3 headerPlus2t" style="position: relative; padding: 0; text-align: center; margin: 0 ;">Visual Contrast & Design Guidance<br>
-    
-    <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin: 0 auto; top:12px;  width: 33%;">&nbsp;&nbsp;&nbsp;<img src="../img/ARGtextPaths_v01.svg" style="position: relative; margin: 0 auto; top:12px;  width: 50%;">
+
+
+    <img src="../img/APCAlogov2bugonly.png" style="position: relative; margin: 0 auto; top:12px;  width: 33%;">&nbsp;&nbsp;&nbsp;<img src="../img/ARCtextPaths_v01.svg" style="position: relative; margin: 0 auto; top:12px;  width: 50%;">
 </div>
 </div>
-    
+
+
     <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+
 
       <details class="summary">
       <summary>Plain language summary of <q>Guidelines</q></summary>
@@ -758,13 +772,15 @@ box-shadow: inset 6px 6px 14px 2px #1636,
             <li>Interactive (links, forms, navigation) </li>
       </ul></ul>
 
+
     </details>
+
 
 <hr>
     <h2 id="visual-contrast" class="headerPlus2 clb">Visual Contrast</h2>
     <h4 class="headerZero4i">Designing for Readability, Understandability, and Accessibility</h4>
 
-    <p>This section illuminates the APCA Readabiliy Guidelines's comprehensive coverage of visual presentation. Depending on application, ARG is usable as a stand-alone suite for design guidance. While the eventual goal is integration into relevant standards such as ISO, WCAG, or ADA, the current conformance testing as described herein is independent. Further, these guidelines are a living work-in-progress, is in development, and not yet a part of any other final published standard or guideline.</p>
+    <p>This section illuminates the APCA Readability Criterion's comprehensive coverage of visual presentation. Depending on application, ARC is usable as a stand-alone suite for design guidance. While the eventual goal is integration into relevant standards such as ISO, WCAG, or ADA, the current conformance testing as described herein is independent. Further, these guidelines are a living work-in-progress, is in development, and not yet a part of any other final published standard or guideline.</p>
 
 
 				<h4 id="platform" class="headerPlus4">Platforms</h4>
@@ -799,145 +815,15 @@ box-shadow: inset 6px 6px 14px 2px #1636,
     <h2 id="visual-contrast" class="headerPlus2t clb">Visual Contrast</h2>
     <h3 class="headerZero4">Guidelines Map</h3>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,700;1,8..144,800&family=Bungee&family=Exo&family=Fugaz+One&family=Lobster&family=Playfair+Display&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@1,800&family=Noto+Serif:ital,wght@1,700&family=Russo+One&display=swap');
-
-
-ul, ol:not(.toc) {
-		margin: 1em;
-		padding-left: 1em;
-		padding-left: var(--list-indent);
-		font-size: 1em;
-		font-weight: 500;
-	}
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ul, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc) + ol:not(.toc)  {
-		margin: 0em;
-		padding: 0.5em 0 0.5em 2em;
-		padding-left: calc(var(--list-indent) * 1.5);
-		font-weight: 500;
-		font-size: 1em;
-	}
-
-ul.multilevel,ul.singlelevel {
-		margin: 0em;
-		padding: 1em 0 1em 2em;
-		padding-left: calc(var(--list-indent) * 1.5);
-		font-weight: 500;
-		font-size: 1em;
-		list-style-type: square;
-	}
-
-
-/* first level bullet */
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ul { list-style-type:"\273D \00A0 \00A0"; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.nobull { list-style-type:none; padding-left: 0.5em; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.diamond { list-style-type:"\2756 \00A0 \00A0"; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.checkbox { list-style-type:"\274F \00A0 \00A0"; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.chevron { list-style-type:"\276F \00A0 \00A0"; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.atomic { list-style-type:"\269B \00A0 \00A0"; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul.arrow { list-style-type:"\27A4 \00A0"; }
-
-
-/* second,third level bullets */
-
-li + ul.diamond, li + ul li + ul {list-style-type:"\2756 \00A0 \00A0";}
-li + ul.atomic, li + ul li + ul li + ul {list-style-type:"\269B \00A0 \00A0";}
-
-ol li + ul { list-style-type:"\273D \00A0 \00A0"; }
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ul li + ul,
-ol li + ul li + ul { 
-  list-style-type:"\273C \00A0 \00A0"; 
-  }
-:not(li,ul,ol,li>strong,li>a,li>em) + ul li + ul li + ul,
-ol li + ul li + ul li + ul { 
-  list-style-type:none; 
-  }
-  :not(li,ul,ol,li>strong,li>a,li>em) + ul > li + ul > li + ul > li::before {
-    display:inline-block;
-    content: "\269B \00A0 \00A0";
-    margin-left: -0.9em;
-    font-size:1.5em;
-    } 
-:not(li,ul,ol,li>strong,li>a,li>em) + ul li + ul li + ul li + ul,
-ol li + ul li + ul li + ul li + ul {
-  list-style-type:"\273E \00A0 \00A0";
-  }
-
-
-li + ul.arrow { list-style-type:"\27A4 \00A0"; }
-li + ul.arrowHalf, ul.arrow li + ul { list-style-type:"\27A2 \00A0"; }
-li + ul.fourStar, ul.arrow li + ul li + ul { list-style-type:"\2726 \00A0"; }
-li + ul.fourStarOutline, ul.arrow li + ul li + ul li + ul { list-style-type:"\2727 \00A0"; }
-
-li + ul.checkbox { list-style-type:"\274F \00A0 \00A0"; }
-li + ul.checkmark, ul.checkbox li + ul { list-style-type:"\2713 \00A0 \00A0"; }
-li + ul.chevron, ul.checkbox li + ul li + ul { list-style-type:"\276F \00A0 \00A0"; }
-ul.chevron li + ul { list-style-type:"\276F \276F \00A0 \00A0"; }
-ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
-
-
-
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ol:not(.toc,.alpha) { list-style: none; counter-reset: num; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ol:not(.toc,.alpha) > li { counter-increment: num;}
-
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.alpha, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.roman { 
-  list-style-type: none; counter-reset: alphaA; 
-  }
-
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.alpha > li, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.roman > li { 
-  counter-increment: alphaA;
-  }
-
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol:not(.toc,.alpha) > li::before {
-  content: counter(num);
-  margin: 0 0.5em 0 -1em;
-  font-family: 'Roboto Serif',Exo,sans-serif;
-  font-size: 1.9em;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--h3-text);
-  }
-
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.alpha > li::before {
-  content: counter(alphaA,upper-latin);
-  margin: 0 0.5em 0 -1em;
-  font-family: 'Roboto Serif',Exo,sans-serif;
-  font-size: 1.9em;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--h3-text);
-  }
-
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha) + ol.roman > li::before {
-  content: counter(alphaA,upper-roman);
-  margin: 0 0.5em 0 -1em;
-  font-family: 'Roboto Serif',Exo,sans-serif;
-  font-size: 1.9em;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--h3-text);
-  }
-
-</style>
-
-
-      <ol class="">  
-        <li>Text contrasts • understanding the need for luminance
+      <ol class="roman">  
+        <li><strong>Text contrasts</strong> • understanding the need for luminance
         <ul>
             <li>Font characteristics • weight, size, and glyph design</li>
             <li>Use Cases • primary content vs sub-fluent vs spot readable</li>
             <li>White space • line&amp;letter spacing, element padding</li>
         </ul></li>
-        <li>Non-text contrasts • semantic and non-semantic elements
+        <li><strong>Non-text contrasts</strong> • semantic and non-semantic elements
         <ul>
             <li>Use of color (hue and colorfulness) – Hue and colorfulness to augment </li>
             <li>Other forms of contrast • shape, size, distance, motion</li>   
@@ -945,7 +831,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
             <li>Interactive • links, forms, navigation, and controls</li>
             <li>Visual hierarchy • semantic layouts and organizing information</li>
         </ul></li>
-        <li>User integration • personalization and environment           
+        <li><strong>User integration</strong> • personalization and environment           
         <ul>
             <li>Visual modes • dark, light, dalton, alternate color schemes </li>
             <li>Zooming text or view, and text reflow</li>
@@ -973,14 +859,15 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
 
-
 <section class="guideline" id="visual-contrast-text">
 
 <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
 
     <div class="header-wrapper"><h2 id="x4-visual-contrast" class="headerPlus">
-    <bdi class="secno">4. </bdi>VISUAL CONTRAST • TEXT</h2><a class="self-link" href="#visual-contrast-text" aria-label="Permalink for Section 4."></a>
-    </div>
+
+    <bdi class="secno">4. </bdi>VISUAL CONTRAST • TEXT</h2><a class="self-link" href="#visual-contrast-text" aria-label="Permalink for Section 4."></a></div>
+
+
 
 
 <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
@@ -993,7 +880,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
         <details class="categories">
           <summary>Functional categories for <q>Lightness contrast between text and background</q></summary>
-          <p>This outcome relates to the following functional categories:</p>
+          <p>This objective relates to the following functional categories:</p>
           <ul>
             <li>Sensory - Light, Contrast</li>
             <li>Sensory - Vision, Color</li>
@@ -1004,32 +891,32 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
         </details>
 
 		<section>
-			<h3 id="outcome-lightness" class="outcome-header"><div>Outcome:</div> Ample lightness contrast between text and background</h3>
+			<h3 id="objective-lightness" class="objective-header"><div>Objective:</div> Ample lightness contrast between text and background</h3>
     
     <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="../img/ReadingOrangeMan.png" height="240"  alt="a little orange man reading a magenta book"id="" /></p>
 
-			<p class="outcome" status="position: relative; clear: left;">Provides adequate luminance contrast (lightness/darkness difference) between background and text or non-text colors in order to read the text easily, or discern non-text meaning and function easily.</p>
+			<p class="objective" status="position: relative; clear: left;">Provides adequate luminance contrast (lightness/darkness difference) between background and text or non-text colors in order to read the text easily, or discern non-text meaning and function easily.</p>
 
       <p>Set the lightness contrast as appropriate for a font family, font weight, x-height, and the use-case of the text.</p>
 
-      <ol>
+      <ul>
         <li>Font weight has a substantial effect on visual contrast</li>
         <li>Font size substantially affects readability for various acuity impairments</li>
         <li>All sighted users require ample lightness/darkness contrast for best readability</li>
-      </ol>
+      </ul>
 
 
 
 		 <h2 class="method-header">Testing Methods</h2>
-			<ol>
+			<ul>
 				<li><a class="method-link" href="../methods/visual-readability-contrast/">Visual Readability Contrast</a> Set the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
-			</ol>
+			</ul>
 
 
 			<h2 class="howto-header">How-to Guides:</h2>
-			<ol>
+			<ul>
 				<li><a class="howto-link" href="../how-tos/designing-with-visual-contrast/">Designing with visual contrast <span>how-to</span></a> A guide for planning, designing, and implementing accessible visual contrast.</li> 
-			</ol>
+			</ul>
 
 		</section>
 
@@ -1065,10 +952,12 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
 <section data-status="research" id="nontext-contrast">
+
+       <div class="addition sticky floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
+
   <div class="header-wrapper">
   <h2 id="x5-nontext-contrast" class="headerPlus"><bdi class="secno">5. </bdi>VISUAL CONTRAST • NON-TEXT</h2><a class="self-link" href="#nontext-contrast" aria-label="Permalink for Section 5."></a></div>
   
-       <div class="addition sticky floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
   
   <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     
@@ -1079,7 +968,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
         <details class="categories">
           <summary>Functional categories for <q>non text contrast for semantic and non-somatic elements</q></summary>
-          <p>This outcome relates to the following functional categories:</p>
+          <p>This objective relates to the following functional categories:</p>
           <ul>
             <li>Sensory - Light, Contrast</li>
             <li>Sensory - Vision, Color</li>
@@ -1091,19 +980,19 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 		<section>
 
-			<h3 id="outcome-nontext" class="outcome-header"><div>Outcome:</div> hue and colorfulness are not the only representations of data</h3>
+			<h3 id="objective-nontext" class="objective-header"><div>Objective:</div> hue and colorfulness are not the only representations of data</h3>
 
-			<p class="outcome"> Hue and colorfulness are important dimension to design, however because of the great amount of variability of vision among individuals, as well as cultural differences regarding color, information coding must utilize other techniques besides hue differentiation.</p>
+			<p class="objective"> Hue and colorfulness are important dimension to design, however because of the great amount of variability of vision among individuals, as well as cultural differences regarding color, information coding must utilize other techniques besides hue differentiation.</p>
 
 		 <h2 class="method-header">Testing Methods</h2>
-			<ol>
+			<ul>
 				<li><a class="method-link" href="../methods/">Null</a></li>
-			</ol>
+			</ul>
 
 			<h2 class="howto-header">How-to Guides:</h2>
-			<ol>
+			<ul>
 				<li><a class="howto-link" href="../how-tos/">Null</a></li> 
-			</ol>
+			</ul>
 		</section>
 </section><!-- close test section 5 -->
 
@@ -1125,11 +1014,12 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
 
-<section data-status="research"  id="user-integration"><div class="header-wrapper">
+<section data-status="research"  id="user-integration">
+       <div class="addition sticky floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
   
+<div class="header-wrapper">
   <h2 id="x6-user-integration" class="headerPlus"><bdi class="secno">6. </bdi>USER INTEGRATION • VISION</h2><a class="self-link" href="#user-integration" aria-label="Permalink for Section 6."></a></div>
        
-       <div class="addition sticky floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
   
   <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
     
@@ -1139,7 +1029,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
     </details>
         <details class="categories">
           <summary>Functional categories for <q>user integration </q></summary>
-          <p>This outcome relates to the following functional categories:</p>
+          <p>This objective relates to the following functional categories:</p>
           <ul>
             <li>Sensory - Light, Contrast</li>
             <li>Sensory - Vision, Color</li>
@@ -1169,20 +1059,20 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
         </details>
 
 		<section>
-			<h3 id="outcome-" class="outcome-header"><div>Outcome:</div> </h3>
+			<h3 id="objective-" class="objective-header"><div>Objective:</div> </h3>
 
-			<p class="outcome"> </p>
+			<p class="objective"> </p>
 			
 		 <h2 class="method-header">Testing Methods</h2>
-			<ol>
+			<ul>
 				<li><a class="method-link" href="../methods/">Null</a></li>
-			</ol>
+			</ul>
 
 
 			<h2 class="howto-header">How-to Guides:</h2>
-			<ol>
+			<ul>
 				<li><a class="howto-link" href="../how-tos/">Null</a></li> 
-			</ol>
+			</ul>
 		</section>
 </section><!-- close test section 6 -->
 
@@ -1207,9 +1097,9 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
     
       <div class="secImg"><img src="../img/conformanceSMALL.png"></div>
       
-<p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
+      <p class="normative-statement"><em>This section must be followed to <a>conform</a> to the specification, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
   
-  <p>The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
+      <p>The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
         are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/bcp14">BCP 14</a>
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
         when, and only when, they appear in all capitals, as shown here.
@@ -1217,47 +1107,49 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
     <details class="summary">
       <summary>Plain language summary of <q>Conformance</q></summary>
-      <p>To assert that your content or product meets an ARG outcome is called “conformance.” To conform to APCA Readabiliy Guidelines, your test results must show that your project is visually accessible.</p>
+      
+      <p>To assert that your content or product meets an ARC objective is called “conformance.” To conform to the APCA Readability Criterion, your test results must show that your project is visually accessible.</p>
       <p>If you want to make a formal claim of conformance, you must use the processes described in this document. Even if you don't want to make a claim, this document and processes can help you improve the visual accessibility for all sighted users.</p></details>
    
    
    <section data-status="development" id="conformance-levels">
    
+      <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
+   
       <div class="header-wrapper"><h3 id="x7-1-conformance-levels" class="headerPlus3"><bdi class="secno">7.1 </bdi>Conformance levels</h3><a class="self-link" href="#conformance-levels" aria-label="Permalink for Section 7.1"></a></div>
 
-      <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
       
       <div class="note" id="issue-container-generatedID-3"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="4"><span class="noteHeading">Development Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-3"></a></div><div class="">
-      <p>APCA Readabiliy Guidelines use new conformance methods, partially modeled after the future WCAG&nbsp;3.0 in order to support the goal of integration. Some key goals for this new conformance model:</p>
+      <p>APCA Readability Criterion uses new conformance methods, partially modeled after the future WCAG&nbsp;3.0 in order to support the goal of integration. Some key goals for this new conformance model:</p>
 
-      <ol>
+      <ul class="checkedbox">
         <li>Develop a model that encourages websites to improve accessibility, as opposed to stopping at an arbitrary level such as "AA";</li>
         <li>Better reflect the needs of visual users of content, and the wide spectrum of human vision and vision &amp; language related impairments.</li>
         <li>Emphasize the need for discrete use cases based on the importance of the specific element understanding the content.
         </li><li>Recognize the natural divisions of technology vs. content</li>
-      </ol>
+      </ul>
 
       <p>To do this, the conformance model prioritizes primary use cases of content needed to understand or complete tasks, while still considering the entire view for readability and accessibility. This means that sites may conform at the lowest level (Bronze), while still containing a small amount of content that might not meet one or more guidelines, so long as such content doesn’t prevent people with disabilities from successfully using the site.</p>
 
       </div></div>
 
-      <p>APCA Readabiliy Guidelines define three levels of conformance: <a href="#bronze">BRONZE</a>, <a href="#silver">SILVER</a>, and <a href="#gold">GOLD</a>.</p>
+      <p>APCA Readability Criterion defines three levels of conformance: <a href="#bronze">BRONZE</a>, <a href="#silver">SILVER</a>, and <a href="#gold">GOLD</a>.</p>
 
       <section id="bronze"><div class="header-wrapper"><h4 id="x7-1-1-bronze" class="headerPlus4"><bdi class="secno">7.1.1 </bdi>BRONZE:</h4><a class="self-link" href="#bronze" aria-label="Permalink for Section 7.1.1"></a></div>
         
         <strong> Covers primary content text only.</strong> 
-        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level fails to conform to ARG.</p>
-        <p class="note" >BACKWARDS COMPATIBILITY NOTE: While there is some overlap between WCAG&nbsp;2.x and ARG-Bronze, ARG includes additional tests and different scoring methods. As a result, ARG is not backwards compatible with WCAG&nbsp;2.x. Bridge-PCA is a special set of guidelines that pass both WCAG&nbsp;2.0 1.4.3 and also ARG, at the expense of design flexibility.</p>
+        <p>Bronze is the minimum conformance level. Content that does not meet the requirements of the bronze level fails to conform to ARC.</p>
+        <p class="note" >BACKWARDS COMPATIBILITY NOTE: While there is some overlap between WCAG&nbsp;2.x and ARC-Bronze, ARC includes additional tests and different scoring methods. As a result, ARC is not backwards compatible with WCAG&nbsp;2.x. Bridge-PCA is a special set of guidelines that pass both WCAG&nbsp;2.0 1.4.3 and also ARC, at the expense of design flexibility.</p>
 
 
-					<ul>
+					<ol class="smallalpha">
 						<li>There is no font lookup table, only a set of general conformance levels.</li>
 						<li>Use-cases for "body text" and "other content text".</li>
 						<li>Spot text: disabled, placeholder, ancillary, decorative text is not covered</li>
 						<li>Logos and incidental text in images are not covered</li>
 						<li>There is no specified minimum font size.</li>
 						<li>There is no requirement to match a reference font weight or size.</li>
-					</ul>
+					</ol>
 
       </section>
       
@@ -1266,7 +1158,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       <section id="silver"><div class="header-wrapper"><h4 id="x7-1-2-silver" class="headerPlus4"><bdi class="secno">7.1.2 </bdi>SILVER</h4><a class="self-link" href="#silver" aria-label="Permalink for Section 7.1.2"></a></div>
         <strong> Covers all text content.</strong>
         <p>Silver is a higher conformance level, featuring improved readability and accommodation of user preferences.</p>
-					<ul>
+					<ol class="smallalpha">
 						<li>Font weight and size per Lc contrast value and font lookup table.</li>
 						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
 						<li>Logos are covered, with a contrast requirement reduced by Lc 15.</li>
@@ -1274,59 +1166,64 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
 						<li>Minimum font size for non-content text is 10px.</li>
 						<li>There is no requirement to compare to a reference font weight or size.</li>
-					</ul>
+					</ol>
 
 
       </section>
       <section id="gold"><div class="header-wrapper"><h4 id="x7-1-3-gold" class="headerPlus4"><bdi class="secno">7.1.3 </bdi>GOLD</h4><a class="self-link" href="#gold" aria-label="Permalink for Section 7.1.3"></a></div>
         <strong> Covers all text content, enhanced.</strong>
         <p>Gold is the highest conformance level, featuring the improvements from Silver, but adding tests to ensure consistent presentation, such as regulating font x-height and font weight relative to defined reference fonts.</p>
-					<ul>
+					<ol class="smallalpha">
 						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
 						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
 						<li>Ancillary, decorative text are covered with recommendations</li>
 						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
 						<li>Minimum font size for non-content text is 12px.</li>
 						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
-					</ul>
+					</ol>
 
       </section>
     </section>
 
 
-    <section data-status="research" id="use-cases-levels"><div class="header-wrapper">
+    <section data-status="research" id="use-cases-levels">
+       <div class="addition floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
     
+    <div class="header-wrapper">
     <h3 id="x7-2-use-cases-levels" class="headerPlus3"><bdi class="secno">7.2 </bdi>Use Cases and Conformance Levels</h3><a class="self-link" href="#use-cases-levels" aria-label="Permalink for Section 7.2"></a></div>
       
-       <div class="addition floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
       
-      <p>In order for content to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
-      <ol>
+      <p>In order for content to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARC, the following conformance requirements apply:</p>
+      <ul>
         <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
-      </ol>
+      </ul>
+
        <p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
 
 
-      <section data-status="development"  id="text-use-cases"><div class="header-wrapper"><h4 id="x7-2-1-text-use-cases" class="headerPlus4"><bdi class="secno">7.2.1 </bdi>Text Use Cases</h4><a class="self-link" href="#text-use-cases" aria-label="Permalink for Section 7.2.1"></a></div>
+      <section data-status="development"  id="text-use-cases">
       
       <div class="addition sticky floatAddition development"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
       
-<h4 class="headerPlus4i">Body text, fluent text, sub-fluent text, etc.</h3>
+      <div class="header-wrapper"><h4 id="x7-2-1-text-use-cases" class="headerPlus4"><bdi class="secno">7.2.1 </bdi>Text Use Cases</h4><a class="self-link" href="#text-use-cases" aria-label="Permalink for Section 7.2.1"></a></div>
+      
+      
+        <h4 class="headerPlus4i">Body text, fluent text, sub-fluent text, etc.</h3>
         
         <strong>The specific testable categories of text, organized by fluency.</strong> 
 
-        
-        
 
-			<ul style="font-size: 18px;">
+
+
+			<ol class="roman" style="font-size: 1.125em;">
 				<li id="fluent"><strong>FLUENT</strong></li>
 				<ul>
 					<li><strong>Fluent Readability, Block/Body Text</strong></li>
 					<ul>
 						<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
 					</ul>
-					
-					
+
+
 					<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text</li>
 					<ul>
 						<li><strong>Defined as:</strong> up to two and a half lines of continuous text.</li>
@@ -1358,6 +1255,8 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 					</ul>
 
 
+
+
 					<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;</li>
 					<ul>
 						<li><strong>Defined as:</strong> non-content text of an incidental nature.</li>
@@ -1367,6 +1266,8 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 					</ul>
 
 
+
+
 					<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
 					<ul>
 						<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
@@ -1374,16 +1275,20 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 					<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
 				</ul>
-			</ul>
-
-      </section>
+			</ol>
 
 
+    </section>
 
 
-     <section  data-status="research" id="non-text-use-cases"><div class="header-wrapper"><h4 id="x7-2-2-non-text-use-cases" class="headerPlus4"><bdi class="secno">7.2.2 </bdi>Non-Text Use Cases</h4><a class="self-link" href="#non-text-use-cases" aria-label="Permalink for Section 7.2.2"></a></div>
+
+
+     <section  data-status="research" id="non-text-use-cases">
      
       <div class="addition sticky floatAddition research" data-status="research"><a href="#section-status-levels" class="status-link">Section status: <strong>Research</strong></a></div>
+     
+     
+     <div class="header-wrapper"><h4 id="x7-2-2-non-text-use-cases" class="headerPlus4"><bdi class="secno">7.2.2 </bdi>Non-Text Use Cases</h4><a class="self-link" href="#non-text-use-cases" aria-label="Permalink for Section 7.2.2"></a></div>
 
      
 <h4 class="headerPlus4t">Non-Text Use Cases: pictorial semantic, abstract semantic, symbolic, DataViz, divisional and containers.</h3>
@@ -1391,12 +1296,15 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
         <strong>The specific testable categories of non-text, organized by .</strong> 
         <p>at potenti curae convallis duis dolor molestie consectetur curabitur posuere vivamus ultricies dis phasellus porttitor justo mi litora praesent nulla fusce iaculis et erat cras ut vel maecenas velit bibendum tincidunt mattis senectus sed volutpat tempor proin venenatis ornare ac pellentesque varius pulvinar accumsan</p>
       </section>
-      
-      
-     <section  data-status="placeholder" hidden=""  id="mode-use-cases"><div class="header-wrapper"><h4 id="x7-2-3-mode-use-cases" class="headerPlus4"><bdi class="secno">7.2.3 </bdi>Mode Use Cases</h4><a class="self-link" href="#mode-use-cases" aria-label="Permalink for Section 7.2.3"></a></div>
-     
+
+
+     <section  data-status="placeholder" hidden=""  id="mode-use-cases">
      
       <div class="addition sticky floatAddition placeholder"> <a href="#section-status-levels" class="status-link">Section status:<strong>Placeholder</strong></a></div>
+     
+     <div class="header-wrapper"><h4 id="x7-2-3-mode-use-cases" class="headerPlus4"><bdi class="secno">7.2.3 </bdi>Mode Use Cases</h4><a class="self-link" href="#mode-use-cases" aria-label="Permalink for Section 7.2.3"></a></div>
+     
+     
 
        <h4 class="headerPlus4t">Mode Use Cases:</h3>
         
@@ -1413,12 +1321,13 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
     <section data-status="development"  id="defining-conformance-scope">
+    
       <div class="addition floatAddition development"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
     
     <div class="header-wrapper"><h3 id="x7-3-defining-conformance-scope" class="headerPlus3"><bdi class="secno">7.3 </bdi>Conformance Scope</h3><a class="self-link" href="#defining-conformance-scope" aria-label="Permalink for Section 7.3"></a></div>
       
       
-      <p>When evaluating the accessibility of content, ARG requires the outcomes apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
+      <p>When evaluating the accessibility of content, ARC requires the objectives apply to a specific scope. While the scope can be all content within a digital product, it is usually one or more sub-sets of the whole. Reasons for this include:</p>
       <ul>
         <li>Large amounts of content are impractical to evaluate comprehensively using anything beyond <a href="#dfn-automated-evaluation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-automated-evaluation-1">automated evaluation</a> of atomic tests;</li>
         <li>Dynamic content changes frequently, so evaluation needs to be consider the range of variation, and examine the underlying styles;</li>
@@ -1449,15 +1358,19 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 				</ul>
 				
 
-<p>ARG defines ways to specify the scope of content, some granular, examining very small aspects of a site or content. Others are broad, covering the totality of a document or a site. The required tests and testing methods reflect the challenges present in various scopes. </p>
+<p>ARC defines ways to specify the scope of content, some granular, examining very small aspects of a site or content. Others are broad, covering the totality of a document or a site. The required tests and testing methods reflect the challenges present in various scopes. </p>
 
 <p>depending on the the product, a top-down, bottom-up, or middle-out approach may be most appropriate.
 
 
 
-      <section  data-status="placeholder" hidden=""  id="top-down-scope"><div class="header-wrapper"><h4 id="x7-3-1-top-down-scope" class="headerPlus4"><bdi class="secno">7.3.1 </bdi>Top Down Scope</h4><a class="self-link" href="#top-down-scope" aria-label="Permalink for Section 7.3.1"></a></div>
-
+      <section  data-status="placeholder" hidden=""  id="top-down-scope">
+      
       <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
+      
+      
+      <div class="header-wrapper"><h4 id="x7-3-1-top-down-scope" class="headerPlus4"><bdi class="secno">7.3.1 </bdi>Top Down Scope</h4><a class="self-link" href="#top-down-scope" aria-label="Permalink for Section 7.3.1"></a></div>
+
         
         <strong> useful for existing incomplete products or sites.</strong> 
         <p> as an example, "mobile first" is frequently a top-down paradigm....in proin praesent nascetur adipiscing aptent pellentesque lectus habitasse feugiat per himenaeos ex maecenas diam.</p>
@@ -1474,9 +1387,13 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       </section>
       
       
-      <section  data-status="placeholder" hidden=""  id="bottom-up-scope"><div class="header-wrapper"><h4 id="x7-3-2-bottom-up-scope" class="headerPlus4"><bdi class="secno">7.3.2 </bdi>Bottom Up Scope</h4><a class="self-link" href="#bottom-up-scope" aria-label="Permalink for Section 7.3.2"></a></div>
-  
+      <section  data-status="placeholder" hidden=""  id="bottom-up-scope">
+      
   <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
+      
+      
+      <div class="header-wrapper"><h4 id="x7-3-2-bottom-up-scope" class="headerPlus4"><bdi class="secno">7.3.2 </bdi>Bottom Up Scope</h4><a class="self-link" href="#bottom-up-scope" aria-label="Permalink for Section 7.3.2"></a></div>
+  
 
 
         <strong>Often best for brand new projects that are starting from the ground up.</strong> 
@@ -1491,9 +1408,12 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
       </section>
 
-      <section  data-status="placeholder" hidden=""  id="middle-out-scope"><div class="header-wrapper"><h4 id="x7-3-3-middle-out-scope" class="headerPlus4"><bdi class="secno">7.3.3 </bdi>Middle Out Scope</h4><a class="self-link" href="#middle-out-scope" aria-label="Permalink for Section 7.3.3"></a></div>
-
+      <section  data-status="placeholder" hidden=""  id="middle-out-scope">
+      
       <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
+      
+      <div class="header-wrapper"><h4 id="x7-3-3-middle-out-scope" class="headerPlus4"><bdi class="secno">7.3.3 </bdi>Middle Out Scope</h4><a class="self-link" href="#middle-out-scope" aria-label="Permalink for Section 7.3.3"></a></div>
+
 
         <strong>Middle-out is an agile, interactive workflow.</strong>
         <p>An example of middle out is "core first", as a significant departure compared to mobile first. Core first... senectus id nostra nisl posuere arcu feugiat egestas porta leo interdum viverra in sem cursus vestibulum sodales vitae lacus tincidunt blandit ac cubilia laoreet aptent</p>
@@ -1508,20 +1428,27 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
     </section>
 
 
-    <section data-status="placeholder" hidden="" id="conformance-requirements"><div class="header-wrapper"><h3 id="x7-4-conformance-requirements" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.4"></a></div>
-  
+    <section data-status="placeholder" hidden="" id="conformance-requirements">
+    
   <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
+    
+    <div class="header-wrapper"><h3 id="x7-4-conformance-requirements" class="headerPlus3"><bdi class="secno">7.4 </bdi>Conformance requirements</h3><a class="self-link" href="#conformance-requirements" aria-label="Permalink for Section 7.4"></a></div>
+  
       
-      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARG, the following conformance requirements apply:</p>
+      <p>In order for technology to <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-2">conform</a> to ARC, the following conformance requirements apply:</p>
       <ol>
         <li><b>Conformance level</b> - Content <em class="rfc2119">MUST</em> meet the requirements of the selected <a href="#conformance-levels">conformance level</a>.</li>
       </ol>
 
     </section>
 
-    <section data-status="placeholder" hidden=""  id="conformance-certification"><div class="header-wrapper"><h3 id="x7-5-conformance-certification" class="headerPlus3"><bdi class="secno">7.5 </bdi>Conformance certification</h3><a class="self-link" href="#conformance-certification" aria-label="Permalink for Section 7.5"></a></div>
-     
+    <section data-status="placeholder" hidden=""  id="conformance-certification">
+    
      <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
+    
+    
+    <div class="header-wrapper"><h3 id="x7-5-conformance-certification" class="headerPlus3"><bdi class="secno">7.5 </bdi>Conformance certification</h3><a class="self-link" href="#conformance-certification" aria-label="Permalink for Section 7.5"></a></div>
+     
      
      <p>Conformance certification feugiat dolor enim ante ornare efficitur sollicitudin ullamcorper tempus semper per eget posuere tempor porta pharetra blandit commodo integer mus sapien gravida hac aptent potenti facilisi adipiscing condimentum pretium elementum litora molestie parturient ligula libero nam dignissim suscipit ultrices curabitur convallis senectus habitant consectetur</p>
 
@@ -1549,9 +1476,13 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
 
-<section data-status="development" id="glossary"><div class="header-wrapper"><h2 id="x8-glossary" class="headerPlus"><bdi class="secno">8. </bdi>GLOSSARY</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 8."></a></div>
+<section data-status="development" id="glossary">
 
     <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
+
+
+<div class="header-wrapper"><h2 id="x8-glossary" class="headerPlus"><bdi class="secno">8. </bdi>GLOSSARY</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 8."></a></div>
+
 
   <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
   
@@ -1586,8 +1517,8 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       </dd>
       <dt><dfn data-lt="Guideline|Guidelines" id="dfn-guideline" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Guideline</dfn></dt>
       <dd>
-        <p>High-level, plain-language content used to organize <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-1">outcomes</a>.</p>
-        <p>See <a href="https://A11yReadTech.github.io/ARG/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
+        <p>High-level, plain-language content used to organize <a href="#dfn-objective" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-objective-1">objectives</a>.</p>
+        <p>See <a href="https://A11yReadTech.github.io/ARC/explainer/#guidelines-structure">Guidelines</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Human evaluation|Human testing|Human evaluated|Human tested|Manual|Manual evaluation|Manual testing|Manually tested" id="dfn-human-evaluation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Human evaluation</dfn></dt>
       <dd>
@@ -1606,18 +1537,18 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       </dd>
       <dt><dfn data-lt="Method|Methods" id="dfn-method" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Method</dfn></dt>
       <dd>
-        <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-2">outcome</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
-        <p>See <a href="https://A11yReadTech.github.io/ARG/explainer/#methods-structure">Methods</a> in the Explainer.</p>
+        <p>Detailed information, either technology-specific or technology-agnostic, on ways to meet the <a href="#dfn-objective" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-objective-2">objective</a> as well as <a href="#dfn-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-test-1">tests</a> and scoring information.</p>
+        <p>See <a href="https://A11yReadTech.github.io/ARC/explainer/#methods-structure">Methods</a> in the Explainer.</p>
       </dd>
       <dt><dfn data-lt="Normative" id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normative</dfn></dt>
       <dd>
         <p>Content whose instructions are required for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conformance-6">conformance</a>.</p>
         <div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Note</span><a class="self-link" aria-label="§" href="#issue-container-generatedID-6"></a></div><p class="">Content identified as <q><a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2">informative</a></q> or <q>non-normative</q> is never required for conformance.</p></div>
       </dd>
-      <dt><dfn data-lt="Outcome|Outcomes" data-plurals="outcomes" id="dfn-outcome" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Outcome</dfn></dt>
+      <dt><dfn data-lt="Objective|Objectives" data-plurals="objectives" id="dfn-objective" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Objective</dfn></dt>
       <dd>
         <p>Result of practices that reduce or eliminate barriers that people with disabilities experience.</p>
-        <p>See <a href="#outcomes">Outcomes</a>.</p>
+        <p>See <a href="#objectives">Objectives</a>.</p>
       </dd>
       <dt><dfn data-lt="Process|Processes" id="dfn-process" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Process</dfn></dt>
       <dd><p>A sequence of steps that need to be completed in order to accomplish an activity / task from
@@ -1632,7 +1563,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       <dt><dfn data-lt="Test|Tests" data-plurals="tests" id="dfn-test" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Test</dfn></dt>
       <dd>
         <p>Mechanism to evaluate implementation of a <a href="#dfn-method" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-method-1">method</a>.</p>
-        <p>Tests can include true / false evaluation or various types of rating scales as appropriate for the <a href="#dfn-guideline" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-guideline-1">guideline</a>, <a href="#dfn-outcome" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-outcome-3">outcome</a>, or technology.</p>
+        <p>Tests can include true / false evaluation or various types of rating scales as appropriate for the <a href="#dfn-guideline" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-guideline-1">guideline</a>, <a href="#dfn-objective" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-objective-3">objective</a>, or technology.</p>
       </dd>
       <dt><dfn data-lt="Technique|Techniques" id="dfn-technique" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Technique</dfn></dt>
       <dd>
@@ -1642,7 +1573,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
       <dd><p>The end goal a user has when starting a process through digital means.</p></dd>
       <dt><dfn data-lt="User testing" id="dfn-user-testing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User testing</dfn></dt>
       <dd>
-        <p>Evaluation of content by observation of how users with specific <a href="#dfn-functional-need" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functional-need-1">functional needs</a> are able to complete a <a href="#dfn-process" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-process-1">process</a> and how the content meets the relevant <a href="#outcomes">outcomes</a>.</p>
+        <p>Evaluation of content by observation of how users with specific <a href="#dfn-functional-need" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functional-need-1">functional needs</a> are able to complete a <a href="#dfn-process" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-process-1">process</a> and how the content meets the relevant <a href="#objectives">objectives</a>.</p>
       </dd>
     </dl>
 </section><!-- close glossary section 8 -->
@@ -1665,6 +1596,10 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 <section id="references" class="bibliography">
 
+      <div class="addition sticky floatAddition development"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
+
+
+
   <div class="header-wrapper">
     <h2 id="x9-references" class="headerPlus"><bdi class="secno">9. </bdi>REFERENCES</h2><a class="self-link" href="#references" aria-label="Permalink for Bibliography 9."></a>
   </div>
@@ -1675,7 +1610,6 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
  
  <section id="normative-references">
  
-      <div class="addition sticky floatAddition development"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
 
     <div class="header-wrapper"><h3 id="x9-1-normative-references"  class="headerPlus3"><bdi class="secno">9.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Bibliography 9.1"></a>
     </div>
@@ -1738,11 +1672,11 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
   <section   data-status="placeholder"  hidden="" id="informative-references">
+    <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
   
     <div class="header-wrapper"><h3 id="x9-3-informative-references"  class="headerPlus3"><bdi class="secno">9.3 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Bibliography 9.3"></a>
     </div>
     
-    <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
 
 
     <dl class="bibliography">
@@ -1774,11 +1708,11 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
   </section><!-- close 93 section -->
 
   <section   data-status="placeholder"  hidden="" id="perspective-references">
+    <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
   
     <div class="header-wrapper"><h3 id="x9-4-informative-references"  class="headerPlus3"><bdi class="secno">9.4 </bdi>Perspective & Opinion</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Bibliography 9.4"></a>
     </div>
     
-    <div class="addition sticky floatAddition placeholder"><a href="#section-status-levels" class="status-link">Section status: <strong>Placeholder</strong></a></div>
 
 
     <dl class="bibliography">
@@ -1842,9 +1776,9 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
 
 <section class="appendix"  data-status="research"  id="guidelines-development-methodology">
+     <div class="addition sticky floatAddition research"><a href="#section-status-levels" class="status-link">Section status: <strong> Research</strong></a><br></div>
 
   <div class="header-wrapper"><h2 id="a-guidelines-development-methodology" class="headerPlus"><bdi class="secno">A. </bdi>Guideline Development Methodology</h2><a class="self-link" href="#guidelines-development-methodology" aria-label="Permalink for Appendix A."></a></div>
-     <div class="addition sticky floatAddition research"><a href="#section-status-levels" class="status-link">Section status: <strong> Research</strong></a><br></div>
 
       <ul>
         <li>Practice Due Diligence</li>
@@ -1889,10 +1823,10 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 
   <p class="reference-statement"><em>This section is reference only, some references are <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a> in their own context, nevertheless the session is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> relative to this document.</em></p>
 
-  <section id="outcomes"><div class="header-wrapper">
+  <section id="objectives"><div class="header-wrapper">
 
-  <h3 id="b-1-outcomes" class="headerPlus3"><bdi class="secno">B.1 </bdi>Outcome Model</h3><a class="self-link" href="#outcomes" aria-label="Permalink for Appendix B.1"></a></div>
-    <p>Outcomes are different from WCAG&nbsp;2.x success criteria. Compared to success criteria, outcomes are written to be:</p>
+  <h3 id="b-1-objectives" class="headerPlus3"><bdi class="secno">B.1 </bdi>Objective Model</h3><a class="self-link" href="#objectives" aria-label="Permalink for Appendix B.1"></a></div>
+    <p>Objectives are different from WCAG&nbsp;2.x success criteria. Compared to success criteria, objectives are written to be:</p>
     <ul>
       <li>In plain language;&nbsp;</li>
       <li>More understandable by people who are not experts in technology;</li>
@@ -2201,18 +2135,18 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
 </div>
     
     
-<div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-outcome" aria-label="Links in this document to definition: Outcome">
+<div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-objective" aria-label="Links in this document to definition: Objective">
       <span class="caret"></span>
       
       
       <div>
-        <a class="self-link" href="#dfn-outcome" aria-label="Permalink for definition: Outcome. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-objective" aria-label="Permalink for definition: Objective. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-outcome-1" title="§ 7. Glossary">§ 7. Glossary</a> <a href="#ref-for-dfn-outcome-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-outcome-3" title="Reference 3">(3)</a> 
+    <a href="#ref-for-dfn-objective-1" title="§ 7. Glossary">§ 7. Glossary</a> <a href="#ref-for-dfn-objective-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-objective-3" title="Reference 3">(3)</a> 
   </li>
   </ul>
 </div>
@@ -2440,7 +2374,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
   function displayPanel(dfn, panel, { x, y }) {
     panel.hidden = false;
     // distance (px) between edge of panel and the pointing triangle (caret)
-    const MARGIN = 20;
+    const MARCIN = 20;
 
     const dfnRects = dfn.getClientRects();
     // Find the `top` offset when the `dfn` can be spread across multiple lines
@@ -2456,7 +2390,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
     }
 
     const top = window.scrollY + closestTop + dfnRects[0].height;
-    const left = x - MARGIN;
+    const left = x - MARCIN;
     panel.style.left = `${left}px`;
     panel.style.top = `${top}px`;
 
@@ -2464,7 +2398,7 @@ ul.chevron li + ul li + ul { list-style-type:"\276F \276F \276F \00A0"; }
     const panelRect = panel.getBoundingClientRect();
     const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
     if (panelRect.right > SCREEN_WIDTH) {
-      const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+      const newLeft = Math.max(MARCIN, x + MARCIN - panelRect.width);
       const newCaretOffset = left - newLeft;
       panel.style.left = `${newLeft}px`;
       /** @type {HTMLElement} */

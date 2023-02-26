@@ -112,15 +112,15 @@ div.upR img {
   text-align: center;
   }
 
-@media (max-width: 1024px) {
+@media (max-width: 59.99em) {
   #quickstart {
     margin: -1em 0 0 0;
     padding: 0.25em 0.15em; 
     font-size: 2.3vw;
   }
-}
+}/* CLOSE MEDIA QUERY */
 
-@media (max-width: 640px) {
+@media (max-width: 39.99em) {
 
   #quickstart {
     padding: 0.75em;
@@ -135,8 +135,7 @@ div.upR img {
     margin: 0 0.35em;
     text-align: center;
   }
-
-}
+}/* CLOSE MEDIA QUERY */
 
 
 
@@ -283,6 +282,7 @@ bdi.secno, .headerPlus1, .headerPlus,
 .headerMinus4,.headerMinus4i,
 .headerMinus5,.headerMinus5i { margin: -0.25em 0 0; }
 
+.headerUp { margin-top: -1.25em; }
 
 #resources li a {font-weight: 700; font-style: italic;}
 
@@ -378,6 +378,9 @@ nav li li li bdi.secno {
   font-weight: 600;
 }
 
+
+
+
 nav li .abstract {
   position: relative;
   left: 0.5em;
@@ -389,12 +392,159 @@ nav li li .abstract {
 
 
 
-.toc > li { font-size:1.35em; font-weight: 700;}
+
+.toc > li { font-size:1.15em; font-weight: 700;}
 .toc > li li { font-size:0.95em; font-weight: 700;}
 .toc > li li li { font-size:0.925em; font-weight: 600;}
 
 .toc > li div {white-space:nowrap; padding-left: 0.33em; font-weight: 600;font-style: italic;}
 .toc > li li div {white-space:nowrap; padding-left: 0.33em; font-weight: 600;font-style: italic;}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,600;1,700;1,800&display=swap');
+
+
+ul, ol:not(.toc){
+		margin: 0em;
+		padding-left: 1em;
+		padding-left: var(--list-indent);
+		font-size: 1em;
+		font-weight: 500;
+	}
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ul, 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc)+ol:not(.toc){
+		margin: 0em;
+		padding: 0.5em 0 0.5em 2em;
+		padding-left: calc(var(--list-indent) * 1.5);
+		font-weight: 500;
+		font-size: 1em;
+	}
+
+ul.multilevel,ul.singlelevel{
+		margin: 0em;
+		padding: 1em 0 1em 2em;
+		padding-left: calc(var(--list-indent) * 1.5);
+		font-weight: 500;
+		font-size: 1em;
+		list-style-type: square;
+	}
+
+
+/* first level bullet */
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ul{list-style-type:"\273D \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.nobull{list-style-type:none; padding-left: 0.5em;}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.diamond{list-style-type:"\2756 \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.checkedbox{list-style-type:"\22A0 \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.checkbox{list-style-type:"\274F \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.chevron{list-style-type:"\276F \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.atomic{list-style-type:"\269B \00A0 \00A0";}
+:not(li,ul,ol,li>strong,li>a,li>em)+ul.arrow{list-style-type:"\27A4 \00A0";}
+
+
+/* second,third level bullets */
+
+li+ul.diamond,li+ul li+ul{list-style-type:"\2756 \00A0 \00A0";}
+li+ul.atomic,li+ul li+ul li+ul{list-style-type:"\269B \00A0 \00A0";}
+
+ol li+ul{list-style-type:"\273D \00A0 \00A0";}
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ul :is(li,li>strong,li>a,li>em)+ul,
+ol li+ul li+ul{list-style-type:"\273C \00A0 \00A0";}
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ul li+ul :is(li,li>strong,li>a,li>em)+ul,
+ol li+ul li+ul li+ul{list-style-type:none;}
+
+  :not(li,ul,ol,li>strong,li>a,li>em) + ul > li + ul > li + ul > :is(li,li>strong,li>a,li>em)::before,
+  ol li+ul li+ul li+ul>li::before {
+    display:inline-block;
+    content: "\269B \00A0 \00A0";  /* ***  atom  *** */
+    margin-left: -0.9em;
+    font-size:1.5em;
+    line-height: 0.3
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ul li+ul li+ul li+ul,
+ol li+ul li+ul li+ul li+ul{list-style-type:"\273E \00A0 \00A0";}
+
+li+ul.arrow{list-style-type:"\27A4 \00A0";}
+li+ul.arrowHalf, ul.arrow li+ul{list-style-type:"\27A2 \00A0";}
+li+ul.fourStar, ul.arrow li+ul li+ul{list-style-type:"\2726 \00A0";}
+li+ul.fourStarOutline, ul.arrow li+ul li+ul li+ul{list-style-type:"\2727 \00A0";}
+
+li+ul.checkbox{list-style-type:"\274F \00A0 \00A0";}
+li+ul.checkmark, ul.checkbox li+ul{list-style-type:"\2713 \00A0 \00A0";}
+li+ul.chevron, ul.checkbox li+ul li+ul{list-style-type:"\276F \00A0 \00A0";}
+ul.chevron li+ul{list-style-type:"\276F \276F \00A0 \00A0";}
+ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
+
+
+
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha){list-style: none; counter-reset: num;}
+:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha)>li{counter-increment: num;}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha, 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman, 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha{ 
+  list-style-type: none; counter-reset: alphaA;
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha>li, 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman>li, 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li{ 
+  counter-increment: alphaA; padding-left:1em; 
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol:not(.toc,.alpha)>li::before{
+  content: counter(num);
+  margin: 0 0.5em 0 -1em;
+  font-family: 'Roboto Serif',Exo,sans-serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--h3-text);
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha>li::before{
+  content: counter(alphaA,upper-latin);
+  margin: 0 0.5em 0 -1em;
+  font-family: 'Roboto Serif',Exo,sans-serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--h3-text);
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman>li::before{
+  content: counter(alphaA,upper-roman);
+  margin: 0 0.5em 0 -1em;
+  font-family: 'Roboto Serif',Exo,sans-serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--h3-text);
+}
+
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li::before{
+  content: counter(alphaA,lower-latin);
+  margin: 0 0.75em 0 -1.45em;
+  padding: 0;
+  text-align: right;
+  font-family: 'Roboto Serif',Exo,sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--h3-text);
+}
+
+
+
 
 
 
@@ -426,7 +576,7 @@ summary::before {
 
 :not(.head) > details:focus summary::before,
 :not(.head) > details:hover summary::before, 
-.outcome:focus h4::before, .outcome:hover h4::before {
+.objective:focus h4::before, .objective:hover h4::before {
 	background-color: #ffff99 ;
 	box-shadow: 0 0 1em 0.25em #ffff99;
 }
@@ -465,15 +615,15 @@ details.summary {
 
 
 
-.howto-link, .outcome-link, 
-.method-link, .outcome-header {
+.howto-link, .objective-link, 
+.method-link, .objective-header {
 	font-weight: 700;
 	font-style: normal;
 	line-height: 1.1;
 }
-.howto-link::before, .outcome-link::before, 
+.howto-link::before, .objective-link::before, 
 .method-link::before, 
-.howto-header::before, .outcome-header::before,
+.howto-header::before, .objective-header::before,
 .method-header::before {
 	display: inline-block;
 	width: 1ex;
@@ -481,7 +631,7 @@ details.summary {
 	vertical-align: text-top;
 }
 
-.outcome-header div::before
+.objective-header div::before
  {
   position: relative;
   width: 4ex;
@@ -489,13 +639,13 @@ details.summary {
 	top: 1em;
   }
   
-.outcome-header div {
+.objective-header div {
   	position: relative;
     font-size: 1.3em;
   	margin-left: -2.8em;
   	top: -0.25em;
   }
-.outcome-header {
+.objective-header {
   	margin-left: 4.5em;
   }
   
@@ -545,16 +695,16 @@ details.summary {
 
 
 
-/* outcome-link breadcrumbs outcome-header main spec  */
+/* objective-link breadcrumbs objective-header main spec  */
 
 
 
 
-.outcome-link::before {
-	content: url(../img/outcome.svg);
+.objective-link::before {
+	content: url(../img/objective.svg);
 }
-.outcome-header div::before {
-	content: url(../img/outcomeLarge.svg);
+.objective-header div::before {
+	content: url(../img/objectiveLarge.svg);
 }
 .method-link::before,
 .method-header::before {
@@ -565,11 +715,11 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	cursor: help;
 }
 
-.outcome {
+.objective {
 	margin-left: 2rem;
 }
 
-.outcome h4 {
+.objective h4 {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 100%;
@@ -578,7 +728,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 
 
 /* .guideline h3::before, */
-.outcome h4::before {
+.objective h4::before {
   display: inline-block;
   position: relative;	
 	width: 3em;
@@ -594,11 +744,11 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 */
 
 
-.outcome h4::before {
-	content: url(../img/outcome.svg);
+.objective h4::before {
+	content: url(../img/objective.svg);
 }
 
-.outcome h4 {
+.objective h4 {
 	margin-top: 1rem;
 	margin-left: -2rem;
 }
@@ -720,7 +870,7 @@ section p, section li {
   max-width: 36em;
   }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 40em) {
 
 	.sticky {
 		position: sticky;
@@ -737,7 +887,7 @@ section p, section li {
   .addition.sticky.deprecated {color:#fff; background-color: #a00b;border-color:#f34b}
   .addition.sticky.deprecated .status-link,
   .addition.sticky.placeholder .status-link {color:#fff;}
-}
+}/* CLOSE MEDIA QUERY */
 
 
 

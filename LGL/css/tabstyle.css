@@ -82,7 +82,7 @@ body {
 h1+p, button[role="tablist"] {
 	clear: both;
 }
-.guideline-link::before, .howto-link::before, .outcome-link::before, .method-link::before, .json-link::before {
+.guideline-link::before, .howto-link::before, .objective-link::before, .method-link::before, .json-link::before {
 	display: inline-block;
 	width: 2.5ex;
 	margin-right: .25em;
@@ -94,8 +94,8 @@ h1+p, button[role="tablist"] {
 .howto-link::before {
 	content: url(../img/how-to.svg);
 }
-.outcome-link::before {
-	content: url(../img/outcome.svg);
+.objective-link::before {
+	content: url(../img/objective.svg);
 }
 .method-link::before {
 	content: url(../img/method.svg);

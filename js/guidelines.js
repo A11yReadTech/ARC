@@ -37,7 +37,7 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "/ARG/how-tos/";
+	var howtoBaseURI = "/ARC/how-tos/";
 	document.querySelectorAll('.guideline').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
@@ -49,7 +49,7 @@ function linkHowTo() {
 }
 
 function linkMethod() {
-	var howtoBaseURI = "/ARG/methods/";
+	var howtoBaseURI = "/ARC/methods/";
 
 	document.querySelectorAll('.guideline').forEach(function(node){
 
@@ -61,15 +61,15 @@ function linkMethod() {
 	})
 }
 
-function linkOutcome() {
-	var outcomeBaseURI = "/ARG/outcomes/";
+function linkObjective() {
+	var objectiveBaseURI = "/ARC/objectives/";
 
-	document.querySelectorAll('.outcome').forEach(function(node){
+	document.querySelectorAll('.objective').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("p");
-		el.innerHTML = " <a href=\"" + outcomeBaseURI + pathFrag + "\" class=\"outcome-link\"><span>Outcome, details, and methods for </span>" + heading + "</a>";
+		el.innerHTML = " <a href=\"" + objectiveBaseURI + pathFrag + "\" class=\"objective-link\"><span>Objective, details, and methods for </span>" + heading + "</a>";
 		node.insertBefore(el, node.querySelector("details"));
 		
 		node.classList.add("notoc");
@@ -83,14 +83,14 @@ function addGuidelineMarkers() {
 	})
 }
 
-function addOutcomeMarkers() {
-	document.querySelectorAll('.outcome').forEach(function(node){
+function addObjectiveMarkers() {
+	document.querySelectorAll('.objective').forEach(function(node){
 		var parentHeader = findHeading(node.parentElement);
-		var outcomeHeader = findHeading(node);
+		var objectiveHeader = findHeading(node);
 		var insertion = document.createElement("span");
 		insertion.classList.add("inserted");
-		insertion.innerHTML = " (outcome for <q>" + textNoDescendant(parentHeader) + "</q>)";
-		outcomeHeader.insertBefore(insertion, outcomeHeader.querySelector(".self-link"));
+		insertion.innerHTML = " (objective for <q>" + textNoDescendant(parentHeader) + "</q>)";
+		objectiveHeader.insertBefore(insertion, objectiveHeader.querySelector(".self-link"));
 	})
 }
 
@@ -269,16 +269,16 @@ function outputJson() {
 				name: findFirstTextChild(findHeading(glnode)).textContent,
 				guideline: findFirstTextChild(glnode.querySelector("p")).textContent
 			};
-			gl.outcomes = new Array();
-			glnode.querySelectorAll(".outcome").forEach(function(ocnode) {
+			gl.objectives = new Array();
+			glnode.querySelectorAll(".objective").forEach(function(ocnode) {
 				var ocid = titleToPathFrag(findFirstTextChild(findHeading(ocnode)).textContent);
 				var oc = {
 					id: ocid,
 					name: findFirstTextChild(findHeading(ocnode)).textContent,
-					outcome: findFirstTextChild(ocnode.querySelector("p")).textContent,
+					objective: findFirstTextChild(ocnode.querySelector("p")).textContent,
 					methods: loadMethods(ocid)
 				}
-				gl.outcomes.push(oc);
+				gl.objectives.push(oc);
 			});
 			result.guidelines.push(gl);
 		});
@@ -292,7 +292,7 @@ function outputJson() {
 	
 	function loadMethods(path) {
 		var returnVal;
-		var ocpath = "/ARG/outcomes/" + path + ".html";
+		var ocpath = "/ARC/objectives/" + path + ".html";
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -340,7 +340,7 @@ function preRespec() {
 	adjustDfnData();
 	addGuidelineMarkers();
 	linkHowTo();
-	linkOutcome();
+	linkObjective();
 	addCategoryMarkers();
 	addErrorMarkers();
 	addRatingMarkers();
@@ -352,7 +352,7 @@ function preRespec() {
 // scripts after Respec has run
 function postRespec() {
 	authorToPM();
-	addOutcomeMarkers();
+	addObjectiveMarkers();
 	adjustNormativity();
 	termTitles();
 	removeDraftMethodLinks();

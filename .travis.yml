@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - GH_REF: github.com/A11yReadTech/ARG.git
+    - GH_REF: github.com/A11yReadTech/ARC.git
     
 git:
   depth: 4
@@ -18,12 +18,12 @@ script:
   - cd ../..
   - mkdir gh-pages
   - cd gh-pages
-  - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/ARG.git
-  - cd ARG
-  - cp -r ../../A11yReadTech/ARG/index.html ../../A11yReadTech/ARG/assets ../../A11yReadTech/ARG/css ../../A11yReadTech/ARG/js ../../A11yReadTech/ARG/img .
-  - cp -r ../../A11yReadTech/ARG/guidelines/img guidelines
-  - cp -r ../../A11yReadTech/ARG/methods ../../A11yReadTech/ARG/how-tos ../../A11yReadTech/ARG/outcomes .
-  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/ARG/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+  - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/ARC.git
+  - cd ARC
+  - cp -r ../../A11yReadTech/ARC/index.html ../../A11yReadTech/ARC/assets ../../A11yReadTech/ARC/css ../../A11yReadTech/ARC/js ../../A11yReadTech/ARC/img .
+  - cp -r ../../A11yReadTech/ARC/guidelines/img guidelines
+  - cp -r ../../A11yReadTech/ARC/methods ../../A11yReadTech/ARC/how-tos ../../A11yReadTech/ARC/objectives .
+  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/ARC/main/guidelines/index.html -o guidelines/index.html -f --retry 3
 
 after_success:
   - git add -A .

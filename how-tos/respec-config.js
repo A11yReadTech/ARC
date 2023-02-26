@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://A11yReadTech.github.io/ARG/how-tos/",
+	edDraftURI: "https://A11yReadTech.github.io/ARC/how-tos/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -57,7 +57,7 @@ var respecConfig = {
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
 	group: "wai",
-	github: "A11yReadTech/ARG",
+	github: "A11yReadTech/ARC",
 
 	maxTocLevel: 4,
 	

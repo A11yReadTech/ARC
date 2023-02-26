@@ -220,10 +220,10 @@
 
 
   /* Deprecation warning */
-  if (document.location.hostname === "www.readtech.org" && /^\/ARG\/\d{4}\//.test(document.location.pathname)) {
+  if (document.location.hostname === "www.readtech.org" && /^\/ARC\/\d{4}\//.test(document.location.pathname)) {
     var request = new XMLHttpRequest();
 
-    request.open('GET', 'https://www.readtech.org/ARG/outdated-spec');
+    request.open('GET', 'https://www.readtech.org/ARC/outdated-spec');
     request.onload = function() {
       if (request.status < 200 || request.status >= 400) {
         return;
@@ -305,7 +305,7 @@
     };
 
     request.onerror = function() {
-      console.error("Request to https://www.readtech.org/ARG/outdated-spec failed.");
+      console.error("Request to https://www.readtech.org/ARC/outdated-spec failed.");
     };
 
     request.send();
@@ -352,7 +352,7 @@
 
 
   /* Drop this? analytics */
-  if (document.location.hostname === "www.readtech.org" && /^\/ARG\//.test(document.location.pathname)) {
+  if (document.location.hostname === "www.readtech.org" && /^\/ARC\//.test(document.location.pathname)) {
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
