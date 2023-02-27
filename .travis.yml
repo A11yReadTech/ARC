@@ -16,8 +16,8 @@ before_script:
   
 script:
   - cd ../..
-  - mkdir gh-pages
-  - cd gh-pages
+  - mkdir page-stage
+  - cd page-stage
   - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/ARC.git
   - cd ARC
   - cp -r ../../A11yReadTech/ARC/index.html ../../A11yReadTech/ARC/assets ../../A11yReadTech/ARC/css ../../A11yReadTech/ARC/js ../../A11yReadTech/ARC/img .
