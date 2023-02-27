@@ -3,6 +3,8 @@
 
 **ARC is a set of guidelines & standards for visual content for use with the APCA contrast algorithm for creating accessible and readable designs of content.**
 
+This repo is used for a staging and testing the content prior to publishing on the live site. The current published draft version is:
+
 ## http://readtech.org
 
 
