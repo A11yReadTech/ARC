@@ -3,7 +3,9 @@
 
 **ARC is a set of guidelines & standards for visual content for use with the APCA contrast algorithm for creating accessible and readable designs of content.**
 
-## http://readtech.org
+This repo is used for staging and testing the content prior to publishing on the live site. The current published draft version is:
+
+## http://readtech.org/ARC/guidelines
 
 
 While officially, ARC stands for *"APCA Readability Criterion"*, it *could* easily mean one of the following:
