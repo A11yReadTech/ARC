@@ -589,7 +589,7 @@ summary::before {
 	transform: scale(0.5, 0.5) translate(2.5em, 2em);
 	outline: none;
 }
-.methods summary::before {
+.tests summary::before {
 	content: url(../img/testmethodsSMALL.png);
 }
 .rating summary::before {
@@ -616,15 +616,15 @@ details.summary {
 
 
 .howto-link, .objective-link, 
-.method-link, .objective-header {
+.tests-link, .objective-header {
 	font-weight: 700;
 	font-style: normal;
 	line-height: 1.1;
 }
 .howto-link::before, .objective-link::before, 
-.method-link::before, 
+.tests-link::before, 
 .howto-header::before, .objective-header::before,
-.method-header::before {
+.tests-header::before {
 	display: inline-block;
 	width: 1ex;
 	margin-right: 0.25em;
@@ -650,10 +650,10 @@ details.summary {
   }
   
 
-.howto-link,.method-link {
+.howto-link,.tests-link {
 	max-height: 30px;
 }
-.howto-header,.method-header {
+.howto-header,.tests-header {
 	max-height: 80px;
 }
 
@@ -674,7 +674,7 @@ details.summary {
     height: 71.5px;
     content:" ";
 }
-.method-link::before {
+.tests-link::before {
     background-image: url('../img/testmethodsSMALL.png');
     display: inline-block;
     background-size: 25px 25px;
@@ -682,7 +682,7 @@ details.summary {
     height: 25px;
     content:" ";
 }
-.method-header::before {
+.tests-header::before {
     background-image: url('../img/testmethodsSMALL.png');
     display: inline-block;
     background-size: 66px 66px;
@@ -706,8 +706,8 @@ details.summary {
 .objective-header div::before {
 	content: url(../img/objectiveLarge.svg);
 }
-.method-link::before,
-.method-header::before {
+.tests-link::before,
+.tests-header::before {
 	content: " ";
 }
 
@@ -752,7 +752,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	margin-top: 1rem;
 	margin-left: -2rem;
 }
-.methods h5, .errors h5, .rating h5 {
+.tests h5, .errors h5, .rating h5 {
 	font-size: 100%;
 	color: #005A9C;
 }

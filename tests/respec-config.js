@@ -12,7 +12,7 @@ var respecConfig = {
 	//publishDate:          "2013-08-22",
 	
 	// the specifications short name, as in https://www.readtech.org/TR/short-name/
-	shortName: "arg-methods",
+	shortName: "arc-tests",
 	
 	
 	// if you wish the publication date to be other than today, set this
@@ -21,7 +21,7 @@ var respecConfig = {
 	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://A11yReadTech.github.io/ARC/methods/",
+	edDraftURI: "https://A11yReadTech.github.io/ARC/tests/",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
@@ -29,8 +29,8 @@ var respecConfig = {
 	// editors, add as many as you like
 	// only "name" is required
 	editors:[ {
-		name: "Andrew Somers",
-		mailto: "perceptex@myndex.com",
+		name: "Mike Anderson",
+		mailto: "mike@readtech.org",
 		company: "ART",
 		companyURI: "https://www.readtech.org/",
 	}],

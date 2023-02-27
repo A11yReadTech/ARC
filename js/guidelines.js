@@ -49,14 +49,14 @@ function linkHowTo() {
 }
 
 function linkMethod() {
-	var howtoBaseURI = "/ARC/methods/";
+	var howtoBaseURI = "/ARC/tests/";
 
 	document.querySelectorAll('.guideline').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
-		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"method-link\">" + heading + " <span>method</span></a>";
+		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"tests-link\">" + heading + " <span>tests</span></a>";
 		node.querySelector("p.guideline-text").append(el);
 	})
 }
@@ -69,7 +69,7 @@ function linkObjective() {
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("p");
-		el.innerHTML = " <a href=\"" + objectiveBaseURI + pathFrag + "\" class=\"objective-link\"><span>Objective, details, and methods for </span>" + heading + "</a>";
+		el.innerHTML = " <a href=\"" + objectiveBaseURI + pathFrag + "\" class=\"objective-link\"><span>Objective, details, and test methods for </span>" + heading + "</a>";
 		node.insertBefore(el, node.querySelector("details"));
 		
 		node.classList.add("notoc");
@@ -188,7 +188,7 @@ function termTitles() {
 }
 
 function removeDraftMethodLinks() {
-	document.querySelectorAll('.method-link').forEach(function(node){
+	document.querySelectorAll('.tests-link').forEach(function(node){
 		uri = node.href;
 		if (!uri.startsWith("https://www.readtech.org")) {
 			node.parentElement.innerHTML = node.textContent;	
@@ -298,7 +298,7 @@ function outputJson() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
 				methodList = new Array();
 				xml = xhttp.responseXML;
-				xml.querySelectorAll(".method-link").forEach(function(node) {
+				xml.querySelectorAll(".tests-link").forEach(function(node) {
 					var methodid = node.href.match(/\/([a-z-]*)\/$/)[1]; 
 					var method = {
 						id: methodid,

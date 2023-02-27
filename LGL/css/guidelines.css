@@ -192,7 +192,7 @@ summary::before {
 .summary summary::before {
 	content: url(../img/summary.svg);
 }
-.methods summary::before {
+.tests summary::before {
 	content: url(../img/method.svg);
 }
 .rating summary::before {
@@ -214,21 +214,21 @@ summary::before {
 
 
 .howto-link, .objective-link, 
-.method-link, .objective-header {
+.tests-link, .objective-header {
 	font-weight: 600;
 	font-style: normal;
 }
 .howto-link::before, .objective-link::before, 
-.method-link::before, 
+.tests-link::before, 
 .howto-header::before, .objective-header::before,
-.method-header::before {
+.tests-header::before {
 	display: inline-block;
 	width: 2ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
 .howto-header::before, .objective-header::before,
-.method-header::before  {
+.tests-header::before  {
   width: 3ex;
 	margin-right: .5em;
 	vertical-align: middle;
@@ -241,7 +241,7 @@ summary::before {
 .objective-link::before, .objective-header::before {
 	content: url(../img/objective.svg);
 }
-.method-link::before,.method-header::before {
+.tests-link::before,.tests-header::before {
 	content: url(../img/method.svg);
 }
 
@@ -275,7 +275,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	margin-top: 1rem;
 	margin-left: -2rem;
 }
-.methods h5, .errors h5, .rating h5 {
+.tests h5, .errors h5, .rating h5 {
 	font-size: 100%;
 	color: #005A9C;
 }

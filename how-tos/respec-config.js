@@ -17,7 +17,7 @@ var respecConfig = {
 	
 	// if you wish the publication date to be other than today, set this
 	// publishDate:  "2009-08-06",
-	copyrightStart: "2020",
+	copyrightStart: "2021",
 	// license: "document",
 	
 	// if there a publicly available Editors Draft, this is the link
@@ -29,8 +29,8 @@ var respecConfig = {
 	// editors, add as many as you like
 	// only "name" is required
 	editors:[ {
-		name: "Andrew Somers",
-		mailto: "perceptex@myndex.com",
+		name: "Mike Anderson",
+		mailto: "mike@readtech.org",
 		company: "ART",
 		companyURI: "https://www.readtech.org/",
 	}],
@@ -56,7 +56,7 @@ var respecConfig = {
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
-	group: "wai",
+	group: "art",
 	github: "A11yReadTech/ARC",
 
 	maxTocLevel: 4,
