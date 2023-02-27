@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 283.46 425.2" version="1.1" viewBox="0 0 283.46 425.2">
+<radialGradient id="d" cx="-369.78" cy="604.9" r="1.0052" gradientTransform="matrix(124.84 0 0 -246.96 46307 1.496e5)" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#CECECF" offset="0"/>
+	<stop stop-color="#A2A1A2" offset=".1462"/>
+	<stop stop-color="#797778" offset=".33"/>
+	<stop stop-color="#5B5A5C" offset=".511"/>
+	<stop stop-color="#48484A" offset=".6859"/>
+	<stop stop-color="#3E3E40" offset=".852"/>
+	<stop stop-color="#3A3B3C" offset="1"/>
+</radialGradient>
+<rect x=".5" y=".002" width="282.46" height="425.2" fill="url(#d)"/>
+<radialGradient id="e" cx="162.5" cy="374.5" r="184.92" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#FFDE00" offset=".1759"/>
+	<stop stop-color="#F39200" offset=".6852"/>
+	<stop stop-color="#e80" offset=".7311"/>
+	<stop stop-color="#E16F15" offset=".8106"/>
+	<stop stop-color="#CE4420" offset=".9133"/>
+	<stop stop-color="#BE1622" offset="1"/>
+</radialGradient>
+<path d="m267.33 262.77c0 55.811-36.85 111.85-85.75 128.63-15.18 2-29.96-2.57-41.01-10.78-2.3-1.7-4.39-3.51-6.28-5.41-10.23-10.25-14.72-23.229-14.72-38.01 0-9.11 1.71-18.9 4.83-29.15-13.56 56.101 70.41 70.48 104.1 4.891 29.58-57.58 10.46-138.34 10.46-148.11 0-1.032 28.37 31.278 28.37 97.938z" fill="url(#e)"/>
+<radialGradient id="f" cx="108.06" cy="212.6" r="145.35" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#FFDE00" offset=".1759"/>
+	<stop stop-color="#F39200" offset=".6852"/>
+	<stop stop-color="#e80" offset=".7311"/>
+	<stop stop-color="#E16F15" offset=".8106"/>
+	<stop stop-color="#CE4420" offset=".9133"/>
+	<stop stop-color="#BE1622" offset="1"/>
+</radialGradient>
+<path d="m181.58 391.4c-9.51 3.26-19.47 5.05-29.71 5.05-54.3 0-75.95-45.9-75.95-79.38 0-18.221 10.31-41.58 48.8-82.48 38.49-40.89 39.86-81.78 39.86-95.87s-3.78-42.96-16.84-61.17c0 0 2.75 45.7-30.92 91.41-33.68 45.7-75.95 87.97-75.95 116.84 0 48.45 17.67 64.391 19.45 65.87-2.72-2.04-44.19-33.939-44.19-85.12 0-52.92 47.08-88.66 64.95-113.4s45.7-63.23 33.67-124.4c0 0 84.36 29.21 85.23 117.53 0.34 34.71-18.711 83.19-49.49 117.52-14.88 16.61-23.01 31.51-26.09 44.25-3.12 10.25-4.83 20.04-4.83 29.15 0 14.78 4.49 27.76 14.72 38.01 1.89 1.9 3.98 3.71 6.28 5.41 11.05 8.21 25.83 12.78 41.01 10.78z" fill="url(#f)"/>
+</svg>

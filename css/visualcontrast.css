@@ -1,0 +1,66 @@
+/* **********	This CSS Style Block is specifically for the 
+				color examples on some tabs  ******************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+
+.cursiveAlert{
+	padding: 1.5em;
+	font-family: cursive, fantasy, ;
+	font-size: 24px;
+}
+
+.testBox {
+	padding: 1.5em;
+	font-family: Montserrat, Barlow, cursive;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #dcb;
+	background-color: #000;
+	border: 6px solid #fff;
+	border-radius: 24px;
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+	font-smooth: auto;
+}
+
+.testBoxWhite {
+	color: #00a;
+	background-color: #FFF;
+}
+.testBoxWhite2 {
+	color: #555;
+	background-color: #f8f8f8;
+	line-height: 1;
+}
+.testBoxWhite2 p {
+  margin: 0 36px;
+	line-height: 1.1;
+  text-align: right;
+}
+
+
+
+.testBoxBeige {
+	color: #009;
+	background-color: #FE9;
+	font-size: 18px;
+}
+
+.thinFont {
+	font-weight: 200;
+}
+.thinFont3 {
+	font-weight: 300;
+}
+
+.thickFont5 {
+	font-weight: 500;
+}
+
+.smoothBlend {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greyscale;
+	font-smooth: always;
+}

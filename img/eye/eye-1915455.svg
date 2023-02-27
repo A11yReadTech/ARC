@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg28"
+   width="1600"
+   height="1600"
+   viewBox="0 0 1600 1600"
+   sodipodi:docname="eye-1915455.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs32">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath44">
+      <path
+         d="M 0,1200 H 1200 V 0 H 0 Z"
+         id="path42" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.1475"
+     inkscape:cx="796.61017"
+     inkscape:cy="800"
+     inkscape:window-width="1419"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g36">
+    <inkscape:page
+       x="0"
+       y="0"
+       id="page34"
+       width="1600"
+       height="1600" />
+  </sodipodi:namedview>
+  <g
+     id="g36"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1600)">
+    <g
+       id="g38">
+      <g
+         id="g40"
+         clip-path="url(#clipPath44)">
+        <g
+           id="g46"
+           transform="translate(605.041,365.6214)">
+          <path
+             d="m 0,0 c -124.59,0 -225.589,97.701 -225.589,218.221 0,120.519 100.999,218.22 225.589,218.22 124.59,0 225.591,-97.701 225.591,-218.22 C 225.591,97.701 124.59,0 0,0 m -514.041,217.383 c 569.238,-589.51 1017.932,0 1017.932,0 -495.572,595.99 -1017.932,0 -1017.932,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path48" />
+        </g>
+        <g
+           id="g50"
+           transform="translate(607.0029,705.2302)">
+          <path
+             d="m 0,0 c -69.661,0 -126.134,-55.08 -126.134,-123.025 0,-67.944 56.473,-123.024 126.134,-123.024 69.662,0 126.134,55.08 126.134,123.024 C 126.134,-55.08 69.662,0 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path52" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

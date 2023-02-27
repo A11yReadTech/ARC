@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 595.275 501.732" version="1.1" viewBox="0 0 595.275 501.732" xmlns="http://www.w3.org/2000/svg">
+ <radialGradient id="a" cx="297.64" cy="250.87" r="202.54" fx="232.21" fy="191.32" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#FFF7E5" offset="0"/>
+  <stop stop-color="#fff" offset=".2963"/>
+  <stop stop-color="#DACBAC" offset="1"/>
+ </radialGradient>
+ <rect width="595.28" height="501.73" fill="url(#a)"/>
+ <polygon points="303.2 65.603 225.09 200.97 146.69 155.96" fill="#FFD369"/>
+ <polygon points="460 155.96 381.58 200.96 381.56 200.96 303.41 65.555" fill="#F59B37"/>
+ <polygon points="460 155.96 460 336.85 381.57 200.97 381.58 200.96" fill="#814A36"/>
+ <polygon points="381.57 200.97 381.56 200.96 381.58 200.96" fill="#F59B37"/>
+ <polygon points="225.09 200.97 146.69 336.84 146.69 155.96" fill="#F6BE5A"/>
+ <polygon points="303.34 427.3 146.71 336.86 303.2 336.87 303.22 336.89" fill="#B8582F"/>
+ <polygon points="459.96 336.88 303.34 427.3 303.22 336.89 303.23 336.87" fill="#814A36"/>
+ <polygon points="303.23 336.87 303.22 336.89 303.2 336.87" fill="#F59B37"/>
+ <polygon points="381.56 200.96 225.11 200.98 225.09 200.97 303.2 65.603 303.34 65.516 303.41 65.555" fill="#F3AA39"/>
+ <polygon points="303.34 65.516 303.2 65.603 303.32 65.391 303.41 65.555" fill="#F6BE5A"/>
+ <polygon points="460 336.85 459.96 336.88 303.23 336.87 381.57 200.97" fill="#B8582F"/>
+ <polygon points="303.2 336.87 146.71 336.86 146.69 336.85 146.69 336.84 225.09 200.97 225.11 200.98" fill="#F3AA39"/>
+ <polygon points="146.71 336.86 146.68 336.86 146.69 336.85" fill="#F6BE5A"/>
+ <polygon points="460.01 336.88 459.96 336.88 460 336.85" fill="#F6BE5A"/>
+ <polygon points="381.57 200.97 303.23 336.87 303.2 336.87 225.11 200.98 381.56 200.96" fill="#F59B37"/>
+ <polygon points="303.23 336.87 303.22 336.89 303.2 336.87" fill="#F3AA39"/>
+ <polygon points="381.58 200.96 381.57 200.97 381.56 200.96" fill="#F3AA39"/>
+</svg>
