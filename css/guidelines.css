@@ -706,6 +706,7 @@ details.summary {
 .objective-header div::before {
 	content: url(../img/objectiveLarge.svg);
 }
+
 .tests-link::before,
 .tests-header::before {
 	content: " ";
