@@ -12,7 +12,7 @@ While officially, ARC stands for *"APCA Readability Criterion"*, it *could* easi
 - APCA: Reading's Clever
 - APCA Readability Contrast
 - Almond Reading Cookies
-- **APy** _the_ **Reading Cow**
+- **Apcia** _the_ **Reading Cow**
 
 
  <img src="./img/APyReadngCowDallE.png" height="360">  <img src="./img/APyReadngCowDallE2.png" height="360">  
