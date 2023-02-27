@@ -21,4 +21,3 @@ While officially, ARC stands for *"APCA Readability Criterion"*, it *could* easi
 <img src="./img/ApciaReadngCowDallEsmall.png" alt="Apcia the Happy Reading Cow, a cartoony illustration of a cow reading a book titled MOO" class="" height="360">  <img src="./img/ApciaHappyReadngCow2small.png" alt="Apcia the Happy Read-Cow, a cartoony illustration of a cow reading a book titled MOO"  class="" height="360">
 
 
-
