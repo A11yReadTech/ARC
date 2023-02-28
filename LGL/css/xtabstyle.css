@@ -70,24 +70,15 @@ body {
 	margin-left: 1em; 
 	margin-bottom: 1em;
 }
-
-/* test methods icon */
-#type-img, #type-img-how {
-	height: 6ex;
-	width: 6ex;
+#type-img {
+	height: 5ex;
+	width: 5ex;
 	max-width: 15%;
 	float: left; 
 	margin-right: 1em; 
 	margin-bottom: 1em;
 	vertical-align: bottom;
 }
-
-#type-img-how {
-	height: 6ex;
-	width: 3.39ex;
-  }
-
-
 h1+p, button[role="tablist"] {
 	clear: both;
 }
@@ -137,7 +128,7 @@ h1+p, button[role="tablist"] {
 	.tool-header-name {
 		font-size: 1.5em;
 	}
-}/* CLOSE MEDIA QUERY */
+}
 .tool-header-logo {
 	margin-left: auto;
 	display: flex;
@@ -153,84 +144,7 @@ h1+p, button[role="tablist"] {
 	.tool-header-logo img {
 		height: 2em;
 	}
-}/* CLOSE MEDIA QUERY */
-
-
-
-
-
-
-
-dd > p:first-child,
-li > p:first-child { margin-top: 0; }
-/*
-ul, ol {
-		margin: 0;
-		padding-left: 1em;
-		padding-left: var(--list-indent);
-		font-size: 0.95em;
-		font-weight: 500;
-	}
-
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ul, :not(li,ul,ol,li>strong,li>a,li>em) + ol {
-		margin: 0em;
-		padding: 0.5em 0 0.5em 2em;
-		padding-left: calc(var(--list-indent) * 1.5);
-		font-weight: 600;
-		font-size: 1em;
-	}
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ul { list-style-type:"\2756 \00A0 \00A0  "; }
-
-
-ul.multilevel,ul.singlelevel {
-		margin: 0em;
-		padding: 1em 0 1em 2em;
-		padding-left: calc(var(--list-indent) * 1.5);
-		font-weight: 500;
-		font-size: 1em;
-		list-style-type: square;
-	}
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ol { list-style: none; counter-reset: num; }
-:not(li,ul,ol,li>strong,li>a,li>em) + ol>li { counter-increment: num;}
-
-ol.alpha { list-style-type: none; counter-reset: alphaA; }
-ol.alpha > li { counter-increment: alphaA;}
-
-
-
-
-:not(li,ul,ol,li>strong,li>a,li>em) + ol > li::before {
-  content: counter(num);
-  margin: 0 0.5em 0 -0.9em;
-  font-family: Exo, sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  font-style: italic;
-  }
-
-ol.alpha > li::before {
-  content: counter(alphaA,upper-latin);
-  margin: 0 0.5em 0 -0.9em;
-  font-family: Exo, sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  font-style: italic;
-  }
-
-
-*/
-
-	li {
-		margin: 0 0 0.6em;
-		padding: 0;
-		line-height: 1.15;
-		}
-	li:last-child {
-		margin: 0 0 1.2em;
-		}
+}
 
 
 
@@ -283,7 +197,6 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	padding: 0.5rem 1em;
 	}
 
-
 [role="tab"][aria-selected="true"] {
 	position: relative;
 	/* top: 0px;
@@ -306,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	}
 [role="tabpanel"] {
 	padding: 12px 32px;
-	font-size: 1.125em;
+	font-size: 18px;
 	font-weight: 500;
 	outline: none;
 	}
@@ -317,7 +230,7 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
   padding: 24px;
 	outline: none;
 	font-family: Barlow, Atkinson,  sans-serif;
-  font-size: 1.125em;
+  font-size: 1.1rem;
 	font-weight: 500;
 	background-color: #fff;
 	border: 2px solid #308;
@@ -337,7 +250,7 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 A heavier weight text. To Use This you must add a title attribute to link */
     display: block;
     content: attr(title);
-  	font-size: 1.125em;
+  	font-size: 1.2rem;
     font-weight: 800;
     height: 0;
     overflow: hidden;
@@ -365,7 +278,7 @@ A heavier weight text. To Use This you must add a title attribute to link */
 
 
 [role="tab"][aria-selected="true"] {
-	font-size: 1.125em;
+	font-size: 1.2rem;
 	font-weight: 500;
 	outline: none;
 	color: #fff;
@@ -388,9 +301,9 @@ A heavier weight text. To Use This you must add a title attribute to link */
 #bibliography p ~ h3, #bibliography h2 ~ h3 {
 	margin: 1.15em 1em 0.15em 0.5em;
 	}
-#bibliography h3 {font-size: 1.2em;font-weight: 700;}
-#bibliography h4 {font-size: 1.1em; font-weight: 600;}
-#bibliography p  {font-size: 0.94em;font-weight: 500;}
+#bibliography h3 {font-size: 1.1em;font-weight: 700;}
+#bibliography h4 {font-size: 1em; font-weight: 600;}
+#bibliography p  {font-size: 0.9em;font-weight: 500;}
 #bibliography p ~ p {font-size: 0.9em;font-weight: 400;}
 
 
@@ -408,7 +321,7 @@ A heavier weight text. To Use This you must add a title attribute to link */
 /* ******   MEDIA QUERIES   ****** */
 
 
-@media (max-width: 39.99em) {
+@media (max-width: 640px) {
 
 body {padding: 0;}
 .default-grid {padding: 0;}
@@ -451,7 +364,7 @@ main {
 	[role="tabpanel"] {
 	padding: 12px;
 	border-top: 0;
-	font-size: 1.125em;
+	font-size: 1.2rem;
 	font-weight: 500;
 	outline: none;
 	}
@@ -462,7 +375,7 @@ main {
 [role="tab"][tab-num="5"],
 [role="tab"][tab-num="6"]{ border-radius: 0 0;}
 
-}/* CLOSE MEDIA QUERY */
+}
 
 
 /* ****** CONTENT STYLES ****** */
@@ -470,7 +383,7 @@ main {
 .breadcrumb, .default-grid.breadcrumb, .default-grid .breadcrumb {
 	margin: 0;
 	padding: 0.25em 1em 0.25em;
-	font-size: 0.85em;
+	font-size: 0.8em;
 	font-weight: bold;
 	font-style: italic;
 	line-height: 1;
@@ -483,37 +396,39 @@ main {
 	}
 	
 .breadcrumb a {
-	font-size: 0.85em;
+	font-size: 0.8em;
 	font-weight: normal;
 	font-style: normal;
 	color: #123;
 	text-decoration: none;	
-	text-shadow:  0 0 0 #000;
 	}
 .breadcrumb a:hover {
-	font-size: 0.85em;
+	font-size: 0.8em;
 	font-weight: normal;
 	font-style: normal;
 	color: #123;
 	text-decoration: none;
 	text-shadow:  0 0 1px #70F,
-				        0 0 2px #07F;
+				 0 0 2px #07F;		
 	}	
 .breadcrumb a::after {
-	content: '\00A0  \27A2  \00A0';
-	font-size: 1.25em;
+	content: '\00A0  \21D2  \00A0';
+	font-size: 1.4em;
 	line-height: 0.3;
 	text-decoration: none;
 	color: #123;
 	}		
 
 
-@media (max-width:59.99em) {
-.breadcrumb, .default-grid.breadcrumb, .default-grid .breadcrumb {
+@media (max-width:60em) {
+
+.breadcrumb, .default-grid.breadcrumb, 
+.default-grid .breadcrumb {
 	border-radius: 0 0 18px 18px ;
 	box-shadow: inset -6px -6px 10px #7646,
 				inset 4px 4px 10px #fffa;
 	}
+
 div.upR {
   margin: -1em 0 0 -2em;
 }
@@ -522,7 +437,7 @@ div.upR img {
   height: 140px;
   margin: -2em;
  }
-}/* CLOSE MEDIA QUERY */
+}
 
 
 .guidanceBox {
@@ -556,7 +471,7 @@ div.upR img {
 button.purple, button.blue, button.orange {
 	margin: 1em 0.5em;
 	padding: 0.65em;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: #FFF;
 	background-color: #408;
