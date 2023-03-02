@@ -18,7 +18,7 @@
 
 
 
-body > section {
+body main > section, body > section {
     margin-bottom: 1.618em;
     padding: 0 1.618em 1em 3em;
 		font-weight: 500;
@@ -32,12 +32,13 @@ body > section {
 }
 
 
-body > section section, body > section section section {
+body > section section, body > section section section,
+body main > section section, body main > section section section,{
     padding: 0 0 0 1em;
 		background-color: var(--bg);
 }
 
-body > section#abstract {
+body main > section#abstract {
   padding: 1px 1.25em .5em 3em;
 }
 section#abstract > h2 {
@@ -675,7 +676,7 @@ details.summary {
     content:" ";
 }
 .tests-link::before {
-    background-image: url('../img/testmethodsSMALL.png');
+    background-image: url('../img/testmethodsTINY.png');
     display: inline-block;
     background-size: 25px 25px;
     width: 25px; 

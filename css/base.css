@@ -238,15 +238,10 @@
 /*                                   Body                                     */
 /******************************************************************************/
 
-	body {
-		counter-reset: example figure issue;
-
-		/* Layout */
-		max-width: 50em;             /* limit line length to 50em for readability   */
-		margin: 0 auto 4em;          /* center text within page, space for footers  */
-		padding: 1.6em 1.5em 0 50px; /* assume 16px font size for downlevel clients */
-		padding: 1.6em 1.5em 0 calc(26px + 1.5em); /* leave space for status flag   */
-
+body {
+  counter-reset: example figure issue;
+  margin: 0;
+  padding: 0;
 		/* Typography */
 		line-height: 1.5;
 		font-family: Barlow, Atkinson, sans-serif;
@@ -255,13 +250,31 @@
 		orphans: 2;
 		word-wrap: break-word;
 		overflow-wrap: break-word;
-
+    overflow-y: scroll;
 		/* Colors */
 		color: black;
 		color: var(--text);
 		background: #fcfcfc top left fixed no-repeat;
 		background-color: var(--lightAnchorBG);
+		background-color: #82a;
 		background-size: 25px auto;
+  }
+  
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body	main {
+		/* Layout */
+		max-width: 46em;             /* limit line length to 40em for readability   */
+/*		margin: 0 auto 4em;          /* center text within page, space for footers  */
+/*		padding: 1.6em 1.5em 0 calc(26px + 1.5em); /* leave space for status flag   */
+/*		padding: 1.6em 4.5em 0 50px; /* assume 16px font size for downlevel clients */
+    overflow-x: hidden;
+    overflow-y: scroll;
+          background-color: #fcfcfc;
+
 	}
 
 /******************************************************************************/
@@ -270,25 +283,61 @@
 
 /** Header ********************************************************************/
 
-	div.head { margin-bottom: 1em; }
+main.wrapper { 
+	  margin: 0em;
+	  padding: 0 1em;
+	  background: right top / calc(100% - 18em)  no-repeat url(../img/bg/abstract-1294642.svg) #fcfcfc;
+	}
+
+
+@media (max-width: 49.99em) {
+
+  main.wrapper { 
+	  margin: 0em;
+	  padding: 0 1em;
+	  background: top / 100%  no-repeat url(../img/bg/abstract-1294642.svg) #fcfcfc;
+  }
+}
+@media (min-width: 50em) and (max-width: 74.99em) {
+
+  main.wrapper { 
+	  margin: 0em;
+	  padding: 0 1em;
+	  background: right top / calc(100% - 26vw)  no-repeat url(../img/bg/abstract-1294642.svg) #fcfcfc;
+  }
+}
+
+	div.head { 
+	  margin-bottom: 1em; 
+	}
 	div.head hr { border-style: solid; }
 
 	div.head h1 {
-		font-weight: bold;
-		margin: 0 0 .1em;
+    display: inline-block;
+		margin: 0;
+		padding: 0.25em;
 		font-size: 220%;
+		font-weight: bold;
+		background-color: #fffb;
+		border-radius: 0.25em;
 	}
 
 	#art-state {
-		margin-top: 0;
-		margin-bottom: 1.5em;
+    display: inline-block;
+		margin-top: -0.05em;
+		margin-bottom: 1.2em;
+		padding: 0.25em;
 		font: 140% sans-serif;   /* Reset all font styling to clear out UA styles */
 		font-family: inherit;    /* Inherit the font family. */
 		line-height: 1.2;        /* Keep wrapped headings compact */
 		hyphens: manual;         /* Hyphenated headings look weird */
 		color: #005a9c;
 		color: var(--heading-text);
+		background-color: #fffd;
+		border-radius: 0.25em;
 	}
+
+
 
 /** ART Logo ******************************************************************/
 
@@ -430,7 +479,7 @@
 			box-shadow: inset -0.9em 0 .25em rgba(0,11,22,.3) ;
 		}
 		body.toc-sidebar #toc h2 {
-			margin-top: .8rem;
+			margin-top: 0.8rem;
 			font-variant: small-caps;
 			font-variant: all-small-caps;
 			text-transform: lowercase;
@@ -464,7 +513,7 @@
 			position: fixed;
 			top: 0; bottom: 0;
 			left: 0;
-			width: 26vw;
+			width: 22vw;
 			overflow-x: auto;			
 			overflow-y: clip;
 			padding: 0 2em;
@@ -477,22 +526,26 @@
 			background-color: #f7f8f9;
 			background-color: var(--tocsidebar-bg);
 			z-index: 1;
-			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
-			box-shadow: -.1em 0 .25em rgba(0,0,0,1) inset;
-		}
+			box-shadow: -0.1em 0 .25em var(--tocsidebar-shadow) inset;
+			box-shadow: -0.1em 0 .25em rgba(0,0,0,1) inset;
+			box-shadow: inset -0.3em 0 0.65em rgba(11,33,55,0.2),
+			            inset -0.6em -0.2em 1em rgba(11,33,55,0.2);
+	}
+		
 		body:not(.toc-inline) #toc h2 {
 			margin-top: .8rem;
 			font-variant: small-caps;
 			font-variant: all-small-caps;
 			text-transform: lowercase;
+			font-size: 2.5vw;
 			font-weight: bold;
 			color: gray;
 			color: hsla(203,20%,40%,.7);
 			color: var(--tocsidebar-heading-text);
 		}
 	 
-		body:not(.toc-inline) {
-			padding-left:  33vw;
+		body:not(.toc-inline) main {
+			padding-left:  29vw;
 		}
 /* See also Overflow section at the bottom */
 
@@ -515,7 +568,7 @@
 			position: fixed;
 			top: 0; bottom: 0;
 			left: 0;
-			width: 19em;
+			width: 16em;
 			overflow-x: auto;			
 			overflow-y: clip;
 			padding: 0 2em;
@@ -535,10 +588,8 @@
 		}
 
 
-
-
 		body:not(.toc-inline) #toc h2 {
-			margin-top: .8rem;
+			margin-top: 0.8rem;
 			font-variant: small-caps;
 			font-variant: all-small-caps;
 			text-transform: lowercase;
@@ -549,19 +600,14 @@
 		}
 
 
-		body:not(.toc-inline) {
-			padding-left: 25em;
+		body:not(.toc-inline) main {
+			padding-left: 22em;
 		}
+
 	/* See also Overflow section at the bottom */
 
-main.mainSpec {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  }
-
-
 		body:not(.toc-inline) #toc-jump:not(:focus) {
+
 			width: 0;
 			height: 0;
 			padding: 0;
@@ -569,17 +615,27 @@ main.mainSpec {
 			overflow: hidden;
 		}
 	}/* CLOSE MEDIA QUERY */
-	
-	
-	@media screen and (min-width: 90em) {
+
+
+
+	@media screen and (min-width: 85em) {
+
 		body:not(.toc-inline) {
 			margin: 0;
+			padding: 0 calc(50vw - 32em);
+			background-color: #82a;
 		}
-		main.mainSpec {
+		body:not(.toc-inline) #toc {
+			position: fixed;
+			top: 0; bottom: 0;
+			left: calc(50vw - 32em);
+    }
+		body:not(.toc-inline) main {
       margin: 0 auto;
+			padding-left: 21em;
+      background-color: #fcfcfc;
     }
 	}/* CLOSE MEDIA QUERY */
-
 
 
 
@@ -1695,13 +1751,13 @@ Possible extra rowspan handling
 
 
 @media (max-width: 47.49em) {
-    body {
+    body main {
       padding: 2vw;
     }
-    body > section {
+    body main > section {
       padding: 2vw;
     }
-    body section#abstract {
+    body main section#abstract {
       padding: 2vw;
     }
   }/* CLOSE MEDIA QUERY */

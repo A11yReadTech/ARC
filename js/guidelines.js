@@ -197,7 +197,7 @@ function removeDraftMethodLinks() {
 }
 
 function adjustNormativity() {
-	document.querySelectorAll('body > section').forEach(function(node){
+	document.querySelectorAll('body main > section').forEach(function(node){
 		if (node.classList.contains("informative")) {
 			var normativeStatement = node.querySelector('p');
 			normativeStatement.classList.add("informative-statement");

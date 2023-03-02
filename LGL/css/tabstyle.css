@@ -107,7 +107,7 @@ h1+p, button[role="tablist"] {
 	content: url(../img/objective.svg);
 }
 .tests-link::before {
-	content: url(../img/method.svg);
+	content: url(../img/testmethodsTINY.png);
 }
 .json-link::before {
 	content: url(../img/json.svg);

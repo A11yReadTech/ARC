@@ -97,8 +97,9 @@ h1+p, button[role="tablist"] {
 	margin-right: .25em;
 	vertical-align: text-top;
 }
+/*
 .guideline-link::before {
-	content: url(../img/rating.svg);
+	content: url(../img/ratingTINY.png);
 }
 .howto-link::before {
 	content: url(../img/how-to.svg);
@@ -107,7 +108,7 @@ h1+p, button[role="tablist"] {
 	content: url(../img/objective.svg);
 }
 .tests-link::before {
-	content: url(../img/method.svg);
+	content: url(../img/testmethodsTINY.png);
 }
 .json-link::before {
 	content: url(../img/json.svg);
@@ -115,7 +116,7 @@ h1+p, button[role="tablist"] {
 .json-link {
 	text-align: right;
 }
-
+*/
 /* fixes for broken minimal-header styles, taken from  */
 .tool-header {
 	-ms-grid-column: 2;
