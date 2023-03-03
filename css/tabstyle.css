@@ -281,8 +281,13 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	}
 [role="tablist"] a {
 	text-decoration: none;
-	padding: 0.5rem 1em;
+	padding: 0.5em 1em;
 	}
+@media (max-width: 72.5em) {
+[role="tablist"] a {
+	padding: 0.5em 1vw;
+	}
+}
 
 
 [role="tab"][aria-selected="true"] {
@@ -298,12 +303,12 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 [role="tabpanel"] {
 	outline: none;
 	border: none;
-	padding: .5rem;
+	padding: 0.5em;
 	border-radius: 0 0 32px 32px;	
 	box-shadow: inset 0 3px 7px rgba(32,32,32,0.2);	
 	}
 [role="tabpanel"] * + * {
-	margin-top: 0.5rem;
+	margin-top: 0.5em;
 	}
 [role="tabpanel"] {
 	padding: 12px 32px;

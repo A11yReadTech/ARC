@@ -381,7 +381,7 @@ div.upR {
 <nav id="toc"><h2 class="introductory headerPlus1" id="table-of-contents">Table of Contents</h2>
 
 
-<p><button id="status-filter-toc" data-status-filter="research,placeholder,deprecated" style="padding: 0.5em 1em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.75em">Show Hidden</button></p>
+<p><button id="status-filter-toc" data-status-filter="research,placeholder,deprecated" style="/* padding: 0.5em 1em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.75em */">Show Hidden</button></p>
 
 
 <ol class="toc"><li class="tocline"><a class="tocxref abstract" href="#abstract"> Executive Summary</a>
@@ -599,6 +599,8 @@ div.upR {
 
 
 <section class="informative" id="introduction">
+  <div class="addition statusStatic  floatAddition review"><a href="#section-status-levels" class="status-link"><strong>Review</strong></a></div>
+  
   <div class="header-wrapper "><h2 id="x1-introduction" class="headerPlus"><bdi class="secno">1. </bdi>INTRODUCTION</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     <p class="informative-statement"><em>This section is advisory only, meaning it is <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> and non-normative.</em></p>
 
@@ -658,16 +660,20 @@ div.upR {
 
       <p>The research and development sections are visible during the present development cycle. Deprecated & placeholder sections are hidden when this page loads, but you may toggle the visibility for these sections with the button the top of the table of contents or the button below:</p>
 
-      <p><button id="status-filter" data-status-filter="placeholder,deprecated" style="padding: 0.5em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.5em">Reveal placeholder &amp; deprecated sections</button></p>
+      <p><button id="status-filter" data-status-filter="placeholder,deprecated" style="/*padding: 0.5em; font-size: 1.3em; font-weight:700; background: #FF6; border-radius: 0.5em */">Reveal Placeholder &amp; Deprecated Sections</button></p>
     </section>
 
-    <section id="goals-and-requirements"><div class="header-wrapper">
-      <h3 id="x1-3-goals-and-requirements" class="headerPlus3 marker"><bdi class="secno">1.3 </bdi>Goals and Objectives</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
+  <section id="goals-and-requirements">
+    <div class="header-wrapper">
+    <h3 id="x1-3-goals-and-requirements" class="headerPlus3 marker"><bdi class="secno">1.3 </bdi>Goals and Objectives</h3><a class="self-link" href="#goals-and-requirements" aria-label="Permalink for Section 1.3"></a></div>
 
     <p>The goal of the APCA Readability Criterion (ARC) and supporting documents is to make digital products including web, ePub, PDF, applications, mobile apps, and other emerging technologies, more readable, accessible, and usable for all people, including those with visual impairments. This goal will be met through evidence-based science and responding to changing technologies.</p>
+    
     <p>Research and development work beginning in early 2019, identified issues with the existing WCAG&nbsp;2.x contrast success criterion. Correcting these issues shaped the guidelines contained herein.</p>
+    
     <p>ARC embodies a much wider scope, and is not confined merely to contrast, but to the entire visual presentation of text and non-text content. The reality is that the very context-sensitive nature of the human vision system requires this more complete, holistic approach to visual perception design guidelines.</p>
-    </section>
+
+  </section>
 
 </section><!-- close intro section 1 -->
 
@@ -687,8 +693,10 @@ div.upR {
 
 
 
+<section id="normative-requirements">
+  <div class="addition statusStatic  floatAddition review"><a href="#section-status-levels" class="status-link"><strong>Review</strong></a></div>
 
-<section id="normative-requirements"><div class="header-wrapper"><h2 id="x2-normative-requirements" class="headerPlus marker"><bdi class="secno">2. </bdi>NORMATIVE REQUIREMENTS</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div>
+<div class="header-wrapper"><h2 id="x2-normative-requirements" class="headerPlus marker"><bdi class="secno">2. </bdi>NORMATIVE REQUIREMENTS</h2><a class="self-link" href="#normative-requirements" aria-label="Permalink for Section 2."></a></div>
     <p class="normative-statement"><em>This section provides requirements which must be followed for <a>conformance</a>, meaning it is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a>.</em></p>
 
     <details class="summary">
@@ -722,12 +730,9 @@ div.upR {
 
 
 
-
-
-
 <section id="guidelines">
 
-  <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
+  <div class="addition statusStatic  floatAddition review"><a href="#section-status-levels" class="status-link"><strong>Review</strong></a></div>
 
 
   <div class="header-wrapper"><h2 id="x3-guidelines" class="headerPlus"><bdi class="secno">3. </bdi>SUMMARY: Visual Presentation</h2><a class="self-link" href="#guidelines" aria-label="Permalink for Section 3."></a></div>
@@ -777,7 +782,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 
 <hr>
 
-  <h2 id="visual-contrast" class="headerPlus2 clb">Visual Contrast</h2>
+  <h2 id="visual-contrast-design" class="headerPlus2 clb">Visual Contrast</h2>
   <h4 class="headerZero4i">Designing for Readability, Understandability, and Accessibility</h4>
 
   <p>This section illuminates the APCA Readability Criterion's comprehensive coverage of visual presentation. Depending on application, ARC is usable as a stand-alone suite for design guidance. While the eventual goal is integration into relevant standards such as ISO, WCAG, or ADA, the current conformance testing as described herein is independent. Further, these guidelines are a living work-in-progress, is in development, and not yet a part of any other final published standard or guideline.</p>
@@ -812,7 +817,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 
 <hr>
 
-  <h2 id="visual-contrast" class="headerPlus2t clb">Visual Contrast</h2>
+  <h2 id="visual-contrast-map" class="headerPlus2t clb">Visual Contrast</h2>
   <h3 class="headerZero4">Guidelines Map</h3>
 
 
@@ -861,7 +866,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 
 <section class="guideline" id="visual-contrast-text">
 
-  <div class="addition sticky floatAddition"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
+  <div class="addition sticky floatAddition development"><a href="#section-status-levels" class="status-link">Section status: <strong>Development</strong></a></div>
 
   <div class="header-wrapper"><h2 id="x4-visual-contrast" class="headerPlus"><bdi class="secno">4. </bdi>VISUAL CONTRAST • TEXT</h2><a class="self-link" href="#visual-contrast-text" aria-label="Permalink for Section 4."></a></div>
 
@@ -904,13 +909,13 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 
 
 
-   <h2 class="tests-header">Testing Methods</h2>
+   <h2 class="tests-header">Testing Criterion, Conformance, and Methods</h2>
     <ul>
       <li><a class="tests-link" href="../tests/visual-readability-contrast/">Visual Readability Contrast</a> Set the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
     </ul>
 
 
-    <h2 class="howto-header">How-to Guides:</h2>
+    <h2 class="howto-header">Helpful Planning & Design Guides</h2>
     <ul>
       <li><a class="howto-link" href="../how-tos/designing-with-visual-contrast/">Designing with visual contrast <span>how-to</span></a> A guide for planning, designing, and implementing accessible visual contrast.</li> 
     </ul>
@@ -930,7 +935,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
       </ul>
 
       <p>This is a significant change from the WCAG&nbsp;2.x <q>1.4.3 Contrast (Minimum)</q> and <q>1.4.6 Contrast (Enhanced)</q>. The reason for this change is that the understanding of contrast has matured and the available research and body of knowledge has made breakthroughs in advancing the understanding of <q>visual contrast</q>.</p>
-      <p>The proposed new guidance more accurately models human visual perception of contrast of high spatial frequency stimuli, such as text and non-text elements, presented on self illuminated displays. </p>
+      <p>This new guidance more accurately models human visual perception of contrast of high spatial frequency stimuli, such as text and non-text elements, presented on self-illuminated displays. </p>
       <p>The goal is to improve understanding of the functional needs of all users, and more effectively match the needs of those who face barriers accessing content. This new perception-based model is more context dependent than a strict light-ratio measurement.</p>
       <p>This model is more responsive to user needs and allows designers more choice in visual presentation. It does this by including multi-factor assessment tests which integrate contrast with inter-related elements of visual readability, such as font features. It includes tests to determine an upper limit of contrast, where elevated contrast may impact usability.</p>
     </div>
@@ -984,12 +989,12 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 
     <p class="objective"> Hue and colorfulness are important dimension to design, however because of the great amount of variability of vision among individuals, as well as cultural differences regarding color, information coding must utilize other techniques besides hue differentiation.</p>
 
-   <h2 class="tests-header">Testing Methods</h2>
+   <h2 class="tests-header">Testing Criterion, Conformance, and Methods</h2>
     <ul>
       <li><a class="tests-link" href="../tests/">Placeholder</a></li>
     </ul>
 
-    <h2 class="howto-header">How-to Guides:</h2>
+    <h2 class="howto-header">Helpful Planning & Design Guides</h2>
     <ul>
       <li><a class="howto-link" href="../how-tos/">Placeholder</a></li> 
     </ul>
@@ -1244,6 +1249,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 						</ul>
 					</ul>
 
+
 					<li><strong>Large Fluent</strong> header/title content</li>
 					<ul>
 						<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
@@ -1251,6 +1257,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 				</ul>
 				<li id="subfluent"><strong>SUB FLUENT</strong></li>
 					<ul>
+
 
 					<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content</li>
 					<ul>
@@ -1298,11 +1305,29 @@ box-shadow: inset 6px 6px 14px 2px #1636,
      
      <div class="header-wrapper"><h4 id="x7-2-2-non-text-use-cases" class="headerPlus4"><bdi class="secno">7.2.2 </bdi>Non-Text Use Cases</h4><a class="self-link" href="#non-text-use-cases" aria-label="Permalink for Section 7.2.2"></a></div>
 
-     
-<h4 class="headerPlus4t">Non-Text Use Cases: pictorial semantic, abstract semantic, symbolic, DataViz, divisional and containers.</h3>
+<h4 class="headerPlus4t">Non-Text Use Cases: pictorial semantic, abstract semantic, symbolic, DataViz, divisional and containers.</h4>
         
-        <strong>The specific testable categories of non-text, organized by .</strong> 
-        <p>at potenti curae convallis duis dolor molestie consectetur curabitur posuere vivamus ultricies dis phasellus porttitor justo mi litora praesent nulla fusce iaculis et erat cras ut vel maecenas velit bibendum tincidunt mattis senectus sed volutpat tempor proin venenatis ornare ac pellentesque varius pulvinar accumsan</p>
+        <strong>The specific testable categories of non-text, organized by four broad categories.</strong>
+<p dir="auto">These four categories have a similar hierarchal need of contrast as does <em>body text</em> followed by <em>fluent text</em> followed by <em>spot text</em> followed by <em>ancillary text.</em></p>
+
+<p dir="auto">Each of these categories is distinct enough to have different design guidance needs.</p>
+<ol dir="auto">
+<li>Intrinsically semantic (icon or pictogram, <em>land</em> map)</li>
+<li>Contextually semantic (chart lines, pie chart pieces, <em>demographics</em> map, lat/long lines, legend codes)</li>
+<li>Meta semantic (focus or state, dynamic driving map, animatable potentially in combination with 1 &amp; 2)</li>
+<li>Discernible non-semantic (border, abstract button shape, map outer edge or legend area, zoom-up enlargement areas)</li>
+</ol>
+<h3 dir="auto"><em>Uniqueness of <code class="notranslate">#3</code></em></h3>
+<p dir="auto">Number three (meta) includes:</p>
+<ul dir="auto">
+<li>inline text links</li>
+<li>focus indicators</li>
+<li>available/disabled control or button indication</li>
+<li>A <em>highlight</em> of a <code class="notranslate">#1</code> or <code class="notranslate">#2</code> element, or an animation of a 1 or 2 element.</li>
+</ul>
+
+
+<p dir="auto">The reason <code class="notranslate">#3</code> is unique is that some animatable property is always involved, even if only the most simple "on/off". An element where in change is inseparable from its function has unique design needs compared to purely static elements. This, and the fact that number three can be added to or used in combination with number one or number two, indicates it should be it's own category.</p>
       </section>
 
 
@@ -1599,6 +1624,26 @@ box-shadow: inset 6px 6px 14px 2px #1636,
 <p dir="auto"><strong>FlexZoom</strong> or <strong>Proportional Zoom</strong> — zooming textup to specific sizes, and not by a uniform percentage. I.e. the smallest text zoomes the most, the lagest text zooms by a smaller percentage, and only to maintain "being larger" but not by the sam proportions. This recognizes that there is a limit to how large a large font shold be zoomed.</p>
 </li>
 </ul>
+
+
+<h2 dir="auto"><em>TERMS FROM RELATED RESEARCH OR STANDARDS</em></h2>
+<p dir="auto">From Choeng/Lovie-Kitchin/Bailey/Bowers, also Legge, Arditi, Whittaker, and others. This includes some of the terms as commonly used in research.</p>
+
+
+<ul dir="auto">
+<li><strong>Acuity reserve</strong> The difference between the current print size and the smallest print size giving the maximum reading rate (critical print size) is the patient's acuity reserve. <em>(AR as measured in <em>lines</em> is valid only when using a near-chart with a logarithmic progression of sizes in 0.1 log steps, such as Bailey–Lovie word or text charts or MNRead acuity charts.)</em></li>
+<li><strong>Near visual acuity</strong>: the smallest print that can be resolved at the near test distance (example, 40 cm/16") indicates near visual acuity</li>
+<li><strong>Text visual acuity (text VA):</strong> threshold print size</li>
+<li><strong>Reading Rate (RR)</strong> in WPM: words per minute</li>
+<li><strong>Maximum reading rate (MRR):</strong> the mean of the reading rates for print sizes at and <em>above</em> CPS</li>
+<li><strong>Standard word:</strong> A standard word is six characters.</li>
+<li><strong>WPM</strong>: words per minute</li>
+<li><strong>Print size</strong> (N point, Lovie-Kitchin definition) Point measurement refers to the overall dimension of the type body from the top of the ascending letters to the bottom of the descending letters, with the lower case letters being half the point size; 1 point = 1/72 inch (0.35 mm). Point sizes are commonly preceded by N, for example, N8 (8 point print), which was first used by Law simply to indicate ‘near’.</li>
+<li><strong>Critical print size (CPS):</strong> the smallest print size that gives maximum reading rate</li>
+<li>The <strong><em>M</em></strong> print size notation refers to the distance in meters, at which the overall size of the <em>lower case letters</em> subtends a <strong>visual angle of five minutes of arc</strong>.</li>
+</ul>
+
+
 
   </section>
 

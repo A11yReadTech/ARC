@@ -11,7 +11,7 @@
     document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "../../js/main.js?1529058420027996000";
+      element.src = "../../js/main.js";
       document.body.appendChild(element);
     }
     window.addEventListener("load", downloadJSAtOnload, false);
@@ -65,7 +65,7 @@
 
 
 
-    <link rel="stylesheet" href="../../css/style.css?1529058420027996000" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/guidetabs.css">
     <link rel="stylesheet" href="../../css/highlight.css">
     <link rel="stylesheet" href="../../css/tabstyle.css" />
@@ -109,7 +109,7 @@
     <li>
         <a href="../../guidelines/">APCA Guidelines</a>
     </li>
-    <li><a class="page-link guideline-link" href="../../guidelines/#visual-contrast">APCA Guidelines for Readable Design</a></li><li><a class="page-link objective-link" href="../../guidelines/#objective-lightness">Lightness contrast between background and text</a></li><li class="page-link tests-link" href="../../tests/visual-readability-contrast/" aria-current="page">Visual Readability Contrast</li></ul>
+    <li><a class="page-link guideline-link" href="../../guidelines/#visual-contrast">APCA Visual Contrast</a></li><li><a class="page-link objective-link" href="../../guidelines/#objective-lightness">Lightness contrast between background and text</a></li><li class="page-link tests-link" href="../../tests/visual-readability-contrast/" aria-current="page">Visual Readability Contrast</li></ul>
 </nav>
 
 <div class="default-grid with-gap leftcol">
@@ -149,12 +149,12 @@
     <a type="button"
             role="tab"
             aria-selected="false"
-            aria-controls="description"
-            title="Description"
-            id="description-button"
+            aria-controls="intro"
+            title="Intro"
+            id="intro-button"
             tabindex="-1"
             tab-num="1">
-      Description
+      Intro
     </a>
     <a type="button"
             role="tab"
@@ -169,24 +169,34 @@
     <a type="button"
             role="tab"
             aria-selected="false"
+            aria-controls="conform"
+            title="Conform"
+            id="conform-button"
+            tabindex="-1"
+            tab-num="3">
+      Conform
+    </a>
+    <a type="button"
+            role="tab"
+            aria-selected="false"
             aria-controls="tests"
             title="Tests"
             id="tests-button"
             tabindex="-1"
             data-deletable=""
-            tab-num="3">
+            tab-num="4">
       Tests
     </a>
     <a type="button"
             role="tab"
             aria-selected="false"
-            aria-controls="techniques"
-            title="Techniques"
-            id="techniques-button"
+            aria-controls="methods"
+            title="Methods"
+            id="methods-button"
             tabindex="-1"
             data-deletable=""
-            tab-num="4">
-      Techniques
+            tab-num="5">
+      Methods
     </a>
     <a type="button"
             role="tab"
@@ -214,16 +224,24 @@
 <!-- *****     TAB 1     ***** -->
 
 
-<div role="tabpanel" tab-num="1" id="description" tabindex="0" aria-labelledby="description-button">
+<div role="tabpanel" tab-num="1" id="intro" tabindex="0" aria-labelledby="intro-button">
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Test Methods - Description</title>
+		<title>Test Methods - Introduction</title>
 	</head>
 	<body>
 		<header>
-			<h1 class="headerPlus1">Description</h1>
+			<h1 class="headerPlus1">Introduction</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#summary">Summary</a></li>
+  <li><a href="#user-need">How It Solves User Needs</a></li>
+  <li><a href="#objective">Objective</a></li>
+  <li><a href="#details">Detailed Description</a></li>
+  <li><a href="#dependencies">Dependencies</a></li>
+</ol>
 		</header>
 		<main>
 
@@ -234,16 +252,18 @@
 			</section>
 
 			<section id="user-need">
-				<h2 class="headerPlus2ti">How it solves user need</h2>
+				<h2 class="headerPlus2ti">How It Solves User Needs</h2>
 				<p>All sighted users need adequate text size and weight, coupled with ample luminance contrast (the perceived lightness/darkness difference) between background and text colors, in order to read the text easily.</p>
 			</section>
 			<section id="objective">
 				<h2 class="headerPlus2ti">Objective</h2>
-				<p>This test method supports the objective <a href="../../guidelines/#objective-lightness" class="objective-link">lightness-contrast-between-text-and-background</a>.</p>
+				<p>This test method supports the objective:
+				<ul><li><a href="../../guidelines/#objective-lightness" class="objective-link">Lightness Contrast Between Text and Background</a>.
+				</ul></p>
 			</section>
 
 			<section id="details">
-				<h2 class="headerPlus2ti">Detailed description</h2>
+				<h2 class="headerPlus2ti">Detailed Description</h2>
 				<p>The visual contrast needed for easy reading of text is substantially higher than the contrast needed to simply "make out" words. At least ten times more contrast is needed for good <em>readability</em> than the bare minimum contrast needed for <em>legibility</em>.</p>
 				
 				<p>Perception of contrast is affected not only by the lightness and darkness of the colors used for the text and background, but also by the weight (thickness) of the font, the font's size, and the relative spacing of lines and letters. Additionally, the perceived contrast can be different when the text is a darker color than the background, or vice versa.</p>
@@ -291,11 +311,14 @@
 	</head>
 	<body>
 		<header>
-			<h1 class="headerPlus1">Criterion</h1>
+			<h1 class="headerPlus1">Testing Criterion</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#conformance-minimums">Conformance Minimums</a></li>
+  <li><a href="#tables">Font Lookup Tables</a></li>
+</ol>
 		</header>
 		<main>
-<h2 class="headerPlus">Testing Criterion</h2>
-
 				<section id="conformance-minimums">
 				
 				<h2 class="headerPlus2ti">Conformance Minimums</h2>
@@ -376,8 +399,10 @@
 						</ul>
 					</ul>
 
-<h3>See Also: <a href="?tn=techniques#conformance">"Understanding Use Cases and Conformance Levels"</a> for a more in depth discussion of conformance levels and use cases.</h3>
+<h3>See Also: <a href="?tn=conform#conformance">"Understanding Use Cases and Conformance Levels"</a> for a more in depth discussion of conformance levels and use cases.</h3>
 				</section>
+
+
 
 
 
@@ -409,7 +434,7 @@
         <col></col>
         <col></col>
         <col></col>
-      </colgroup>			
+      </colgroup>
 
 			<tr>
 				<th colspan="2" rowspan="2" class="pxTextC tableTitle"style="padding: 1.4em 0 0;">Font<br />Size</th>
@@ -558,6 +583,7 @@
   </table>
 </div>
 
+<!--
 <ul>
   <li>Values shown are for common sans-serif fonts (e.g., Helvetica, Arial, Verdana, Barlow). </li>
   <li>Some fonts such as Times have a smaller than usual x-height. Such fonts should be compared to the reference and the required contrast adjusted accordingly.
@@ -568,7 +594,7 @@
   <li>Due to the vast variety of font designs, designers should visually compare a desired font to a standard reference font such as Helvetica or Arial, using the size and weight of Helvetica or Arial that most closely matches the appearance of the tested font as a guide. </li>
   <li>Designers are cautioned that some forms of font smoothing can drastically reduce contrast for small or thin fonts. For instance, the use of <q>webkit-font-smoothing: antialiasing</q> is strongly discouraged. </li>
 </ul>
-
+-->
 
 <div style="overflow: scroll;">
 
@@ -888,8 +914,152 @@
 <!-- *****     TAB 3     ***** -->
 <!-- *****     TAB 3     ***** -->
 
+<div role="tabpanel" tab-num="3" id="conform" tabindex="0" aria-labelledby="conform-button" class="is-hidden">
 
-<div role="tabpanel" tab-num="3" id="tests" tabindex="0" aria-labelledby="tests-button" class="is-hidden">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Test Methods - Conformance</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="headerPlus1">Conformance</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#use-cases-text">Use Cases For Text</a></li>
+  <li><a href="#conformance-levels">Conformance Levels: Bronze, Silver, & Gold</a></li>
+</ol>
+		</header>
+
+		<main>
+
+			<section id="use-cases-text">
+				<h2 class="headerPlus2ti">Use Cases For Text</h2>
+				<p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
+				<h3 class="headerPlus3t">Text Use Cases: Body, Fluent, Sub-Fluent, Spot.</h3>
+
+				<ol class="roman">
+					<li id="fluent"><strong>FLUENT</strong>
+					<ul>
+						<li><strong>Fluent Readability, Block/Body Text</strong>
+						<ul>
+							<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
+						</ul></li>
+
+						<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text
+						<ul>
+							<li><strong>Defined as:</strong> up to two and a half lines of continuous text.
+							<ul>
+								<li>Includes headlines, captions, and images of text, if they <em>contribute to content</em></li>
+								<li><strong><em>primary</em></strong> navigation and primary menus</li>
+								<li>asides, tool-tips, spoilers, &quot;continued&quot; </li>
+								<li>user entered text in forms, fields, etc </li>
+								<li><em>does not include text the user controls or adjusts in size or color</em></li>
+							</ul></li>
+						</ul></li>
+
+						<li><strong>Large Fluent</strong> header/title content
+						<ul>
+							<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
+						</ul></li>
+					</ul></li>
+
+					<li id="subfluent"><strong>SUB FLUENT</strong>
+						<ul>
+							<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content
+							<ul>
+								<li><strong>Defined as:</strong> non-primary content with relaxed readability needs.
+								<ul>
+									<li>Applies to certain aspects of dataviz (call-outs, de-enhanced aspects of visual hierarchy)</li>
+									<li>Category can include secondary/tertiary nav such as to TOS/EULA</li>
+									<li>May include byline, short duplicative captions, footer matter.</li>
+								</ul></li>
+							</ul></li>
+						
+
+
+						<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;
+						<ul>
+							<li><strong>Defined as:</strong> non-content text of an incidental nature.
+							<ul>
+								<li>This category includes <em>non-informative placeholder text</em>, disabled controls, copyright/trademark/license bugs (but not actual license or legal text blocks)</li>
+							</ul></li>
+						</ul></li>
+
+
+						<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
+						<ul>
+							<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
+						</ul></li>
+
+						<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
+					</ul></li>
+				</ol>
+</section>
+
+<hr>
+			<section id="conformance-levels">
+				<h3 class="headerPlus3t">Conformance Levels: Bronze, Silver, and Gold</h3>
+
+				<ol class="alpha">
+					<li><h4 class="headerMinus4 headerUp">BRONZE:</h4> <strong> Covers primary content text only.</strong> 
+					<ul>
+						<li>There is no font lookup table, only a set of general conformance levels.</li>
+						<li>Use-cases for "body text" and "other content text".</li>
+						<li>Spot text: disabled, placeholder, ancillary, decorative text is not covered</li>
+						<li>Logos and incidental text in images are not covered</li>
+						<li>There is no specified minimum font size.</li>
+						<li>There is no requirement to match a reference font weight or size.</li>
+					</ul></li>
+
+					<li><h4 class="headerMinus4 headerUp">SILVER:</h4> <strong> Covers all text content.</strong> 
+					<ul>
+						<li>Font weight and size per Lc contrast value and font lookup table.</li>
+						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
+						<li>Logos are covered, with a contrast requirement reduced by Lc 15.</li>
+						<li>Spot text: disabled, placeholder, ancillary, decorative text are covered as a recommendation (should)</li>
+						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
+						<li>Minimum font size for non-content text is 10px.</li>
+						<li>There is no requirement to compare to a reference font weight or size.</li>
+					</ul></li>
+					<li><h4 class="headerMinus4 headerUp">GOLD:</h4><strong> Covers all text content, enhanced.</strong> 
+					<ul>
+						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
+						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
+						<li>Ancillary, decorative text are covered with recommendations</li>
+						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
+						<li>Minimum font size for non-content text is 12px.</li>
+						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
+					</ul></li>
+				</ul>
+
+			</section>
+			
+		</main>
+	</body>
+</html>
+
+</div>
+
+
+
+
+
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+<!-- *****     TAB 4     ***** -->
+
+
+
+
+
+
+<div role="tabpanel" tab-num="4" id="tests" tabindex="0" aria-labelledby="tests-button" class="is-hidden">
 
 
 <!DOCTYPE html>
@@ -902,11 +1072,16 @@
 
 		<header>
 			<h1 class="headerPlus1">Tests</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#objective">Objective, Procedural Testing</a></li>
+  <li><a href="#conditional">Conditional, Evaluative Testing</a></li>
+</ol>
 		</header>
 
 		<main>
 			<section id="objective">
-				<h2 class="headerPlus2ti">Objective Testing</h2>
+				<h2 class="headerPlus2ti">Objective, Procedural Testing</h2>
 
 				<p>Measure the predicted contrast of the content to ensure it supports the <a href="../../guidelines/#objective-lightness" class="objective-link">required objective</a>  of adequate luminance contrast for readability.</p>
 
@@ -922,7 +1097,7 @@
 
 				<section id="scope">
 					<h3 class="headerPlus3t">STEP ONE: Decide on the Conformance Level to Test For</h3>
-					<p>With reference to the conformance levels and related use-cases as defined in this 	<a href="?tn=techniques#conformance">understanding section,</a> choose one of the three conformance levels.</p>
+					<p>With reference to the conformance levels and related use-cases as defined in this 	<a href="?tn=conform#conformance">understanding section,</a> choose one of the three conformance levels.</p>
 
 					<h4 class="headerPlus4">Test Procedure</h4>
 					<ul>
@@ -953,7 +1128,7 @@
 
 					<h4 class="headerPlus4">Test Procedure</h4>
 					<ul>
-						<li>Determine the intended use-case-scope to be tested, per the <a href="?tn=techniques#conformance">conformance scope.</a>
+						<li>Determine the intended use-case-scope to be tested, per the <a href="?tn=conform#conformance">conformance scope.</a>
 						<ul>
 							<li>Bronze Use Cases for Testing
 							<ul>
@@ -974,7 +1149,7 @@
 
 							<li>Additional Gold Testing
 							<ul>
-								<li>If the page uses non-standard fonts, then for gold level, additionally perform the separate <a href="?tn=tests#weight">font weight test.</a></li>
+								<li>If the page uses non-standard fonts, then for gold level, additionally perform the separate <a href="?tn=methods##weight-example">font weight test.</a></li>
 							</ul></li>
 						</ul></li>
 					</ul>
@@ -987,7 +1162,7 @@
 
 					<h4 class="headerPlus4">Test Procedure</h4>
 				<ul>
-					<li>Obtain the CSS color values for the text (or non-text) element, and the adjacent background, using one or more of the <a href="?tn=techniques#sampling">color sampling techniques</a></li>
+					<li>Obtain the CSS color values for the text (or non-text) element, and the adjacent background, using one or more of the <a href="?tn=methods#sampling">color sampling techniques</a></li>
 
 					<li>Using a contrast calculator that is compliant with the APCA-W3 contrast method, calculate the predicted lightness contrast (Lc value) between the foreground and background colors.
 					<ul>
@@ -1005,7 +1180,7 @@
 					
 					<li>For calculators that provide only a numeric contrast result, and require a manual comparison:
 					<ul>
-						<li>Compare the calculated contrast value against the <a href="?tn=tests#conformance-minimums">Conformance Minimums</a> and for Silver of Gold, find the font and contrast value on the <a href="?tn=tests#tables">Font Lookup Tables</a> below.</li>
+						<li>Compare the calculated contrast value against the <a href="?tn=criterion#conformance-minimums">Conformance Minimums</a> and for Silver of Gold, find the font and contrast value on the <a href="?tn=criterion#tables">Font Lookup Tables</a>.</li>
 						<li>Check that the absolute value of contrast (the Lc value) meets or exceeds the required Lc value for the font weight & size, in the content of the given use case. 
 						<ul>
 							<li>Interpolation of the data in the font table is permitted.</li>
@@ -1019,10 +1194,14 @@
 					<p>In order to pass, either #1 or #2 must be true.</p>
 				</section>
 
+
+
+
+
 <hr class="abstract">
 
-			<section id="qualified">
-				<h2 class="headerPlus">Conditional/Qualified Tests</h2>
+			<section id="conditional">
+				<h2 class="headerPlus">Conditional, Evaluative Testing</h2>
 
 				<section id="weight">
 					<h3 class="headerPlus3t">Determining Effective Font Weight<br> for Non-Standard Fonts</h3>
@@ -1032,44 +1211,204 @@
 <hr>
 
 
-
 <section id="font-match">
 
-<h2 class="headerPlus3t" dir="auto"><a id="user-content-matching-a-design-font-to-a-reference-font" class="anchor" aria-hidden="true" href="#matching-a-design-font-to-a-reference-font"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Matching a Design Font to a Reference Font</h2>
+<h2 class="headerPlus3t" dir="auto"><a id="matching-a-design-font-to-a-reference-font" class="anchor" aria-hidden="true" href="?tn=tests#matching-a-design-font-to-a-reference-font"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Matching a Design Font to a Reference Font</h2>
 
 <p dir="auto">The APCA readability guidelines indicate font size and weight. These characteristics are related to a specific reference font such as Helvetica or Arial. In order to ensure that the chosen font for a design meets the same visual properties, it is necessary to do a side-by-side comparison.</p>
 
 <section id="size-match">
 
-<h2 class="headerPlus2t" dir="auto"><a id="user-content-test-methods" class="anchor" aria-hidden="true" href="#test-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TEST METHODS</h2>
+<h2 class="headerPlus2t" dir="auto"><a id="test-summary" class="anchor" aria-hidden="true" href="?tn=tests#test-summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Test Method Summary</h2>
 <p dir="auto">Take your desired font and compare it to one of the reference fonts "Helvetica Neue, Helvetica, Fira Sans, Kanit, or Arial."</p>
-<ol class="smallNum" dir="auto">
-<li>Measure the x-height, and determine the relative size offset.</li>
-<li>Visually compare the weight And both a low contrast and high contrast setting, and determine the relative weight offset.</li>
-</ol>
-<h2 class="headerPlus3t" dir="auto"><a id="user-content-i---size" class="anchor" aria-hidden="true" href="#i---size"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>I - Size</h2>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-ia---setup" class="anchor" aria-hidden="true" href="#part-ia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.a - Setup</h3>
 
+
+<ol class="smallNum" dir="auto">
+	<li>Measure the x-height, and determine the relative size offset.</li>
+	<li>Visually compare the weight And both a low contrast and high contrast setting, and determine the relative weight offset.</li>
+</ol>
+
+<h3 class="headerPlus4" dir="auto">See this detailed<a href="?tn=methods#step-by-step"> step-by-step procedure.</a></h3>
+
+<h2 class="headerPlus2t" dir="auto"><a id="summary" class="anchor" aria-hidden="true" href="?tn=tests#summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Summary</h2>
+<p dir="auto">Following a simple procedure, compare a desired design font to a reference font, and determine the Size and weight offsets needed for equivalence.</p>
+	</section>
+
+
+					<ul>
+						<li>Draft procedure discussed at the <a href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289">APCA forum on GitHub</a>, and also in the draft <a href="https://github.com/Myndex/SAPC-APCA/blob/master/documentation/referenceFont.md">APCA documentation.</a>
+							<!-- <ul>
+								<li>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul></li>
+								<li>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul></li>
+								<li>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul></li>
+							</ul></li>
+						<li>
+							<ul>
+								<li></li>
+							</ul></li>  -->
+						</li>
+					</ul>
+</section>
+
+				</section>
+			</section>
+		</main>
+	</body>
+</html>
+</div>
+
+
+
+
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+<!-- *****     TAB 5     ***** -->
+
+
+
+
+<div role="tabpanel" tab-num="5" id="methods" tabindex="0" aria-labelledby="methods-button" class="is-hidden">
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Test Methods & Techniques</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="headerPlus1">Test Methods</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#sampling">Sampling Colors</a></li>
+  <li><a href="#tool-setup">Eyedropper Tool Setup</a></li>
+  <li><a href="#size-weight">Determining Font Size and Weight</a></li>
+  <li><a href="#conditions">Test Environment Viewing Conditions</a></li>
+</ol>
+		</header>
+		<main>
+		<section id="techniques">
+			<h2 class="headerPlus2ti">Visual Contrast Testing Techniques</h2>
+			<p>These are specific techniques with examples, demonstrating best practices to support the tests for visual contrast of text and non-text elements.</p>
+
+			<section id="sampling">
+				<h3 class="headerPlus3t">Sampling Colors for Testing</h3>
+				<p>These testing techniques provide guidance on how to determine the RGB color values of the elements to be tested, such as the color of the text and the adjacent background.</p>
+				<h4 class="headerPlus4">Color Sampling Techniques</h4>
+				<p>Use one of the following methods, or an equivalent method that provides an accurate sRGB value (or RGB value in the relevant color space as displayed.)</p>
+
+				<ol class="alpha">
+					<li><strong>CALCULATED:</strong> Read the calculated values as determined by a browser, user agent, or automated tool.
+					<ul>
+						<li>For consistency and ease of use, this is the preferred method.</li>
+						<li>Ensure the values are for the sRGB color space. (Other spaces discussed separately).</li>
+						<li>Ensure that colors with alpha channels (transparency) are fully composited, i.e. that the actual final color is sampled, with no remaining transparency.
+						<ul>
+							<li>If the user agent or tool does not present the final color, it must be calculated.</li>
+							<li>REFERENCE: <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing</a> W3 CSS guidance regarding calculating colors involving alpha channels.</li>
+						</ul></li>
+					</ul></li>
+
+
+					<li><strong>AUDIT CSS:</strong> Auditing the CSS styles in use on the page.
+					<ul>
+						<li>It is important to confirm that a particular style property is actually the active value. </li>
+						<li>For complex style sheets, it is recommended to use the values as calculated by the browser, user agent, or automated tool.</li>
+						<li>For colors with an alpha channel or transparency, calculate the final composited color using the method as described in <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing.</a></li>
+					</ul></li>
+
+
+					<li><strong>EYEDROPPER:</strong> Sample the colors on the rendered page using a software based "digital color meter" eye-dropper type tool, which samples the rendered screen values.
+					<ul>
+						<li>This method is required if testing content in an image, and also has the advantage of taking alpha blending into account without further calculations. Nevertheless, it is recommended to use the values as calculated by the browser, user agent, or automated tool as the preferred method for sampling colors.</li>
+						<li>The eye dropper tool must report the native CSS value for the color space (nominally sRGB). See <a href="?tn=methods#eyedropper">this guide</a> for setting up an eye-dropper color meter tool properly.</li>
+						<li>The eye dropper sample should be a pixel in the middle of a major stroke of the smallest size font to be tested, and with the content at the default size (no zoom or scaling). </li>
+						<li>For small and thin fonts, where the major stroke is inconsistent due to antialiasing, sample at least three to five different letters and average the result.<br>
+						<img width="45%" alt="example of sampling the main stroke of a thin letter" src="./img/Sampleapixelinthemiddleofamajorstrokeinaletter.png"></li>
+					</ul></li>
+				</ol>
+			</section>
+
+<hr>
+
+			<section id="tool-setup">
+			<h2 class="headerPlus2ti">Tool Setup</h2>
+				<h3 id="eyedropper" class="headerPlus3t">Setup for a Digital Color Meter (Eye Dropper)</h3>
+				<p>In order for a digital color meter or eye dropper tool to provide useful color data, the system color profile and the tool need to be configured correctly. This tutorial is using the standard digital color meter app in MacOS.</p>
+					<h4>The test system should use an sRGB monitor.</h4>
+				<ol>
+					<li>Set the system color profile to a standard sRGB profile when using the digital color meter.<br>
+						<img width="45%" alt="Set Display to an sRGB profile" src="./img/SetDisplaytoansRGBprofile.png"></li>
+
+					<li>Set the digital color meter to measure sRGB from the pop up menu.<br>
+						<img width="45%" alt="Set Digital Color Meter to display in sRGB" src="./img/SetDigitalColorMetertodisplayinsRGB.png"></li>
+						
+					<li>Under the view menu, set the digital color meter to report the color values as decimal, hex, or percentage, per your working preference, or the needs of the other tools in use.<br>
+						<img width="45%" alt="Choose the display value you are comfortable with" src="./img/Choosethedisplayvalueyouarecomfortablewith.png"></li>
+					<li>Set the size of the sample to one pixel.</li>
+				</ol>
+			</section>
+
+
+
+
+<hr class="abstract">
+
+<section id="size-weight">
+
+<h3 class="headerPlus3">Determining Effective Font Weight<br> for Non-Standard Fonts</h3>
+
+<h4 class="headerPlus4" dir="auto"><a id="test-methods" class="anchor" aria-hidden="true" href="?tn=methods#test-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Test Method Summary</h4>
+<p dir="auto">Take your desired font and compare it to one of the reference fonts "Helvetica Neue, Helvetica, Fira Sans, Kanit, or Arial."</p>
+
+<ol class="smallNum" dir="auto">
+	<li>Measure the x-height, and determine the relative size offset.</li>
+	<li>Visually compare the weight And both a low contrast and high contrast setting, and determine the relative weight offset.</li>
+</ol>
+
+
+
+<h2 class="headerPlus2" dir="auto"><a id="step-by-step" class="anchor" aria-hidden="true" href="tn=methods#step-by-step"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step by Step</h2>
+
+
+<h2 class="headerPlus3" dir="auto"><a id="i---size" class="anchor" aria-hidden="true" href="?tn=methods#i---size"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>I - Size</h2>
+<h3 class="headerPlus4" dir="auto"><a id="part-ia---setup" class="anchor" aria-hidden="true" href="?tn=methods#part-ia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.a - Setup</h3>
 <ol class="smallNum" dir="auto">
 	<li>Using a 400 normal weight font as the example, make a test webpage with two spans, each containing a single <strong>lowercase x</strong>, so they are next to each other horizontally.</li>
 	<li>Set the font-family of one of the spans to the reference (i.e. Helvetica or Arial)</li>
 	<li>Set the other span to the font being evaluated.</li>
 	<li>Set the font-size to <strong>100px.</strong> for both.</li>
 </ol>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-ib---measure" class="anchor" aria-hidden="true" href="#part-ib---measure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.b - Measure</h3>
+<h3 class="headerPlus4" dir="auto"><a id="part-ib---measure" class="anchor" aria-hidden="true" href="?tn=methods#part-ib---measure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.b - Measure</h3>
 <ol class="smallNum" dir="auto">
 	<li>Load the test page in a browser.</li>
 	<li>Take a screen shot of both x as rendered.</li>
 	<li>Load the screenshot into a photo editor and measure the height of each lowercase x.</li>
 </ol>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-ic---determine-offset" class="anchor" aria-hidden="true" href="#part-ic---determine-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
+<h3 class="headerPlus4" dir="auto"><a id="part-ic---determine-offset" class="anchor" aria-hidden="true" href="?tn=methods#part-ic---determine-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
 <ol class="smallNum" dir="auto">
 	<li>Divide the x-height of the reference font, by the x-height of the test font.</li>
 	<li>This value is the reference ratio.</li>
 </ol>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-using-the-reference-ratio" class="anchor" aria-hidden="true" href="#using-the-reference-ratio"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Ratio</em></h3>
+<h3 class="headerPlus4" dir="auto"><a id="using-the-reference-ratio" class="anchor" aria-hidden="true" href="?tn=methods#using-the-reference-ratio"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Ratio</em></h3>
 <p dir="auto">For a given minimum font size, indicated by the font look up table or APCA tool, multiply by the reference ratio to find the appropriate font size for the desired design font.</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-i-example" class="anchor" aria-hidden="true" href="#part-i-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I <em>Example</em>:</h3>
+<h3 class="headerPlus4" dir="auto"><a id="part-i-example" class="anchor" aria-hidden="true" href="?tn=methods#part-i-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I <em>Example</em>:</h3>
 <p dir="auto">This example compares the reference font Helvetica, to the desired design font Times New Roman.</p>
 
 <details class="codeHide"><summary>▶︎ Click to see code</summary>
@@ -1168,12 +1507,13 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 <p dir="auto"><strong><em>(NOTE: this image was captured on a retina display, so the indicated sizes are twice what they would be on a standard display.)</em></strong></p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png"><img width="769" alt=" and example of a lowercase X of the reference font versus the test font, in this case Helvetica versus times new Roman, showing the times new Roman is much smaller." src="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png" style="max-width: 100%;"></a></p>
 <p dir="auto">In this case 100px Helvetica would measure an x-height of about 52px. Determine the reference ratio by dividing the reference size by the font being tested. If the test font is 45px, such as this Times New Roman, then:</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-5245--1156" class="anchor" aria-hidden="true" href="#5245--1156"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>52/45 = 1.156</h3>
+<h3 class="headerPlus4" dir="auto"><a id="5245--1156" class="anchor" aria-hidden="true" href="?tn=methods#5245--1156"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>52/45 = 1.156</h3>
 <p dir="auto"><em>(round to at least two significant digits, three is shown here)</em></p>
 <p dir="auto">So for example, an APCA value of L<sup>c</sup>&nbsp;75 specifies and 18px reference font. To use the example of Times New Roman, multiply 18px by 1.156 to arrive at a minimum font size of 20.8px, or 21px rounded.</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-why-list-cursive" class="anchor" aria-hidden="true" href="#why-list-cursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why List Cursive?</h3>
+<h3 class="headerPlus4" dir="auto"><a id="why-list-cursive" class="anchor" aria-hidden="true" href="?tn=methods#why-list-cursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why List Cursive?</h3>
 <p dir="auto">Make the fallback font-family after the test and reference fonts something very different, such as "cursive". This way if the browser does not load the font properly, it is immediately obvious, as in this example:</p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png"><img width="335" alt=" an example of why it's useful to use cursive as the last font in a fallback list for testing purposes, if the correct reference or test font does not load properly then cursive makes it very obvious." src="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png" style="max-width: 100%;"></a></p>
+
 <hr>
 
 </section>
@@ -1185,11 +1525,10 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 
 
 
-
-
 <section id="weight-match">
 
-<h2 class="headerPlus2t" dir="auto"><a id="user-content-ii---weight" class="anchor" aria-hidden="true" href="#ii---weight"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>II - Weight</h2>
+
+<h2 class="headerPlus2t" dir="auto"><a id="ii---weight" class="anchor" aria-hidden="true" href="?tn=methods#ii---weight"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>II - Weight</h2>
 
 
 <p dir="auto">While size per x-height is fairly straight forward, weight requires some visual judgment. There is active research into possible automated tools, but for the time being a visual reference is needed.</p>
@@ -1197,7 +1536,7 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 <p dir="auto">In the example below, were using the common reference font Arial, at the standard normal and bold weights of 400 and 700. Arial is a clone of Helvetica, and either have very similar characteristics.</p>
 <p dir="auto">We'll make a few lines to compare different weights, and one with high contrast, and another set with very low contrast to help exacerbate the differences.</p>
 <p dir="auto">The test text is <strong><code>Il 400 &amp;IcyATOMsizedgap</code></strong>, using an uppercase I &amp; lowercase l as these make it easy to compare the vertical stroke widths. The sample text "&amp; IcyATOMsizedgap" is short yet demonstrates most of the common design differences in a font.</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-iia---setup" class="anchor" aria-hidden="true" href="#part-iia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part II.a - Setup</h3>
+<h3 class="headerPlus4" dir="auto"><a id="part-iia---setup" class="anchor" aria-hidden="true" href="?tn=methods#part-iia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part II.a - Setup</h3>
 <ol class="smallNum" dir="auto">
 	<li>Setup a 400 normal weight, and 700 bold weight reference font as the comparison sample.
 	<ul dir="auto">
@@ -1219,29 +1558,38 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 	</li>
 </ol>
 
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-iib---evaluate" class="anchor" aria-hidden="true" href="#part-iib---evaluate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part II.b - Evaluate</h3>
+
+<h3 class="headerPlus4" dir="auto"><a id="part-iib---evaluate" class="anchor" aria-hidden="true" href="?tn=methods#part-iib---evaluate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part II.b - Evaluate</h3>
+
 <ol class="smallNum" dir="auto">
 	<li>Evaluate each sample pair, and determine which test-font weight most closely resembles the reference font's weight.
-<ul dir="auto">
-	<li>If thr test-font is in between two weights of the reference font, it is best to round up.</li>
-	<li>If the test font is a variable font, as in the example below, find the variable weight that matches the reference.</li>
-</ul>
-</li>
+	<ul dir="auto">
+		<li>If thr test-font is in between two weights of the reference font, it is best to round up.</li>
+		<li>If the test font is a variable font, as in the example below, find the variable weight that matches the reference.</li>
+	</ul>
+	</li>
 </ol>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-part-ic---determine-offset-1" class="anchor" aria-hidden="true" href="#part-ic---determine-offset-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
+
+
+<h3 class="headerPlus4" dir="auto"><a id="part-ic---determine-offset-1" class="anchor" aria-hidden="true" href="?tn=methods#part-ic---determine-offset-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
 <ol class="smallNum" dir="auto">
 	<li>Subtract the reference weight from the matching test font weight.</li>
 	<li>This value is the reference weight offset.</li>
 	<li>If there is a different reference weight offset among different reference weights, in-between weights may be interpolated.</li>
 </ol>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-using-the-reference-weight-offset" class="anchor" aria-hidden="true" href="#using-the-reference-weight-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Weight Offset</em></h3>
+<h3 class="headerPlus4" dir="auto"><a id="using-the-reference-weight-offset" class="anchor" aria-hidden="true" href="?tn=methods#using-the-reference-weight-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Weight Offset</em></h3>
 <p dir="auto">For a given indicated weight, add the reference weight offset to find the actual needed weight for the design font which was tested.</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-weight-example" class="anchor" aria-hidden="true" href="#weight-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Weight Example</h3>
+<h3 class="headerPlus4" dir="auto"><a id="weight-example" class="anchor" aria-hidden="true" href="?tn=methods#weight-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Weight Example</h3>
 <p dir="auto">Below, a test setup for the "RALEWAY" Google font. Raleway has the same ex height as Ariel or Helvetica, so we can use the same size for both samples.</p>
 
 
-<details class="codeHide"><summary>▶︎ Click to see code</summary>
 
+
+
+
+
+
+<details class="codeHide"><summary>▶︎ Click to see code</summary>
 
 <div class="highlightTabs highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto">
 
@@ -1492,136 +1840,236 @@ hr{margin: 1em;}
 <body>
 
 <section class=&quot;weightCompare&quot;>
-<!-- find the closest matching weight to the reference font--> 
 
-<h2>Weight Comparison</h2>
+	<!-- find the closest matching weight to the reference font--> 
 
-  <div class=&quot;hiCon&quot;>
+	<h2>Weight Comparison</h2>
 
-    <h3>Hi-Con Compare Lc 90</h3>
+		<div class=&quot;hiCon&quot;>
 
-    <p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight3&quot;>Il 300 &amp; IcyATOMsizedgap Raleway</p>
+			<h3>Hi-Con Compare Lc 90</h3>
 
-    <p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight3&quot;>Il 300 &amp; IcyATOMsizedgap Raleway</p>
 
-    <p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight5&quot;>Il 500 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Raleway</p>
 
-    <p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight52&quot;>Il 520 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight5&quot;>Il 500 &amp; IcyATOMsizedgap Raleway</p>
 
-    <p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight6&quot;>Il 600 &amp; IcyATOMsizedgap Raleway</p>
-<hr>
-    <p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight6&quot;>Il 600 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight52&quot;>Il 520 &amp; IcyATOMsizedgap Raleway</p>
 
-    <p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Raleway</p>
-    
-    <p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight73&quot;>Il 730 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight4&quot;>Il 400 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight6&quot;>Il 600 &amp; IcyATOMsizedgap Raleway</p>
+	<hr>
+			<p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight6&quot;>Il 600 &amp; IcyATOMsizedgap Raleway</p>
 
-    <p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
-    <p class=&quot;testFont weight8&quot;>Il 800 &amp; IcyATOMsizedgap Raleway</p>
+			<p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Raleway</p>
+		
+			<p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight73&quot;>Il 730 &amp; IcyATOMsizedgap Raleway</p>
 
-  </div>
+			<p class=&quot;referenceFont weight7&quot;>Il 700 &amp; IcyATOMsizedgap Arial</p>
+			<p class=&quot;testFont weight8&quot;>Il 800 &amp; IcyATOMsizedgap Raleway</p>
 
-  <div class=&quot;loCon&quot;>
-  
-    <h3>Lo-Con Compare Lc 30</h3>
+		</div>
 
-    <p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight3&quot;>300 &amp; IcyATOMsizedgap Raleway lI</p>
+		<div class=&quot;loCon&quot;>
+	
+			<h3>Lo-Con Compare Lc 30</h3>
 
-    <p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight4&quot;>400 &amp; IcyATOMsizedgap Raleway lI</p>
+			<p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight3&quot;>300 &amp; IcyATOMsizedgap Raleway lI</p>
 
-    <p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight5&quot;>500 &amp; IcyATOMsizedgap Raleway lI</p>
+			<p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight4&quot;>400 &amp; IcyATOMsizedgap Raleway lI</p>
 
-    <p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight52&quot;>520 &amp; IcyATOMsizedgap Raleway lI</p>
-    
-    <p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight6&quot;>600 &amp; IcyATOMsizedgap Raleway lI</p>
-<hr>
-    <p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight6&quot;>600 &amp; IcyATOMsizedgap Raleway lI</p>
+			<p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight5&quot;>500 &amp; IcyATOMsizedgap Raleway lI</p>
 
-    <p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight7&quot;>700 &amp; IcyATOMsizedgap Raleway lI</p>
-    
-    <p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight73&quot;>730 &amp; IcyATOMsizedgap Raleway lI</p>
+			<p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight52&quot;>520 &amp; IcyATOMsizedgap Raleway lI</p>
+		
+			<p class=&quot;referenceFont weight4&quot;>400 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight6&quot;>600 &amp; IcyATOMsizedgap Raleway lI</p>
+	<hr>
+			<p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight6&quot;>600 &amp; IcyATOMsizedgap Raleway lI</p>
 
-    <p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
-    <p class=&quot;testFont weight8&quot;>800 &amp; IcyATOMsizedgap Raleway lI</p>
+			<p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight7&quot;>700 &amp; IcyATOMsizedgap Raleway lI</p>
+		
+			<p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight73&quot;>730 &amp; IcyATOMsizedgap Raleway lI</p>
 
-  </div>
+			<p class=&quot;referenceFont weight7&quot;>700 &amp; IcyATOMsizedgap Arial lI</p>
+			<p class=&quot;testFont weight8&quot;>800 &amp; IcyATOMsizedgap Raleway lI</p>
 
-<div class=&quot;clearFix&quot;> </div>
+		</div>
 
-</section>
+	<div class=&quot;clearFix&quot;> </div>
 
-</body>
-</html>" tabindex="0" role="button">
-
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-</svg>
-    </clipboard-copy>
-    
-    
-  </div></div>
-</details>
-
-
-<p dir="auto">So here, find the closest visual match in terms of weight. If we look at a screenshot:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/222089662-11c221b6-c2fa-4cf0-b9ee-32f599b3650f.png"><img width="735" alt="this is a series of weight test patches design for visual comparison between a reference font and a test font at various weights." src="https://user-images.githubusercontent.com/42009457/222089662-11c221b6-c2fa-4cf0-b9ee-32f599b3650f.png" style="max-width: 100%;"></a></p>
-<p dir="auto">We see that Raleway is clearly lighter than Arial 400. Absent a variable font, we would say that Raleway 500 is close to Arial 400. As Raleway is available as a variable font, we can find tune and find that Raleway 520 is a close match to aerial 400. Therefore, the offset for a 400 weight font for Raleway is +120.</p>
-<p dir="auto">Raleway bold is also lighter than Arial 700, but here the difference is not as great. Using the variable, Raleway 730 matches Ariel 700, so the offset for Raleway is +30.</p>
-<h3 class="headerPlus4" dir="auto"><a id="user-content-here-it-is-closeup" class="anchor" aria-hidden="true" href="#here-it-is-closeup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Here it is closeup:</h3>
-<p dir="auto"><em>Click for larger</em></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/222092105-2ff229fb-0434-4ba1-af9a-c5a1dbe08e71.png"><img width="400" alt=" ultra close-up, a series of weight test patches design for visual comparison between a reference font and a test font at various weights." src="https://user-images.githubusercontent.com/42009457/222092105-2ff229fb-0434-4ba1-af9a-c5a1dbe08e71.png" style="max-width: 100%;"></a></p>
-<p dir="auto">A look to the lo-con version on the left helps to accentuate the weight differences.</p>
-<h2 class="headerPlus2t" dir="auto"><a id="user-content-summary" class="anchor" aria-hidden="true" href="#summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Summary</h2>
-<p dir="auto">Following a simple procedure, compare a desired design font to a reference font, and determine the Size and weight offsets needed for equivalence.</p>
 	</section>
 
-					<ul>
-						<li>Draft procedure discussed at the <a href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289">APCA forum on GitHub</a>, and also in the draft <a href="https://github.com/Myndex/SAPC-APCA/blob/master/documentation/referenceFont.md">APCA documentation.</a>
-							<!-- <ul>
-								<li>
-								<ul>
-									<li></li>
-									<li></li>
-								</ul></li>
-								<li>
-								<ul>
-									<li></li>
-									<li></li>
-								</ul></li>
-								<li>
-								<ul>
-									<li></li>
-									<li></li>
-								</ul></li>
-							</ul></li>
-						<li>
-							<ul>
-								<li></li>
-							</ul></li>  -->
-						</li>
-					</ul>
-</section>
+	</body>
+	</html>" tabindex="0" role="button">
 
+				<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+			<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+	</svg>
+				<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+			<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+	</svg>
+			</clipboard-copy>
+
+		</div></div>
+
+	</details>
+
+
+	<p dir="auto">So here, find the closest visual match in terms of weight. If we look at a screenshot:</p>
+	<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/222089662-11c221b6-c2fa-4cf0-b9ee-32f599b3650f.png"><img width="735" alt="this is a series of weight test patches design for visual comparison between a reference font and a test font at various weights." src="https://user-images.githubusercontent.com/42009457/222089662-11c221b6-c2fa-4cf0-b9ee-32f599b3650f.png" style="max-width: 100%;"></a></p>
+	<p dir="auto">We see that Raleway is clearly lighter than Arial 400. Absent a variable font, we would say that Raleway 500 is close to Arial 400. As Raleway is available as a variable font, we can find tune and find that Raleway 520 is a close match to aerial 400. Therefore, the offset for a 400 weight font for Raleway is +120.</p>
+	<p dir="auto">Raleway bold is also lighter than Arial 700, but here the difference is not as great. Using the variable, Raleway 730 matches Ariel 700, so the offset for Raleway is +30.</p>
+	<h3 class="headerPlus4" dir="auto"><a id="here-it-is-closeup" class="anchor" aria-hidden="true" href="?tn=methods#here-it-is-closeup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Here it is closeup:</h3>
+	<p dir="auto"><em>Click for larger</em></p>
+	<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/222092105-2ff229fb-0434-4ba1-af9a-c5a1dbe08e71.png"><img width="400" alt="ultra close-up, a series of weight test patches, design for visual comparison between a reference font and a test font at various weights." src="https://user-images.githubusercontent.com/42009457/222092105-2ff229fb-0434-4ba1-af9a-c5a1dbe08e71.png" style="max-width: 100%;"></a></p>
+	<p dir="auto">A look to the lo-con version on the left helps to accentuate the weight differences.</p>
+
+
+
+
+		<hr class="abstract">
+
+
+
+
+			<section id="conditions">
+				<h2 class="headerPlus2ti">Testing Conditions and Environment</h2>
+
+					<h3 class="headerPlus3t">Objective Test Baseline Setup</h3>
+				
+					<ol class="smallalpha">
+						<li>Color samples are taken using the sRGB color space, the default color space for web content.</li>
+						<li>The monitor used on the testing system is sRGB, and the system profile is set to sRGB</li>
+						<li>Content to be tested is at the initial or default zoom for the given view.</li>
+						<li>Content is using the embedded or page-provided CSS styles</li>
+						<li>No user styles nor user-preference appearance altering extensions active</li>
+						<li>For web based content, user agent shall be a commonly available browser capable of rendering the most recent recommended CSS and HTML standards, or an equivalent testing tool.</li>
+					</ol>
+					<h3 class="headerPlus3t">Color Spaces</h3>
+					<p>Because sRGB is the default standard color space for web content, primary tests for conformance should be conducted in sRGB. It is permissible to conduct tests in other color spaces, so long as the primary tests for conformance are conducted in sRGB.</p>
+
+					<h3 class="headerPlus3t">Modes</h3>
+					<p>If a site or content is normally only presented in one mode, such as light mode or dark mode, then all testing must be conducted in that default mode, regardless of if it is light or dark mode.</p>
+					<p>If a site or content is available in multiple modes, then testing can be conducted in either light mode or dark mode, so long as the choice of mode is consistent through the group of visual testing. It is preferred to test all modes made available to the user, however, only one mode is required for testing.</p>
+				
+					<h3 class="headerPlus3t">Devices</h3>
+					<p>If a site or content is optimized for one particularly type of device, then testing should be conducted with that target device. For instance a site designed for desktop should be tested using a desktop testing environment to test conformance.</p>
+					<p>If a site or content is responsive and therefore differs significantly between desktop and mobile, then the site should be tested in at least two scopes, ideally one of desktop, and one of small mobile. However, a site may specify testing in only one device scope for conformance purposes.</p>
+				
+					<h3 class="headerPlus3t">Conditional/Qualified Tests Standard Setup</h3>
+					<p>Because conditional or qualified tests involve a certain amount of subjectivity, it's important to have a standardized environment for conducting any such tests. This is facilitated with a defined standard testing environment, intended to provide a consistent foundation for evaluations that require any degree of subjectivity.</p>
+
+					<p><em><strong>The standard environmental model shall comprise</strong></em></p>
+
+					<ol>
+						<li>A desktop sRGB LCD screen that is
+						<ul>
+							<li>A non-retina, standard resolution display in the sRGB colorspace</li>
+							<li>IPS or equivelent technology such that off-axis viewing is not impacted. </li>
+							<li>For desktop, the monitor should have a ppi between 72 and 112 to allow an observer distance between 24&quot; (60cm) and 37&quot; (90cm)</li>
+						</ul></li>
+
+						<li>Monitor shall be calibrated using a hardware calibrator to:
+						<ul>
+							<li>Max White (#FFF) Luminance between 140cd/m^2 and 220cd/m^2 </li>
+							<li>Black level (#000) target of less than 0.5 cd/m^2 or less.</li>
+							<li>Preferred gamma target of 2.2.</li>
+							<li>HDR displays are not included in this specification.</li>
+						</ul></li>
+
+						<li>Monitor&#39;s surrounding environmental conditions
+						<ul>
+							<li>Background behind the monitor and within the users field of view should be neutral grey or white, at a luminance that is 20% of the monitor&#39;s maximum white.
+							<ul>
+								<li>For instance if the peak white luminance of the screen is 140cd/m^2, that the immediate area surrounding the screen should be 28cd/m^2.</li>
+							</ul></li>
+						</ul></li>
+						<li>Ambient light of approximately 350 lux.
+						<ul>
+							<li>The light should not <em>directly</em> shine on the face of the monitor.</li>
+							<li>The light should not shine into the eyes of the user while viewing the monitor.</li>
+						</ul></li>
+					</ol>
+
+					<p><em><strong>The standard model configuration shall be: </strong></em></p>
+
+					<ol>
+						<li>Monitor positioned toward user in a way that minimizes reflections.</li>
+
+						<li>Ambient evaluation procedure:
+						<ul>
+							<li>Send the sRGB monitor full screen grey at sRGB value #7C7C7C.</li>
+							<li>The average luminance of the area in view around the monitor should be the same as the monitor grey at #7C7C7C.</li>
+							<li>The monitor at #FFFFFF should measure as a luminance five times higher than that measured at #7C7C7C.</li>
+						</ul></li>
+
+						<li>Standard observer positioning and desktop monitor resolution.
+						<ul>
+							<li>Monitor resolution in ppi defines the observers view position.</li>
+							<li>One CSS reference px is 1.278 minutes of arc or 0.0213°</li>
+							<li>To determine the critical reading x-height in px for a given acuity, multiply the lower Snellen number by 0.47.
+							<ul>
+								<li>For instance, for 20/40 vision, multiply 40 * 0.47 = 18.8px critical x-height.</li>
+								<li>For a font like Helvetica with a 0.52 x-height ratio, this is a 36px font.</li>
+							</ul></li>
+							<li>As a quick rule of thumb: <strong> the font Verdana at 16px is approximately the critical size for standard 20/20 vision.</strong></li>
+						</ul></li>
+
+						<li>Observer is positioned based on the monitor resolution.
+						<ul>
+							<li>For a mobile device, the observer is positioned such that the 1px = 1.278&#39; arc-min relationship is maintained.</li>
+							<li>For a 96ppi monitor, the observer shall be 28&quot; away.</li>
+						</ul></li>
+
+					</ol>
+
+
+		<div style="overflow: scroll;">
+			<table class="ppiTable centered">
+				<tr><th colspan="5">Screen Pitch vs Distance for 1.278 arc-min VA</th></tr>
+				<tr><th colspan="1">Distance<br>to Display</th><th colspan="3">Screen Pitch</th><th colspan="1">Distance<br>to Display</th></tr>
+				<tr><th>inches</th><th>ppi</th><th> </th><th>ppcm</th><th>cm</th></tr>
+				<tr><td>244"</td><td>11</td><td></td><td>4</td><td>621cm</td></tr>
+				<tr><td>122"</td><td>22</td><td></td><td>9</td><td>310cm</td></tr>
+				<tr class="keyValue"><td>96"</td><td>28</td><td>HDTV</td><td>11</td><td>244cm</td></tr>
+				<tr><td>37"</td><td>72</td><td></td><td>28</td><td>95cm</td></tr>
+				<tr class="keyValue"><td>28"</td><td>96</td><td>DESKTOP</td><td>38</td><td>71cm</td></tr>
+				<tr><td>24"</td><td>112</td><td></td><td>44</td><td>61cm</td></tr>
+				<tr class="keyValue"><td>21"</td><td>128</td><td>LAPTOP</td><td>50</td><td>54cm</td></tr>
+				<tr><td>18"</td><td>150</td><td></td><td>59</td><td>45.5cm</td></tr>
+				<tr><td>17"</td><td>160</td><td></td><td>64</td><td>42cm</td></tr>
+				<tr class="keyValue"><td>16"</td><td>170</td><td>TABLET</td><td>67</td><td>40cm</td></tr>
+				<tr><td>15"</td><td>180</td><td></td><td>71</td><td>38cm</td></tr>
+				<tr><td>14"</td><td>192</td><td></td><td>76</td><td>35.6cm</td></tr>
+				<tr><td>13"</td><td>204</td><td></td><td>80</td><td>33.5cm</td></tr>
+				<tr class="keyValue"><td>12"</td><td>224</td><td>PHONE</td><td>88</td><td>30cm</td></tr>
+				<tr><td>10"</td><td>268</td><td></td><td>106</td><td>25.5cm</td></tr>
+				<tr><td>8"</td><td>336</td><td></td><td>132</td><td>20.3cm</td></tr>
+				<tr><td colspan="5">Screen Pixel Density @ various distances</td></tr>
+				<tr><td colspan="5">1 pixel = 1 CSS ref px = 1.278 arc-min</td></tr>
+				<tr><td colspan="5">Some Values Rounded</td></tr>
+			</table>
+		</div>
 				</section>
+
+<hr>
+
 			</section>
 		</main>
 	</body>
@@ -1629,352 +2077,83 @@ hr{margin: 1em;}
 </div>
 
 
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
-<!-- *****     TAB 4     ***** -->
 
 
-<div role="tabpanel" tab-num="4" id="techniques" tabindex="0" aria-labelledby="techniques-button" class="is-hidden">
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Test Methods - Techniques</title>
-	</head>
-	<body>
-		<header>
-			<h1 class="headerPlus1">Test Techniques</h1>
-		</header>
-		<main>
-		<section id="techniques">
-			<h2 class="headerPlus2ti">Visual Contrast Testing Techniques</h2>
-			<p>These are specific techniques with examples, demonstrating best practices to support the tests for visual contrast of text and non-text elements.</p>
-
-			<section id="sampling">
-				<h3 class="headerPlus3t">Sampling Colors for Testing</h3>
-				<p>These testing techniques provide guidance on how to determine the RGB color values of the elements to be tested, such as the color of the text and the adjacent background.</p>
-				<h4 class="headerPlus4">Color Sampling Techniques</h4>
-				<p>Use one of the following methods, or an equivalent method that provides an accurate sRGB value (or RGB value in the relevant color space as displayed.)</p>
-
-				<ol class="alpha">
-					<li><strong>CALCULATED:</strong> Read the calculated values as determined by a browser, user agent, or automated tool.
-					<ul>
-						<li>For consistency and ease of use, this is the preferred method.</li>
-						<li>Ensure the values are for the sRGB color space. (Other spaces discussed separately).</li>
-						<li>Ensure that colors with alpha channels (transparency) are fully composited, i.e. that the actual final color is sampled, with no remaining transparency.
-						<ul>
-							<li>If the user agent or tool does not present the final color, it must be calculated.</li>
-							<li>REFERENCE: <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing</a> W3 CSS guidance regarding calculating colors involving alpha channels.</li>
-						</ul></li>
-					</ul></li>
-
-
-					<li><strong>AUDIT CSS:</strong> Auditing the CSS styles in use on the page.
-					<ul>
-						<li>It is important to confirm that a particular style property is actually the active value. </li>
-						<li>For complex style sheets, it is recommended to use the values as calculated by the browser, user agent, or automated tool.</li>
-						<li>For colors with an alpha channel or transparency, calculate the final composited color using the method as described in <a href="https://www.w3.org/TR/compositing-1/#simplealphacompositing">Simple alpha compositing.</a></li>
-					</ul></li>
-
-
-					<li><strong>EYEDROPPER:</strong> Sample the colors on the rendered page using a software based "digital color meter" eye-dropper type tool, which samples the rendered screen values.
-					<ul>
-						<li>This method is required if testing content in an image, and also has the advantage of taking alpha blending into account without further calculations. Nevertheless, it is recommended to use the values as calculated by the browser, user agent, or automated tool as the preferred method for sampling colors.</li>
-						<li>The eye dropper tool must report the native CSS value for the color space (nominally sRGB). See <a href="?tn=techniques#eyedropper">this guide</a> for setting up an eye-dropper color meter tool properly.</li>
-						<li>The eye dropper sample should be a pixel in the middle of a major stroke of the smallest size font to be tested, and with the content at the default size (no zoom or scaling). </li>
-						<li>For small and thin fonts, where the major stroke is inconsistent due to antialiasing, sample at least three to five different letters and average the result.<br>
-						<img width="45%" alt="example of sampling the main stroke of a thin letter" src="./img/Sampleapixelinthemiddleofamajorstrokeinaletter.png"></li>
-					</ul></li>
-				</ol>
-			</section>
-
-<hr>
-
-			<h2 class="headerPlus2ti">Tool Setup</h2>
-			<section id="tools">
-				<h3 id="eyedropper" class="headerPlus3t">Setup for a Digital Color Meter (Eye Dropper)</h3>
-				<p>In order for a digital color meter or eye dropper tool to provide useful color data, the system color profile and the tool need to be configured correctly. This tutorial is using the standard digital color meter app in MacOS.</p>
-					<h4>The test system should use an sRGB monitor.</h4>
-				<ol>
-					<li>Set the system color profile to a standard sRGB profile when using the digital color meter.<br>
-						<img width="45%" alt="Set Display to an sRGB profile" src="./img/SetDisplaytoansRGBprofile.png"></li>
-
-					<li>Set the digital color meter to measure sRGB from the pop up menu.<br>
-						<img width="45%" alt="Set Digital Color Meter to display in sRGB" src="./img/SetDigitalColorMetertodisplayinsRGB.png"></li>
-						
-					<li>Under the view menu, set the digital color meter to report the color values as decimal, hex, or percentage, per your working preference, or the needs of the other tools in use.<br>
-						<img width="45%" alt="Choose the display value you are comfortable with" src="./img/Choosethedisplayvalueyouarecomfortablewith.png"></li>
-					<li>Set the size of the sample to one pixel.</li>
-				</ol>
-			</section>
-
-<hr>
-
-			<section id="conformance">
-				<h2 class="headerPlus2ti">Use Cases and Conformance Levels</h2>
-				<p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
-				<h3 class="headerPlus3t">Text Use Cases: Body Text, Fluent, Sub-Fluent, Spot, etc.</h3>
-
-				<ol class="roman">
-					<li id="fluent"><strong>FLUENT</strong>
-					<ul>
-						<li><strong>Fluent Readability, Block/Body Text</strong>
-						<ul>
-							<li><strong>Defined as:</strong> a block or column of <strong><em>more than two</em></strong> continuous lines of content text that uses a readable font with an x-height of ~19px or <em>less</em>.</li>
-						</ul></li>
-
-						<li><strong>Fluent Readability, <em>Primary</em> content</strong> that is <em>not</em> body text
-						<ul>
-							<li><strong>Defined as:</strong> up to two and a half lines of continuous text.
-							<ul>
-								<li>Includes headlines, captions, and images of text, if they <em>contribute to content</em></li>
-								<li><strong><em>primary</em></strong> navigation and primary menus</li>
-								<li>asides, tool-tips, spoilers, &quot;continued&quot; </li>
-								<li>user entered text in forms, fields, etc </li>
-								<li><em>does not include text the user controls or adjusts in size or color</em></li>
-							</ul></li>
-						</ul></li>
-
-						<li><strong>Large Fluent</strong> header/title content
-						<ul>
-							<li><strong>Defined as: </strong> fluent subcategory of &quot;large content&quot; such as big, bold headlines, and generally referring to text larger than 36px.</li>
-						</ul></li>
-					</ul></li>
-
-					<li id="subfluent"><strong>SUB FLUENT</strong>
-						<ul>
-							<li><strong>Soft Readability,</strong> small sub-fluent secondary/ancillary content
-							<ul>
-								<li><strong>Defined as:</strong> non-primary content with relaxed readability needs.
-								<ul>
-									<li>Applies to certain aspects of dataviz (call-outs, de-enhanced aspects of visual hierarchy)</li>
-									<li>Category can include secondary/tertiary nav such as to TOS/EULA</li>
-									<li>May include byline, short duplicative captions, footer matter.</li>
-								</ul></li>
-							</ul></li>
-						
-
-
-						<li><strong>Spot Readability,</strong> sub-fluent  &quot;<strong>non</strong>-content&quot;
-						<ul>
-							<li><strong>Defined as:</strong> non-content text of an incidental nature.
-							<ul>
-								<li>This category includes <em>non-informative placeholder text</em>, disabled controls, copyright/trademark/license bugs (but not actual license or legal text blocks)</li>
-							</ul></li>
-						</ul></li>
-
-
-						<li><strong>Logo or Branding,</strong> brand related logo, symbol, service mark.
-						<ul>
-							<li>This category relates to specific colors that are required as part of a brand or logotype.</li>
-						</ul></li>
-
-						<li><strong>Incidental Text in Images</strong> text in images not critical to the understanding, nor specifically contributing to the content.</li>
-					</ul></li>
-				</ol>
-
-
-				<h3 class="headerPlus3t">Conformance Levels: Bronze, Silver, and Gold</h3>
-
-				<ol class="alpha">
-					<li><h4 class="headerMinus4 headerUp">BRONZE:</h4> <strong> Covers primary content text only.</strong> 
-					<ul>
-						<li>There is no font lookup table, only a set of general conformance levels.</li>
-						<li>Use-cases for "body text" and "other content text".</li>
-						<li>Spot text: disabled, placeholder, ancillary, decorative text is not covered</li>
-						<li>Logos and incidental text in images are not covered</li>
-						<li>There is no specified minimum font size.</li>
-						<li>There is no requirement to match a reference font weight or size.</li>
-					</ul></li>
-
-					<li><h4 class="headerMinus4 headerUp">SILVER:</h4> <strong> Covers all text content.</strong> 
-					<ul>
-						<li>Font weight and size per Lc contrast value and font lookup table.</li>
-						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
-						<li>Logos are covered, with a contrast requirement reduced by Lc 15.</li>
-						<li>Spot text: disabled, placeholder, ancillary, decorative text are covered as a recommendation (should)</li>
-						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
-						<li>Minimum font size for non-content text is 10px.</li>
-						<li>There is no requirement to compare to a reference font weight or size.</li>
-					</ul></li>
-					<li><h4 class="headerMinus4 headerUp">GOLD:</h4><strong> Covers all text content, enhanced.</strong> 
-					<ul>
-						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
-						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
-						<li>Ancillary, decorative text are covered with recommendations</li>
-						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
-						<li>Minimum font size for non-content text is 12px.</li>
-						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
-					</ul></li>
-				</ul>
-
-			</section>
-	<hr>
-
-
-
-			<h2 class="headerPlus2ti">Testing Conditions and Environment</h2>
-
-			<section id="conditions">
-				<h3 class="headerPlus3t">Objective Test Baseline Setup</h3>
-				
-				<ol class="smallalpha">
-					<li>Color samples are taken using the sRGB color space, the default color space for web content.</li>
-					<li>The monitor used on the testing system is sRGB, and the system profile is set to sRGB</li>
-					<li>Content to be tested is at the initial or default zoom for the given view.</li>
-					<li>Content is using the embedded or page-provided CSS styles</li>
-					<li>No user styles nor user-preference appearance altering extensions active</li>
-					<li>For web based content, user agent shall be a commonly available browser capable of rendering the most recent recommended CSS and HTML standards, or an equivalent testing tool.</li>
-				</ol>
-				<h3 class="headerPlus3t">Color Spaces</h3>
-				<p>Because sRGB is the default standard color space for web content, primary tests for conformance should be conducted in sRGB. It is permissible to conduct tests in other color spaces, so long as the primary tests for conformance are conducted in sRGB.</p>
-
-				<h3 class="headerPlus3t">Modes</h3>
-				<p>If a site or content is normally only presented in one mode, such as light mode or dark mode, then all testing must be conducted in that default mode, regardless of if it is light or dark mode.</p>
-				<p>If a site or content is available in multiple modes, then testing can be conducted in either light mode or dark mode, so long as the choice of mode is consistent through the group of visual testing. It is preferred to test all modes made available to the user, however, only one mode is required for testing.</p>
-				
-				<h3 class="headerPlus3t">Devices</h3>
-				<p>If a site or content is optimized for one particularly type of device, then testing should be conducted with that target device. For instance a site designed for desktop should be tested using a desktop testing environment to test conformance.</p>
-				<p>If a site or content is responsive and therefore differs significantly between desktop and mobile, then the site should be tested in at least two scopes, ideally one of desktop, and one of small mobile. However, a site may specify testing in only one device scope for conformance purposes.</p>
-				
-				<h3 class="headerPlus3t">Conditional/Qualified Tests Standard Setup</h3>
-				<p>Because conditional or qualified tests involve a certain amount of subjectivity, it's important to have a standardized environment for conducting any such tests. This is facilitated with a defined standard testing environment, intended to provide a consistent foundation for evaluations that require any degree of subjectivity.</p>
-
-				<p><em><strong>The standard environmental model shall comprise</strong></em></p>
-
-				<ol>
-					<li>A desktop sRGB LCD screen that is
-					<ul>
-						<li>A non-retina, standard resolution display in the sRGB colorspace</li>
-						<li>IPS or equivelent technology such that off-axis viewing is not impacted. </li>
-						<li>For desktop, the monitor should have a ppi between 72 and 112 to allow an observer distance between 24&quot; (60cm) and 37&quot; (90cm)</li>
-					</ul></li>
-
-					<li>Monitor shall be calibrated using a hardware calibrator to:
-					<ul>
-						<li>Max White (#FFF) Luminance between 140cd/m^2 and 220cd/m^2 </li>
-						<li>Black level (#000) target of less than 0.5 cd/m^2 or less.</li>
-						<li>Preferred gamma target of 2.2.</li>
-						<li>HDR displays are not included in this specification.</li>
-					</ul></li>
-
-					<li>Monitor&#39;s surrounding environmental conditions
-					<ul>
-						<li>Background behind the monitor and within the users field of view should be neutral grey or white, at a luminance that is 20% of the monitor&#39;s maximum white.
-						<ul>
-							<li>For instance if the peak white luminance of the screen is 140cd/m^2, that the immediate area surrounding the screen should be 28cd/m^2.</li>
-						</ul></li>
-					</ul></li>
-					<li>Ambient light of approximately 350 lux.
-					<ul>
-						<li>The light should not <em>directly</em> shine on the face of the monitor.</li>
-						<li>The light should not shine into the eyes of the user while viewing the monitor.</li>
-					</ul></li>
-				</ol>
-
-				<p><em><strong>The standard model configuration shall be: </strong></em></p>
-
-				<ol>
-					<li>Monitor positioned toward user in a way that minimizes reflections.</li>
-
-					<li>Ambient evaluation procedure:
-					<ul>
-						<li>Send the sRGB monitor full screen grey at sRGB value #7C7C7C.</li>
-						<li>The average luminance of the area in view around the monitor should be the same as the monitor grey at #7C7C7C.</li>
-						<li>The monitor at #FFFFFF should measure as a luminance five times higher than that measured at #7C7C7C.</li>
-					</ul></li>
-
-					<li>Standard observer positioning and desktop monitor resolution.
-					<ul>
-						<li>Monitor resolution in ppi defines the observers view position.</li>
-						<li>One CSS reference px is 1.278 minutes of arc or 0.0213°</li>
-						<li>To determine the critical reading x-height in px for a given acuity, multiply the lower Snellen number by 0.47.
-						<ul>
-							<li>For instance, for 20/40 vision, multiply 40 * 0.47 = 18.8px critical x-height.</li>
-							<li>For a font like Helvetica with a 0.52 x-height ratio, this is a 36px font.</li>
-						</ul></li>
-						<li>As a quick rule of thumb: <strong> the font Verdana at 16px is approximately the critical size for standard 20/20 vision.</strong></li>
-					</ul></li>
-
-					<li>Observer is positioned based on the monitor resolution.
-					<ul>
-						<li>For a mobile device, the observer is positioned such that the 1px = 1.278&#39; arc-min relationship is maintained.</li>
-						<li>For a 96ppi monitor, the observer shall be 28&quot; away.</li>
-					</ul></li>
-
-				</ol>
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
+<!-- *****     TAB 6     ***** -->
 
 
 
 
-	<div style="overflow: scroll;">
-		<table class="ppiTable centered">
-			<tr><th colspan="5">Screen Pitch vs Distance for 1.278 arc-min VA</th></tr>
-			<tr><th colspan="1">Distance<br>to Display</th><th colspan="3">Screen Pitch</th><th colspan="1">Distance<br>to Display</th></tr>
-			<tr><th>inches</th><th>ppi</th><th> </th><th>ppcm</th><th>cm</th></tr>
-			<tr><td>244"</td><td>11</td><td></td><td>4</td><td>621cm</td></tr>
-			<tr><td>122"</td><td>22</td><td></td><td>9</td><td>310cm</td></tr>
-			<tr class="keyValue"><td>96"</td><td>28</td><td>HDTV</td><td>11</td><td>244cm</td></tr>
-			<tr><td>37"</td><td>72</td><td></td><td>28</td><td>95cm</td></tr>
-			<tr class="keyValue"><td>28"</td><td>96</td><td>DESKTOP</td><td>38</td><td>71cm</td></tr>
-			<tr><td>24"</td><td>112</td><td></td><td>44</td><td>61cm</td></tr>
-			<tr class="keyValue"><td>21"</td><td>128</td><td>LAPTOP</td><td>50</td><td>54cm</td></tr>
-			<tr><td>18"</td><td>150</td><td></td><td>59</td><td>45.5cm</td></tr>
-			<tr><td>17"</td><td>160</td><td></td><td>64</td><td>42cm</td></tr>
-			<tr class="keyValue"><td>16"</td><td>170</td><td>TABLET</td><td>67</td><td>40cm</td></tr>
-			<tr><td>15"</td><td>180</td><td></td><td>71</td><td>38cm</td></tr>
-			<tr><td>14"</td><td>192</td><td></td><td>76</td><td>35.6cm</td></tr>
-			<tr><td>13"</td><td>204</td><td></td><td>80</td><td>33.5cm</td></tr>
-			<tr class="keyValue"><td>12"</td><td>224</td><td>PHONE</td><td>88</td><td>30cm</td></tr>
-			<tr><td>10"</td><td>268</td><td></td><td>106</td><td>25.5cm</td></tr>
-			<tr><td>8"</td><td>336</td><td></td><td>132</td><td>20.3cm</td></tr>
-			<tr><td colspan="5">Screen Pixel Density @ various distances</td></tr>
-			<tr><td colspan="5">1 pixel = 1 CSS ref px = 1.278 arc-min</td></tr>
-			<tr><td colspan="5">Some Values Rounded</td></tr>
-		</table>
-	</div>
-			</section>
-
-<hr>
-
-			</section>
-		</main>
-	</body>
-</html>
-
-
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-<!-- *****     TAB 5     ***** -->
-
-
-		</div>
-			<div role="tabpanel" tab-num="6" id="resources" tabindex="0" aria-labelledby="resources-button" class="is-hidden">
-
+<div role="tabpanel" tab-num="6" id="resources" tabindex="0" aria-labelledby="resources-button" class="is-hidden">
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 	<head>
 		<title>Test Methods - Resources</title>
 	</head>
+
 	<body>
 
 		<header>
 			<h1 class="headerPlus1">Resources</h1>
+<h2 class="headerPlus4i">ON THIS TAB</h2>
+<ol class="smallUpperRoman">
+  <li><a href="#apca-basis">APCA Empirical Basis</a></li>
+  <li><a href="#apca-resources">APCA Resources</a></li>
+  <li><a href="#color-resources">External Resources</a></li>
+  <li><a href="#w3c-resources">W3C Resources</a></li>
+  <li><a href="#equation">APCA Equation</a></li>
+  <li><a href="#bibliography">Selected Bibliography</a></li>
+</ol>
 		</header>
+
 		<main>
+
+			<section id="apca-basis">
+
+<h2 dir="auto">EMPIRICAL BASIS FOR THE GUIDELINES (IN PART):</h2>
+<p>Recited in the research of Lovie-Kitchin et alia.</p>
+<table role="table">
+<thead>
+<tr>
+<th><strong>Reading rate (wpm)</strong></th>
+<th><strong>Minimum <em>acuity</em> reserve</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spot (∼40 wpm)</td>
+<td>1.3:1 (0.1 log unit or 1 line*)</td>
+</tr>
+<tr>
+<td>Fluent (≥100 wpm)</td>
+<td>2:1 (0.3 log units or 3 lines*)</td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td>3:1 to 8:1 (0.5 to 0.9 log units or 5–9 lines*)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 dir="auto">Contrast Sensitivity vs Spatial Frequency</h2>
+
+
+
+			</section>
+
+
 
 			<section id="apca-resources">
 				<h2 class="headerPlus2ti">APCA Resources</h2>
@@ -1995,6 +2174,13 @@ hr{margin: 1em;}
 				</ul>	
 			</section>
 
+
+
+
+
+
+
+
 			<section id="w3c-resources">
 				<h2 class="headerPlus2ti">W3C Resources</h2>
 				<ul>
@@ -2004,13 +2190,18 @@ hr{margin: 1em;}
 					<li><a href="https://www.w3.org/WAI/GL/task-forces/silver/wiki/Visual_Contrast_of_Text_Subgroup/Whitepaper">Visual Contrast White Paper (In-Progress Draft)</a> An overview of readability contrast, with infographics and a bibliography of the relevant peer reviewed science.</li>
 				</ul>	
 			</section>
-			
+
+
+
+
+
+
+
+
 			<section id="equation">
 				<h2 class="headerPlus2ti">APCA Equation</h2>
 				<p>This equation takes two sRGB color values, one for text and one for the background, and generates a perceptual lightness contrast value (Lc).</p>
 				<p>It is presented here as an svg image, in MathML, and with the original LaTeX code as the alt-text.</p>
-  <dl>
-    <dd>
       <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
         <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\\\ \ \mathbf {APCA} \mathbf {\bullet W3} \ \ &amp;\mathbf {\scriptstyle version\ {0.1.7}\ {developed\ for\ WCAG\ 3\ contrast\ guidelines}} \\[0.66ex]{\scriptstyle Using:}\quad \quad \quad \quad &amp;\\\ \ {APCA}\ Contr&amp;ast\ {Prediction\ Equation\ \ 0.0.98G-4g-base}\\\\Result:\ &amp;{\begin{bmatrix}\hline {\scriptstyle Lightness\ Contrast}\\\quad L\!^{c}=\ S_{apc}\ {\boldsymbol {\times }}\ 100\quad \\\hline \end{bmatrix}}\\\\\textstyle Where:\quad &amp;\\\hline {\scriptstyle Clamp\ Mi}&amp;{\scriptstyle nimum\ Contrast\ Then\ Offset}\\[1.25ex]S_{apc}=&amp;{\begin{cases}0.0\ \ &amp;\vert C\vert <P_{out}\\C-W_{offset}\ \ &amp;\ C\ >0\\C+W_{offset}\ \ &amp;\ C\ <0\\\end{cases}}\\\hline {\scriptstyle Clamp\ No}&amp;{\scriptstyle ise\ Then\ Scale}\\[1.25ex]C=&amp;{\begin{cases}0.0\ \ &amp;{\bigg \vert }Y_{bg}-Y_{txt}{\bigg \vert }<P_{in}\\S_{norm}\times R_{scale}\ \ &amp;\ Y_{txt}<Y_{bg}\\S_{rev}\times R_{scale}\ \ &amp;\ Y_{txt}>Y_{bg}\\\end{cases}}\\\hline {\textstyle Find\ }&amp;{\textstyle Perceptual\ Lightness\ Difference}\\[0.75ex]&amp;{\scriptstyle Normal\ Polarity\ (dark\ text/light\ bg)}\\S_{norm}=&amp;\ Y_{bg}^{0.56}-Y_{txt}^{0.57}\quad \ _{Normal:\ Y_{bg}\ >\ Y_{txt}}\\[0.75ex]&amp;{\scriptstyle Reverse\ Polarity\ (light\ text/dark\ bg)}\\S_{rev}=&amp;\ Y_{bg}^{0.65}-Y_{txt}^{0.62}\quad \ _{Reverse:\ Y_{bg}\ <\ Y_{txt}}\\\hline {\scriptstyle Soft\ Clam}&amp;{\scriptstyle p\ Black\ Levels}\\[1.25ex]Y_{txt}=&amp;\ f_{clamp}(Y)\quad _{color\ of\ the\ text,\ symbol,\ or\ object.}^{where\ Y\ is\ derived\ from\ the}\\[1.1ex]Y_{bg}=&amp;\ f_{clamp}(Y)\quad _{color\ used\ for\ the\ background.}^{where\ Y\ is\ derived\ from\ the}\\[0.66ex]f_{clamp}(Y_{c})=&amp;{\begin{cases}Y_{c}\ \ &amp;Y_{c}>=B_{thrsh}\\Y_{c}+{\big (}B_{thrsh}-Y_{c}{\big )}^{Bexp}&amp;Y_{c}<B_{thrsh}\\\end{cases}}\\\hline {\scriptstyle Constants}&amp;{\scriptstyle \ for\ Clamps\ and\ Scalers}\\[1.25ex]&amp;{\begin{aligned}B_{exp}=&amp;\ 1.414&amp;R_{scale}=&amp;\ 1.14\\B_{thresh}=&amp;\ 0.022&amp;W_{offset}=&amp;\ 0.027\\P_{in}=&amp;\ 0.0005&amp;P_{out}=&amp;\ 0.1\\\end{aligned}}\\\hline {\scriptstyle Estimate\ }&amp;{\scriptstyle Screen\ Luminance}\\[1.25ex]\definecolor {DarkGreen}{rgb}{0,0.35,0}\definecolor {DarkRed}{rgb}{0.6,0,0}Y_s=\textstyle \sum &amp;{\begin{cases}{\color {DarkRed}(\mathbf {R} ^{\prime }\div 255.0)^{2.4}\times 0.2126729}\\{\color {DarkGreen}(\mathbf {G} ^{\prime }\div 255.0)^{2.4}\times 0.7151522}\\{\color {Blue}(\mathbf {B} ^{\prime }\div 255.0)^{2.4}\times 0.0721750}\\\end{cases}}\\[1.25ex]{\{\color {DarkRed}R^{\prime },\color {DarkGreen}G^{\prime },\color {Blue}B^{\prime }\}}&amp;\ {\in }\ \mathbf {s} RGB\\\hline \\\ GitHubRepo&amp;\Rrightarrow \mathrm {https:\!//apcaw3.myndex.com} \\[0.75ex]\\\end{aligned}}}">
           <semantics>
@@ -3657,27 +3848,25 @@ hr{margin: 1em;}
   </semantics>
       </math>
       </span>
-      <img src="./img/APCAw3_0.1.17_APCA0.0.98G.svg" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -70ex; width:75ex; height:140ex;" alt="{\displaystyle {\begin{aligned}\\\ \ \mathbf {APCA} \mathbf {\bullet W3} \ \ &amp;\mathbf {\scriptstyle version\ {0.1.7}\ {developed\ for\ WCAG\ 3\ contrast\ guidelines}} \\[0.66ex]{\scriptstyle Using:}\quad \quad \quad \quad &amp;\\\ \ {APCA}\ Contr&amp;ast\ {Prediction\ Equation\ \ 0.0.98G-4g-base}\\\\Result:\ &amp;{\begin{bmatrix}\hline {\scriptstyle Lightness\ Contrast}\\\quad L\!^{c}=\ S_{apc}\ {\boldsymbol {\times }}\ 100\quad \\\hline \end{bmatrix}}\\\\\textstyle Where:\quad &amp;\\\hline {\scriptstyle Clamp\ Mi}&amp;{\scriptstyle nimum\ Contrast\ Then\ Offset}\\[1.25ex]S_{apc}=&amp;{\begin{cases}0.0\ \ &amp;\vert C\vert <P_{out}\\C-W_{offset}\ \ &amp;\ C\ >0\\C+W_{offset}\ \ &amp;\ C\ <0\\\end{cases}}\\\hline {\scriptstyle Clamp\ No}&amp;{\scriptstyle ise\ Then\ Scale}\\[1.25ex]C=&amp;{\begin{cases}0.0\ \ &amp;{\bigg \vert }Y_{bg}-Y_{txt}{\bigg \vert }<P_{in}\\S_{norm}\times R_{scale}\ \ &amp;\ Y_{txt}<Y_{bg}\\S_{rev}\times R_{scale}\ \ &amp;\ Y_{txt}>Y_{bg}\\\end{cases}}\\\hline {\textstyle Find\ }&amp;{\textstyle Perceptual\ Lightness\ Difference}\\[0.75ex]&amp;{\scriptstyle Normal\ Polarity\ (dark\ text/light\ bg)}\\S_{norm}=&amp;\ Y_{bg}^{0.56}-Y_{txt}^{0.57}\quad \ _{Normal:\ Y_{bg}\ >\ Y_{txt}}\\[0.75ex]&amp;{\scriptstyle Reverse\ Polarity\ (light\ text/dark\ bg)}\\S_{rev}=&amp;\ Y_{bg}^{0.65}-Y_{txt}^{0.62}\quad \ _{Reverse:\ Y_{bg}\ <\ Y_{txt}}\\\hline {\scriptstyle Soft\ Clam}&amp;{\scriptstyle p\ Black\ Levels}\\[1.25ex]Y_{txt}=&amp;\ f_{clamp}(Y)\quad _{color\ of\ the\ text,\ symbol,\ or\ object.}^{where\ Y\ is\ derived\ from\ the}\\[1.1ex]Y_{bg}=&amp;\ f_{clamp}(Y)\quad _{color\ used\ for\ the\ background.}^{where\ Y\ is\ derived\ from\ the}\\[0.66ex]f_{clamp}(Y_{c})=&amp;{\begin{cases}Y_{c}\ \ &amp;Y_{c}>=B_{thrsh}\\Y_{c}+{\big (}B_{thrsh}-Y_{c}{\big )}^{Bexp}&amp;Y_{c}<B_{thrsh}\\\end{cases}}\\\hline {\scriptstyle Constants}&amp;{\scriptstyle \ for\ Clamps\ and\ Scalers}\\[1.25ex]&amp;{\begin{aligned}B_{exp}=&amp;\ 1.414&amp;R_{scale}=&amp;\ 1.14\\B_{thresh}=&amp;\ 0.022&amp;W_{offset}=&amp;\ 0.027\\P_{in}=&amp;\ 0.0005&amp;P_{out}=&amp;\ 0.1\\\end{aligned}}\\\hline {\scriptstyle Estimate\ }&amp;{\scriptstyle Screen\ Luminance}\\[1.25ex]\definecolor {DarkGreen}{rgb}{0,0.35,0}\definecolor {DarkRed}{rgb}{0.6,0,0}Y_s=\textstyle \sum &amp;{\begin{cases}{\color {DarkRed}(\mathbf {R} ^{\prime }\div 255.0)^{2.4}\times 0.2126729}\\{\color {DarkGreen}(\mathbf {G} ^{\prime }\div 255.0)^{2.4}\times 0.7151522}\\{\color {Blue}(\mathbf {B} ^{\prime }\div 255.0)^{2.4}\times 0.0721750}\\\end{cases}}\\[1.25ex]{\{\color {DarkRed}R^{\prime },\color {DarkGreen}G^{\prime },\color {Blue}B^{\prime }\}}&amp;\ {\in }\ \mathbf {s} RGB\\\hline \\\ GitHubRepo&amp;\Rrightarrow \mathrm {https:\!//apcaw3.myndex.com} \\[0.75ex]\\\end{aligned}}}">
-      </span>
-    </dd>
-  </dl>
+      <img src="./img/APCAw3_0.1.17_APCA0.0.98G.svg" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -70ex; width:75ex; height:140ex;" alt="{\displaystyle {\begin{aligned}\\\ \ \mathbf {APCA} \mathbf {\bullet W3} \ \ &amp;\mathbf {\scriptstyle version\ {0.1.7}\ {developed\ for\ WCAG\ 3\ contrast\ guidelines}} \\[0.66ex]{\scriptstyle Using:}\quad \quad \quad \quad &amp;\\\ \ {APCA}\ Contr&amp;ast\ {Prediction\ Equation\ \ 0.0.98G-4g-base}\\\\Result:\ &amp;{\begin{bmatrix}\hline {\scriptstyle Lightness\ Contrast}\\\quad L\!^{c}=\ S_{apc}\ {\boldsymbol {\times }}\ 100\quad \\\hline \end{bmatrix}}\\\\\textstyle Where:\quad &amp;\\\hline {\scriptstyle Clamp\ Mi}&amp;{\scriptstyle nimum\ Contrast\ Then\ Offset}\\[1.25ex]S_{apc}=&amp;{\begin{cases}0.0\ \ &amp;\vert C\vert <P_{out}\\C-W_{offset}\ \ &amp;\ C\ >0\\C+W_{offset}\ \ &amp;\ C\ <0\\\end{cases}}\\\hline {\scriptstyle Clamp\ No}&amp;{\scriptstyle ise\ Then\ Scale}\\[1.25ex]C=&amp;{\begin{cases}0.0\ \ &amp;{\bigg \vert }Y_{bg}-Y_{txt}{\bigg \vert }<P_{in}\\S_{norm}\times R_{scale}\ \ &amp;\ Y_{txt}<Y_{bg}\\S_{rev}\times R_{scale}\ \ &amp;\ Y_{txt}>Y_{bg}\\\end{cases}}\\\hline {\textstyle Find\ }&amp;{\textstyle Perceptual\ Lightness\ Difference}\\[0.75ex]&amp;{\scriptstyle Normal\ Polarity\ (dark\ text/light\ bg)}\\S_{norm}=&amp;\ Y_{bg}^{0.56}-Y_{txt}^{0.57}\quad \ _{Normal:\ Y_{bg}\ >\ Y_{txt}}\\[0.75ex]&amp;{\scriptstyle Reverse\ Polarity\ (light\ text/dark\ bg)}\\S_{rev}=&amp;\ Y_{bg}^{0.65}-Y_{txt}^{0.62}\quad \ _{Reverse:\ Y_{bg}\ <\ Y_{txt}}\\\hline {\scriptstyle Soft\ Clam}&amp;{\scriptstyle p\ Black\ Levels}\\[1.25ex]Y_{txt}=&amp;\ f_{clamp}(Y)\quad _{color\ of\ the\ text,\ symbol,\ or\ object.}^{where\ Y\ is\ derived\ from\ the}\\[1.1ex]Y_{bg}=&amp;\ f_{clamp}(Y)\quad _{color\ used\ for\ the\ background.}^{where\ Y\ is\ derived\ from\ the}\\[0.66ex]f_{clamp}(Y_{c})=&amp;{\begin{cases}Y_{c}\ \ &amp;Y_{c}>=B_{thrsh}\\Y_{c}+{\big (}B_{thrsh}-Y_{c}{\big )}^{Bexp}&amp;Y_{c}<B_{thrsh}\\\end{cases}}\\\hline {\scriptstyle Constants}&amp;{\scriptstyle \ for\ Clamps\ and\ Scalers}\\[1.25ex]&amp;{\begin{aligned}B_{exp}=&amp;\ 1.414&amp;R_{scale}=&amp;\ 1.14\\B_{thresh}=&amp;\ 0.022&amp;W_{offset}=&amp;\ 0.027\\P_{in}=&amp;\ 0.0005&amp;P_{out}=&amp;\ 0.1\\\end{aligned}}\\\hline {\scriptstyle Estimate\ }&amp;{\scriptstyle Screen\ Luminance}\\[1.25ex]\definecolor {DarkGreen}{rgb}{0,0.35,0}\definecolor {DarkRed}{rgb}{0.6,0,0}Y_s=\textstyle \sum &amp;{\begin{cases}{\color {DarkRed}(\mathbf {R} ^{\prime }\div 255.0)^{2.4}\times 0.2126729}\\{\color {DarkGreen}(\mathbf {G} ^{\prime }\div 255.0)^{2.4}\times 0.7151522}\\{\color {Blue}(\mathbf {B} ^{\prime }\div 255.0)^{2.4}\times 0.0721750}\\\end{cases}}\\[1.25ex]{\{\color {DarkRed}R^{\prime },\color {DarkGreen}G^{\prime },\color {Blue}B^{\prime }\}}&amp;\ {\in }\ \mathbf {s} RGB\\\hline \\\ GitHubRepo&amp;\Rrightarrow \mathrm {https:\!//apcaw3.myndex.com} \\[0.75ex]\\\end{aligned}}}"></span>
 			</section>
+
 			<section id="bibliography">
 				<h2 class="headerPlus2ti">Selected Bibliography</h2>
 
-				<h3>Reading with low vision:</h3>
+				<a href="https://doi.org/10.1111/j.1444-0938.2010.00565.x"><h3>Reading with low vision:</h3></a>
 				<h4>the impact of research on clinical management (2011)</h4>
 				<p>Jan Lovie–Kitchin PhD</p>
 				<p>School of Optometry Queensland University of Technology </p>
 				<p><a href="https://doi.org/10.1111/j.1444-0938.2010.00565.x"> doi.org/10.1111/j.1444-0938.2010.00565.x</a></p>
 
-				<h3>Luminance Contrast</h3>
+				<a href="https://colorusage.arc.nasa.gov/luminance_cont.php"><h3>Luminance Contrast</h3></a>
 				<h4>Using Color In Information Display Graphics</h4>
 				<p>Larry Arend, with contributions from Alex Logan and Galina Havin</p>
 				<p>NASA Website, NASA Ames Research Center, Human Systems Integration Division</p>
 				<p><a href="https://colorusage.arc.nasa.gov/luminance_cont.php">https://colorusage.arc.nasa.gov/luminance_cont.php</a></p>
 
-				<h3>Human factors design standard (HFDS) (2003)</h3>
+				<a href="http://hf.tc.faa.gov/hfds"><h3>Human factors design standard (HFDS) (2003)</h3></a>
 				<p>Federal Aviation Administration (FAA)</p>
 				<p>HF-STD-001. Available for download at</p>
 				<p><a href="http://hf.tc.faa.gov/hfds">http://hf.tc.faa.gov/hfds</a>
@@ -3705,7 +3894,7 @@ hr{margin: 1em;}
 				<p>M.D. Fairchild</p>
 				<p>John Wiley and Sons, 3rd edition, 2013</p>
 
-				<h3>Realities and Myths of Contrast and Color</h3>
+				<a href="https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/"><h3>Realities and Myths of Contrast and Color</h3></a>
 				<p>A.M.Somers</p>
 				<p><a href="https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/"> Smashing Magazine Sept. 2022</a>
 
@@ -3730,8 +3919,8 @@ hr{margin: 1em;}
 		</main>
 	</body>
 </html>
-
 </div>
+
 </div>
 
 
