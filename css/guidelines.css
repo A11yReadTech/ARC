@@ -990,7 +990,8 @@ a[href].status-link {
 	  max-width: 60%;
 		font-size: 0.5em;
 		text-align: center;
-		margin: -1em auto -1em;
+    left: -3em;
+		margin: 0em auto -1em;
 		padding: 1em;
 		height: auto;
 		color: #408;
@@ -998,19 +999,24 @@ a[href].status-link {
 		border: transparent solid 0;
 		background: transparent;
 	}
+
+	:not(.head) > :not(.head) + hr.abstract {
+    margin: 5em auto 4em;
+  }
+
 	:not(.head) > hr::before {
 		content: url(../img/hr/divider-7551966-thin.svg);
     position:relative;    
-    left: -3em;
-		opacity: 0.5;
+		opacity: 0.66;
 	}
 
 	:not(.head) > hr.abstract::before {
 		content: url(../img/hr/abstract-3166168.svg);
-    position:relative;    
-    left: -3em;
-		opacity: 0.5;
+    position:relative;
+		opacity: 0.66;
 	}
+
+
 
 
 section p, section li {
