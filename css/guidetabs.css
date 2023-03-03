@@ -916,13 +916,13 @@ a[href].status-link {
 	:not(.head) > hr::before {
 		content: url(../img/hr/divider-7551966-thin.svg);
     position:relative;    
-		opacity: 0.5;
+		opacity: 0.66;
 	}
 
 	:not(.head) > hr.abstract::before {
 		content: url(../img/hr/abstract-3166168.svg);
     position:relative;
-		opacity: 0.5;
+		opacity: 0.66;
 	}
 
 
