@@ -150,8 +150,8 @@
 
 	--heading-text: #60b;
   --h1-text: var(--heading-text);
-  --h2-text: var(--heading-text);
-  --h3-text: #50a;
+  --h2-text: #50a;
+  --h3-text: #4a00a4;
   --h4-text: #409;
   --h5-text: #306;
   --h6-text: var(--h5-text);

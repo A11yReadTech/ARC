@@ -852,6 +852,59 @@ h3.guideline-text {
 span.inserted {display: inline-block; font-weight: 700;}
 
 
+.howto-header,
+.tests-header  {
+    font-weight: 700;
+
+  }
+
+.howto-list, .tests-list {
+	font-size: 1.125em;
+  }
+.howto-list a, .tests-list a {
+	font-size: 1.3em;
+  }
+
+.howto-list  a, .tests-list a,
+.howto-list  a:link, .tests-list a:link {
+  display: inline-block; 
+  text-align: left;  
+  position: relative; 
+  margin: 0 auto 0.33em; 
+  font-weight: 600;
+  text-align: center;  
+  color: #52a; 
+  text-decoration: underline;
+  text-decoration-color: #306;
+  text-decoration-thickness: 1.75px;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+  text-shadow: 0 0 4px #0000;
+  }
+
+.howto-list a:hover, .tests-list a:hover,
+.howto-list a:active, .tests-list a:active {
+  color: #408a;
+  text-decoration: underline; 
+  text-decoration-color: #63bb;
+  text-decoration-thickness: 1.75px;
+  text-decoration-style: solid;
+  text-underline-position: under;
+  text-shadow: -1px -1px 0px #dcfb, 1px 1px 0px #3066,2px 2px 4px #ffff;
+  }
+
+.howto-list a:active, .tests-list a:active {
+  top: 3px;
+  left: 3px;
+  }
+
+
+
+
+
+
+
+
 .rating-table, .rating-table th, .rating-table td {
 	border: 1px solid black;
 	vertical-align: top;
