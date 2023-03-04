@@ -144,7 +144,7 @@ a:hover h1 span.forit,a:active h1 span.forit {
         0.1em 0.1em 0.2em #126;
   }
 
-a h1, a:link h1, .resourceLinks a, .resourceLinks a:link {
+p a, p a:link, a h1, a:link h1, .resourceLinks a, .resourceLinks a:link {
   display: block; 
   position: relative; 
   margin: 0 auto 0; 
@@ -158,6 +158,7 @@ a h1, a:link h1, .resourceLinks a, .resourceLinks a:link {
   text-shadow: 0 0 4px #fff0;
   }
 
+p a, p a:link ,
 .resourceLinks a, .resourceLinks a:link {
   display: inline-block; 
   margin: 0; 
@@ -171,19 +172,22 @@ a h1, a:link h1, .resourceLinks a, .resourceLinks a:link {
   }
 
 
-a:hover h1, a:active h1, .resourceLinks a:hover, .resourceLinks a:active {
+p a:hover, p a:active,
+a:hover h1, a:active h1,
+.resourceLinks a:hover, .resourceLinks a:active {
   color: #ddf;
   text-decoration: underline; 
   text-decoration-color: #89abcd;
   text-decoration-thickness: 1.5px;
   text-decoration-style: solid;
   text-underline-position: under;
-  text-shadow: 0 0 2px #dcf,0 0 1px #000,0 0 4px #ccc,0 0 4px #abf;
+  text-shadow: 0 0 2px #baf,0 0 1px #000,0 0 4px #aac,0 0 4px #78f;
   }
 
-a:active h1, a:active   {
+a:active h1, p a:active, a:active, .resourceLinks a:active    {
   top: 3px;
   left: 3px;
+  text-shadow: 0 0 2px #dcf4,0 0 1px #000,0 0 4px #ccc4,0 0 4px #abf4;
   }
 
 img {
@@ -358,14 +362,14 @@ div.resourceLinks {
   <div class="floater">
     <h2>Welcome to Accessible Reading Technologies.</h2>
     <p>We are a nonprofit dedicated to improving accessibility and visual readability, and home to the APCA Readability Criterion.</p>
-    <p>The APCA Readability Criterion (ARC) provides recommendations for making visual content on self-illuminated displays more accessible to all users, especially those with visual impairments.</p>
+    <p>The <a href="./ARC/guidelines/">APCA Readability Criterion (ARC)</a> provides recommendations for making visual content on self-illuminated displays more accessible to all users, especially those with visual impairments.</p>
   </div>
 
   <div class="spaceCadet">&nbsp;</div>
-  <img class="imgFloat" alt="Image of an orange figurine representing a human reading a purple covered book" src="./img/ReadingOrangeMan.png">
+  <img class="imgFloat" alt="Image of an orange figurine representing a human, reading a purple covered book" src="./img/ReadingOrangeMan.png">
   
   <div class="resourceLinks">
-    <h2>Resources</h2>
+    <h2>Related Resources</h2>
     <ul>
       <li><a href="https://git.apcacontrast.com/documentation/WhyAPCA">Why APCA?</a> • This is a brief overview and introduction to the accessible perceptual contrast algorithm. This is a good place to start if you're new to the APCA test methods.<br>
       <li><a href="https://apcacontrast.com">APCA Contrast Calculator</a> • This is the canonical demonstration tool for APCA. This is the only certified correct implementation of the most current, public beta APCA algorithm and guidelines.<br>
