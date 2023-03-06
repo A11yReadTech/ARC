@@ -573,7 +573,7 @@ summary::before {
 
 
 
-/* .guideline:focus h3::before, .guideline:hover h3::before, */
+/* .criterion:focus h3::before, .criterion:hover h3::before, */
 
 :not(.head) > details:focus summary::before,
 :not(.head) > details:hover summary::before, 
@@ -729,7 +729,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 }
 
 
-/* .guideline h3::before, */
+/* .criterion h3::before, */
 .objective h4::before {
   display: inline-block;
   position: relative;	
@@ -740,7 +740,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 
 
 /*
-.guideline h3::before {
+.criterion h3::before {
 	content: url(../img/guideline.svg);
 }
 */
@@ -759,7 +759,7 @@ a.internalDFN[title]:hover, .internalDFN[title]:active, a.internalDFN[title]:foc
 	color: #005A9C;
 }
 
-h3.guideline-text {
+h3.criterion-text {
     position: relative;
     margin-left: 3em;
     font-weight: 500;

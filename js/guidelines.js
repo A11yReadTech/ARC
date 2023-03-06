@@ -38,26 +38,26 @@ function pathToName(path) {
 
 function linkHowTo() {
 	var guideBaseURI = "/ARC/guides/";
-	document.querySelectorAll('.guideline').forEach(function(node){
+	document.querySelectorAll('.criterion').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
 		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"guide-link\">" + heading + " <span>guides</span></a>";
-		node.querySelector("p.guideline-text").append(el);
+		node.querySelector("p.criterion-text").append(el);
 	})
 }
 
 function linkMethod() {
 	var guideBaseURI = "/ARC/tests/";
 
-	document.querySelectorAll('.guideline').forEach(function(node){
+	document.querySelectorAll('.criterion').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
 		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"tests-link\">" + heading + " <span>tests</span></a>";
-		node.querySelector("p.guideline-text").append(el);
+		node.querySelector("p.criterion-text").append(el);
 	})
 }
 
@@ -77,7 +77,7 @@ function linkObjective() {
 }
 
 function addGuidelineMarkers() {
-	document.querySelectorAll('.guideline').forEach(function(node){
+	document.querySelectorAll('.criterion').forEach(function(node){
 		var guidelineText = node.querySelector("p");
 		guidelineText.innerHTML = "<span class=\"inserted\">Guideline: </span>" + guidelineText.innerHTML;
 	})
@@ -263,7 +263,7 @@ function outputJson() {
 	if (params.get("json") != null) {
 		var result = new Object();
 		result.criterion = new Array();
-		document.querySelectorAll(".guideline").forEach(function(glnode) {
+		document.querySelectorAll(".criterion").forEach(function(glnode) {
 			var gl = {
 				id: titleToPathFrag(findFirstTextChild(findHeading(glnode)).textContent),
 				name: findFirstTextChild(findHeading(glnode)).textContent,

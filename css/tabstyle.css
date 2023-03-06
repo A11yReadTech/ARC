@@ -91,14 +91,14 @@ body {
 h1+p, button[role="tablist"] {
 	clear: both;
 }
-.guideline-link::before, .guide-link::before, .objective-link::before, .tests-link::before, .json-link::before {
+.criterion-link::before, .guide-link::before, .objective-link::before, .tests-link::before, .json-link::before {
 	display: inline-block;
 	width: 2.5ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
 /*
-.guideline-link::before {
+.criterion-link::before {
 	content: url(../img/ratingTINY.png);
 }
 .guide-link::before {
