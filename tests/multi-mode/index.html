@@ -261,38 +261,34 @@
 			<section id="summary">
 				<h2 class="headerPlus2ti">Summary</h2>
 				<p>Visual readability of text requires good visual contrast. Visual contrast is a product of the text characteristics, such as font weight (thickness) and font size, the lightness/darkness difference of the colors used for the text and the background, and other factors.</p>
-				<p>Using objective guidelines and tools, evaluate font stroke width (weight), font size, background color, font color, and nearby colors and adjust the properties of those elements to achieve good visual contrast and readability.</p>
+				<p>Different users have significantly different needs in terms of their perception of light and color for reading, or for interacting with content on a self-illuminated display.</p>
 			</section>
 
 			<section id="user-need">
 				<h2 class="headerPlus2ti">How It Solves User Needs</h2>
-				<p>Some users experience eye fatigue or have difficulty reading on self illuminated displays that are too bright. The Paper Reading Experience approach provides a way to emulate reading more comfortably.</p>
+				<p>All sighted users need adequate text size and weight, coupled with ample luminance contrast (the perceived lightness/darkness difference) between background and text colors, in order to read the text easily.</p>
 			</section>
 			<section id="objective">
 				<h2 class="headerPlus2ti">Objective</h2>
-				<p>This test method supports the objective:
-				<ul><li><a href="../../guidelines/#objective-lightness" class="objective-link">Reduce glare and eye fatigue when reading columns of body text.</a>.
+				<p>This test method supports the objectives:
+				<ul><li><a href="../../guidelines/#objective-lightness" class="objective-link">Lightness Contrast Between Text and Background</a>.</li>
+				    <li><a href="../../guidelines/#objective-lightness" class="objective-link">Supports Multiple Modes or Color Schemes</a>.</li>
 				</ul></p>
 			</section>
 
 			<section id="details">
 				<h2 class="headerPlus2ti">Detailed Description</h2>
-				<p>The visual contrast needed for easy reading of text is substantially higher than the contrast needed to simply "make out" words. At least ten times more contrast is needed for good <em>readability</em> than the bare minimum contrast needed for <em>legibility</em>.</p>
-
-				<p>However the overall brightness of the background behind text can significantly impact glare and cause eye fatigue. In particular, if we stare directly at the illumination source that is defining the eyes current adaptation state, we can quickly become fatigued. But when we read words printed on paper, we stare at a diffuse reflection which is normally less than 85% to 90% of the adaptation state.</p>
-
-				<p>The difficulty with applying this to a self-illuminated computer display, is that the adaptation state is directly affected by the brightest patches of color on a given page. If the brightest background is behind the text, for instance, then we may end up staring at the peak adaptation brightness while attempting to read.</p>
-
-				<p>To accommodate our need to view content that is at least 10 to 15% darker than the peak adaptation brightness, we missed adjust the background behind text to the equivalent luminance of the diffuse reflectivity of paper. However simply setting that as the overall background, or I will then adapt to that as the peak. In other words, if we set the background to <code>#e8e8e8</code> instead of <code>#fff</code>, then after a minute or two <code>#e8e8e8</code> will become the peak adaptation luminance, and again we will develop fatigue.</p>
-
-        <p>To "anchor" our adaptation state at a peak that is brighter than the background under text, we use a white solid outline that is spaced away from the text, so that it influences our adaptation state through our peripheral vision.</p>
+			  <p>The visual contrast needed for easy reading of text is substantially higher than the contrast needed to simply "make out" words. At least ten times more contrast is needed for good <em>readability</em> than the bare minimum contrast needed for <em>legibility</em>.</p>
+				
+        <p>Because a person's contrast perception is so variable, different individuals have significantly different needs in terms of their perception of light and color for reading, or for interacting with content on a self-illuminated display.</p>
+        <p>One way to accommodate these different needs is to provide different color schemes or different modes such as light mode and dark mode, that a user can choose between the solve their individual need.</p>
 			</section>
-
+	
 			<section id="dependencies">
 				<h2 class="headerPlus2ti">Dependencies</h2>
 				<ul>
 				  <li>An APCA-W3 compliant perceptual contrast calculator</li>
-				  <li>Self illuminated displays or devices.</li>
+				  <li>Are user agent that recognizes "prefers color scheme" and "prefers contrast" media queries.</li>
 				  <li>The sRGB color space, the default color space for web content</li>
 				</ul>
 			</section>
