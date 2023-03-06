@@ -915,7 +915,7 @@ box-shadow: inset 6px 6px 14px 2px #1636,
   </details>
 
 	<section>
-		<h3 id="objective-lightness" class="objective-header"><div>Objective:</div> Ample lightness contrast between text and background</h3>
+		<h3 id="objective-lightness" class="objective-header"><div>Objective:</div> Ample Lightness Contrast Between Text and Background</h3>
     
     <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="./img/ReadingOrangeMan.png" height="240"  alt="a little orange man reading a magenta book"id="" /></p>
 
@@ -929,17 +929,52 @@ box-shadow: inset 6px 6px 14px 2px #1636,
       <li>All sighted users require ample lightness/darkness contrast for best readability</li>
     </ul>
 
+
+		<h3 id="objective-" class="objective-header"><div>Objective:</div> Multiple User Selectable Modes or Color Schemes</h3>
+
+    <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="./img/matrix-1013612gradeSMALL.png" height="240"  alt="Matrix of cubes"id="" /></p>
+
+		<p class="objective" status="position: relative; clear: left;">Provides at a minimum a light mode and a dark mode, switchable using the <code>prefers-color-scheme</code> media query.</p>
+
+    <p>Create two or more color schemes using the visual contrast conformance specifications, and allow switching between them by the user, either through the use of media queries, or through the use of a user interface, such as radio buttons in the header.</p>
+
+
+    <ul>
+      <li>Some users need a dark mode while others prefer a light mode.</li>
+      <li>Other possible modes include low contrast, high contrast, and Daltonization.</li>
+    </ul>
+
+
+		<h3 id="objective-" class="objective-header"><div>Objective:</div> Reduce glare and eye fatigue when reading columns of body text.</h3>
+    
+    <p style="position: relative; float:right; margin:0; transform: scale(-1, 1);"><img src="./img/readpaperSMALL.png" height="240"  alt="a little yellow man reading a paper while sitting at a table with a cup of coffee" id="" /></p>
+
+		<p class="objective" status="position: relative; clear: left;"> Use psychophysical design techniques to anchor the adaptation point above the text background to prevent eye fatigue or strain from excess luminance. </p>
+
+    <p>As an example, in the document you are reading right now, there is a white border around the text background, and this background is at a reduced luminance. The white border anchors the adaptation state, and the reduced luminance behind this text is closer to the equivalent of reading dark text printed on diffuse, light paper.</p>
+
+    <ul>
+      <li>Excess luminance can be a problem for all users, depending on the degree.</li>
+      <li>Long periods of focused reading requires an optimum luminance that is neither too dim nor too bright.</li>
+       <li>In order to facilitate this, the adaptation state needs to be controlled with something to anchor it at a position that is brighter than the text area.</li>
+    </ul>
+
+
 <hr class="abstract">
+
 
    <h2 class="tests-header">Testing Criterion, Conformance, and Methods</h2>
     <ul class="tests-list">
       <li><a class="tests-link" href="./tests/visual-readability-contrast/">Visual Readability Contrast Test Methods.</a><br>Here are the technical details for the readability criterion, in terms of conformance, testing, techniques, and resources relating to setting the lightness contrast as appropriate for a font family, font weight, and x-height. (CSS)</li>
+      <li><a class="tests-link" href="./tests/bronze-simple-mode/">Bronze Simple Mode Contrast Test Methods.</a><br>Simple mode is a more basic way to conform a website for readability. Intended as an easier point of entry to APCA methods and guidelines.</li>
+      <li><a class="tests-link" href="./tests/multi-mode/">Multiple Color Scheme Contrast Test Methods.</a><br>Technical details for implementing user selectable, multiple color schemes and multiple contrast modes.</li>
     </ul>
 <hr>
 
     <h2 class="guide-header">Helpful Planning & Design Guides</h2>
     <ul class="guide-list">
-      <li><a class="guide-link" href="./guides/designing-with-visual-contrast/">Designing With Visual Contrast <span>How-To Guide</span></a><br>Here are guides for planning, designing, and implementing accessible visual contrast in your content. Different guides for different audiences from a bird's-eye-view, to more design oriented. </li> 
+      <li><a class="guide-link" href="./guides/designing-with-visual-contrast/">Designing With Visual Contrast <span>How-To Guide</span></a><br>Here are guides for planning, designing, and implementing accessible visual contrast in your content. Different guides for different audiences from a bird's-eye-view, to more design oriented. </li>
+      <li><a class="guide-link" href="./guides/paper-reading-experience/">Designing for the Paper Reading Experience</a><br> the paper reading experience is a helpful set of design considerations for reducing eyestrain and eye fatigue.</li>
     </ul>
 
   </section>
