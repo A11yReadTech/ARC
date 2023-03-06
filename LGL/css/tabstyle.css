@@ -91,7 +91,7 @@ body {
 h1+p, button[role="tablist"] {
 	clear: both;
 }
-.guideline-link::before, .howto-link::before, .objective-link::before, .tests-link::before, .json-link::before {
+.guideline-link::before, .guide-link::before, .objective-link::before, .tests-link::before, .json-link::before {
 	display: inline-block;
 	width: 2.5ex;
 	margin-right: .25em;
@@ -100,8 +100,8 @@ h1+p, button[role="tablist"] {
 .guideline-link::before {
 	content: url(../img/rating.svg);
 }
-.howto-link::before {
-	content: url(../img/how-to.svg);
+.guide-link::before {
+	content: url(../img/guide.svg);
 }
 .objective-link::before {
 	content: url(../img/objective.svg);

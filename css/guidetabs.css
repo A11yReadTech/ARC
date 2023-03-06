@@ -656,15 +656,15 @@ details.summary {
 
 
 
-.howto-link, .objective-link, 
+.guide-link, .objective-link, 
 .tests-link, .objective-header {
 	font-weight: 700;
 	font-style: normal;
 	line-height: 1.1;
 }
-.howto-link::before, .objective-link::before, 
+.guide-link::before, .objective-link::before, 
 .tests-link::before, 
-.howto-header::before, .objective-header::before,
+.guide-header::before, .objective-header::before,
 .tests-header::before {
 	display: inline-block;
 	width: 1ex;
@@ -691,23 +691,23 @@ details.summary {
   }
   
 
-.howto-link,.tests-link {
+.guide-link,.tests-link {
 	max-height: 30px;
 }
-.howto-header,.tests-header {
+.guide-header,.tests-header {
 	max-height: 80px;
 }
 
-.howto-link::before {
-    background-image: url('../img/howtomanSMALL.png');
+.guide-link::before {
+    background-image: url('../img/guidemanSMALL.png');
     display: inline-block;
     background-size: 15px 26.8125px;
     width: 15px; 
     height: 26.8125px;
     content:" ";
 }
-.howto-header::before {
-    background-image: url('../img/howtomanSMALL.png');
+.guide-header::before {
+    background-image: url('../img/guidemanSMALL.png');
     display: inline-block;
     background-size: 40px 71.5px;
     margin: -1em 0 0;

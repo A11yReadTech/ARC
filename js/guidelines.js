@@ -37,26 +37,26 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "/ARC/how-tos/";
+	var guideBaseURI = "/ARC/guides/";
 	document.querySelectorAll('.guideline').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
-		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"howto-link\">" + heading + " <span>how-to</span></a>";
+		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"guide-link\">" + heading + " <span>guides</span></a>";
 		node.querySelector("p.guideline-text").append(el);
 	})
 }
 
 function linkMethod() {
-	var howtoBaseURI = "/ARC/tests/";
+	var guideBaseURI = "/ARC/tests/";
 
 	document.querySelectorAll('.guideline').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
-		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"tests-link\">" + heading + " <span>tests</span></a>";
+		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"tests-link\">" + heading + " <span>tests</span></a>";
 		node.querySelector("p.guideline-text").append(el);
 	})
 }
@@ -262,7 +262,7 @@ function outputJson() {
 	params = new URLSearchParams(window.location.search);
 	if (params.get("json") != null) {
 		var result = new Object();
-		result.guidelines = new Array();
+		result.criterion = new Array();
 		document.querySelectorAll(".guideline").forEach(function(glnode) {
 			var gl = {
 				id: titleToPathFrag(findFirstTextChild(findHeading(glnode)).textContent),
@@ -280,7 +280,7 @@ function outputJson() {
 				}
 				gl.objectives.push(oc);
 			});
-			result.guidelines.push(gl);
+			result.criterion.push(gl);
 		});
 		
 	    var a = document.createElement("a");

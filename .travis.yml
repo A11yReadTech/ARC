@@ -21,9 +21,9 @@ script:
   - git clone --depth=1 --branch=gh-pages https://github.com/A11yReadTech/ARC.git
   - cd ARC
   - cp -r ../../A11yReadTech/ARC/index.html ../../A11yReadTech/ARC/assets ../../A11yReadTech/ARC/css ../../A11yReadTech/ARC/js ../../A11yReadTech/ARC/img .
-  - cp -r ../../A11yReadTech/ARC/guidelines/img guidelines
-  - cp -r ../../A11yReadTech/ARC/tests ../../A11yReadTech/ARC/how-tos ../../A11yReadTech/ARC/objectives .
-  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/ARC/main/guidelines/index.html -o guidelines/index.html -f --retry 3
+  - cp -r ../../A11yReadTech/ARC/img guidelines
+  - cp -r ../../A11yReadTech/ARC/tests ../../A11yReadTech/ARC/guides ../../A11yReadTech/ARC/objectives .
+  - curl https://labs.w3.org/spec-generator/?type=respec"&"url=https://raw.githack.com/A11yReadTech/ARC/main/index.html -o guidelines/index.html -f --retry 3
 
 after_success:
   - git add -A .

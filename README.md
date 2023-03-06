@@ -5,7 +5,7 @@
 
 This repo is used for staging and testing the content prior to publishing on the live site. The current published draft version is:
 
-## http://readtech.org/ARC/guidelines
+## http://readtech.org/ARC/
 
 
 While officially, ARC stands for *"APCA Readability Criterion"*, it *could* easily mean one of the following:
