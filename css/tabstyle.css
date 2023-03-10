@@ -391,6 +391,7 @@ A heavier weight text. To Use This you must add a title attribute to link */
 #bibliography p {
 	margin: 0.15em 1.25em;
 	}
+#bibliography p ~ a + h3, #bibliography p ~ a:link + h3,
 #bibliography p ~ h3, #bibliography h2 ~ h3 {
 	margin: 1.15em 1em 0.15em 0.5em;
 	}
@@ -398,6 +399,10 @@ A heavier weight text. To Use This you must add a title attribute to link */
 #bibliography h4 {font-size: 1.1em; font-weight: 600;}
 #bibliography p  {font-size: 0.94em;font-weight: 500;}
 #bibliography p ~ p {font-size: 0.9em;font-weight: 400;}
+
+
+#bibliography a, #bibliography a:link {margin: 0; padding: 0}
+
 
 
 
