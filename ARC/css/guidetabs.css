@@ -404,7 +404,7 @@ nav li li .abstract {
 
 
 ul, ol:not(.toc){
-		margin: 0em;
+		margin: 0.25em 0;
 		padding-left: 1em;
 		padding-left: var(--list-indent);
 		font-size: 1em;
@@ -455,7 +455,7 @@ ol li+ul li+ul{list-style-type:"\273C \00A0 \00A0";}
 :not(li,ul,ol,li>strong,li>a,li>em)+ul li+ul :is(li,li>strong,li>a,li>em)+ul,
 ol li+ul li+ul li+ul{list-style-type:none;}
 
-  :not(li,ul,ol,li>strong,li>a,li>em) + ul > li + ul > li + ul > :is(li,li>strong,li>a,li>em)::before,
+:not(li,ul,ol,li>strong,li>a,li>em)+ul>li+ul>li+ul>:is(li,li>strong,li>a,li>em)::before,
   ol li+ul li+ul li+ul>li::before {
     display:inline-block;
     content: "\269B \00A0 \00A0";  /* ***  atom  *** */
@@ -481,21 +481,31 @@ ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
 
 
 
-:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha){list-style: none; counter-reset: num;}
-:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha)>li{counter-increment: num;}
+:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha)
+{list-style: none; counter-reset: num;}
+
+:not(li,ul,ol,li>strong,li>a,li>em)+ol:not(.toc,.alpha)>li
+{counter-increment: num;}
 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha{ 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman { 
   list-style-type: none; counter-reset: alphaA;
+}
+
+ol li ol.smallUpperAlpha,
+ol li ol.smallAlpha { 
+  list-style-type: none; counter-reset: alphaB;
 }
 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha>li, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman>li, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman>li, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li{ 
-  counter-increment: alphaA; padding: 0 0 0.45em 2em;
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman>li { 
+  counter-increment: alphaA; padding: 0 0 0 2em;
+}
+ol li ol.smallUpperAlpha>li,
+ol li ol.smallAlpha>li { 
+  counter-increment: alphaB; padding: 0 0 0 2em;
 }
 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol:not(.toc,.alpha)>li::before{
@@ -507,6 +517,7 @@ ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
   font-style: italic;
   color: var(--h3-text);
 }
+
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallNum:not(.toc,.alpha)>li::before{
   font-size: 1.4em;
   font-weight: 600;
@@ -549,8 +560,20 @@ ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
   color: var(--h3-text);
 }
 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li::before{
-  content: counter(alphaA,lower-latin);
+ol li ol.smallUpperAlpha>li::before {
+  content: counter(alphaB,upper-latin);
+  margin: 0 0.75em 0 -1.45em;
+  padding: 0;
+  text-align: right;
+  font-family: 'Roboto Serif'Exo,sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--h3-text);
+}
+
+ol li ol.smallAlpha>li::before {
+  content: counter(alphaB,lower-latin);
   margin: 0 0.75em 0 -1.45em;
   padding: 0;
   text-align: right;

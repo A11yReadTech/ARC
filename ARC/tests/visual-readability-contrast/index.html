@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
 	<head>
-	<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H77JCN2GW4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,7 +12,7 @@
 </script>
 
 
-		  <meta charset="utf-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Visual Readability Contrast | Test Methods | ARC | ART</title>
@@ -245,32 +245,43 @@
 	<body>
 		<header>
 			<h1 class="headerPlus1">Introduction</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#summary">Summary</a></li>
-  <li><a href="#user-need">How It Solves User Needs</a></li>
-  <li><a href="#objective">Objective</a></li>
-  <li><a href="#details">Detailed Description</a></li>
-  <li><a href="#dependencies">Dependencies</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#summary">Summary</a></li>
+				<li><a href="#objective">Objective</a></li>
+				<li><a href="#user-need">How It Solves User Needs</a></li>
+				<li><a href="#scope">Scope</a></li>
+				<li><a href="#details">Detailed Description</a></li>
+				<li><a href="#dependencies">Dependencies</a></li>
+			</ol>
 		</header>
+
+
 		<main>
+
 
 			<section id="summary">
 				<h2 class="headerPlus2ti">Summary</h2>
 				<p>Visual readability of text requires good visual contrast. Visual contrast is a product of the text characteristics, such as font weight (thickness) and font size, the lightness/darkness difference of the colors used for the text and the background, and other factors.</p>
 				<p>Using objective guidelines and tools, evaluate font stroke width (weight), font size, background color, font color, and nearby colors and adjust the properties of those elements to achieve good visual contrast and readability.</p>
 			</section>
-
-			<section id="user-need">
-				<h2 class="headerPlus2ti">How It Solves User Needs</h2>
-				<p>All sighted users need adequate text size and weight, coupled with ample luminance contrast (the perceived lightness/darkness difference) between background and text colors, in order to read the text easily.</p>
-			</section>
 			<section id="objective">
 				<h2 class="headerPlus2ti">Objective</h2>
 				<p>This test method supports the objective:
 				<ul><li><a href="../../#objective-lightness" class="objective-link">Lightness Contrast Between Text and Background</a>.
 				</ul></p>
+			</section>
+
+			<section id="user-need">
+				<h2 class="headerPlus2ti">How It Solves User Needs</h2>
+				<p>All sighted users need adequate text size and weight, coupled with ample luminance contrast (the perceived lightness/darkness difference) between background and text colors, in order to read the text easily.</p>
+
+        <p>Following these guidelines will address many of the needs of users with low vision, color vision deficiency, and other visual impairments; certain cognitive and learning disabilities; and combinations of these. These guidelines address visual accessibility of digital content on desktops, laptops, tablets, and mobile devices.</p>
+			</section>
+
+			<section id="scope">
+				<h2 class="headerPlus2ti">Scope</h2>
+				<p>This criterion addresses visual accessibility of lexical content displayed on desktops, laptops, tablets, and mobile devices.</p>
 			</section>
 
 			<section id="details">
@@ -281,7 +292,7 @@
 				
 				<p>A person's contrast sensitivity shifts throughout their lifetime, and visual impairments can cause a substantial reduction in contrast perception, requiring higher contrast text for the same readability. Some impairments can make it difficult to see certain hues, so it is important to ensure enough luminance contrast (lightness/darkness), and not to rely on color contrasts of hue and saturation.</p>
 				
-				<p>Because a person's contrast perception is so variable, it is difficult for any one individual to judge what makes a good readable contrast for all. The solution is to use objective guidelines and tools to evaluate font stroke width (weight), font size, background and font colors to ensure good visual contrast and readability.</p>
+				<p>Because a person's contrast perception is so variable, it is difficult for any one individual to judge what makes a good readable contrast for all. The solution is to use objective guidelines and tools to evaluate font stroke width (weight), font size, spacing & padding, and background & font colors to ensure good readability contrast.</p>
 			</section>
 	
 			<section id="dependencies">
@@ -289,7 +300,14 @@
 				<ul>
 				  <li>An APCA-W3 compliant perceptual contrast calculator</li>
 				  <li>A defined reference font family, for comparison purposes</li>
-				  <li>The sRGB color space, the default color space for web content</li>
+				  <li>A target color space of a physical, self-illuminated display
+				  <ul>
+						<li><a href="#"></a>MUST: The sRGB color space, the default color space for web content</li>
+						<li><a href="#"></a>OPTION: the DisplayP3 color space</li>
+						<li><a href="#"></a>OPTION: the Adobe98 RGB color space</li>
+						<li><a href="#"></a>NOTE: Rec2020 has accessibility concerns</li>
+				</ul></li>
+
 				</ul>
 			</section>
 			
@@ -297,7 +315,8 @@
 	</body>
 </html>
 </div>
-			
+
+
 
 
 <!-- *****     TAB 2     ***** -->
@@ -323,21 +342,34 @@
 	<body>
 		<header>
 			<h1 class="headerPlus1">Testing Criterion</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#conformance-minimums">Conformance Minimums</a></li>
-  <li><a href="#tables">Font Lookup Tables</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#conformance-minimums">Conformance Minimums</a>
+				<ul>
+				  <li><a href="#bronze-level-conformance">Bronze</a></li>
+				  <li><a href="#silver-level-conformance">Silver</a></li>
+				  <li><a href="#gold-level-conformance">Gold</a></li>
+				  <li><a href="#exchange-rules">Exchange Rules</a></li>
+				</ul></li>
+				<li><a href="#tables">Font Lookup Tables</a></li>
+			</ol>
 		</header>
+
 		<main>
-				<section id="conformance-minimums">
-				
+			<section id="conformance-minimums">
+
 				<h2 class="headerPlus2ti">Conformance Minimums</h2>
 				<p>The following minimum levels are used with the <a href="tn=tests#">tests</a> and <a href="tn=methods#">methods</a> to provide the basic pass/fail criteria for this objective.</p>
-				<h3 id="bronze-level-conformance" class="headerPlus3t">Bronze Level Conformance</h3>
 
+				<h3 id="bronze-level-conformance" class="headerPlus3t">Bronze Level Conformance</h3>
 				<ul>
-					<li>Bronze Use Case Conformance Values for Testing</li>
+					<li>GENERAL:
+					<ul>
+						<li>Use case: all fluent content text</li>
+						<li>No look up tables</li>
+						<li>Exchange Rules: optional.</li>
+					</ul></li>
+					<li>Bronze Use Case Conformance Values for Testing:</li>
 					<ul>
 						<li>Body Text</li>
 						<ul>
@@ -346,19 +378,27 @@
 						</ul>
 						<li>Other Content Text</li>
 						<ul>
+						  <li>Fonts 16px or larger</li>
 							<li>Minimum Contrast: Lc 60</li>
 						</ul>
 						<li>Large Fluent Content</li>
 						<ul>
-							<li>Fonts larger than 36px</li>
+							<li>Fonts larger than 32px</li>
 							<li>Minimum Contrast: Lc 45</li>
-							<li>Maximum Contrast: Lc 90 (Large Only)</li>
+							<li>Maximum Contrast: Lc 90 (Large & Bold Only)</li>
 						</ul>
 					</ul>
 				</ul>
 
 				<h3 id="silver-level-conformance" class="headerPlus3t">Silver Level Conformance</h3>
 				<ul>
+					<li>GENERAL:
+					<ul>
+						<li>Use cases: all fluent and sub-fluent content text</li>
+						<li>Uses look up tables or tools for font weight & size</li>
+						<li>Fonts for all body-text must be qualified, either prequalified or manually qualified using the <a href="?tn=methods#size-weight">Font Weight Test</a></li>
+						<li>Exchange Rules: Must choose at least one.</li>
+					</ul></li>
 					<li>Silver Use Case Conformance Values for Testing</li>
 					<ul>
 						<li>Body Text & Fluent Content</li>
@@ -375,7 +415,7 @@
 							<li>But in no case can it be under Lc 40</li>
 							<li>Minimum font size 10px</li>
 						</ul>
-						<li>Spot/Incidental</li>
+						<li>Non-Fluent & Incidental</li>
 						<ul>
 							<li>Per Lookup Table</li>
 							<li>Contrast Value can be reduced by as much as Lc 30</li>
@@ -383,8 +423,16 @@
 						</ul>
 					</ul>
 				</ul>
+
 				<h3 id="gold-level-conformance" class="headerPlus3t">Gold Level Conformance</h3>
 				<ul>
+					<li>GENERAL:
+					<ul>
+						<li>Use cases: all text (fluent, sub-fluent, non-fluent)</li>
+						<li>Uses look up tables or tools for font weight & size</li>
+						<li>Fonts for all fluent content must be qualified, either prequalified or manually qualified using the <a href="?tn=methods#size-weight">Font Weight Test</a></li>
+						<li>Exchange Rules: Must choose at least two.</li>
+					</ul></li>
 					<li>Gold Use-Case Conformance Values for Testing</li>
 					<ul>
 						<li>Body Text & Fluent Content</li>
@@ -402,7 +450,7 @@
 							<li>But in no case can it be under Lc 45</li>
 							<li>Minimum font size 12px</li>
 						</ul>
-						<li>Spot/Incidental</li>
+						<li>Non-Fluent & Incidental</li>
 						<ul>
 							<li>Per Lookup Table</li>
 							<li>Contrast Value can be reduced by as much as Lc 20</li>
@@ -411,10 +459,20 @@
 					</ul>
 				</ul>
 
-<h3>See Also: <a href="?tn=conform#conformance">"Understanding Use Cases and Conformance Levels"</a> for a more in depth discussion of conformance levels and use cases.</h3>
+				<h3 id="exchange-rules" class="headerPlus3t">EXCHANGE RULES:</h3>
+          <ul>
+						<li>Silver must choose one, Gold must choose two of these:
+            <ul>
+						  <li>Provides for more than one color scheme, at least light and dark mode, with control for user selection (persistent), and default of automatic following OS.</li>
+						  <li>Light mode body-text content using the Paper Reading Experience design guidelines.</li>
+						  <li>Provides a polyfill for proportional text zoom.</li>
+						  <li>Provides user controls for body-text weight, size, and spacing, persistent.</li>
+						  <li>Provides a set of hyper-legible fallback fonts, user activatable.</li>
+						<ul></li>
+          <ul>
+
+      <h3 class="">See Also: <a href="?tn=conform#conformance">"Understanding Use Cases and Conformance Levels"</a> for a more in depth discussion of conformance levels and use cases.</h3>
 				</section>
-
-
 
 
 
@@ -936,11 +994,23 @@
 	<body>
 		<header>
 			<h1 class="headerPlus1">Conformance</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#use-cases-text">Use Cases For Text</a></li>
-  <li><a href="#conformance-levels">Conformance Levels: Bronze, Silver, & Gold</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#use-cases-text">Use Cases For Text</a>
+				<ol class="smallUpperAlpha">
+				  <li><a href="#fluent">Fluent</a></li>
+				  <li><a href="#sub-fluent">Sub-Fluent</a></li>
+				  <li><a href="#non-fluent">Non-Fluent</a></li>
+				</ol></li>
+
+				<li><a href="#conformance-levels">Conformance Levels: Bronze, Silver, & Gold</a>
+				<ol class="smallUpperAlpha">
+				  <li><a href="#conformance-levels-bronze">BRONZE</a></li>
+				  <li><a href="#conformance-levels-silver">SILVER</a></li>
+				  <li><a href="#conformance-levels-gold">GOLD</a></li>
+				</ol></li>
+				<li><a href="#conformance-exchanges">Exchanges</a></li>
+			</ol>
 		</header>
 
 		<main>
@@ -950,7 +1020,7 @@
 				<p>Understanding use cases and conformance levels, and how they work together to provide improved accessibility along with added design flexibility.    
 				<h3 class="headerPlus3t">Text Use Cases: Body, Fluent, Sub-Fluent, Spot.</h3>
 
-				<ol class="roman">
+				<ol class="alpha">
 					<li id="fluent"><strong>FLUENT</strong>
 					<ul>
 						<li><strong>Fluent Readability, Block/Body Text</strong>
@@ -1009,7 +1079,7 @@
 						</ul></li>
 					</ul></li>
 				</ol>
-</section>
+      </section>
 
 <hr>
 
@@ -1018,7 +1088,7 @@
 				<h3 class="headerPlus3t">Conformance Levels: Bronze, Silver, and Gold</h3>
 
 				<ol class="alpha">
-					<li><h4 class="headerMinus4 headerUp">BRONZE:</h4> <strong> Covers primary content text only.</strong> 
+					<li id="conformance-levels-bronze"><h4 class="headerMinus4 headerUp">BRONZE:</h4> <strong> Covers primary content text only.</strong> 
 					<ul>
 						<li>There is no font lookup table, only a set of general conformance levels.</li>
 						<li>Use-cases for "body text" and "other content text".</li>
@@ -1028,7 +1098,7 @@
 						<li>There is no requirement to match a reference font weight or size.</li>
 					</ul></li>
 
-					<li><h4 class="headerMinus4 headerUp">SILVER:</h4> <strong> Covers all text content.</strong> 
+					<li id="conformance-levels-silver"><h4 class="headerMinus4 headerUp">SILVER:</h4> <strong> Covers all text content.</strong> 
 					<ul>
 						<li>Font weight and size per Lc contrast value and font lookup table.</li>
 						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text".</li>
@@ -1036,31 +1106,40 @@
 						<li>Spot text: disabled, placeholder, ancillary, decorative text are covered as a recommendation (should)</li>
 						<li>The minimum font size for content is 13px, based on an x-height ratio of 0.5 (minimum x-height of 7.5px)</li>
 						<li>Minimum font size for non-content text is 10px.</li>
-						<li>There is no requirement to compare to a reference font weight or size.</li>
+						<li>Fonts used for body text (only) must be prequalified or compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
 					</ul></li>
-					<li><h4 class="headerMinus4 headerUp">GOLD:</h4><strong> Covers all text content, enhanced.</strong> 
+
+					<li id="conformance-levels-gold"><h4 class="headerMinus4 headerUp">GOLD:</h4><strong> Covers all text content, enhanced.</strong> 
 					<ul>
 						<li>Font weight and size per Lc contrast value and font lookup tables per use cases. </li>
-						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "spot text" (Disabled, placeholder) and Logos.</li>
+						<li>Use-cases for "body text", "fluent text", "large fluent text", "sub-fluent text",  "non-fluent text" (Disabled, placeholder) and Logos.</li>
 						<li>Ancillary, decorative text are covered with recommendations</li>
 						<li>The minimum font size for content text is 18px, based on an x-height ratio of 0.5 (minimum x-height of 9px).</li>
 						<li>Minimum font size for non-content text is 12px.</li>
-						<li>Fonts used for content text must be compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
+						<li>Fonts used for fluent content text must be prequalified or compared to a reference font's weight or size, and appropriate offset used for equivalency.</li>
 					</ul></li>
 				</ol>
-
 			</section>
-			
+<hr>
+			<section id="conformance-exchanges">
+				<h3 id="exchange-rules" class="headerPlus3t">EXCHANGE RULES:</h3>
+						<strong>Silver must choose one, Gold must choose two of following:</strong>
+            <ul>
+						  <li>Provides for more than one color scheme, at least light and dark mode, with control for user selection (persistent), and default of automatic following OS.</li>
+						  <li>Light mode body-text content using the Paper Reading Experience design guidelines.</li>
+						  <li>Provides a polyfill for proportional text zoom.</li>
+						  <li>Provides user controls for body-text weight, size, and spacing, persistent.</li>
+						  <li>Provides a set of hyper-legible fallback fonts, user activatable.</li>
+						<ul>
+			</section>
 		</main>
 	</body>
 </html>
-
 </div>
 
 
 
 
-
 <!-- *****     TAB 4     ***** -->
 <!-- *****     TAB 4     ***** -->
 <!-- *****     TAB 4     ***** -->
@@ -1069,8 +1148,6 @@
 <!-- *****     TAB 4     ***** -->
 <!-- *****     TAB 4     ***** -->
 <!-- *****     TAB 4     ***** -->
-
-
 
 
 
@@ -1088,18 +1165,28 @@
 
 		<header>
 			<h1 class="headerPlus1">Tests</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#objective">Objective, Procedural Testing</a></li>
-  <li><a href="#conditional">Conditional, Evaluative Testing</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#objective">Objective, Procedural Testing</a>
+				<ul>
+				  <li><a href="#determine-scope">Determine Scope</a></li>
+				  <li><a href="#determine-use-case">Determine Use Case</a></li>
+				  <li><a href="#determine-contrast">Determine Contrast</a></li>
+				  <li><a href="#test-evaluate">Evaluate Tests for Pass/Fail</a></li>
+				</ul></li>
+
+				<li><a href="#conditional">Conditional, Evaluative Testing</a>
+				<ul>
+				  <li><a href="#font-match">Match a font to the reference</a></li>
+				</ul></li>
+			</ol>
 		</header>
 
 		<main>
 			<section id="objective">
 				<h2 class="headerPlus2ti">Objective, Procedural Testing</h2>
 
-				<p>Measure the predicted contrast of the content to ensure it supports the <a href="../../#objective-lightness" class="objective-link">required objective</a>  of adequate luminance contrast for readability.</p>
+				<p>Measure the predicted contrast of the content to ensure it supports the <a href="../../#objective-lightness" class="objective-link">required objective</a> of adequate luminance contrast for readability.</p>
 
 				<h3 class="headerPlus3t">Test Overview and Objective</h3>
 				<ol>
@@ -1111,7 +1198,8 @@
 
 				<h2 class="headerPlus2ti">Testing Step by Step</h2>
 
-				<section id="scope">
+				<section id="determine-scope">
+
 					<h3 class="headerPlus3t">STEP ONE: Decide on the Conformance Level to Test For</h3>
 					<p>With reference to the conformance levels and related use-cases as defined in this 	<a href="?tn=conform#conformance">understanding section,</a> choose one of the three conformance levels.</p>
 
@@ -1126,23 +1214,26 @@
 							<li><strong>SILVER:</strong> Covers all text content.
 							<ul>
 								<li>Font weight & size per Lc contrast value and font lookup table.</li>
+								<li>Fonts for body text (only) are qualified with a weight/size offset for equivalency to the reference font.</li>
 							</ul></li>
 							<li><strong>GOLD:</strong> Covers all text content, enhanced.
 							<ul>
 								<li>Font weight & size per Lc contrast value and font tables per use cases. </li>
-								<li>Fonts for content text are compared to a reference font creating a weight/size offset for equivalency.</li>
+								<li>Fonts for fluent content text are qualified with a weight/size offset for equivalency to the reference font.</li>
 							</ul></li>
 						</ul></li>
 					</ul>
 				</section>
 
 
-				<section id="use-case">
+				<section id="determine-use-case">
+
 					<h3 class="headerPlus3t">STEP TWO: Determine the Use-Case(s) of Text to be Tested</h3>
 					<p>A typical page of text content will have several different use cases of text, such as headlines, blocks of body text, text in menus, and so forth.</p>
 					<p>Depending on the chosen conformance level, it will not always be necessary to test every use-case of text. At a minimum, text the smallest, and also the lowest visible contrast examples on the page.</p>
 
 					<h4 class="headerPlus4">Test Procedure</h4>
+
 					<ul>
 						<li>Determine the intended use-case-scope to be tested, per the <a href="?tn=conform#conformance">conformance scope.</a>
 						<ul>
@@ -1169,47 +1260,52 @@
 							</ul></li>
 						</ul></li>
 					</ul>
+
 				</section>
 
 
-				<section id="contrast">
+
+
+				<section id="determine-contrast">
+
 					<h3 class="headerPlus3t">STEP THREE: Determine Colors and Contrast Value</h3>
 					<p>This testing procedure provides guidance on how to determine the lightness contrast value (Lc) of the elements to be tested, such as the text against the adjacent background.</p>
 
 					<h4 class="headerPlus4">Test Procedure</h4>
-				<ul>
-					<li>Obtain the CSS color values for the text (or non-text) element, and the adjacent background, using one or more of the <a href="?tn=methods#sampling">color sampling techniques</a></li>
-
-					<li>Using a contrast calculator that is compliant with the APCA-W3 contrast method, calculate the predicted lightness contrast (Lc value) between the foreground and background colors.
 					<ul>
-						<li>Important: do not swap the foreground & background colors in the tool entry fields. </li>
-						<li>The contrast evaluation is based in part on polarity, i.e. dark-mode or light-mode, so it is important that the background color value be entered into the background color field, and likewise for the foreground text or non-text element being tested. </li>
-					</ul></li>
-				</ul>
+						<li>Obtain the CSS color values for the text (or non-text) element, and the adjacent background, using one or more of the <a href="?tn=methods#sampling">color sampling techniques</a></li>
+						<li>Using a contrast calculator that is compliant with the APCA-W3 contrast method, calculate the predicted lightness contrast (Lc value) between the foreground and background colors.
+						<ul>
+							<li>Important: do not swap the foreground & background colors in the tool entry fields. </li>
+							<li>The contrast evaluation is based in part on polarity, i.e. dark-mode or light-mode, so it is important that the background color value be entered into the background color field, and likewise for the foreground text or non-text element being tested. </li>
+						</ul></li>
+					</ul>
 				</section>
 
-				<section id="testing">
-					<h3 class="headerPlus3t">STEP FOUR: Test and Evaluate the Contrast</h3>
-					<p>Having completed the above steps, determine of the materials under test pass or fail the conformance guidelines.</p>
-				<ol>
-					<li>For automated tools, and calculators that provide a minimum size and weight with the results: Compare the smallest font size and weight as used in the content and use-case, and confirm that it meets or exceeds the calculated minimum font size & weight.</li>
-					
-					<li>For calculators that provide only a numeric contrast result, and require a manual comparison:
-					<ul>
-						<li>Compare the calculated contrast value against the <a href="?tn=criterion#conformance-minimums">Conformance Minimums</a> and for Silver of Gold, find the font and contrast value on the <a href="?tn=criterion#tables">Font Lookup Tables</a>.</li>
-						<li>Check that the absolute value of contrast (the Lc value) meets or exceeds the required Lc value for the font weight & size, in the content of the given use case. 
-						<ul>
-							<li>Interpolation of the data in the font table is permitted.</li>
-							<li>Remember that light text on a dark background generates a negative value; ignore the minus sign and use the absolute value when using the lookup table.</li>
-							<li>Interpolation of the data in the font table is permitted.</li>
-						</ul></li>
-					</ul></li>
-				</ol>
 
-				<h3 class="headerPlus3t">Scoring the Result</h3>
+
+
+				<section id="test-evaluate">
+					<h3 class="headerPlus3t">STEP FOUR: Test and Evaluate the Contrast</h3>
+					<p>Having completed the above steps, determine if the materials under test pass or fail the conformance guidelines.</p>
+					<ol>
+						<li>For automated tools, and calculators that provide a minimum size and weight with the results: Compare the smallest font size and weight as used in the content and use-case, and confirm that it meets or exceeds the calculated minimum font size & weight.</li>
+					
+						<li>For calculators that provide only a numeric contrast result, and require a manual comparison:
+						<ul>
+							<li>Compare the calculated contrast value against the <a href="?tn=criterion#conformance-minimums">Conformance Minimums</a> and for Silver of Gold, find the font and contrast value on the <a href="?tn=criterion#tables">Font Lookup Tables</a>.</li>
+							<li>Check that the absolute value of contrast (the Lc value) meets or exceeds the required Lc value for the font weight & size, in the content of the given use case. 
+							<ul>
+								<li>Interpolation of the data in the font table is permitted.</li>
+								<li>Remember that light text on a dark background generates a negative value; ignore the minus sign and use the absolute value when using the lookup table.</li>
+								<li>Interpolation of the data in the font table is permitted.</li>
+							</ul></li>
+						</ul></li>
+					</ol>
+
+					<h3 class="headerPlus3t">Scoring the Result</h3>
 					<p>In order to pass, either #1 or #2 must be true.</p>
 				</section>
-
 
 
 
@@ -1310,16 +1406,29 @@
 	<body>
 		<header>
 			<h1 class="headerPlus1">Test Methods</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#sampling">Sampling Colors</a></li>
-  <li><a href="#tool-setup">Eyedropper Tool Setup</a></li>
-  <li><a href="#size-weight">Determining Font Size and Weight</a></li>
-  <li><a href="#conditions">Test Environment Viewing Conditions</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#sampling">Sampling Colors</a></li>
+				<li><a href="#tool-setup">Eyedropper Tool Setup</a></li>
+				<li><a href="#size-weight">Qualify Font Size and Weight</a>
+				<ul>
+					<li><a href="#i---size">Determine Size Offset</a></li>
+					<li><a href="#ii---weight">Determine Weight Offset</a></li>
+				</ul></li>
+				<li><a href="#conditions">Test Environment Viewing Conditions</a>
+				<ul>
+					<li><a href="#standard-environment">The Standard Environment</a></li>
+					<li><a href="#standard-model">The Standard Viewing Model</a></li>
+					<li><a href="#screen-pitch">Screen Pitch vs Distance Chart</a></li>
+				</ul></li>
+			</ol>
 		</header>
+
+
 		<main>
+
 		<section id="techniques">
+
 			<h2 class="headerPlus2ti">Visual Contrast Testing Techniques</h2>
 			<p>These are specific techniques with examples, demonstrating best practices to support the tests for visual contrast of text and non-text elements.</p>
 
@@ -1328,6 +1437,7 @@
 				<p>These testing techniques provide guidance on how to determine the RGB color values of the elements to be tested, such as the color of the text and the adjacent background.</p>
 				<h4 class="headerPlus4">Color Sampling Techniques</h4>
 				<p>Use one of the following methods, or an equivalent method that provides an accurate sRGB value (or RGB value in the relevant color space as displayed.)</p>
+
 
 				<ol class="alpha">
 					<li><strong>CALCULATED:</strong> Read the calculated values as determined by a browser, user agent, or automated tool.
@@ -1359,26 +1469,27 @@
 						<img width="45%" alt="example of sampling the main stroke of a thin letter" src="./img/Sampleapixelinthemiddleofamajorstrokeinaletter.png"></li>
 					</ul></li>
 				</ol>
+
 			</section>
 
 <hr>
 
 			<section id="tool-setup">
-			<h2 class="headerPlus2ti">Tool Setup</h2>
-				<h3 id="eyedropper" class="headerPlus3t">Setup for a Digital Color Meter (Eye Dropper)</h3>
-				<p>In order for a digital color meter or eye dropper tool to provide useful color data, the system color profile and the tool need to be configured correctly. This tutorial is using the standard digital color meter app in MacOS.</p>
-					<h4>The test system should use an sRGB monitor.</h4>
-				<ol>
-					<li>Set the system color profile to a standard sRGB profile when using the digital color meter.<br>
-						<img width="45%" alt="Set Display to an sRGB profile" src="./img/SetDisplaytoansRGBprofile.png"></li>
+				<h2 class="headerPlus2ti">Tool Setup</h2>
+					<h3 id="eyedropper" class="headerPlus3t">Setup for a Digital Color Meter (Eye Dropper)</h3>
+					<p>In order for a digital color meter or eye dropper tool to provide useful color data, the system color profile and the tool need to be configured correctly. This tutorial is using the standard digital color meter app in MacOS.</p>
+						<h4>The test system should use an sRGB monitor.</h4>
+					<ol>
+						<li>Set the system color profile to a standard sRGB profile when using the digital color meter.<br>
+							<img width="45%" alt="Set Display to an sRGB profile" src="./img/SetDisplaytoansRGBprofile.png"></li>
 
-					<li>Set the digital color meter to measure sRGB from the pop up menu.<br>
-						<img width="45%" alt="Set Digital Color Meter to display in sRGB" src="./img/SetDigitalColorMetertodisplayinsRGB.png"></li>
+						<li>Set the digital color meter to measure sRGB from the pop up menu.<br>
+							<img width="45%" alt="Set Digital Color Meter to display in sRGB" src="./img/SetDigitalColorMetertodisplayinsRGB.png"></li>
 						
-					<li>Under the view menu, set the digital color meter to report the color values as decimal, hex, or percentage, per your working preference, or the needs of the other tools in use.<br>
-						<img width="45%" alt="Choose the display value you are comfortable with" src="./img/Choosethedisplayvalueyouarecomfortablewith.png"></li>
-					<li>Set the size of the sample to one pixel.</li>
-				</ol>
+						<li>Under the view menu, set the digital color meter to report the color values as decimal, hex, or percentage, per your working preference, or the needs of the other tools in use.<br>
+							<img width="45%" alt="Choose the display value you are comfortable with" src="./img/Choosethedisplayvalueyouarecomfortablewith.png"></li>
+						<li>Set the size of the sample to one pixel.</li>
+					</ol>
 			</section>
 
 
@@ -1386,149 +1497,158 @@
 
 <hr class="abstract">
 
+
 <section id="size-weight">
 
-<h3 class="headerPlus3">Determining Effective Font Weight<br> for Non-Standard Fonts</h3>
+	<h2 class="headerPlus3">Qualify Font Size and Weight</h2>
 
-<h4 class="headerPlus4" dir="auto"><a id="test-methods" class="anchor" aria-hidden="true" href="?tn=methods#test-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Test Method Summary</h4>
-<p dir="auto">Take your desired font and compare it to one of the reference fonts "Helvetica Neue, Helvetica, Fira Sans, Kanit, or Arial."</p>
+	<h3 class="">Determining Effective Font Weight for Non-Standard Fonts</h3>
 
-<ol class="smallNum" dir="auto">
-	<li>Measure the x-height, and determine the relative size offset.</li>
-	<li>Visually compare the weight And both a low contrast and high contrast setting, and determine the relative weight offset.</li>
-</ol>
+	<h4 class="headerPlus4" dir="auto"><a id="test-methods" class="anchor" aria-hidden="true" href="?tn=methods#test-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Test Method Summary</h4>
+	<p dir="auto">Take your desired font and compare it to one of the reference fonts "Helvetica Neue, Helvetica, Fira Sans, Kanit, or Arial."</p>
 
-
-
-<h2 class="headerPlus2" dir="auto"><a id="step-by-step" class="anchor" aria-hidden="true" href="tn=methods#step-by-step"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step by Step</h2>
+		<ol class="smallNum" dir="auto">
+			<li>Measure the x-height, and determine the relative size offset.</li>
+			<li>Visually compare the weight And both a low contrast and high contrast setting, and determine the relative weight offset.</li>
+		</ol>
 
 
-<h2 class="headerPlus3" dir="auto"><a id="i---size" class="anchor" aria-hidden="true" href="?tn=methods#i---size"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>I - Size</h2>
-<h3 class="headerPlus4" dir="auto"><a id="part-ia---setup" class="anchor" aria-hidden="true" href="?tn=methods#part-ia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.a - Setup</h3>
-<ol class="smallNum" dir="auto">
-	<li>Using a 400 normal weight font as the example, make a test webpage with two spans, each containing a single <strong>lowercase x</strong>, so they are next to each other horizontally.</li>
-	<li>Set the font-family of one of the spans to the reference (i.e. Helvetica or Arial)</li>
-	<li>Set the other span to the font being evaluated.</li>
-	<li>Set the font-size to <strong>100px.</strong> for both.</li>
-</ol>
-<h3 class="headerPlus4" dir="auto"><a id="part-ib---measure" class="anchor" aria-hidden="true" href="?tn=methods#part-ib---measure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.b - Measure</h3>
-<ol class="smallNum" dir="auto">
-	<li>Load the test page in a browser.</li>
-	<li>Take a screen shot of both x as rendered.</li>
-	<li>Load the screenshot into a photo editor and measure the height of each lowercase x.</li>
-</ol>
-<h3 class="headerPlus4" dir="auto"><a id="part-ic---determine-offset" class="anchor" aria-hidden="true" href="?tn=methods#part-ic---determine-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
-<ol class="smallNum" dir="auto">
-	<li>Divide the x-height of the reference font, by the x-height of the test font.</li>
-	<li>This value is the reference ratio.</li>
-</ol>
-<h3 class="headerPlus4" dir="auto"><a id="using-the-reference-ratio" class="anchor" aria-hidden="true" href="?tn=methods#using-the-reference-ratio"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Ratio</em></h3>
-<p dir="auto">For a given minimum font size, indicated by the font look up table or APCA tool, multiply by the reference ratio to find the appropriate font size for the desired design font.</p>
-<h3 class="headerPlus4" dir="auto"><a id="part-i-example" class="anchor" aria-hidden="true" href="?tn=methods#part-i-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I <em>Example</em>:</h3>
-<p dir="auto">This example compares the reference font Helvetica, to the desired design font Times New Roman.</p>
-
-<details class="codeHide"><summary>▶︎ Click to see code</summary>
+	<h2 class="headerPlus2" dir="auto"><a id="step-by-step" class="anchor" aria-hidden="true" href="tn=methods#step-by-step"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step by Step</h2>
 
 
+	<h2 class="headerPlus3" dir="auto"><a id="i---size" class="anchor" aria-hidden="true" href="?tn=methods#i---size"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>I - Size</h2>
+	<h3 class="headerPlus4" dir="auto"><a id="part-ia---setup" class="anchor" aria-hidden="true" href="?tn=methods#part-ia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.a - Setup</h3>
+		<ol class="smallNum" dir="auto">
+			<li>Using a 400 normal weight font as the example, make a test webpage with two spans, each containing a single <strong>lowercase x</strong>, so they are next to each other horizontally.</li>
+			<li>Set the font-family of one of the spans to the reference (i.e. Helvetica or Arial)</li>
+			<li>Set the other span to the font being evaluated.</li>
+			<li>Set the font-size to <strong>100px.</strong> for both.</li>
+		</ol>
 
-<div class="highlightTabs highlight-text-html-basic notranslate" dir="auto">
+	<h3 class="headerPlus4" dir="auto"><a id="part-ib---measure" class="anchor" aria-hidden="true" href="?tn=methods#part-ib---measure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.b - Measure</h3>
+		<ol class="smallNum" dir="auto">
+			<li>Load the test page in a browser.</li>
+			<li>Take a screen shot of both x as rendered.</li>
+			<li>Load the screenshot into a photo editor and measure the height of each lowercase x.</li>
+		</ol>
+	<h3 class="headerPlus4" dir="auto"><a id="part-ic---determine-offset" class="anchor" aria-hidden="true" href="?tn=methods#part-ic---determine-offset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I.c - Determine Offset</h3>
+		<ol class="smallNum" dir="auto">
+			<li>Divide the x-height of the reference font, by the x-height of the test font.</li>
+			<li>This value is the reference ratio.</li>
+		</ol>
+	<h3 class="headerPlus4" dir="auto"><a id="using-the-reference-ratio" class="anchor" aria-hidden="true" href="?tn=methods#using-the-reference-ratio"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em>Using the Reference Ratio</em></h3>
+	<p dir="auto">For a given minimum font size, indicated by the font look up table or APCA tool, multiply by the reference ratio to find the appropriate font size for the desired design font.</p>
 
-<pre><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+	<h3 class="headerPlus4" dir="auto"><a id="part-i-example" class="anchor" aria-hidden="true" href="?tn=methods#part-i-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part I <em>Example</em>:</h3>
+	<p dir="auto">This example compares the reference font Helvetica, to the desired design font Times New Roman.</p>
 
-<span class="pl-c">&lt;!-- Web Page Snippet 1: matching size to the reference --&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-<span class="pl-c">/* import test and reference fonts here, (not shown)
-or link them above in the &lt;head&gt; */</span> 
-
-<span class="pl-ent">body</span><span class="pl-kos">,</span> <span class="pl-ent">section</span><span class="pl-kos">,</span> <span class="pl-ent">div</span><span class="pl-kos">,</span> <span class="pl-ent">p</span><span class="pl-kos">,</span> <span class="pl-ent">span</span>  {<span class="pl-c1">margin</span><span class="pl-kos">:</span> <span class="pl-c1">0<span class="pl-smi">em</span></span>;<span class="pl-c1">padding</span><span class="pl-kos">:</span><span class="pl-c1">0</span>;}
-
-.<span class="pl-c1">xheightMeasure</span>{
-  <span class="pl-c1">clear</span><span class="pl-kos">:</span>both;
-  <span class="pl-c1">padding</span><span class="pl-kos">:</span> <span class="pl-c1">24<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>222</span>; 
-  <span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>eaeaea</span>; 
-  <span class="pl-c1">font-size</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">px</span></span>; 
-  <span class="pl-c1">font-weight</span><span class="pl-kos">:</span> <span class="pl-c1">400</span>;
-  }
-
-.<span class="pl-c1">referenceFont</span> {<span class="pl-c1">font-family</span><span class="pl-kos">:</span> Arial<span class="pl-kos">,</span> Helvetica<span class="pl-kos">,</span> cursive<span class="pl-kos">,</span>fantasy;}
-.<span class="pl-c1">testFont</span> {<span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">'Times New Roman'</span><span class="pl-kos">,</span> cursive<span class="pl-kos">,</span>fantasy;}
-<span class="pl-c">/* the reason the last font-family in the fallbacks is cursive Fantasy,
- is to make it very clear that the desired font did not load as expected */</span>
-
-<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-<span class="pl-c">&lt;!-- Measure the x-height compared to the reference font--&gt;</span> 
-
-<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">xheightMeasure</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">referenceFont</span>"<span class="pl-kos">&gt;</span>x<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">testFont</span>"<span class="pl-kos">&gt;</span>x<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
-
-<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+	<details class="codeHide"><summary>▶︎ Click to see code</summary>
 
 
 
-<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<!DOCTYPE html>
-<html>
-<head>
+	<div class="highlightTabs highlight-text-html-basic notranslate" dir="auto">
 
-<!-- Web Page Snippet 1: matching size to the reference -->
-<style>
-/* import test and reference fonts here, or link them above in the <head> */ 
+		<pre><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+		<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+		<span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+
+		<span class="pl-c">&lt;!-- Web Page Snippet 1: matching size to the reference --&gt;</span>
+		<span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+		<span class="pl-c">/* import test and reference fonts here, (not shown)
+		or link them above in the &lt;head&gt; */</span> 
+
+		<span class="pl-ent">body</span><span class="pl-kos">,</span> <span class="pl-ent">section</span><span class="pl-kos">,</span> <span class="pl-ent">div</span><span class="pl-kos">,</span> <span class="pl-ent">p</span><span class="pl-kos">,</span> <span class="pl-ent">span</span>  {<span class="pl-c1">margin</span><span class="pl-kos">:</span> <span class="pl-c1">0<span class="pl-smi">em</span></span>;<span class="pl-c1">padding</span><span class="pl-kos">:</span><span class="pl-c1">0</span>;}
+
+		.<span class="pl-c1">xheightMeasure</span>{
+			<span class="pl-c1">clear</span><span class="pl-kos">:</span>both;
+			<span class="pl-c1">padding</span><span class="pl-kos">:</span> <span class="pl-c1">24<span class="pl-smi">px</span></span>;
+			<span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>222</span>; 
+			<span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>eaeaea</span>; 
+			<span class="pl-c1">font-size</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">px</span></span>; 
+			<span class="pl-c1">font-weight</span><span class="pl-kos">:</span> <span class="pl-c1">400</span>;
+			}
+
+		.<span class="pl-c1">referenceFont</span> {<span class="pl-c1">font-family</span><span class="pl-kos">:</span> Arial<span class="pl-kos">,</span> Helvetica<span class="pl-kos">,</span> cursive<span class="pl-kos">,</span>fantasy;}
+		.<span class="pl-c1">testFont</span> {<span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">'Times New Roman'</span><span class="pl-kos">,</span> cursive<span class="pl-kos">,</span>fantasy;}
+		<span class="pl-c">/* the reason the last font-family in the fallbacks is cursive Fantasy,
+		 is to make it very clear that the desired font did not load as expected */</span>
+
+		<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+		<span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+		<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+		<span class="pl-c">&lt;!-- Measure the x-height compared to the reference font--&gt;</span> 
+
+		<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">xheightMeasure</span>"<span class="pl-kos">&gt;</span>
+			<span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">referenceFont</span>"<span class="pl-kos">&gt;</span>x<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">testFont</span>"<span class="pl-kos">&gt;</span>x<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+		<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+
+		<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+		<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
 
 
-body, section, div, p, span  {margin: 0em;padding:0;}
 
-.xheightMeasure{
-  clear:both;
-  padding: 24px;
-  color: #222; 
-  background-color: #eaeaea; 
-  font-size: 100px; 
-  font-weight: 400;
-  }
+		<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<!DOCTYPE html>
+		<html>
+		<head>
 
-.referenceFont {font-family: Arial, Helvetica, cursive,fantasy;}
-.testFont {font-family: 'Times New Roman', cursive,fantasy;}
-/* the reason the last font-family in the fallbacks is cursive Fantasy, is to make it very clear that the desired font did not load as expected */
+		<!-- Web Page Snippet 1: matching size to the reference -->
+		<style>
+		/* import test and reference fonts here, or link them above in the <head> */ 
 
-</style>
-</head>
-<body>
-<!-- Measure the x-height compared to the reference font--> 
 
-<div class=&quot;xheightMeasure&quot;>
-  <span class=&quot;referenceFont&quot;>x</span><span class=&quot;testFont&quot;>x</span>
-</div>
+		body, section, div, p, span  {margin: 0em;padding:0;}
 
-</body>
-</html>
+		.xheightMeasure{
+			clear:both;
+			padding: 24px;
+			color: #222; 
+			background-color: #eaeaea; 
+			font-size: 100px; 
+			font-weight: 400;
+			}
 
-" tabindex="0" role="button">
+		.referenceFont {font-family: Arial, Helvetica, cursive,fantasy;}
+		.testFont {font-family: 'Times New Roman', cursive,fantasy;}
+		/* the reason the last font-family in the fallbacks is cursive Fantasy, is to make it very clear that the desired font did not load as expected */
 
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-</svg>
-    </clipboard-copy>
-  </div></div>
-  
-</details>
-<p dir="auto"><strong><em>(NOTE: this image was captured on a retina display, so the indicated sizes are twice what they would be on a standard display.)</em></strong></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png"><img width="769" alt=" and example of a lowercase X of the reference font versus the test font, in this case Helvetica versus times new Roman, showing the times new Roman is much smaller." src="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png" style="max-width: 100%;"></a></p>
-<p dir="auto">In this case 100px Helvetica would measure an x-height of about 52px. Determine the reference ratio by dividing the reference size by the font being tested. If the test font is 45px, such as this Times New Roman, then:</p>
-<h3 class="headerPlus4" dir="auto"><a id="5245--1156" class="anchor" aria-hidden="true" href="?tn=methods#5245--1156"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>52/45 = 1.156</h3>
-<p dir="auto"><em>(round to at least two significant digits, three is shown here)</em></p>
-<p dir="auto">So for example, an APCA value of L<sup>c</sup>&nbsp;75 specifies and 18px reference font. To use the example of Times New Roman, multiply 18px by 1.156 to arrive at a minimum font size of 20.8px, or 21px rounded.</p>
-<h3 class="headerPlus4" dir="auto"><a id="why-list-cursive" class="anchor" aria-hidden="true" href="?tn=methods#why-list-cursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why List Cursive?</h3>
-<p dir="auto">Make the fallback font-family after the test and reference fonts something very different, such as "cursive". This way if the browser does not load the font properly, it is immediately obvious, as in this example:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png"><img width="335" alt=" an example of why it's useful to use cursive as the last font in a fallback list for testing purposes, if the correct reference or test font does not load properly then cursive makes it very obvious." src="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png" style="max-width: 100%;"></a></p>
+		</style>
+		</head>
+		<body>
+		<!-- Measure the x-height compared to the reference font--> 
+
+		<div class=&quot;xheightMeasure&quot;>
+			<span class=&quot;referenceFont&quot;>x</span><span class=&quot;testFont&quot;>x</span>
+		</div>
+
+		</body>
+		</html>
+
+		" tabindex="0" role="button">
+
+					<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+				<path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+		</svg>
+					<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+				<path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+		</svg>
+				</clipboard-copy>
+			</div>
+		</div>
+	
+	</details>
+
+
+
+
+	<p dir="auto"><strong><em>(NOTE: this image was captured on a retina display, so the indicated sizes are twice what they would be on a standard display.)</em></strong></p>
+	<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png"><img width="769" alt=" and example of a lowercase X of the reference font versus the test font, in this case Helvetica versus times new Roman, showing the times new Roman is much smaller." src="https://user-images.githubusercontent.com/42009457/140870281-d6fc40f5-e979-4086-9585-6bd716a7540a.png" style="max-width: 100%;"></a></p>
+	<p dir="auto">In this case 100px Helvetica would measure an x-height of about 52px. Determine the reference ratio by dividing the reference size by the font being tested. If the test font is 45px, such as this Times New Roman, then:</p>
+	<h3 class="headerPlus4" dir="auto"><a id="5245--1156" class="anchor" aria-hidden="true" href="?tn=methods#5245--1156"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>52/45 = 1.156</h3>
+	<p dir="auto"><em>(round to at least two significant digits, three is shown here)</em></p>
+	<p dir="auto">So for example, an APCA value of L<sup>c</sup>&nbsp;75 specifies and 18px reference font. To use the example of Times New Roman, multiply 18px by 1.156 to arrive at a minimum font size of 20.8px, or 21px rounded.</p>
+	<h3 class="headerPlus4" dir="auto"><a id="why-list-cursive" class="anchor" aria-hidden="true" href="?tn=methods#why-list-cursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why List Cursive?</h3>
+	<p dir="auto">Make the fallback font-family after the test and reference fonts something very different, such as "cursive". This way if the browser does not load the font properly, it is immediately obvious, as in this example:</p>
+	<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png"><img width="335" alt=" an example of why it's useful to use cursive as the last font in a fallback list for testing purposes, if the correct reference or test font does not load properly then cursive makes it very obvious." src="https://user-images.githubusercontent.com/42009457/140868635-38b7f926-3687-4e2c-96fe-6407cad350fa.png" style="max-width: 100%;"></a></p>
 
 <hr>
 
@@ -1553,6 +1673,8 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 <p dir="auto">We'll make a few lines to compare different weights, and one with high contrast, and another set with very low contrast to help exacerbate the differences.</p>
 <p dir="auto">The test text is <strong><code>Il 400 &amp;IcyATOMsizedgap</code></strong>, using an uppercase I &amp; lowercase l as these make it easy to compare the vertical stroke widths. The sample text "&amp; IcyATOMsizedgap" is short yet demonstrates most of the common design differences in a font.</p>
 <h3 class="headerPlus4" dir="auto"><a id="part-iia---setup" class="anchor" aria-hidden="true" href="?tn=methods#part-iia---setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Part II.a - Setup</h3>
+
+
 <ol class="smallNum" dir="auto">
 	<li>Setup a 400 normal weight, and 700 bold weight reference font as the comparison sample.
 	<ul dir="auto">
@@ -1564,8 +1686,10 @@ body, section, div, p, span  {margin: 0em;padding:0;}
 		<li>The test font's size must be normalized so that the test and reference x Heights are equivalent.</li>
 	</ul>
 	</li>
+
 	<li>Create one test area for high contrast around L<sup>c</sup>&nbsp;90 and a second test area for low contrast around L<sup>c</sup>&nbsp;30.</li>
 	<li>Use a consistent line of sample text for each line, and include the weight that is being tested for each line.
+
 	<ul dir="auto">
 		<li>An example is "<code>&amp;IcyATOMsizedgap</code>".</li>
 		<li>Include the weight that is being tested in each line.</li>
@@ -1969,7 +2093,7 @@ hr{margin: 1em;}
 
 					<h3 class="headerPlus3t">Objective Test Baseline Setup</h3>
 				
-					<ol class="smallalpha">
+					<ol class="smallAlpha">
 						<li>Color samples are taken using the sRGB color space, the default color space for web content.</li>
 						<li>The monitor used on the testing system is sRGB, and the system profile is set to sRGB</li>
 						<li>Content to be tested is at the initial or default zoom for the given view.</li>
@@ -1991,7 +2115,7 @@ hr{margin: 1em;}
 					<h3 class="headerPlus3t">Conditional/Qualified Tests Standard Setup</h3>
 					<p>Because conditional or qualified tests involve a certain amount of subjectivity, it's important to have a standardized environment for conducting any such tests. This is facilitated with a defined standard testing environment, intended to provide a consistent foundation for evaluations that require any degree of subjectivity.</p>
 
-					<p><em><strong>The standard environmental model shall comprise</strong></em></p>
+					<h3 id="standard-environment"><em><strong>The Standard Environment Shall Comprise</strong></em></h3>
 
 					<ol>
 						<li>A desktop sRGB LCD screen that is
@@ -2023,7 +2147,7 @@ hr{margin: 1em;}
 						</ul></li>
 					</ol>
 
-					<p><em><strong>The standard model configuration shall be: </strong></em></p>
+					<h3 id="standard-model"><em><strong>The Standard Viewing Model Configuration Shall Comprise: </strong></em></h3>
 
 					<ol>
 						<li>Monitor positioned toward user in a way that minimizes reflections.</li>
@@ -2052,11 +2176,10 @@ hr{margin: 1em;}
 							<li>For a mobile device, the observer is positioned such that the 1px = 1.278&#39; arc-min relationship is maintained.</li>
 							<li>For a 96ppi monitor, the observer shall be 28&quot; away.</li>
 						</ul></li>
-
 					</ol>
 
 
-		<div style="overflow: scroll;">
+		<div id="screen-pitch" style="overflow: scroll;">
 			<table class="ppiTable centered">
 				<tr><th colspan="5">Screen Pitch vs Distance for 1.278 arc-min VA</th></tr>
 				<tr><th colspan="1">Distance<br>to Display</th><th colspan="3">Screen Pitch</th><th colspan="1">Distance<br>to Display</th></tr>
@@ -2123,15 +2246,15 @@ hr{margin: 1em;}
 
 		<header>
 			<h1 class="headerPlus1">Resources</h1>
-<h2 class="headerPlus4i">ON THIS TAB</h2>
-<ol class="smallUpperRoman">
-  <li><a href="#apca-basis">APCA Empirical Basis</a></li>
-  <li><a href="#apca-resources">APCA Resources</a></li>
-  <li><a href="#color-resources">External Resources</a></li>
-  <li><a href="#w3c-resources">W3C Resources</a></li>
-  <li><a href="#equation">APCA Equation</a></li>
-  <li><a href="#bibliography">Selected Bibliography</a></li>
-</ol>
+			<h2 class="headerPlus4i">ON THIS TAB</h2>
+			<ol class="smallUpperRoman">
+				<li><a href="#apca-basis">APCA Empirical Basis</a></li>
+				<li><a href="#apca-resources">APCA Resources</a></li>
+				<li><a href="#color-resources">External Resources</a></li>
+				<li><a href="#w3c-resources">W3C Resources</a></li>
+				<li><a href="#equation">APCA Equation</a></li>
+				<li><a href="#bibliography">Selected Bibliography</a></li>
+			</ol>
 		</header>
 
 		<main>
