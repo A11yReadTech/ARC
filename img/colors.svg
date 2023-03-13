@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   sodipodi:docname="colors.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.55766767"
+     inkscape:cx="328.15243"
+     inkscape:cy="225.04443"
+     inkscape:window-width="1309"
+     inkscape:window-height="615"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="546.92072"
+       y="134.4887"
+       width="231.32057"
+       height="150.62734"
+       id="rect11522" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0000ee;stroke-width:0.529;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;fill-opacity:1"
+       id="rect111"
+       width="45.546841"
+       height="71.641388"
+       x="34.16013"
+       y="27.992331"
+       ry="13.607143" />
+    <rect
+       style="fill:#00ff00;stroke-width:0.529;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;fill-opacity:1"
+       id="rect111-8"
+       width="45.546841"
+       height="71.641388"
+       x="83.502541"
+       y="27.755104"
+       ry="13.607143" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-11.835602,16.605619)"
+       id="text11520"
+       style="font-weight:300;font-size:64px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';white-space:pre;shape-inside:url(#rect11522);fill:#808080"><tspan
+         x="546.91992"
+         y="195.82161"
+         id="tspan14450"><tspan
+           style="font-weight:normal;font-family:'Barlow Black';-inkscape-font-specification:'Barlow Black, ';fill:#a0a0a0"
+           id="tspan14448">Lc -71
+</tspan></tspan></text>
+  </g>
+</svg>

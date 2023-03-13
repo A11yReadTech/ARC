@@ -1,17 +1,18 @@
 @media (max-width: 49.99em) {
   :root {}
-  body {
+  body main {
+    margin: 0;
     padding: 5vw;
     font-size: 2.5vw;
   }
 
-  body > section, body section#abstract {
+  body main > section, body main section#abstract {
     margin: 8vw 0;
     padding: 2vw 5vw 5vw;
     border: none
   }
 
-  body > section section, body > section section section {
+  body main > section section, body main > section section section {
     padding: 0 0 0 2vw;
   }
 
@@ -32,7 +33,8 @@
 
 @media (max-width: 39.99em) {
   :root {}
-  body {
+  body main {
+    margin: 0;
     padding: 5vw;
     font-size: 3vw;
   }
