@@ -521,14 +521,14 @@ ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha{ 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallAlpha{ 
   list-style-type: none; counter-reset: alphaA;
 }
 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.alpha>li, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.roman>li, 
 :not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallUpperRoman>li, 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li{ 
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallAlpha>li{ 
   counter-increment: alphaA; padding: 0 0 0.45em 2em;
 }
 
@@ -583,7 +583,7 @@ ul.chevron li+ul li+ul{list-style-type:"\276F \276F \276F \00A0";}
   color: var(--h3-text);
 }
 
-:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallalpha>li::before{
+:not(li,ul,ol,li>strong,li>a,li>em,.toc,.alpha)+ol.smallAlpha>li::before{
   content: counter(alphaA,lower-latin);
   margin: 0 0.75em 0 -1.45em;
   padding: 0;

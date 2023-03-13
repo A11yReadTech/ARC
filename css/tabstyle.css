@@ -46,14 +46,17 @@ body {
 }
 
 [role="tabpanel"] {
-	padding: .5rem;
+/*	padding: .5rem;
 	border: 2px solid #005a6a;
 	border-radius: 5px;
 	margin-top: -2px;
+	*/
 }
+
 [role="tabpanel"].is-hidden {
 	display: none;
 }
+
 /*
 [role="tab"][aria-selected="true"] {
 	background-color: var(--art-blue);
@@ -62,6 +65,7 @@ body {
 	font-size: 1rem;
 }
 */
+
 #apca-sticker {
 	height: 15ex;
 	width: 15ex;
@@ -87,16 +91,17 @@ body {
 	width: 3.39ex;
   }
 
-
 h1+p, button[role="tablist"] {
 	clear: both;
 }
+
 .criterion-link::before, .guide-link::before, .objective-link::before, .tests-link::before, .json-link::before {
 	display: inline-block;
 	width: 2.5ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
+
 /*
 .criterion-link::before {
 	content: url(../img/ratingTINY.png);
@@ -118,6 +123,7 @@ h1+p, button[role="tablist"] {
 }
 */
 /* fixes for broken minimal-header styles, taken from  */
+
 .tool-header {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 8;
@@ -127,18 +133,23 @@ h1+p, button[role="tablist"] {
 	align-items: center;
 	width: 100%;
 }
+
 .tool-header a {
 	text-decoration: none;
 }
+
 .tool-header-name {
 	font-size: 1.125em;
 	white-space: nowrap;
 }
+
 @media (min-width: 60em) {
 	.tool-header-name {
 		font-size: 1.5em;
 	}
 }/* CLOSE MEDIA QUERY */
+
+
 .tool-header-logo {
 	margin-left: auto;
 	display: flex;
@@ -159,11 +170,10 @@ h1+p, button[role="tablist"] {
 
 
 
-
-
-
 dd > p:first-child,
 li > p:first-child { margin-top: 0; }
+
+
 /*
 ul, ol {
 		margin: 0;
@@ -220,15 +230,15 @@ ol.alpha > li::before {
   font-weight: 700;
   font-style: italic;
   }
-
-
 */
+
 
 	li {
 		margin: 0 0 0.6em;
 		padding: 0;
 		line-height: 1.15;
 		}
+
 	li:last-child {
 		margin: 0 0 1.2em;
 		}
@@ -307,9 +317,10 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	border-radius: 0 0 32px 32px;	
 	box-shadow: inset 0 3px 7px rgba(32,32,32,0.2);	
 	}
+	/*
 [role="tabpanel"] * + * {
 	margin-top: 0.5em;
-	}
+	} */
 [role="tabpanel"] {
 	padding: 12px 32px;
 	font-size: 1.125em;
@@ -393,7 +404,7 @@ p a:link, li a:link, #bibliography a:link {
   display: inline-block; 
   text-align: left;  
   position: relative; 
-  margin: 0 auto 0.33em; 
+  margin: 0 auto 0; 
   font-weight: 600;
   text-align: center;  
   color: #52a; 
@@ -421,8 +432,7 @@ p a:active, li a:active, #bibliography a:active {
   left: 3px;
   }
 
-
-#resources li a:link{
+#resources li a:link {
   font-weight: 600;
   font-style: italic;
   }
@@ -442,15 +452,16 @@ p a:active, li a:active, #bibliography a:active {
 #bibliography p {
 	margin: 0.15em 1.25em;
 	}
+
 #bibliography p ~ a + h3, #bibliography p ~ a:link + h3,
 #bibliography p ~ h3, #bibliography h2 ~ h3 {
 	margin: 1.15em 1em 0.15em 0.5em;
 	}
+
 #bibliography h3 {font-size: 1.2em;font-weight: 700;}
 #bibliography h4 {font-size: 1.1em; font-weight: 600;}
 #bibliography p  {font-size: 0.94em;font-weight: 500;}
 #bibliography p ~ p {font-size: 0.9em;font-weight: 400;}
-
 
 #bibliography a, #bibliography a:link {margin: 0; padding: 0}
 
@@ -466,6 +477,7 @@ p a:active, li a:active, #bibliography a:active {
 
 
 
+
 /* ******   MEDIA QUERIES   ****** */
 
 
@@ -473,6 +485,7 @@ p a:active, li a:active, #bibliography a:active {
 
 body {padding: 0;}
 .default-grid {padding: 0;}
+
 main {
   margin: 0;
   max-width:100vw;
