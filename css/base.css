@@ -467,7 +467,7 @@ main.wrapper {
 			max-width: 80%;
 			max-width: calc(100% - 2em - 26px);
 			overflow-x: auto;			
-			overflow-y: clip;
+			overflow-y: scroll;
 			padding: 0 1em;
 			padding-left: 42px;
 			padding-left: calc(1em + 26px);
@@ -503,7 +503,7 @@ main.wrapper {
 	@media screen and (max-width: 26em) {
 		body.toc-sidebar {
 			overflow-x: auto;			
-			overflow-y: clip;
+			overflow-y: scroll;
 		}
 	}/* CLOSE MEDIA QUERY */
 
@@ -517,7 +517,7 @@ main.wrapper {
 			left: 0;
 			width: 22vw;
 			overflow-x: auto;			
-			overflow-y: clip;
+			overflow-y: scroll;
 			padding: 0 2em;
 			padding-left: 2vw;
       
@@ -557,7 +557,7 @@ main.wrapper {
 			padding: 0;
 			position: absolute;
 			overflow-x: auto;			
-			overflow-y: clip;
+			overflow-y: scroll;
 		}
 	}/* CLOSE MEDIA QUERY */
 
@@ -572,7 +572,7 @@ main.wrapper {
 			left: 0;
 			width: 16em;
 			overflow-x: auto;			
-			overflow-y: clip;
+			overflow-y: scroll;
 			padding: 0 2em;
 			padding-left: 2em;
 			padding-left: calc(1em + 16px);
