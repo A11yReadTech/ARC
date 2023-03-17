@@ -31,7 +31,7 @@ var respecConfig = {
 	editors:[ {
 		name: "Mike Anderson",
 		mailto: "mike@readtech.org",
-		company: "ART",
+		company: "IRT",
 		companyURI: "https://www.readtech.org/",
 	}],
 
@@ -42,7 +42,7 @@ var respecConfig = {
 	authors:[ {
 		name: "Andrew Somers",
 		mailto: "perceptex@myndex.com",
-		company: "ART",
+		company: "IRT",
 		companyURI: "https://www.readtech.org/",
 	}],
 

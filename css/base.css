@@ -1,5 +1,5 @@
 /******************************************************************************
- *                   Style sheet for the ART specifications                   *
+ *                   Style sheet for the IRT specifications                   *
  *
  * Special classes handled by this style sheet include:
  *
@@ -324,7 +324,7 @@ main.wrapper {
 		border-radius: 0.25em;
 	}
 
-	#art-state {
+	#irt-state {
     display: inline-block;
 		margin-top: -0.05em;
 		margin-bottom: 1.2em;
@@ -341,7 +341,7 @@ main.wrapper {
 
 
 
-/** ART Logo ******************************************************************/
+/** IRT Logo ******************************************************************/
 
 	.head p:not(.copyright):first-child {
 		margin: 0;
@@ -353,7 +353,7 @@ main.wrapper {
 		margin: 0.4rem 0 0.2rem .4rem;
 	}
 
-	.head img[src*="logos/ART"] {
+	.head img[src*="logos/IRT"] {
 		display: block;
 		border: solid #1a5e9a;
 		border: solid var(--logo-bg);
@@ -366,12 +366,12 @@ main.wrapper {
 		font-weight: bold;
 	}
 
-	.head a:hover > img[src*="logos/ART"],
-	.head a:focus > img[src*="logos/ART"] {
+	.head a:hover > img[src*="logos/IRT"],
+	.head a:focus > img[src*="logos/IRT"] {
 		opacity: .8;
 	}
 
-	.head a:active > img[src*="logos/ART"] {
+	.head a:active > img[src*="logos/IRT"] {
 		background: #c00;
 		background: var(--logo-active-bg);
 		border-color: #c00;
@@ -956,7 +956,7 @@ a[href]:active {
   text-decoration-color: var(--a-active-underline);
 }
 
-/* Backout above styling for ART logo */
+/* Backout above styling for IRT logo */
 .head p:not(.copyright):first-child > a,
 .head > a:first-child {
   border: none;

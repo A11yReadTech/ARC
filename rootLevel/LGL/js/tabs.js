@@ -2,7 +2,7 @@
 /////                        THE TURBO ENTABULATOR
 /////                by Andrew Somers and unknown other people
 /////                           APGL v3 License
-/////           copyright © 2023 Accessible Reading Technologies
+/////           copyright © 2023 Inclusive Reading Technologies
 /////                      https://www.readtech.org/
 ////////////////////////////////////////////////////////////////////////////////
 /////    Notes: tab name is appended to the URL as a parameter,

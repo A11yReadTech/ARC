@@ -1,4 +1,4 @@
-# Accessible Reading Technologies Interim License
+# Inclusive Reading Technologies Interim License
 
 **_Notice:_** during the development of the specifications listed in this repository, this license shall be time-limited and temporary, the terms of which shall extend no more than one year past the most recent _**editor's draft publication date**_ of this material.
 
@@ -6,7 +6,7 @@ Upon finalization of a final recommendation by this organization, or by specific
 
 Nothing in this license extends to any trademarks or patents (pending or issued). Any potential patent licensing is a separate matter, not covered within this document.
 
-This license and permission to use any of the materials contained herein, being beta material, is revocable at any time by Accessible Reading Technologies, Myndex Research, authorized officers, agents, or assigns.
+This license and permission to use any of the materials contained herein, being beta material, is revocable at any time by Inclusive Reading Technologies, Myndex Research, authorized officers, agents, or assigns.
 
 
 
