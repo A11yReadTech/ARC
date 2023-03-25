@@ -46,22 +46,26 @@ body {
 }
 
 [role="tabpanel"] {
-	padding: .5rem;
+/*	padding: .5rem;
 	border: 2px solid #005a6a;
 	border-radius: 5px;
 	margin-top: -2px;
+	*/
 }
+
 [role="tabpanel"].is-hidden {
 	display: none;
 }
+
 /*
 [role="tab"][aria-selected="true"] {
-	background-color: var(--art-blue);
-	border-color: var(--art-blue);
+	background-color: var(--irt-blue);
+	border-color: var(--irt-blue);
 	padding: 12px 16px 8px 16px;
 	font-size: 1rem;
 }
 */
+
 #apca-sticker {
 	height: 15ex;
 	width: 15ex;
@@ -71,7 +75,7 @@ body {
 	margin-bottom: 1em;
 }
 
-/* method icon */
+/* test methods icon */
 #type-img, #type-img-how {
 	height: 6ex;
 	width: 6ex;
@@ -87,27 +91,29 @@ body {
 	width: 3.39ex;
   }
 
-
 h1+p, button[role="tablist"] {
 	clear: both;
 }
-.guideline-link::before, .howto-link::before, .objective-link::before, .method-link::before, .json-link::before {
+
+.criterion-link::before, .guide-link::before, .objective-link::before, .tests-link::before, .json-link::before {
 	display: inline-block;
 	width: 2.5ex;
 	margin-right: .25em;
 	vertical-align: text-top;
 }
-.guideline-link::before {
-	content: url(../img/rating.svg);
+
+/*
+.criterion-link::before {
+	content: url(../img/ratingTINY.png);
 }
-.howto-link::before {
-	content: url(../img/how-to.svg);
+.guide-link::before {
+	content: url(../img/guide.svg);
 }
 .objective-link::before {
 	content: url(../img/objective.svg);
 }
-.method-link::before {
-	content: url(../img/method.svg);
+.tests-link::before {
+	content: url(../img/testmethodsTINY.png);
 }
 .json-link::before {
 	content: url(../img/json.svg);
@@ -115,8 +121,9 @@ h1+p, button[role="tablist"] {
 .json-link {
 	text-align: right;
 }
-
+*/
 /* fixes for broken minimal-header styles, taken from  */
+
 .tool-header {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 8;
@@ -126,18 +133,23 @@ h1+p, button[role="tablist"] {
 	align-items: center;
 	width: 100%;
 }
+
 .tool-header a {
 	text-decoration: none;
 }
+
 .tool-header-name {
 	font-size: 1.125em;
 	white-space: nowrap;
 }
+
 @media (min-width: 60em) {
 	.tool-header-name {
 		font-size: 1.5em;
 	}
 }/* CLOSE MEDIA QUERY */
+
+
 .tool-header-logo {
 	margin-left: auto;
 	display: flex;
@@ -158,11 +170,10 @@ h1+p, button[role="tablist"] {
 
 
 
-
-
-
 dd > p:first-child,
 li > p:first-child { margin-top: 0; }
+
+
 /*
 ul, ol {
 		margin: 0;
@@ -219,15 +230,15 @@ ol.alpha > li::before {
   font-weight: 700;
   font-style: italic;
   }
-
-
 */
+
 
 	li {
 		margin: 0 0 0.6em;
 		padding: 0;
 		line-height: 1.15;
 		}
+
 	li:last-child {
 		margin: 0 0 1.2em;
 		}
@@ -280,8 +291,13 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 	}
 [role="tablist"] a {
 	text-decoration: none;
-	padding: 0.5rem 1em;
+	padding: 0.5em 1em;
 	}
+@media (max-width: 72.5em) {
+[role="tablist"] a {
+	padding: 0.5em 1vw;
+	}
+}
 
 
 [role="tab"][aria-selected="true"] {
@@ -297,13 +313,14 @@ h1,h2,h3,h4,h5,h6 {	font-weight: 600;	}
 [role="tabpanel"] {
 	outline: none;
 	border: none;
-	padding: .5rem;
+	padding: 0.5em;
 	border-radius: 0 0 32px 32px;	
 	box-shadow: inset 0 3px 7px rgba(32,32,32,0.2);	
 	}
+	/*
 [role="tabpanel"] * + * {
-	margin-top: 0.5rem;
-	}
+	margin-top: 0.5em;
+	} */
 [role="tabpanel"] {
 	padding: 12px 32px;
 	font-size: 1.125em;
@@ -378,6 +395,56 @@ A heavier weight text. To Use This you must add a title attribute to link */
 
 
 
+
+
+
+
+p a, li a, #bibliography a,
+p a:link, li a:link, #bibliography a:link {
+  display: inline-block; 
+  text-align: left;  
+  position: relative; 
+  margin: 0 auto 0; 
+  font-weight: 600;
+  text-align: center;  
+  color: #52a; 
+  text-decoration: underline;
+  text-decoration-color: #306;
+  text-decoration-thickness: 1.75px;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+  text-shadow: 0 0 4px #0000;
+  }
+
+p a:hover, li a:hover, #bibliography a:hover,
+p a:active, li a:active, #bibliography a:active {
+  color: #408a;
+  text-decoration: underline; 
+  text-decoration-color: #63bb;
+  text-decoration-thickness: 1.75px;
+  text-decoration-style: solid;
+  text-underline-position: under;
+  text-shadow: -1px -1px 0px #dcfb, 1px 1px 0px #3066,2px 2px 4px #ffff;
+  }
+
+p a:active, li a:active, #bibliography a:active {
+  top: 3px;
+  left: 3px;
+  }
+
+#resources li a:link {
+  font-weight: 600;
+  font-style: italic;
+  }
+  
+#bibliography a:link {
+  font-weight: 700;
+  font-style: italic;
+  }
+
+
+
+
 /* Styles for bibliography */
 
 #bibliography h3,
@@ -385,13 +452,18 @@ A heavier weight text. To Use This you must add a title attribute to link */
 #bibliography p {
 	margin: 0.15em 1.25em;
 	}
+
+#bibliography p ~ a + h3, #bibliography p ~ a:link + h3,
 #bibliography p ~ h3, #bibliography h2 ~ h3 {
 	margin: 1.15em 1em 0.15em 0.5em;
 	}
+
 #bibliography h3 {font-size: 1.2em;font-weight: 700;}
 #bibliography h4 {font-size: 1.1em; font-weight: 600;}
 #bibliography p  {font-size: 0.94em;font-weight: 500;}
 #bibliography p ~ p {font-size: 0.9em;font-weight: 400;}
+
+#bibliography a, #bibliography a:link {margin: 0; padding: 0}
 
 
 
@@ -405,6 +477,7 @@ A heavier weight text. To Use This you must add a title attribute to link */
 
 
 
+
 /* ******   MEDIA QUERIES   ****** */
 
 
@@ -412,6 +485,7 @@ A heavier weight text. To Use This you must add a title attribute to link */
 
 body {padding: 0;}
 .default-grid {padding: 0;}
+
 main {
   margin: 0;
   max-width:100vw;

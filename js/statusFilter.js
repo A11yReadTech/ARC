@@ -29,7 +29,7 @@ function enableStatusFilter() {
 			}
 		});
 		button.textContent = (filterActive ? 'Show' : 'Hide')
-		                   + ' placeholder & exploratory sections';
+		                   + ' placeholder & deprecated sections';
 		buttontoc.textContent = (filterActive ? 'Show Hidden' : 'Hide Placeholders');
 		                   
 	}

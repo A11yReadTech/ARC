@@ -37,27 +37,27 @@ function pathToName(path) {
 }
 
 function linkHowTo() {
-	var howtoBaseURI = "/ARC/how-tos/";
-	document.querySelectorAll('.guideline').forEach(function(node){
+	var guideBaseURI = "/ARC/guides/";
+	document.querySelectorAll('.criterion').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
-		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"howto-link\">" + heading + " <span>how-to</span></a>";
-		node.querySelector("p.guideline-text").append(el);
+		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"guide-link\">" + heading + " <span>guides</span></a>";
+		node.querySelector("p.criterion-text").append(el);
 	})
 }
 
 function linkMethod() {
-	var howtoBaseURI = "/ARC/methods/";
+	var guideBaseURI = "/ARC/tests/";
 
-	document.querySelectorAll('.guideline').forEach(function(node){
+	document.querySelectorAll('.criterion').forEach(function(node){
 
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("span");
-		el.innerHTML = " <a href=\"" + howtoBaseURI + pathFrag + "/\" class=\"method-link\">" + heading + " <span>method</span></a>";
-		node.querySelector("p.guideline-text").append(el);
+		el.innerHTML = " <a href=\"" + guideBaseURI + pathFrag + "/\" class=\"tests-link\">" + heading + " <span>tests</span></a>";
+		node.querySelector("p.criterion-text").append(el);
 	})
 }
 
@@ -69,7 +69,7 @@ function linkObjective() {
 		var heading = textNoDescendant(findHeading(node));
 		var pathFrag = titleToPathFrag(heading);
 		var el = document.createElement("p");
-		el.innerHTML = " <a href=\"" + objectiveBaseURI + pathFrag + "\" class=\"objective-link\"><span>Objective, details, and methods for </span>" + heading + "</a>";
+		el.innerHTML = " <a href=\"" + objectiveBaseURI + pathFrag + "\" class=\"objective-link\"><span>Objective, details, and test methods for </span>" + heading + "</a>";
 		node.insertBefore(el, node.querySelector("details"));
 		
 		node.classList.add("notoc");
@@ -77,7 +77,7 @@ function linkObjective() {
 }
 
 function addGuidelineMarkers() {
-	document.querySelectorAll('.guideline').forEach(function(node){
+	document.querySelectorAll('.criterion').forEach(function(node){
 		var guidelineText = node.querySelector("p");
 		guidelineText.innerHTML = "<span class=\"inserted\">Guideline: </span>" + guidelineText.innerHTML;
 	})
@@ -188,7 +188,7 @@ function termTitles() {
 }
 
 function removeDraftMethodLinks() {
-	document.querySelectorAll('.method-link').forEach(function(node){
+	document.querySelectorAll('.tests-link').forEach(function(node){
 		uri = node.href;
 		if (!uri.startsWith("https://www.readtech.org")) {
 			node.parentElement.innerHTML = node.textContent;	
@@ -197,7 +197,7 @@ function removeDraftMethodLinks() {
 }
 
 function adjustNormativity() {
-	document.querySelectorAll('body > section').forEach(function(node){
+	document.querySelectorAll('body main > section').forEach(function(node){
 		if (node.classList.contains("informative")) {
 			var normativeStatement = node.querySelector('p');
 			normativeStatement.classList.add("informative-statement");
@@ -262,8 +262,8 @@ function outputJson() {
 	params = new URLSearchParams(window.location.search);
 	if (params.get("json") != null) {
 		var result = new Object();
-		result.guidelines = new Array();
-		document.querySelectorAll(".guideline").forEach(function(glnode) {
+		result.criterion = new Array();
+		document.querySelectorAll(".criterion").forEach(function(glnode) {
 			var gl = {
 				id: titleToPathFrag(findFirstTextChild(findHeading(glnode)).textContent),
 				name: findFirstTextChild(findHeading(glnode)).textContent,
@@ -280,7 +280,7 @@ function outputJson() {
 				}
 				gl.objectives.push(oc);
 			});
-			result.guidelines.push(gl);
+			result.criterion.push(gl);
 		});
 		
 	    var a = document.createElement("a");
@@ -298,7 +298,7 @@ function outputJson() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
 				methodList = new Array();
 				xml = xhttp.responseXML;
-				xml.querySelectorAll(".method-link").forEach(function(node) {
+				xml.querySelectorAll(".tests-link").forEach(function(node) {
 					var methodid = node.href.match(/\/([a-z-]*)\/$/)[1]; 
 					var method = {
 						id: methodid,

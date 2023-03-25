@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="BPCA logo 2 square.svg"
+   inkscape:export-filename="/Users/asomers/BPCAlogo.png"
+   inkscape:export-xdpi="191.87595"
+   inkscape:export-ydpi="191.87595">
+  <defs
+     id="defs2">
+    <rect
+       x="30.015337"
+       y="77.312232"
+       width="113.39127"
+       height="26.377115"
+       id="rect854" />
+    <rect
+       x="39.309524"
+       y="50.64881"
+       width="124.73214"
+       height="48.380952"
+       id="rect837" />
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="113.39127"
+       height="26.377115"
+       id="rect854-1" />
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="113.39127"
+       height="26.377115"
+       id="rect905" />
+    <filter
+       x="-0.35"
+       width="1.7"
+       y="-0.35"
+       height="1.7"
+       inkscape:menu-tooltip="Smooth rainbow colors warped along the edges and colorizable"
+       inkscape:menu="Textures"
+       inkscape:label="Warped Rainbow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter46">
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="5"
+         id="feGaussianBlur36" />
+      <feTurbulence
+         baseFrequency="0.015"
+         numOctaves="2"
+         type="fractalNoise"
+         result="result7"
+         seed="20"
+         id="feTurbulence38" />
+      <feDisplacementMap
+         yChannelSelector="A"
+         xChannelSelector="A"
+         scale="100"
+         result="result10"
+         in="result7"
+         in2="result8"
+         id="feDisplacementMap40" />
+      <feComposite
+         in="result10"
+         operator="atop"
+         result="result2"
+         in2="result8"
+         id="feComposite42" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         in="result10"
+         result="fbSourceGraphic"
+         k1="2.5"
+         k3="0.5"
+         id="feComposite44" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.74440084"
+     inkscape:cx="298.06686"
+     inkscape:cy="365.76145"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="855"
+     inkscape:window-x="69"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     showguides="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0000ff;stroke-width:0.243417;filter:url(#filter46)"
+       id="rect833"
+       width="110"
+       height="110"
+       x="23.064352"
+       y="5.9826813" />
+    <g
+       aria-label="APCA"
+       id="text835"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:Audiowide;white-space:pre;shape-inside:url(#rect837);fill:#ffffff;fill-opacity:1;stroke:none"
+       transform="translate(-8.8695753,-11.311946)">
+      <path
+         d="m 71.198488,65.639014 q 0,1.318438 -0.433086,2.355412 -0.433087,1.036973 -1.181145,1.836925 -0.728373,0.785137 -1.692975,1.348065 -0.964601,0.562929 -2.027632,0.918463 -1.043346,0.355534 -2.126062,0.518487 -1.063031,0.162953 -2.007947,0.162953 H 50.154418 v -3.851617 h 11.575223 q 0.984288,-0.05926 1.771718,-0.296278 0.807116,-0.251837 1.378003,-0.666626 0.570886,-0.41479 0.885859,-0.992532 0.314972,-0.592557 0.314972,-1.333252 v -1.748041 q -0.09843,-0.725882 -0.4134,-1.333252 Q 65.35182,61.95035 64.800618,61.520747 64.269104,61.091144 63.501359,60.854121 62.733615,60.602284 61.729641,60.602284 H 50.193789 q -1.023658,0 -1.555174,0.399976 -0.531515,0.399976 -0.531515,1.155485 v 15.83607 h -5.118296 v -15.83607 q 0,-1.481391 0.708687,-2.518365 0.728372,-1.036973 1.791404,-1.673972 1.082716,-0.636998 2.342604,-0.918462 1.259888,-0.296278 2.322919,-0.296278 h 11.575223 q 1.732347,0 3.110349,0.34072 1.378003,0.325906 2.421348,0.888834 1.06303,0.548115 1.791404,1.273997 0.748059,0.725881 1.220517,1.525832 0.492143,0.785138 0.708686,1.599903 0.216543,0.799951 0.216543,1.511019 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;font-family:Audiowide;-inkscape-font-specification:Audiowide;fill:#ffffff;stroke-width:1.15277"
+         id="path845" />
+      <path
+         d="M 100.8649,77.993815 H 82.399682 q -0.708686,0 -1.535488,-0.118511 -0.807116,-0.133325 -1.614231,-0.399976 -0.787431,-0.26665 -1.515803,-0.68144 Q 77.005786,76.364285 76.4349,75.771729 75.883698,75.164358 75.549041,74.379221 75.214383,73.57927 75.214383,72.586738 V 62.157745 q 0,-0.533301 0.157485,-1.140671 0.177173,-0.622184 0.531516,-1.214741 0.354343,-0.60737 0.925231,-1.155485 0.570886,-0.548114 1.358317,-0.962904 0.807116,-0.429603 1.85046,-0.68144 1.043345,-0.251836 2.36229,-0.251836 H 100.8649 v 3.851616 H 82.399682 q -1.003972,0 -1.535488,0.399976 -0.531515,0.399976 -0.531515,1.185113 v 10.399365 q 0,0.740695 0.531515,1.155485 0.551201,0.399975 1.535488,0.399975 H 100.8649 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;font-family:Audiowide;-inkscape-font-specification:Audiowide;fill:#ffffff;stroke-width:1.15277"
+         id="path847" />
+      <path
+         d="m 104.51227,77.993815 h 5.1183 v -5.214496 h 17.99277 v 5.214496 h 5.1183 V 67.372241 q 0,-2.325783 -1.06303,-4.28122 -1.06303,-1.955436 -2.95287,-3.362757 -1.88982,-1.407322 -4.46865,-2.192459 -2.57885,-0.785137 -5.63013,-0.785137 h -11.53585 q -0.53152,0 -1.00397,0.148139 -0.47247,0.148139 -0.82681,0.414789 -0.35435,0.266651 -0.55121,0.622185 -0.19685,0.355533 -0.19685,0.755509 z m 23.11107,-9.066113 h -17.99277 v -8.325418 h 8.99639 q 0.23622,0 1.00397,0.05926 0.74806,0.04444 1.75202,0.251837 0.9843,0.207394 2.0867,0.636998 1.10241,0.429603 2.02763,1.185113 0.92524,0.755509 1.5355,1.89618 0.59056,1.125857 0.59056,2.740573 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;font-family:Audiowide;-inkscape-font-specification:Audiowide;fill:#ffffff;stroke-width:1.15277"
+         id="path849" />
+      <text
+         xml:space="preserve"
+         style="font-size:23.4247px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26619"
+         x="45.985424"
+         y="45.114502"
+         id="text58"
+         transform="scale(0.90718211,1.1023145)"><tspan
+           sodipodi:role="line"
+           id="tspan56"
+           x="45.985424"
+           y="45.114502"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4247px;font-family:Audiowide;-inkscape-font-specification:Audiowide;stroke-width:0.26619">BRIDGE</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       id="text852-4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555999999999983px;line-height:1.2;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:end;letter-spacing:0.27471499999999999px;white-space:pre;shape-inside:url(#rect854-1);fill:#ffffff;fill-opacity:1;stroke:none;"
+       x="41.417511"
+       y="0"
+       transform="matrix(1.0798725,0,0,1.0957772,-16.606092,-7.5529413)"><tspan
+         x="42.566955"
+         y="83.440005"><tspan
+           style="font-size:6.81041px;text-align:center;text-anchor:middle">WCAG 2 COMPATIBILITY</tspan><tspan
+           style="text-align:center;text-anchor:middle">
+</tspan></tspan><tspan
+         x="46.677028"
+         y="92.538714"><tspan
+           style="font-size:7.78332px;text-align:center;text-anchor:middle">APCA TECHNOLOGY</tspan></tspan></text>
+  </g>
+</svg>

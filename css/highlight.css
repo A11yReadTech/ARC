@@ -1,0 +1,261 @@
+[data-color-mode=light][data-light-theme=dark_high_contrast], [data-color-mode=dark][data-dark-theme=dark_high_contrast] {} 
+
+:root {
+    --color-canvas-default-transparent: rgba(10, 12, 16, 0);
+    --color-page-header-bg: #0a0c10;
+    --color-marketing-icon-primary: #91cbff;
+    --color-marketing-icon-secondary: #409eff;
+    --color-diff-blob-addition-num-text: #f0f3f6;
+    --color-diff-blob-addition-fg: #0a0c10;
+    --color-diff-blob-addition-num-bg: rgba(38, 205, 77, 0.3);
+    --color-diff-blob-addition-line-bg: rgba(9, 180, 58, 0.15);
+    --color-diff-blob-addition-word-bg: #09b43a;
+    --color-diff-blob-deletion-num-text: #f0f3f6;
+    --color-diff-blob-deletion-fg: #0a0c10;
+    --color-diff-blob-deletion-num-bg: rgba(255, 106, 105, 0.3);
+    --color-diff-blob-deletion-line-bg: rgba(255, 106, 105, 0.15);
+    --color-diff-blob-deletion-word-bg: #ff6a69;
+    --color-diff-blob-hunk-num-bg: rgba(64, 158, 255, 0.4);
+    --color-diff-blob-expander-icon: #f0f3f6;
+    --color-diff-blob-selected-line-highlight-mix-blend-mode: screen;
+    --color-diffstat-deletion-border: #ffb1af;
+    --color-diffstat-addition-border: #4ae168;
+    --color-diffstat-addition-bg: #26cd4d;
+    --color-fg-default: #f0f3f6;
+    --color-search-keyword-hl: rgba(240, 183, 47, 0.4);
+    --color-prettylights-syntax-comment: #bdc4cc;
+    --color-prettylights-syntax-constant: #91cbff;
+    --color-prettylights-syntax-entity: #dbb7ff;
+    --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+    --color-prettylights-syntax-entity-tag: #72f088;
+    --color-prettylights-syntax-keyword: #ff9492;
+    --color-prettylights-syntax-string: #addcff;
+    --color-prettylights-syntax-variable: #ffb757;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+    --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+    --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+    --color-prettylights-syntax-carriage-return-text: #ffffff;
+    --color-prettylights-syntax-carriage-return-bg: #ff4445;
+    --color-prettylights-syntax-string-regexp: #72f088;
+    --color-prettylights-syntax-markup-list: #fbd669;
+    --color-prettylights-syntax-markup-heading: #409eff;
+    --color-prettylights-syntax-markup-italic: #f0f3f6;
+    --color-prettylights-syntax-markup-bold: #f0f3f6;
+    --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+    --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+    --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+    --color-prettylights-syntax-markup-inserted-bg: #007728;
+    --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+    --color-prettylights-syntax-markup-changed-bg: #a74c00;
+    --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+    --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+    --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+    --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+    --color-prettylights-syntax-constant-other-reference-link: #addcff;
+    --color-codemirror-text: #f0f3f6;
+    --color-codemirror-bg: #0a0c10;
+    --color-codemirror-gutters-bg: #0a0c10;
+    --color-codemirror-guttermarker-text: #0a0c10;
+    --color-codemirror-guttermarker-subtle-text: #9ea7b3;
+    --color-codemirror-linenumber-text: #f0f3f6;
+    --color-codemirror-cursor: #f0f3f6;
+    --color-codemirror-selection-bg: rgba(64, 158, 255, 0.4);
+    --color-codemirror-activeline-bg: rgba(158, 167, 179, 0.1);
+    --color-codemirror-matchingbracket-text: #f0f3f6;
+    --color-codemirror-lines-bg: #0a0c10;
+    --color-codemirror-syntax-comment: #bdc4cc;
+    --color-codemirror-syntax-constant: #91cbff;
+    --color-codemirror-syntax-entity: #dbb7ff;
+    --color-codemirror-syntax-keyword: #ff9492;
+    --color-codemirror-syntax-storage: #ff9492;
+    --color-codemirror-syntax-string: #addcff;
+    --color-codemirror-syntax-support: #91cbff;
+    --color-codemirror-syntax-variable: #ffb757;
+    
+}
+
+:not(.highlight) code {
+  padding: 2px 4px 3px;
+  -webkit-font-feature-settings:"liga","clig off";
+  font-feature-settings:"liga","clig off";
+  -webkit-font-variant-ligatures:no-common-ligatures;
+  font-variant-ligatures:no-common-ligatures;
+  color:#206;
+  background-color:#e8e2dd;
+  color:var(--code-text);
+  background-color:var(--code-bg);
+  border-radius: 4px;
+  box-shadow: inset -0.06em -0.06em 0.1em #5677,
+              inset 0.06em 0.06em 0.1em #fff;
+  }
+
+
+div.highlightTabs {
+  position: relative;
+  margin: 1em -2em;
+  padding: 1.5em 0.1em 2em 2em
+  border-radius: 1.25em;
+  overflow: scroll;
+  text-overflow: scroll;
+  white-space: nowrap;
+  hyphens: none;
+  text-transform: none;
+  font-family: 'Fira Mono', Menlo, Consolas, Monaco, monospace;
+  font-size: 0.95em;
+  text-align: left;
+  text-align: start;
+  font-variant: normal;
+  page-break-before: avoid;
+  background: #123;
+  border-radius: 1.5em;
+  box-shadow: inset 0.1em 0.1em 0.17em #567,
+              inset -0.1em -0.1em 0.17em #123,
+              inset 0.1em 0.1em 0.1em 0.1em #def,
+              inset 0.4em 0.4em 0.8em #def7,
+              inset -0.1em -0.1em 0.4em 0.4em #456b,
+              inset -0.4em -0.4em 0.8em 0.12em #defb,
+              0.12em 0.12em 0.22em #abdd,
+              0.2em 0.2em 0.3em #7895,
+              0.3em 0.3em 0.6em #2345;
+}
+
+div.highlightTabs pre {
+  margin: 0 auto;
+  padding: 18px;
+  overflow: scroll;
+  text-overflow: scroll;
+  white-space: pre;
+  overflow: scroll;
+  font-family: 'Fira Mono', Menlo, Consolas, Monaco, monospace;
+  font-size: 85%;
+  font-size: 15px;
+  line-height: 1.45;
+  background-color: var(--color-canvas-subtle);
+  border-radius: 1.25em;
+}
+
+
+/*!
+ * GitHub Light v0.5.0
+ * Copyright (c) 2012 - 2017 GitHub, Inc.
+ * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
+ */
+
+
+pre {
+  color: var(--color-fg-default);
+}
+
+.pl-c {
+    color:var(--color-prettylights-syntax-comment)
+}
+
+.pl-kos, .pl-c1, .pl-s .pl-v {
+    color:var(--color-prettylights-syntax-constant)
+}
+
+.pl-e, .pl-en {
+    color:var(--color-prettylights-syntax-entity)
+}
+
+.pl-smi, .pl-s .pl-s1 {
+    color:var(--color-prettylights-syntax-storage-modifier-import)
+}
+
+.pl-ent {
+    color:var(--color-prettylights-syntax-entity-tag)
+}
+
+.pl-k {
+    color:var(--color-prettylights-syntax-keyword)
+}
+
+.pl-s, .pl-pds, .pl-s .pl-pse .pl-s1, .pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sre, .pl-sr .pl-sra {
+    color:var(--color-prettylights-syntax-string)
+}
+
+.pl-v, .pl-smw {
+    color:var(--color-prettylights-syntax-variable)
+}
+
+.pl-bu {
+    color:var(--color-prettylights-syntax-brackethighlighter-unmatched)
+}
+
+.pl-ii {
+    color: var(--color-prettylights-syntax-invalid-illegal-text);
+    background-color:var(--color-prettylights-syntax-invalid-illegal-bg)
+}
+
+.pl-c2 {
+    color: var(--color-prettylights-syntax-carriage-return-text);
+    background-color:var(--color-prettylights-syntax-carriage-return-bg)
+}
+
+.pl-c2::before {
+    content: "^M"
+}
+
+.pl-sr .pl-cce {
+    font-weight: bold;
+    color:var(--color-prettylights-syntax-string-regexp)
+}
+
+.pl-ml {
+    color:var(--color-prettylights-syntax-markup-list)
+}
+
+.pl-mh, .pl-mh .pl-en, .pl-ms {
+    font-weight: bold;
+    color:var(--color-prettylights-syntax-markup-heading)
+}
+
+.pl-mi {
+    font-style: italic;
+    color:var(--color-prettylights-syntax-markup-italic)
+}
+
+.pl-mb {
+    font-weight: bold;
+    color:var(--color-prettylights-syntax-markup-bold)
+}
+
+.pl-md {
+    color: var(--color-prettylights-syntax-markup-deleted-text);
+    background-color:var(--color-prettylights-syntax-markup-deleted-bg)
+}
+
+.pl-mi1 {
+    color: var(--color-prettylights-syntax-markup-inserted-text);
+    background-color:var(--color-prettylights-syntax-markup-inserted-bg)
+}
+
+.pl-mc {
+    color: var(--color-prettylights-syntax-markup-changed-text);
+    background-color:var(--color-prettylights-syntax-markup-changed-bg)
+}
+
+.pl-mi2 {
+    color: var(--color-prettylights-syntax-markup-ignored-text);
+    background-color:var(--color-prettylights-syntax-markup-ignored-bg)
+}
+
+.pl-mdr {
+    font-weight: bold;
+    color:var(--color-prettylights-syntax-meta-diff-range)
+}
+
+.pl-ba {
+    color:var(--color-prettylights-syntax-brackethighlighter-angle)
+}
+
+.pl-sg {
+    color:var(--color-prettylights-syntax-sublimelinter-gutter-mark)
+}
+
+.pl-corl {
+    text-decoration: underline;
+    color:var(--color-prettylights-syntax-constant-other-reference-link)
+}
+

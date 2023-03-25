@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="SeeStarsLOGO.svg"
+   inkscape:export-filename="/Users/asomers/seestars.png"
+   inkscape:export-xdpi="191.87595"
+   inkscape:export-ydpi="191.87595">
+  <defs
+     id="defs2">
+    <rect
+       x="30.015337"
+       y="77.312232"
+       width="113.39127"
+       height="26.377115"
+       id="rect854" />
+    <rect
+       x="39.309524"
+       y="50.64881"
+       width="124.73214"
+       height="48.380952"
+       id="rect837" />
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="126.29262"
+       height="42.269729"
+       id="rect854-1" />
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="113.39127"
+       height="26.377115"
+       id="rect905" />
+    <filter
+       x="-0.35"
+       width="1.7"
+       y="-0.35"
+       height="1.7"
+       inkscape:menu-tooltip="Smooth rainbow colors warped along the edges and colorizable"
+       inkscape:menu="Textures"
+       inkscape:label="Color Shift"
+       style="color-interpolation-filters:sRGB;"
+       id="filter46">
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="8.8326470588235289"
+         id="feGaussianBlur36" />
+      <feTurbulence
+         baseFrequency="0.021000000000000005"
+         numOctaves="3"
+         type="fractalNoise"
+         result="result7"
+         seed="60"
+         id="feTurbulence38" />
+      <feDisplacementMap
+         yChannelSelector="A"
+         xChannelSelector="A"
+         scale="100"
+         result="result10"
+         in="result7"
+         in2="result8"
+         id="feDisplacementMap40" />
+      <feComposite
+         in="result10"
+         operator="atop"
+         result="result2"
+         in2="result8"
+         id="feComposite42" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         in="result10"
+         result="fbSourceGraphic"
+         k1="1.0084033613445378"
+         k3="0.5"
+         id="feComposite44"
+         k2="0" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix253" />
+      <feColorMatrix
+         id="feColorMatrix255"
+         type="hueRotate"
+         values="268"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix257"
+         type="saturate"
+         values="0.779264"
+         result="color2" />
+      <feBlend
+         mode="multiply"
+         in2="color2"
+         id="feBlend265" />
+    </filter>
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="126.29262"
+       height="42.26973"
+       id="rect854-1-8" />
+    <rect
+       x="30.015337"
+       y="77.312233"
+       width="126.29262"
+       height="42.26973"
+       id="rect400" />
+    <filter
+       inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Cutout Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter435"
+       width="1.8999999999999999"
+       height="1.8999999999999999"
+       x="-0.59999999999999998"
+       y="-0.59999999999999998">
+      <feOffset
+         dy="-0.86206896551723844"
+         dx="2.5862068965517295"
+         id="feOffset425" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur427" />
+      <feFlood
+         flood-color="rgb(0,0,0)"
+         flood-opacity="1"
+         result="flood"
+         id="feFlood429" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite"
+         id="feComposite431" />
+      <feBlend
+         in="blur"
+         in2="composite"
+         mode="darken"
+         id="feBlend433" />
+    </filter>
+    <filter
+       inkscape:menu-tooltip="Glowing metal texture"
+       inkscape:menu="Bevels"
+       inkscape:label="Glowing Metal"
+       style="color-interpolation-filters:sRGB;"
+       id="filter547">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="result10"
+         id="feGaussianBlur529" />
+      <feBlend
+         in2="SourceGraphic"
+         result="result5"
+         mode="multiply"
+         in="result10"
+         id="feBlend531" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result5"
+         result="fbSourceGraphic"
+         operator="over"
+         id="feComposite533" />
+      <feGaussianBlur
+         result="result9"
+         stdDeviation="5"
+         id="feGaussianBlur535" />
+      <feSpecularLighting
+         in="result9"
+         result="result1"
+         lighting-color="rgb(255,255,255)"
+         surfaceScale="1.0443037974683547"
+         specularConstant="1.8829113924050633"
+         specularExponent="44.107594936708864"
+         id="feSpecularLighting539"
+         kernelUnitLength="0.62714285714285722">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight537" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         in="result1"
+         result="result2"
+         operator="in"
+         id="feComposite541" />
+      <feComposite
+         in="result2"
+         result="result4"
+         operator="arithmetic"
+         k2="2"
+         k3="0.8"
+         in2="fbSourceGraphic"
+         id="feComposite543" />
+      <feBlend
+         in="result4"
+         in2="result4"
+         mode="multiply"
+         id="feBlend545" />
+    </filter>
+    <filter
+       inkscape:menu-tooltip="Pressed metal with a rolled edge"
+       inkscape:menu="Bevels"
+       inkscape:label="Pressed Steel"
+       style="color-interpolation-filters:sRGB;"
+       id="filter949">
+      <feGaussianBlur
+         result="result1"
+         stdDeviation="3"
+         id="feGaussianBlur927" />
+      <feBlend
+         in2="result1"
+         result="result5"
+         mode="multiply"
+         in="result1"
+         id="feBlend929" />
+      <feGaussianBlur
+         in="result5"
+         result="result6"
+         stdDeviation="1"
+         id="feGaussianBlur931" />
+      <feComposite
+         result="result8"
+         in2="result5"
+         in="result6"
+         operator="xor"
+         id="feComposite933" />
+      <feComposite
+         in="result6"
+         result="fbSourceGraphic"
+         operator="xor"
+         in2="result8"
+         id="feComposite935" />
+      <feSpecularLighting
+         in="fbSourceGraphic"
+         result="result1"
+         lighting-color="rgb(255,255,255)"
+         surfaceScale="2"
+         specularConstant="2.2"
+         specularExponent="55"
+         id="feSpecularLighting939">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight937" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         in="result1"
+         result="result2"
+         operator="in"
+         id="feComposite941" />
+      <feComposite
+         in="fbSourceGraphic"
+         result="result4"
+         operator="arithmetic"
+         k2="2"
+         k3="1"
+         in2="result2"
+         id="feComposite943" />
+      <feComposite
+         in2="result4"
+         in="result4"
+         operator="in"
+         result="result91"
+         id="feComposite945" />
+      <feBlend
+         mode="darken"
+         in2="result91"
+         id="feBlend947" />
+    </filter>
+    <filter
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter969">
+      <feGaussianBlur
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4"
+         id="feGaussianBlur963" />
+      <feOffset
+         dx="5"
+         dy="5"
+         result="result4"
+         id="feOffset965" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result4"
+         operator="lighter"
+         result="result3"
+         id="feComposite967" />
+    </filter>
+    <filter
+       inkscape:label="Rough and Glossy"
+       inkscape:menu="Textures"
+       inkscape:menu-tooltip="Crumpled glossy paper effect which can be used for pictures as for objects"
+       style="color-interpolation-filters:sRGB;"
+       id="filter1215">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="3"
+         baseFrequency="0.013999999999999995"
+         seed="55"
+         result="result0"
+         id="feTurbulence1197" />
+      <feDiffuseLighting
+         surfaceScale="4"
+         diffuseConstant="1"
+         kernelUnitLength="1"
+         result="result1"
+         in="result0"
+         id="feDiffuseLighting1201">
+        <feDistantLight
+           azimuth="235"
+           elevation="60"
+           id="feDistantLight1199" />
+      </feDiffuseLighting>
+      <feSpecularLighting
+         in="result0"
+         surfaceScale="3"
+         specularConstant="1"
+         specularExponent="25"
+         kernelUnitLength="1"
+         result="result3"
+         id="feSpecularLighting1205">
+        <feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight1203" />
+      </feSpecularLighting>
+      <feComposite
+         in="result1"
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="1"
+         result="result2"
+         id="feComposite1207" />
+      <feComposite
+         in="result2"
+         in2="result3"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         result="result4"
+         id="feComposite1209" />
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         in="result4"
+         result="fbSourceGraphic"
+         id="feComposite1211" />
+      <feDisplacementMap
+         scale="7"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in2="result0"
+         id="feDisplacementMap1213" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.63764229"
+     inkscape:cx="241.81956"
+     inkscape:cy="467.31567"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="855"
+     inkscape:window-x="41"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     showguides="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#d42aff;stroke-width:0.243417;filter:url(#filter46)"
+       id="rect833"
+       width="110"
+       height="110"
+       x="23.064352"
+       y="5.9826813" />
+    <g
+       aria-label="APCA"
+       id="text835"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:Audiowide;white-space:pre;shape-inside:url(#rect837);fill:#660080;fill-opacity:1;stroke:none;stroke-width:1.0545;filter:url(#filter949)"
+       transform="matrix(0.89930578,0,0,1,-40.668249,-69.322379)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.6528px;line-height:0.95;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#660080;stroke-width:0.281886"
+         x="103.66641"
+         y="132.06667"
+         id="text58"
+         transform="scale(1.2645653,0.79078557)"><tspan
+           sodipodi:role="line"
+           x="103.66641"
+           y="132.06667"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.6528px;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#660080;stroke-width:0.281886"
+           id="tspan43">See</tspan><tspan
+           sodipodi:role="line"
+           x="103.66641"
+           y="163.08682"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.6528px;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#660080;stroke-width:0.281886"
+           id="tspan102">Stars</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       id="text852-4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.67500000000000071px;line-height:1.2;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:end;letter-spacing:0.27471499999999999px;white-space:pre;shape-inside:url(#rect854-1);fill:#bbfffe;fill-opacity:1;stroke:none;filter:url(#filter435);"
+       x="4.8789282"
+       y="0"
+       transform="matrix(1.0798725,0,0,1.0957772,-23.34863,-9.105447)"><tspan
+         x="56.444295"
+         y="87.451826"><tspan
+           style="text-align:center;text-anchor:middle;fill:#bbfffe;fill-opacity:1">sRGB to Y &amp;
+</tspan></tspan><tspan
+         x="64.939396"
+         y="101.46183"><tspan
+           style="text-align:center;text-anchor:middle;fill:#bbfffe;fill-opacity:1">CIE Lstar</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text852-4-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.67500000000000071px;line-height:1.2;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:end;letter-spacing:0.27471499999999999px;white-space:pre;shape-inside:url(#rect854-1-8);fill:#afdde9;fill-opacity:1;stroke:none;filter:url(#filter1215);"
+       x="4.8789282"
+       y="0"
+       transform="matrix(1.0798725,0,0,1.0957772,-23.683033,-10.085097)"><tspan
+         x="56.444295"
+         y="87.451826"><tspan
+           style="text-align:center;text-anchor:middle;shape-inside:url(#rect854-1-8);fill:#afdde9">sRGB to Y &amp;
+</tspan></tspan><tspan
+         x="64.939396"
+         y="101.46183"><tspan
+           style="text-align:center;text-anchor:middle;shape-inside:url(#rect854-1-8);fill:#afdde9">CIE Lstar</tspan></tspan></text>
+    <g
+       aria-label="APCA"
+       id="text835-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:Audiowide;white-space:pre;shape-inside:url(#rect837);fill:#00ffff;fill-opacity:1;stroke:none;filter:url(#filter547)"
+       transform="translate(-25.1486,-70.562186)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5905px;line-height:0.95;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#00ffff;stroke-width:0.267318"
+         x="89.384216"
+         y="120.63179"
+         id="text58-8"
+         transform="scale(1.1459679,0.87262481)"><tspan
+           sodipodi:role="line"
+           x="89.384216"
+           y="120.63179"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5905px;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#00ffff;stroke-width:0.267318"
+           id="tspan43-9">See</tspan><tspan
+           sodipodi:role="line"
+           x="89.384216"
+           y="148.74277"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5905px;font-family:'Henny Penny';-inkscape-font-specification:'Henny Penny';text-align:center;text-anchor:middle;fill:#00ffff;stroke-width:0.267318"
+           id="tspan98">Stars</tspan></text>
+    </g>
+  </g>
+</svg>
